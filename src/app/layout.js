@@ -1,8 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./shared/header";
-import Footer from "./shared/footer";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link href="/bootstrap.min.css" rel="stylesheet" />
-      <Script src="/bootstrap.bundle.min.js" />
+      <head>
+        <link href="/bootstrap.min.css" rel="stylesheet" />
+        <script src="/bootstrap.bundle.min.js" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

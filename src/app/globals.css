@@ -105,3 +105,10 @@ a {
     color-scheme: dark;
   }
 }
+
+
+ul {
+  padding: 0!important;
+  margin: 0!important;
+  list-style: none;
+}

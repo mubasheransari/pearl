@@ -1,87 +1,40 @@
-.header {
-    @media (min-width: 768px) {
-        nav {
-            background-color: transparent!important;
-            border-bottom: 1px solid rgba(224, 224, 224, 0.5);
-            .header_container {
-                .logo_box {
-                    display: flex;
-                    span{
-                        width: 200px;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-                .header_links {
-                    justify-content: flex-end;
-                    ul {
-                        li {
-                            padding: 0 20px;
-                            a {
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
+.home {
+    min-height: 100vh;
+
+    .video_box {
+        position: relative;
+        background-color: #a1a0a0;
+        overflow: hidden;
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            transform: scale(1.3);
+
+            @media (max-width: 767px) {
+                transform: scale(4);
             }
         }
-    }
-}
 
-.home {
-    .video_box {
-        height: 100vh;
-        position: relative;
         .video_label {
             position: absolute;
             bottom: 0;
             width: 50%;
             right: 0;
-            background-color: rgba(0,64,143,.8);
+            background-color: rgba(0, 64, 143, .8);
             color: #fff;
             font-size: 2rem;
             padding: 20px 50px;
-        }
-    }
-}
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    .footer_bottom {
-        display: flex;
-        border-top: 1px solid #e0e0e0;
-        height: 50px;
-        .copy_right {
-            width: 30%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .social_terms {
-            width: 60%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 100%;
-            border-left: 1px solid #e0e0e0;
-            ul {
-                padding: 0;
-                list-style-type: none;
-                display: flex;
-                margin: 0;
-                li {
-                    padding: 0 10px;
-                }
-            }
-            span{
-                a {
-                    text-decoration: none;
-                    color: #000;
-                    font-size: 12px;
-                    padding: 0 10px;
-                }
+            @media (max-width: 767px) {
+                bottom: inherit;
+                top: 41%;
+                background-color: transparent;
+                left: 0;
+                width: 100%;
+                font-size: 18px;
+                padding: 20px;
             }
         }
     }

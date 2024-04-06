@@ -1,0 +1,98 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    .footer_top {
+        display: flex;
+        
+        .left {
+            width: 30%;
+            padding: 20px 0;
+            display: flex;
+            @media (max-width:767px) {
+                flex-direction: column;
+            }
+            justify-content: end;
+            >div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            span {
+                img {
+                    width: 40%;
+                }
+            }
+
+            label {
+                font-size: 20px;
+            }
+        }
+
+        .right {
+            width: 70%;
+            border-left: 1px solid #e0e0e0;
+            padding: 20px 0;
+
+            span {
+                >label {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    li {
+                        padding: 5px 0;
+                        label {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        display: flex;
+        border-top: 1px solid #e0e0e0;
+        height: 50px;
+
+        .copy_right {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social_terms {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            border-left: 1px solid #e0e0e0;
+
+            ul {
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                margin: 0;
+
+                li {
+                    padding: 0 10px;
+                }
+            }
+
+            span {
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 12px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}

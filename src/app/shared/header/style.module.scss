@@ -1,0 +1,50 @@
+.header {
+
+    // @media (min-width: 768px) {
+    nav {
+        background-color: transparent !important;
+        border-bottom: 1px solid rgba(224, 224, 224, 0.5);
+
+        @media (max-width: 767px) {
+        }
+
+        .header_container {
+            @media (max-width: 767px) {
+                .logo_box {
+                    justify-content: space-between;
+                    span {
+                        width: 30%!important;
+                    }
+                }
+            }
+
+            .logo_box {
+                display: flex;
+
+                span {
+                    width: 200px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .header_links {
+                justify-content: flex-end;
+
+                ul {
+                    li {
+                        padding: 0 20px;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // }
+}
