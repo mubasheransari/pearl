@@ -2,17 +2,31 @@
     display: flex;
     flex-direction: column;
     background-color: #f7f7f7;
+
+    .container {
+        @media (max-width:767px) {
+            padding: 0;
+        }
+    }
+
     .footer_top {
         display: flex;
-        
+
+        @media (max-width:767px) {
+            flex-direction: column;
+        }
+
         .left {
             width: 30%;
             padding: 20px 0;
             display: flex;
+
             @media (max-width:767px) {
-                flex-direction: column;
+                width: 100%;
             }
+
             justify-content: end;
+
             >div {
                 display: flex;
                 flex-direction: column;
@@ -20,6 +34,10 @@
             }
 
             span {
+                @media (max-width:767px) {
+                    text-align: center;
+                }
+
                 img {
                     width: 40%;
                 }
@@ -27,6 +45,10 @@
 
             label {
                 font-size: 20px;
+
+                @media (max-width:767px) {
+                    text-align: center;
+                }
             }
         }
 
@@ -35,7 +57,34 @@
             border-left: 1px solid #e0e0e0;
             padding: 20px 0;
 
+            @media (max-width:767px) {
+                width: 100%;
+                border-left: 0;
+                border-top: 1px solid #e0e0e0;
+            }
+
+            >div {
+                padding: 0px 40px;
+
+                @media (max-width:767px) {
+                    padding: 0px 10px;
+                }
+            }
+
             span {
+                width: 33%;
+
+                @media (max-width:767px) {
+                    width: max-content;
+                    padding-right: 10px;
+
+                    ul {
+                        li {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+
                 >label {
                     font-size: 18px;
                     font-weight: 500;
@@ -45,6 +94,12 @@
                 ul {
                     li {
                         padding: 5px 0;
+
+                        &.wrap {
+                            white-space: wrap;
+                            display: flex;
+                        }
+
                         label {
                             font-weight: 400;
                         }
@@ -59,11 +114,23 @@
         border-top: 1px solid #e0e0e0;
         height: 50px;
 
+        @media (max-width:767px) {
+            flex-direction: column-reverse;
+            height: max-content;
+
+        }
+
         .copy_right {
             width: 30%;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media (max-width:767px) {
+                width: 100%;
+                border-top: 1px solid #e0e0e0;
+                padding: 20px 0;
+            }
         }
 
         .social_terms {
@@ -73,7 +140,11 @@
             justify-content: space-around;
             height: 100%;
             border-left: 1px solid #e0e0e0;
-
+            @media (max-width:767px) {
+                width: 100%;
+                padding: 20px 0;
+                flex-direction: column;
+            }
             ul {
                 padding: 0;
                 list-style-type: none;
