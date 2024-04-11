@@ -1,13 +1,31 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
+
+  const headerRef = useRef()
+
+  useEffect(() => {
+    document.addEventListener('scroll', scrollFunction)
+    return () => {
+      document.removeEventListener('scroll', scrollFunction)
+    }
+  }, [])
+
+  const scrollFunction = () => {
+    if (window.scrollY > 50) {
+      headerRef?.current?.classList.add(`${style.scroll}`)
+    } else {
+      headerRef?.current?.classList.remove(`${style.scroll}`)
+    }
+  }
+
   return (
     <header className={style.header}>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav ref={headerRef} class={`navbar navbar-expand-md navbar-dark fixed-top bg-dark`}>
         <div class={`container-fluid ${style.header_container}`}>
           <div className={`${style.logo_box}`}>
             <span><img src="/pearl.png" /></span>
