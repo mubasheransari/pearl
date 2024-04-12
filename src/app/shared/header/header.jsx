@@ -3,12 +3,16 @@ import React, { useEffect, useRef } from 'react'
 import style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 const Header = () => {
 
   const headerRef = useRef()
 
   useEffect(() => {
+    if(window.scrollY > 50) {
+      headerRef?.current?.classList.add(`${style.scroll}`)  
+    }
     document.addEventListener('scroll', scrollFunction)
     return () => {
       document.removeEventListener('scroll', scrollFunction)
@@ -37,19 +41,19 @@ const Header = () => {
           <div class={`collapse navbar-collapse ${style.header_links}`} id="navbarCollapse">
             <ul class="navbar-nav mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <Link class="nav-link" href="/">Home</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <Link class="nav-link" href="#">About Us</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Capabilities</a>
+                <Link class="nav-link" href="#">Our Capabilities</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <Link class="nav-link" href="#">Projects</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <Link class="nav-link" href="/contactUs">Contact Us</Link>
               </li>
             </ul>
           </div>

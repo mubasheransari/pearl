@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import style from './home.module.scss'
-import BaseLayout from '@/baseLayout'
+import BaseLayout from '@/app/baseLayout'
 
 
 
