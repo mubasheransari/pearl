@@ -9,7 +9,7 @@ const Header = () => {
 
   const headerRef = useRef()
 
-  const [path, setPath] = useState(location?.pathname)
+  const [path, setPath] = useState(null)
 
   useEffect(() => {
     setPath(location.pathname)
