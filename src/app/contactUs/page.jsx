@@ -3,16 +3,15 @@ import BaseLayout from '@/app/baseLayout'
 import React from 'react'
 import style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faLocationDot, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import Navigation from '@/app/shared/navigation/navigation'
 
 const ContantUs = () => {
     return (
         <BaseLayout>
             <div className={`${style.contactUs}`}>
-                <div className={`${style.pageHeader}`}>
-                    <h1>Contact Us</h1>
-                    <label>Home / Contact Us</label>
-                </div>
+                <Navigation />
                 <div className={`${style.locationBox} `}>
                     <div className={`${style.boxTitle} container`}>
                         <span>
@@ -23,7 +22,7 @@ const ContantUs = () => {
                         </span>
                     </div>
                     <div className={`${style.mapBox}`}>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.835629472007!2d0.03159717704132958!3d51.350933071778236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8aadda2b24b59%3A0xb70245792b16f8db!2sWesterham%20Rd%2C%20Leaves%20Green%2C%20Keston%2C%20UK!5e0!3m2!1sen!2s!4v1712919372341!5m2!1sen!2s" width="100%" height="450" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2491.0280513620164!2d0.038921!3d51.365781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDIxJzU2LjgiTiAwwrAwMicyMC4xIkU!5e0!3m2!1sen!2s!4v1713013995125!5m2!1sen!2s" width="100%" height="500" style={{ border: '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         <div className={`${style.locationOverLay}`}>
                             <h4>United Kingdom</h4>
                             <ul>
@@ -37,7 +36,15 @@ const ContantUs = () => {
                                 </li>
                                 <li>
                                     <span><FontAwesomeIcon icon={faPhone} /></span>
-                                    <label>+44 7391 569139</label>
+                                    <label>+44 2035763199</label>
+                                </li>
+                                <li>
+                                    <span><FontAwesomeIcon icon={faMobile} /></span>
+                                    <label>+44 7460 140474</label>
+                                </li>
+                                <li>
+                                    <span><FontAwesomeIcon icon={faWhatsapp} /></span>
+                                    <label>+44 7460 140474</label>
                                 </li>
                             </ul>
                             <h5 className='mb-3'>Support</h5>

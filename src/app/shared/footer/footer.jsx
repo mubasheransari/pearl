@@ -40,7 +40,7 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <FontAwesomeIcon icon={faPhone} />
-                                        <label className='ms-2'>+44 7391 569139</label>
+                                        <label className='ms-2'>+44 7460 140474</label>
                                     </li>
                                     <li className={`${style.wrap}`}>
                                         <FontAwesomeIcon icon={faLocationDot} />

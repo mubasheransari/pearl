@@ -51,6 +51,9 @@
 
                         a {
                             color: #fff;
+                            &.active {
+                                font-weight: 600;
+                            }
                         }
                     }
                 }
