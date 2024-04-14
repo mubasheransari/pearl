@@ -5,7 +5,7 @@ import style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocationDot, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import Navigation from '@/app/shared/navigation/navigation'
+import Navigation from '@/shared/navigation/navigation'
 
 const ContantUs = () => {
     return (

@@ -4,16 +4,19 @@ import style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
 
   const headerRef = useRef()
+  const pathname = usePathname();
 
   const [path, setPath] = useState(null)
 
   useEffect(() => {
-    setPath(location.pathname)
-  }, [location.pathname])
+    setPath(pathname)
+  }, [pathname])
 
   const navLinks = [
     { link: '/', class: 'nav-link', text: 'Home' },
@@ -54,9 +57,9 @@ const Header = () => {
           </div>
           <div className={`collapse navbar-collapse ${style.header_links}`} id="navbarCollapse">
             <ul className="navbar-nav mb-2 mb-md-0">
-              {navLinks.map(link => {
+              {navLinks.map((link, i) => {
                 return (
-                  <li className={`nav-item`}>
+                  <li className={`nav-item`} key={'nav_' + i}>
                     <Link className={`${link.class} ${(path == link.link) ? style.active : ''}`} href={link.link}>{link.text}</Link>
                   </li>
                 )
