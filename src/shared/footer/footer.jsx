@@ -12,8 +12,8 @@ const Footer = () => {
 
     return (
         <footer className={`${style.footer}`}>
-            <div className={`${style.container} container`}>
-                <div className={`${style.footer_top}`}>
+            <div className={`${style.container}`}>
+                <div className={`${style.footer_top} container`}>
                     <div className={`${style.left}`}>
                         <div className={``}>
                             <span ><img src="/pearl.png" /></span>
@@ -52,21 +52,23 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={`${style.footer_bottom}`}>
-                    <div className={`${style.copy_right}`}>© Copyright {year.getFullYear()} PERAL.</div>
-                    <div className={`${style.social_terms}`}>
-                        <span>
-                            <ul>
-                                <li><FontAwesomeIcon icon={faFacebookF} /></li>
-                                <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                                <li><FontAwesomeIcon icon={faX} /></li>
-                                <li><FontAwesomeIcon icon={faInstagram} /></li>
-                                <li><FontAwesomeIcon icon={faYoutube} /></li>
-                            </ul>
-                        </span>
-                        <span>
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms of Services</a>
-                        </span>
+                    <div className={`container d-flex`}>
+                        <div className={`${style.copy_right}`}>© Copyright {year.getFullYear()} PERAL.</div>
+                        <div className={`${style.social_terms}`}>
+                            <span>
+                                <ul>
+                                    <li><FontAwesomeIcon icon={faFacebookF} /></li>
+                                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
+                                    <li><FontAwesomeIcon icon={faX} /></li>
+                                    <li><FontAwesomeIcon icon={faInstagram} /></li>
+                                    <li><FontAwesomeIcon icon={faYoutube} /></li>
+                                </ul>
+                            </span>
+                            <span>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms of Services</a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

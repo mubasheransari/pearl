@@ -113,9 +113,11 @@
         display: flex;
         border-top: 1px solid #e0e0e0;
         height: 50px;
-
         @media (max-width:767px) {
-            flex-direction: column-reverse;
+            > div {
+                flex-direction: column;
+                padding: 0;
+            }
             height: max-content;
 
         }
@@ -124,12 +126,12 @@
             width: 30%;
             display: flex;
             align-items: center;
-            justify-content: center;
 
             @media (max-width:767px) {
                 width: 100%;
-                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #c0c0c0;
                 padding: 20px 0;
+                justify-content: center;
             }
         }
 
@@ -137,13 +139,15 @@
             width: 70%;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             height: 100%;
             border-left: 1px solid #e0e0e0;
+            padding: 0 30px;
             @media (max-width:767px) {
                 width: 100%;
                 padding: 20px 0;
                 flex-direction: column;
+                border-left: 0;
             }
             ul {
                 padding: 0;
