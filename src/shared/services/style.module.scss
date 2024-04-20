@@ -1,0 +1,73 @@
+.services {
+    padding: 40px 0;
+    font-size: 14px;
+    background-color: #fff;
+
+    .services_box {
+        .top_services {
+            display: flex;
+            gap: 4%;
+            margin-bottom: 20px;
+
+            @media (max-width:767px) {
+                flex-wrap: wrap;
+                gap: initial;
+                justify-content: space-around;
+            }
+
+            .intro {
+                width: 44%;
+                padding: 0 30px;
+
+                @media (max-width:767px) {
+                    width: 100%;
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        .service_cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4%;
+
+            .card_box {
+                margin-bottom: 20px;
+            }
+
+            @media (max-width:767px) {
+                gap: initial;
+                justify-content: space-around;
+            }
+        }
+
+        .card_box {
+            width: 22%;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width:767px) {
+                width: 45%;
+            }
+
+            span {
+                font-size: 40px;
+                padding-bottom: 10px;
+                width: 70px;
+                height: 70px;
+                overflow: hidden;
+            }
+
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

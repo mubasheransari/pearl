@@ -44,7 +44,7 @@ const Expertise = () => {
     const [collapse, setCollapse] = useState(0)
 
     const handleCollapse = (index) => {
-        if(collapse == index) {
+        if (collapse == index) {
             setCollapse(null)
         } else {
             setCollapse(index)
@@ -52,12 +52,12 @@ const Expertise = () => {
     }
 
     return (
-        <div className={`${style.expertise}`}>
+        <section className={`${style.expertise}`} id="expertise">
             <div className={`${style.expertise_box} container`}>
                 <div className={`${style.left}`}>
                     <label>OUR APPROACH</label>
                     <h3 className={`mt-3 ${lora.className}`}>
-                        Welcome to PEPP, where we're dedicated to turning your dream home into a reality that surpasses your expectations. Here's how we approach each project
+                        @ PEPP, where we're dedicated to turning your dream home into a reality that surpasses your expectations. Here's how we approach each project
                     </h3>
                 </div>
                 <div className={`${style.right}`}>
@@ -83,7 +83,7 @@ const Expertise = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

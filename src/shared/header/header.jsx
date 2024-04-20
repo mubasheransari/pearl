@@ -19,11 +19,11 @@ const Header = () => {
   }, [pathname])
 
   const navLinks = [
-    { link: '/', class: 'nav-link', text: 'Home' },
-    { link: '/b', class: 'nav-link', text: 'About Us' },
-    { link: '/c', class: 'nav-link', text: 'Our Capabilities' },
-    { link: '/d', class: 'nav-link', text: 'Projects' },
-    { link: '/contactUs', class: 'nav-link', text: 'Contat Us' },
+    { link: '/#home', class: 'nav-link', text: 'Home' },
+    { link: '/#about-us', class: 'nav-link', text: 'About Us' },
+    { link: '/#services', class: 'nav-link', text: 'Our Vision' },
+    { link: '/#expertise', class: 'nav-link', text: 'Our Expertise' },
+    { link: '/#contact-us', class: 'nav-link', text: 'Contat Us' },
   ]
 
   useEffect(() => {
