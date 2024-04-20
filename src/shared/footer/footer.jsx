@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocation, faLocationDot, faMapLocationDot, faMapMarked, faPhone, faX } from '@fortawesome/free-solid-svg-icons'
 import { } from '@fortawesome/fontawesome-svg-core'
 import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 const Footer = () => {
 
@@ -23,7 +26,7 @@ const Footer = () => {
                     <div className={`${style.right}`}>
                         <div className={`d-flex justify-content-between`}>
                             <span>
-                                <label>Company</label>
+                                <label className={lora.className}>Company</label>
                                 <ul>
                                     <li>Home</li>
                                     <li>About Us</li>
@@ -32,7 +35,7 @@ const Footer = () => {
                                 </ul>
                             </span>
                             <span>
-                                <label>Contact Us</label>
+                                <label className={lora.className}>Contact Us</label>
                                 <ul>
                                     <li>
                                         <FontAwesomeIcon icon={faEnvelope} />

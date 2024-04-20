@@ -1,0 +1,72 @@
+.expertise {
+    background-color: #f5f6f6;
+    padding: 30px 0;
+
+    .expertise_box {
+        display: flex;
+        @media (max-width:767px) {
+            flex-direction: column;
+        }
+        .left,
+        .right {
+            width: 50%;
+            @media (max-width:767px) {
+                width: 100%;
+            }
+        }
+        .left {
+            padding: 0 50px;
+            @media (max-width:767px) {
+                padding: 0;
+                margin-bottom: 20px;
+            }
+        }
+        .right {
+            .list_box {
+                .list_item {
+                    border-top: 1px solid #e0e0e0;
+                    &:last-child {
+                        border-bottom: 1px solid #e0e0e0;
+                    }
+                    padding: 20px 0;
+                    p {
+                        margin-bottom: 0;
+                    }
+                    .list_header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        label {
+                            display: flex;
+                            align-items: center;
+                            small {
+                                padding-right: 10px;
+                            }
+                            h5 {
+                                margin: 0;
+                            }
+                        }
+                        > span {
+                            transition: 0.3s;
+                            &.rotate {
+                                transform: rotate(-180deg);
+                            }
+                        }
+                    }
+                    .list_collapse {
+                        user-select: none;
+                        height: 0;
+                        overflow: hidden;
+                        font-weight: lighter;
+                        color:#000;
+                        transition: height 0.15s ease-out;
+                        &.show {
+                            padding: 20px;
+                            height: max-content;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
