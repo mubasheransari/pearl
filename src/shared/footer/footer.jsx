@@ -6,12 +6,14 @@ import { faEnvelope, faLocation, faLocationDot, faMapLocationDot, faMapMarked, f
 import { } from '@fortawesome/fontawesome-svg-core'
 import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { Lora } from "next/font/google";
+import Privacy from '@/shared/popups/privacy'
 
 const lora = Lora({ subsets: ["latin"] });
 
 const Footer = () => {
 
     const [year, setYear] = useState(new Date())
+    const [privacyModal, setPrivacyModal] = useState(false)
 
     return (
         <footer className={`${style.footer}`}>
@@ -20,7 +22,7 @@ const Footer = () => {
                     <div className={`${style.left}`}>
                         <div className={``}>
                             <span ><img src="/pearl.png" /></span>
-                            <label>Subscribe <br /> to our newsletter</label>
+                            {/* <label>Subscribe <br /> to our newsletter</label> */}
                         </div>
                     </div>
                     <div className={`${style.right}`}>
@@ -68,13 +70,14 @@ const Footer = () => {
                                 </ul>
                             </span>
                             <span>
-                                <a href="#">Privacy Policy</a>
-                                <a href="#">Terms of Services</a>
+                                <label onClick={() => {setPrivacyModal(!privacyModal)}}>Privacy Policy</label>
+                                {/* <a href="#">Terms of Services</a> */}
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
+            <Privacy isOpen={privacyModal} toggle={() => {setPrivacyModal(!privacyModal)}} />
         </footer>
     )
 }

@@ -161,6 +161,13 @@
             }
 
             span {
+                width: 33%;
+                @media (max-width:767px) {
+                    width: max-content;
+                    &:last-child{
+                        margin-top: 10px;
+                    }
+                }
                 a {
                     text-decoration: none;
                     color: #000;

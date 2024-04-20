@@ -10,6 +10,19 @@ import {
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function ContactUs() {
+
+    const handleForm = (event) => {
+        event.preventDefault();
+        let name = event.target[0].value
+        let email = event.target[2].value
+        let company = event.target[1].value
+        let contact = event.target[3].value
+        let message = event.target[4].value
+        console.warn(event)
+        window.open(`mailto:Info@pearlepp.co.uk?subject=Inquiry&body=Name: ${name}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0AContact: ${contact}%0D%0AMessage: ${message}`);
+        event.target.reset();
+    }
+
     return (
         <section className={`${style.contactUs}`} id="contact-us">
             <div className={`${style.locationBox} `}>
@@ -60,32 +73,34 @@ function ContactUs() {
             </div>
             <div className={`${style.getInTouch} container`}>
                 <h2 className={lora.className}>Get In touch with us</h2>
-                <div className={`${style.formBody}`}>
-                    <div className={`${style.formBox}`}>
-                        <div className={`${style.formInput}`}>
-                            <input type='text' placeholder='Name' />
+                <form onSubmit={handleForm}>
+                    <div className={`${style.formBody}`}>
+                        <div className={`${style.formBox}`}>
+                            <div className={`${style.formInput}`}>
+                                <input type='text' placeholder='Name' required tabIndex={1} />
+                            </div>
+                            <div className={`${style.formInput}`}>
+                                <input type='text' placeholder='Company' required tabIndex={3} />
+                            </div>
                         </div>
-                        <div className={`${style.formInput}`}>
-                            <input type='text' placeholder='Company' />
+                        <div className={`${style.formBox}`}>
+                            <div className={`${style.formInput}`}>
+                                <input type='email' placeholder='Email' required tabIndex={2} />
+                            </div>
+                            <div className={`${style.formInput}`}>
+                                <input type='text' placeholder='Contact Number' required tabIndex={4} />
+                            </div>
+                        </div>
+                        <div className={`${style.formBox} ${style.message}`}>
+                            <div className={`${style.formInput}`}>
+                                <textarea placeholder='Message' tabIndex={5} />
+                            </div>
                         </div>
                     </div>
-                    <div className={`${style.formBox}`}>
-                        <div className={`${style.formInput}`}>
-                            <input type='email' placeholder='Email' />
-                        </div>
-                        <div className={`${style.formInput}`}>
-                            <input type='text' placeholder='Enqiry On' />
-                        </div>
+                    <div className={`${style.submitBox}`}>
+                        <button type='submit'>Send Inquiry</button>
                     </div>
-                    <div className={`${style.formBox} ${style.message}`}>
-                        <div className={`${style.formInput}`}>
-                            <textarea placeholder='Message' />
-                        </div>
-                    </div>
-                </div>
-                <div className={`${style.submitBox}`}>
-                    <button>Send Inquiry</button>
-                </div>
+                </form>
             </div>
         </section>
     )
