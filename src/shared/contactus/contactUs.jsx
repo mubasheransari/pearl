@@ -20,7 +20,7 @@ function ContactUs() {
         let message = event.target[4].value
         console.warn(event)
         window.open(`mailto:Info@pearlepp.co.uk?subject=Inquiry&body=Name: ${name}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0AContact: ${contact}%0D%0AMessage: ${message}`);
-        event.target.reset();
+        event.target.reset(); 
     }
 
     return (
