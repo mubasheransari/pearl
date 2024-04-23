@@ -25,27 +25,27 @@ const Header = () => {
     { link: '/#contact-us', class: 'nav-link', text: 'Contact Us' },
   ]
 
-  useEffect(() => {
-    if (window.scrollY > 50) {
-      headerRef?.current?.classList.add(`${style.scroll}`)
-    }
-    document.addEventListener('scroll', scrollFunction)
-    return () => {
-      document.removeEventListener('scroll', scrollFunction)
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (window.scrollY > 50) {
+  //     headerRef?.current?.classList.add(`${style.scroll}`)
+  //   }
+  //   document.addEventListener('scroll', scrollFunction)
+  //   return () => {
+  //     document.removeEventListener('scroll', scrollFunction)
+  //   }
+  // }, [])
 
-  const scrollFunction = () => {
-    if (window.scrollY > 50) {
-      headerRef?.current?.classList.add(`${style.scroll}`)
-    } else {
-      headerRef?.current?.classList.remove(`${style.scroll}`)
-    }
-  }
+  // const scrollFunction = () => {
+  //   if (window.scrollY > 50) {
+  //     headerRef?.current?.classList.add(`${style.scroll}`)
+  //   } else {
+  //     headerRef?.current?.classList.remove(`${style.scroll}`)
+  //   }
+  // }
 
   return (
     <header className={style.header}>
-      <nav ref={headerRef} className={`navbar navbar-expand-md navbar-dark fixed-top bg-dark`}>
+      <nav ref={headerRef} className={`navbar navbar-expand-md navbar-dark fixed-top bg-dark ${style.scroll}`}>
         <div className={`container-fluid ${style.header_container}`}>
           <div className={`${style.logo_box}`}>
             <span><img src="/pearl.png" /></span>

@@ -7,6 +7,7 @@ import { } from '@fortawesome/fontawesome-svg-core'
 import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { Lora } from "next/font/google";
 import Privacy from '@/shared/popups/privacy'
+import Link from 'next/link'
 
 const lora = Lora({ subsets: ["latin"] });
 
@@ -30,10 +31,11 @@ const Footer = () => {
                             <span>
                                 <label className={lora.className}>Company</label>
                                 <ul>
-                                    <li>Home</li>
-                                    <li>About Us</li>
-                                    <li>Projects</li>
-                                    <li>Contact Us</li>
+                                    <li><Link href={'/#home'}>Home</Link></li>
+                                    <li><Link href={'/#about-us'}>About Us</Link></li>
+                                    <li><Link href={'/#services'}>Our Vision</Link></li>
+                                    <li><Link href={'/#expertise'}>Our Expertise</Link></li>
+                                    <li><Link href={'/#contact-us'}>Contact Us</Link></li>
                                 </ul>
                             </span>
                             <span>

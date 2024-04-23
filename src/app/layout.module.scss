@@ -1,6 +1,10 @@
 .main_layout {
     min-height: 100vh;
     background-color: #fff;
+    margin-top: 97.75px;
+    @media (max-width: 767px) {
+        margin-top: 65px;
+    }
     &.innerPages {
         margin-top: 95.75px;
         background-color: #fff;
