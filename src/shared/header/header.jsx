@@ -4,7 +4,6 @@ import style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { usePathname } from 'next/navigation'
 
 const Header = () => {
@@ -23,7 +22,7 @@ const Header = () => {
     { link: '/#about-us', class: 'nav-link', text: 'About Us' },
     { link: '/#services', class: 'nav-link', text: 'Our Vision' },
     { link: '/#expertise', class: 'nav-link', text: 'Our Expertise' },
-    { link: '/#contact-us', class: 'nav-link', text: 'Contat Us' },
+    { link: '/#contact-us', class: 'nav-link', text: 'Contact Us' },
   ]
 
   useEffect(() => {
@@ -58,9 +57,10 @@ const Header = () => {
           <div className={`collapse navbar-collapse ${style.header_links}`} id="navbarCollapse">
             <ul className="navbar-nav mb-2 mb-md-0">
               {navLinks.map((link, i) => {
+                // ${(location?.hash == link.link?.replace('/', '')) ? style.active : ''}
                 return (
                   <li className={`nav-item`} key={'nav_' + i}>
-                    <Link className={`${link.class} ${(path == link.link) ? style.active : ''}`} href={link.link}>{link.text}</Link>
+                    <Link className={`${link.class}`} href={link.link}>{link.text}</Link>
                   </li>
                 )
               })}

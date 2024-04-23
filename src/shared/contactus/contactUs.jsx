@@ -65,7 +65,7 @@ function ContactUs() {
                         <ul>
                             <li>
                                 <span><FontAwesomeIcon icon={faPhone} /></span>
-                                <label>+44 7391 569139</label>
+                                <label>+44 7460 140474</label>
                             </li>
                         </ul>
                     </div>

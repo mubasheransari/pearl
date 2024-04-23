@@ -64,7 +64,7 @@ const Expertise = () => {
                     <div className={`${style.list_box}`}>
                         {expertise.map((item, index) => {
                             return (
-                                <div className={`${style.list_item}`}>
+                                <div key={'expertise_'+index} className={`${style.list_item}`}>
                                     <div className={`${style.list_header} ${lora.className}`} onClick={() => handleCollapse(index)}>
                                         <label>
                                             <small>{index + 1}</small>
