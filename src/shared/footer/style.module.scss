@@ -54,13 +54,13 @@
 
         .right {
             width: 70%;
-            border-left: 1px solid #e0e0e0;
+            border-left: 1px solid #c1c1c1;
             padding: 20px 0;
 
             @media (max-width:767px) {
                 width: 100%;
                 border-left: 0;
-                border-top: 1px solid #e0e0e0;
+                border-top: 1px solid #c1c1c1;
             }
 
             >div {
