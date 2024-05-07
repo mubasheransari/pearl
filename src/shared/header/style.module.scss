@@ -27,6 +27,10 @@
                     span {
                         width: 30%!important;
                     }
+                    button{
+                        color: #27257B !important;
+                        border-color: #27257B !important;
+                    }
                 }
             }
 
@@ -44,6 +48,19 @@
 
             .header_links {
                 justify-content: flex-end;
+                
+                .dropdown_menu{
+                    width: 280px;
+                    @media (max-width:767px) {
+                        width: 100%;
+                    }
+                    li {
+                        padding: 0;
+                        a {
+                            text-wrap: wrap;
+                        }
+                    }
+                }
 
                 ul {
                     li {
