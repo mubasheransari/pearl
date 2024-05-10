@@ -9,7 +9,29 @@
             background-color: #e5e5e5 !important;
             .header_links {
                 ul {
+                    .form{
+                        background-color: #00408E;
+                        border-radius: 50px;
+                        border: 2px solid #00408E ;
+                        a {
+                            color: #fff !important;
+                        }
+                    }
+                    margin: 2px;
+                    .form:hover{
+                        background-color: #e5e5e5;
+                    }
                     li {
+                        border-bottom: 2px solid #e5e5e5;
+                        transition: .3s;
+                    }
+                    a {
+                        color: #000!important;
+                        font-family: sans-serif;
+                    }
+                    
+                    li:hover{
+                        border-bottom: 2px solid #00408E;
                         a {
                             color: #000!important;
                         }

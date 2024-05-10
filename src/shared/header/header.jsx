@@ -33,6 +33,9 @@ const Header = () => {
     { link: '/quality_management', class: 'dropdown-item', text: 'Quality Management' },
     { link: '/commercial_management', class: 'dropdown-item', text: 'Commercial Management' },
     { link: '/project_management', class: 'dropdown-item', text: 'Project Management' },
+    { link: '/architectural_services', class: 'dropdown-item', text: 'Architectural Services' },
+    { link: '/structural_enigneering_services', class: 'dropdown-item', text: 'Structural Enigneering Services' },
+    { link: '/planning_and_building_control_services', class: 'dropdown-item', text: 'Planning and Building Control Services' },
   ]
 
   // useEffect(() => {
@@ -76,7 +79,7 @@ const Header = () => {
                 </>
               )
             })}
-            <li className="nav-item dropdown">
+            <div className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categories
               </a>
@@ -91,9 +94,12 @@ const Header = () => {
                   )
                 })}
               </ul>
-            </li>
-            <li className={`nav-item`}>
+            </div>
+            <li className={`nav-item ${style.contact}`}>
               <Link className={`nav-link`} href="/#contact-us">Contact Us</Link>
+            </li>
+            <li className={`nav-item ${style.form}`}>
+              <Link className={`nav-link`} href="/form">Form</Link>
             </li>
 
           </ul>
