@@ -8,11 +8,12 @@
         &.scroll {
             background-color: #e5e5e5 !important;
             .header_links {
+                
                 ul {
                     .form{
-                        background-color: #00408E;
+                        background-color: #27247B;
                         border-radius: 50px;
-                        border: 2px solid #00408E ;
+                        border: 2px solid #27247B ;
                         a {
                             color: #fff !important;
                         }
@@ -31,10 +32,21 @@
                     }
                     
                     li:hover{
-                        border-bottom: 2px solid #00408E;
+                        border-bottom: 2px solid #27247B;
                         a {
                             color: #000!important;
                         }
+                    }
+                }
+                .dropdown_div{
+                    padding: 0 20px;
+                    .dropdown_menu{
+                        display: none;
+                    }
+                }
+                .dropdown_div:hover{
+                    .dropdown_menu{
+                        display: block;
                     }
                 }
             }
