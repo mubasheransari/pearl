@@ -14,7 +14,7 @@ function Services() {
                 <div className={`${style.top_services}`}>
                     <div className={`${style.intro}`}>
                         <h3 className={lora.className}>BUILDING YOUR VISION</h3>
-                        <p>Welcome to PEPP, your partner in structural engineering excellence. We're here to transform your architectural vision into a structurally sound reality. Here's our approach</p>
+                        <p>Welcome to PEPP, your partner in structural engineering excellence. We're here to transform your architectural vision into a structurally sound reality. Here's our approach.</p>
                         <p>Thank you for considering PEPP for your structural engineering needs. We're passionate about delivering innovative solutions that bring your architectural vision to life.
                             Get in touch with us today to start your journey towards a structurally exceptional future.</p>
                     </div>
