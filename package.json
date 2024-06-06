@@ -23,5 +23,10 @@
   "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.1.4"
-  }
+  },
+  
+    "optionalDependencies": {
+      "@next/swc-win32-x64-msvc": "15.0.0-rc.0"
+    }
+  
 }
