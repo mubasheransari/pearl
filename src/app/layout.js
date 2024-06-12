@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({weight:'400', subsets: ["latin"] });
 
 export const metadata = {
   title: "PEARL ENGINEERS, PLANNERS & PROJECT MANAGERS",
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <link href="/bootstrap.min.css" rel="stylesheet" />
         <script src="/bootstrap.bundle.min.js" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

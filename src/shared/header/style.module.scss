@@ -23,25 +23,39 @@
                         background-color: #e5e5e5;
                     }
                     li {
-                        border-bottom: 2px solid #e5e5e5;
+                        // border-bottom: 2px solid #e5e5e5;
+                        padding: 10px;
                         transition: .3s;
                     }
                     a {
                         color: #000!important;
-                        font-family: sans-serif;
+                        font-weight: 600;
                     }
                     
                     li:hover{
-                        border-bottom: 2px solid #27247B;
+                        // border-bottom: 1px solid #27247B;
+                        text-decoration: underline;
+                        text-decoration-color: #27247b;
+                        text-underline-position: under;
+                       
+                        
                         a {
                             color: #000!important;
+                        }
+                        a:hover {
+                            color: #27247b !important;
                         }
                     }
                 }
                 .dropdown_div{
                     padding: 0 20px;
+
+                    li:hover {
+                        text-decoration: none;
+                    }
                     .dropdown_menu{
                         display: none;
+                        padding: 20px 10px !important;
                     }
                 }
                 .dropdown_div:hover{
