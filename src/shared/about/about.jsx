@@ -6,7 +6,7 @@ const lora = Lora({ subsets: ["latin"] });
 function About() {
     return (
         <section className={`${style.about}`} id="about-us">
-            <div className={`${style.about_box} container py-5 d-flex`}>
+            <div className={`${style.about_box} container py-4 d-flex`}>
                 <div className={`${style.left}`}>
                     <h5 className={lora.className}>About Us</h5>
                     <div className={`${style.image_box}`}>
