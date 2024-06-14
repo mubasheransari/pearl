@@ -1,11 +1,11 @@
 .category {
     background-color: #f5f6f6;
-    margin-top: 95.75px;
+    margin-top: 78.75px;
     @media (max-width:767px) {
         margin-top: 70px;
     }
     @media (max-width:450px) {
-        margin-top: 55px;
+        margin-top: 48px;
     }
 
     .left {
@@ -35,21 +35,21 @@
                 margin: 0;
             }
 
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 600px;
-                height: 200px;
-                background-color: #e0e0e0;
-                left: -30px;
-                z-index: -2;
-                top: -30px;
+            // &::before {
+            //     content: '';
+            //     display: block;
+            //     position: absolute;
+            //     width: 600px;
+            //     height: 200px;
+            //     background-color: #e0e0e0;
+            //     left: -30px;
+            //     z-index: -2;
+            //     top: -30px;
 
-                @media (max-width:767px) {
-                    display: none;
-                }
-            }
+            //     @media (max-width:767px) {
+            //         display: none;
+            //     }
+            // }
 
             p {
                 font-size: 14px;

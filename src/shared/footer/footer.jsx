@@ -72,7 +72,7 @@ const Footer = () => {
                                 </ul>
                             </span>
                             <span>
-                                <label onClick={() => {setPrivacyModal(!privacyModal)}}>Privacy Policy</label>
+                                <label style={{cursor:'pointer'}} onClick={() => {setPrivacyModal(!privacyModal)}}>Privacy Policy</label>
                                 {/* <a href="#">Terms of Services</a> */}
                             </span>
                         </div>

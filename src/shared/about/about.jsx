@@ -8,7 +8,7 @@ function About() {
         <section className={`${style.about}`} id="about-us">
             <div className={`${style.about_box} container py-5 d-flex`}>
                 <div className={`${style.left}`}>
-                    <h6 className={lora.className}>About Us</h6>
+                    <h5 className={lora.className}>About Us</h5>
                     <div className={`${style.image_box}`}>
                         <img src="/about.jpg" alt="about image" />
                     </div>

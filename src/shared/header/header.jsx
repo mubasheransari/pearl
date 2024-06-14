@@ -64,7 +64,7 @@ const Header = () => {
       <nav ref={headerRef} className={`navbar navbar-expand-md navbar-dark fixed-top bg-dark ${style.scroll}`}>
         <div className={`container-fluid ${style.header_container}`}>
           <div className={`${style.logo_box}`}>
-            <span><img src="/pearl.png" /></span>
+            <span><Link  href="/"><img src="/pearl.png" /></Link></span>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <FontAwesomeIcon icon={faBarsStaggered} />

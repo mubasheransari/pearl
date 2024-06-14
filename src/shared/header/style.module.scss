@@ -5,6 +5,7 @@
         background-color: transparent !important;
         border-bottom: 1px solid rgba(224, 224, 224, 0.5);
         transition: background-color 0.5s;
+        padding: 0px;
         &.scroll {
             background-color: #e5e5e5 !important;
             .header_links {
