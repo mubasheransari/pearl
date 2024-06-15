@@ -68,7 +68,7 @@ function ContactUs() {
                 </div>
                 <div className={`${style.mapBox}`}>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2491.0280513620164!2d0.038921!3d51.365781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDIxJzU2LjgiTiAwwrAwMicyMC4xIkU!5e0!3m2!1sen!2s!4v1713013995125!5m2!1sen!2s" width="100%" height="500" style={{ border: '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                    <div className={`${style.locationOverLay}`}>
+                    {/* <div className={`${style.locationOverLay}`}>
                         <h4>United Kingdom</h4>
                         <ul>
                             <li>
@@ -100,10 +100,10 @@ function ContactUs() {
                                 <label>+44 7460 140474</label>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <div className={`${style.getInTouch} container`}>
+            {/* <div className={`${style.getInTouch} container`}>
                 <h2 className={lora.className}>Get In touch with us</h2>
                  <form ref={form} onSubmit={sendEmail}>
                     <div className={`${style.formBody}`}>
@@ -134,7 +134,7 @@ function ContactUs() {
                     </div>
                     <p className='text-danger mt-3 d-flex justify-content-center font-large'>{err}</p>
                 </form> 
-            </div>
+            </div> */}
         </section>
     )
 }

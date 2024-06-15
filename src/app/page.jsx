@@ -7,6 +7,8 @@ import { Lora } from "next/font/google";
 import Services from '@/shared/services/services'
 import About from '@/shared/about/about'
 import ContactUs from '@/shared/contactus/contactUs'
+import NewContactUs from '@/shared/newContactUs/newContactUs'
+
 
 const lora = Lora({ subsets: ["latin"] });
 
@@ -41,6 +43,7 @@ const Home = () => {
       <Services />
       <Expertise />
       <ContactUs />
+      <NewContactUs />
     </BaseLayout>
   )
 }

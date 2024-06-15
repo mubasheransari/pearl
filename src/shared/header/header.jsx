@@ -37,7 +37,7 @@ const Header = () => {
 
   const servicesLinks = [
     { link: '/architectural_services', class: 'dropdown-item', text: 'Architectural Services' },
-    { link: '/structural_enigneering_services', class: 'dropdown-item', text: 'Structural Enigneering Services' },
+    { link: '/structural_enigneering_services', class: 'dropdown-item', text: 'Structural Engineering Services' },
     { link: '/planning_and_building_control_services', class: 'dropdown-item', text: 'Planning and Building Control Services' },
   ]
 

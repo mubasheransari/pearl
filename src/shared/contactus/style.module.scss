@@ -139,11 +139,16 @@
             text-align: center;
 
             input {
-                border: 1px solid #000;
-                background-color: transparent;
+                border: 1px solid;
+                background-color: #27247b;
                 border-radius: 3px;
                 padding: 10px 20px;
+                color: #fff;
+
+                &:hover{
+                background-color: transparent;
                 color: #000;
+                }
             }
         }
     }
