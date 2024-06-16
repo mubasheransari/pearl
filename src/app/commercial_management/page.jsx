@@ -13,7 +13,7 @@ function commercial_management() {
         <section className={`${style.category}`} id="commercial_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Commercial Management</h6>
+                        <h4 className={lora.className}>Commercial Management</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Welcome to PEPP, the premier provider of commercial management services for the civil engineering industry in the United Kingdom. As a dynamic new startup, we are dedicated to revolutionizing the way commercial contracts are managed, ensuring optimal outcomes for our clients through our expertise and commitment to excellence.<br />

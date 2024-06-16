@@ -13,7 +13,7 @@ function snagging_services() {
         <section className={`${style.category}`} id="snagging_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Snagging Works</h6>
+                        <h4 className={lora.className}>Snagging Works</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Your Partner for Comprehensive Snagging Works Solutions. <br />

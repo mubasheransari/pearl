@@ -13,7 +13,7 @@ function cost_control_value() {
         <section className={`${style.category}`} id="cost_control_value">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Cost Control and Value Engineering</h6>
+                        <h4 className={lora.className}>Cost Control and Value Engineering</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Introducing PEPP: Your Partner for Cost and Value Engineering Solutions. <br />

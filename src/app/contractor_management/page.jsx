@@ -13,7 +13,7 @@ function contractor_management() {
         <section className={`${style.category}`} id="contractor_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Contractor Management</h6>
+                        <h4 className={lora.className}>Contractor Management</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Your Partner for Effective Contractor Management Solutions <br />

@@ -3,6 +3,12 @@
     flex-direction: column;
     background-color: #e5e5e5;
 
+    ul {
+        padding: 0!important;
+        margin: 0!important;
+        list-style: none;
+      }
+
     .container {
         @media (max-width:767px) {
             padding: 0;

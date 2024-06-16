@@ -13,7 +13,7 @@ function project_management() {
         <section className={`${style.category}`} id="project_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Project Management</h6>
+                        <h4 className={lora.className}>Project Management</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Welcome to PEPP, a dynamic and innovative civil engineering design firm revolutionizing the world of project management services for small residential projects in the UK. With a passionate team of experienced professionals, PEPP is here to ensure that your dream home becomes a reality, right from conception to completion. <br />

@@ -13,7 +13,7 @@ function quantity_surverying() {
         <section className={`${style.category}`} id="quantity_surverying">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Quantity Surverying</h6>
+                        <h4 className={lora.className}>Quantity Surverying</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Greetings and a warm welcome to PEPP, an exciting new startup revolutionizing the realm of quantity surveying services in the United Kingdom. With a touch of quintessential English charm, we bring a fresh perspective and innovative approach to meet the diverse needs of our clients. <br />

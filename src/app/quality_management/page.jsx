@@ -13,7 +13,7 @@ function quality_management() {
         <section className={`${style.category}`} id="quality_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Quality Management</h6>
+                        <h4 className={lora.className}>Quality Management</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Your Partner for Exceptional Quality Management Solutions <br />

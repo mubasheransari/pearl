@@ -15,7 +15,7 @@ function Contracts_management() {
             <section className={`${style.category}`} id="contracts_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
-                        <h6 className={lora.className}>Contracts Management</h6>
+                        <h4 className={lora.className}>Contracts Management</h4>
                         <div className={`${style.category_text}`}>
                             <p>
                                 Welcome to PEPP, the leading provider of contract management services in the United Kingdom’s civil engineering industry. With a passion for excellence and a commitment to delivering exceptional results, PEPP is revolutionizing the way construction projects are executed, ensuring efficiency, transparency, and unparalleled value for our clients. <br /> 
