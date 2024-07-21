@@ -31,8 +31,6 @@ const Home = () => {
       <section className={style.home} id="home">
         <div className={`${style.back_layer}`}></div>
         <div className={style.video_box}>
-          {/* <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2aLqVb22LGI?autoplay=1&mute=1&controls=0&loop=1&showinfo=0" ></iframe> */}
-          {/* <iframe src="https://player.vimeo.com/video/872427139??autoplay=1&muted=1&autopause=0&background=1" allow='autoplay; fullscreen'></iframe> */}
           <video ref={videoRef} className={`${style.video_div}`} preload="auto" playsInline autoplay loop muted>
             <source src='/PEPP_video.mp4' type="video/mp4" />
           </video>
