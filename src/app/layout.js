@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "@/shared/google-analytics/googleAnaytics";
 
 const poppins = Poppins({weight:'400', subsets: ["latin"] });
 
@@ -11,10 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <head>
         <link href="/bootstrap.min.css" rel="stylesheet" />
         <link  rel="canonical" href="https://pearlepp.co.uk/" />
         <link rel="alternate" href="https://pearlepp.co.uk/" hreflang="en-uk" />
+        <meta name="google-site-verification" content="5jllG5yaIGP4yMEIFPLQE308aMGx-Y_9jCLesHYeaU4" />
+        <meta name="google-site-verification" content="5jllG5yaIGP4yMEIFPLQE308aMGx-Y_9jCLesHYeaU4" />
         <script src="/bootstrap.bundle.min.js" />
       </head>
       <body className={poppins.className}>
@@ -27,6 +31,10 @@ export default function RootLayout({ children }) {
       <meta property="og:image:height" content="660" />
       <meta property="og:locale" content="en_UK" />
       <meta property="og:site_name" content="Pearlepp" />
+      <meta name="robots" content="index, follow" />
+      <meta name="bingbot" content="index, follow, max-snippet:-1 " />
+      <meta name="googlebot" content="index, follow, max-snippet:-1" />
+      
         {children}
       </body>
     </html>
