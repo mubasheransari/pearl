@@ -43,11 +43,11 @@ const Footer = () => {
                                 <ul>
                                     <li>
                                         <FontAwesomeIcon icon={faEnvelope} />
-                                        <Link href="Info@pearlepp.co.uk" target='_blank'><label className='ms-2'>Info@pearlepp.co.uk</label></Link>
+                                        <Link href="mailto:Info@pearlepp.co.uk" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>Info@pearlepp.co.uk</label></Link>
                                     </li>
                                     <li>
                                         <FontAwesomeIcon icon={faPhone} />
-                                        <Link href="https://wa.me/+447460140474" target='_blank'><label className='ms-2'>+44 7460 140474</label></Link>
+                                        <Link href="https://wa.me/+447460140474" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>+44 7460 140474</label></Link>
                                     </li>
                                     <li className={`${style.wrap}`}>
                                         <FontAwesomeIcon icon={faLocationDot} />
