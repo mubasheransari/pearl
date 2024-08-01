@@ -3,6 +3,7 @@ import style from'./touch.module.scss'
 import {FormControl} from '@mui/material';
 import TextField from '@mui/material/TextField';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 import {
     faChartPie, faHandshake, faHeadset, faPersonDigging, faRankingStar, faRulerCombined, faVest, faVihara,
     faEnvelope, faLocationDot, faMobile, faPhone
@@ -90,19 +91,22 @@ function NewContactUs(props) {
                             </li>
                             <li>
                                 <span><FontAwesomeIcon icon={faEnvelope} /></span>
-                                <label>Info@pearlepp.co.uk</label>
+                                <Link href="mailto:Info@pearlepp.co.uk" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>Info@pearlepp.co.uk</label></Link>
                             </li>
                             <li>
                                 <span><FontAwesomeIcon icon={faPhone} /></span>
-                                <label>+44 2035763199</label>
+                                {/* <label>+44 2035763199</label> */}
+                                <Link href="tel:+442035763199" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>+44 2035763199</label></Link>
+                                
                             </li>
                             <li>
                                 <span><FontAwesomeIcon icon={faMobile} /></span>
-                                <label>+44 7460 140474</label>
+                                {/* <label>+44 7460 140474</label> */}
+                                <Link href="tel:+447460140474" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>+44 7460 140474</label></Link>
                             </li>
                             <li>
                                 <span><FontAwesomeIcon icon={faWhatsapp} /></span>
-                                <label>+44 7460 140474</label>
+                                <Link href="https://wa.me/+447460140474" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>+44 7460 140474</label></Link>
                             </li>
                         </ul>
                         <h5 className='mb-3'>Support</h5>
@@ -110,7 +114,8 @@ function NewContactUs(props) {
                         <ul>
                             <li>
                                 <span><FontAwesomeIcon icon={faPhone} /></span>
-                                <label>+44 7460 140474</label>
+                                {/* <label>+44 7460 140474</label> */}
+                                <Link href="tel:+447460140474" target='_blank'><label style={{cursor:'pointer'}}>+44 7460 140474</label></Link>
                             </li>
                         </ul>
                     </div>

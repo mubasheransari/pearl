@@ -22,6 +22,7 @@ const Header = () => {
     { link: '/#about-us', class: 'nav-link', text: 'About Us' },
     { link: '/#services', class: 'nav-link', text: 'Our Vision' },
     { link: '/#expertise', class: 'nav-link', text: 'Our Expertise' },
+    { link: '/form', class: 'nav-link', text: 'Form' },
   ]
 
   const categoryLinks = [

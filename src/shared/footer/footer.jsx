@@ -23,7 +23,6 @@ const Footer = () => {
                     <div className={`${style.left}`}>
                         <div className={``}>
                             <span ><img src="/pearl.png" /></span>
-                            {/* <label>Subscribe <br /> to our newsletter</label> */}
                         </div>
                     </div>
                     <div className={`${style.right}`}>
@@ -73,7 +72,6 @@ const Footer = () => {
                             </span>
                             <span>
                                 <label style={{cursor:'pointer'}} onClick={() => {setPrivacyModal(!privacyModal)}}>Privacy Policy</label>
-                                {/* <a href="#">Terms of Services</a> */}
                             </span>
                         </div>
                     </div>
