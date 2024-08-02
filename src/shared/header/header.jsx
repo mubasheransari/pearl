@@ -22,7 +22,7 @@ const Header = () => {
     { link: '/#about-us', class: 'nav-link', text: 'About Us' },
     { link: '/#services', class: 'nav-link', text: 'Our Vision' },
     { link: '/#expertise', class: 'nav-link', text: 'Our Expertise' },
-    { link: '/form', class: 'nav-link', text: 'Form' },
+    // { link: '/form', class: 'nav-link', text: 'Form' },
   ]
 
   const categoryLinks = [
@@ -66,10 +66,14 @@ const Header = () => {
         <div className={`container-fluid ${style.header_container}`}>
           <div className={`${style.logo_box}`}>
             <span><Link  href="/"><img src="/pearl.png" /></Link></span>
+            <div className={style.logo_wrap}>
+            <p className={style.quotation_btn}>
+              <Link href="/form">Instant quote</Link></p>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <FontAwesomeIcon icon={faBarsStaggered} />
             </button>
+            </div>
           </div>
           <div className={`collapse navbar-collapse ${style.header_links}`} id="navbarCollapse">
             <ul className="navbar-nav mb-2 mb-md-0">
@@ -118,9 +122,9 @@ const Header = () => {
               <li className={`nav-item ${style.contact}`}>
                 <Link className={`nav-link`} href="/#contact-us">Contact Us</Link>
               </li>
-              {/* <li className={`nav-item ${style.form}`}>
-                <Link className={`nav-link`} href="/form">Form</Link>
-              </li> */}
+              <li className={`nav-item ${style.form}`}>
+                <Link className={`nav-link`} href="/form">Instant qoute</Link>
+              </li>
 
             </ul>
           </div>

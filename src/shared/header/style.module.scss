@@ -17,11 +17,13 @@
                         border: 2px solid #27247B ;
                         a {
                             color: #fff !important;
+                            text-decoration: none;
                         }
                     }
                     margin: 2px;
                     .form:hover{
                         background-color: #e5e5e5;
+                        text-decoration: none;
                     }
                     li {
                         // border-bottom: 2px solid #e5e5e5;
@@ -70,7 +72,43 @@
         }
 
         .header_container {
+
+            .logo_wrap {
+                display: none;
+                @media (max-width:767px) {
+                    display: flex;
+                    gap:10px;
+                    align-items: center;    
+                }
+                
+
+                .quotation_btn {
+                    display: none;
+
+                    @media (max-width:767px) {
+                        display: flex;
+                        align-items: center;
+                        background: #27257B;
+                        color: #fff;
+                        border-radius: 25px;
+                        font-size:12px;
+                        padding:6px 10px;
+                        cursor: pointer;
+                        margin-bottom: 0px;
+    
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                        }    
+                    }
+                    
+                }
+
+
+            }
+
             @media (max-width: 767px) {
+               
                 .logo_box {
                     justify-content: space-between;
                     span {
