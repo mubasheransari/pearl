@@ -12,6 +12,9 @@
                 
                 ul {
                     .form{
+                        @media (max-width:767px) {
+                            display: none;
+                        }
                         background-color: #27247B;
                         border-radius: 50px;
                         border: 2px solid #27247B ;
