@@ -2,14 +2,12 @@
 import React, {useState} from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
-import Header from '@/shared/header/header';
 const lora = Lora({ subsets: ["latin"] });
 
 function project_management() {
 
     return (
         <>
-        <Header />
         <section className={`${style.category}`} id="project_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

@@ -18,8 +18,8 @@ const Header = () => {
   }, [pathname])
 
   const navLinks = [
-    { link: '/#home', class: 'nav-link', text: 'Home' },
-    { link: '/#about-us', class: 'nav-link', text: 'About Us' },
+    { link: '/', class: 'nav-link', text: 'Home' },
+    { link: '/about', class: 'nav-link', text: 'About Us' },
     { link: '/#services', class: 'nav-link', text: 'Our Vision' },
     { link: '/#expertise', class: 'nav-link', text: 'Our Expertise' },
     // { link: '/form', class: 'nav-link', text: 'Form' },
@@ -120,7 +120,7 @@ const Header = () => {
                 </ul>
               </div>
               <li className={`nav-item ${style.contact}`}>
-                <Link className={`nav-link`} href="/#contact-us">Contact Us</Link>
+                <Link className={`nav-link`} href="/contact">Contact Us</Link>
               </li>
               <li className={`nav-item ${style.form}`}>
                 <Link className={`nav-link`} href="/form">Instant qoute</Link>

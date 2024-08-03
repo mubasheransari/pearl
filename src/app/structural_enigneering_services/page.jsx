@@ -2,7 +2,6 @@
 import React, {useState} from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
-import Header from '@/shared/header/header';
 const lora = Lora({ subsets: ["latin"] });
 
 const feature_points = [
@@ -44,7 +43,6 @@ function structural_enigneering_services() {
 
     return (
         <>
-        <Header />
             <section className={`${style.category}`} id="structural_enigneering_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

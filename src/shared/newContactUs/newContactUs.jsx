@@ -1,3 +1,4 @@
+"use client"
 import React,{ useRef, useState }  from 'react'
 import style from'./touch.module.scss'
 import {FormControl} from '@mui/material';

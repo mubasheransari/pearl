@@ -613,14 +613,14 @@ const Form = (props: Props) => {
                             </select>
                         </div>
                     </fieldset>
-                    <div className="mb-2">
+                    {/* <div className="mb-2">
                         <input type="checkbox" className='mr-2' name="" value="" />
                         <label className='ms-1'>I accept the terms and conditions</label>
                     </div>
                     <div className="mb-2">
                         <input type="checkbox" className='mr-2' name="" value="" />
                         <label className='ml-2 ms-2'>Keep me updated on PEPP news, events and offers.</label>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className={`${style.form_button_div}`}>

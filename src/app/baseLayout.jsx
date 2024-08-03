@@ -1,8 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Header from '../shared/header/header'
-import Head from 'next/head'
-import Footer from '../shared/footer/footer'
 import style from './layout.module.scss'
 
 const BaseLayout = (props) => {
@@ -17,11 +14,9 @@ const BaseLayout = (props) => {
 
     return (
         <main>
-            <Header />
             <main className={`${style.main_layout}`}>
                 {props.children}
             </main>
-            <Footer />
         </main>
     )
 }
