@@ -120,6 +120,14 @@
             border: 2px solid #27247B !important;
           }
 
+          input[type="checkbox"]{
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + .cards {
+            border: 2px solid #27247B !important;
+          }
+
         hr{
             background-color: lightgray !important
         }
