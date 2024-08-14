@@ -97,7 +97,7 @@ const cards7 = [
 ]
 type Props = {}
 
-const DataJson = {
+const dataJson = {
     firstName:'',
     lastName:'',
     email:'',
@@ -115,7 +115,10 @@ const DataJson = {
             side:false,
             side_and_rear:false,
             wrap_around:false,
-            other:''
+            other:{
+                is_selected:false,
+                value:''
+            }
         },
         loft:{
             selected:false,
@@ -124,7 +127,10 @@ const DataJson = {
             hip_to_gable__with_no_dormer:false,
             hip_to_gable__with_main_dormer:false,
             l_shape_dormer:false,
-            other:''
+            other:{
+                is_selected:false,
+                value:''
+            }
         },
         firstfloor:{
             selected:false,
@@ -133,7 +139,10 @@ const DataJson = {
             rear:false,
             rear_over_outrigger:false,
             rear_over_ground_floor:false,
-            other:''
+            other:{
+                is_selected:false,
+                value:''
+            }
         },
         other:{
             selected:false,
@@ -141,7 +150,10 @@ const DataJson = {
             garage_conversion:false,
             two_story_side:false,
             two_story_rear:false,
-            other:''
+            other:{
+                is_selected:false,
+                value:''
+            }
         },
         
        
@@ -172,47 +184,48 @@ const Form = (props: Props) => {
     const [projectDetails, setPRojectDetails] = useState<any>({})
     const [err,setErr] = useState('')
     const [isLoading,setIsloading]  = useState(false)
-    const [projectJson,setProjectJson] = useState(DataJson)
+    const [projectJson,setProjectJson] = useState(dataJson)
     const form = useRef();
 
     const sendEmail = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         setIsloading(true)
-        console.log('detail',projectDetails)
+        console.log('detail', projectJson)
       
-        // emailjs
-        //   .sendForm( 'service_lbvt72k', 'template_i1bu4iz', form.current, {
-        //     publicKey:  'YvcL1-VJjm_J4uKFv',
-        //   })
-        //   .then(
-        //     () => {
-        // setIsloading(false);
-        // console.log('SUCCESS!');setErr('Form sumbitted successfully'); setTimeout(()=>setErr(''),2000);e.target.reset(); 
+        emailjs
+          .sendForm( 'service_lbvt72k', 'template_i1bu4iz', form.current, {
+            publicKey:  'YvcL1-VJjm_J4uKFv',
+          })
+          .then(
+            () => {
+        setIsloading(false);
+        setProjectJson(dataJson)
+        console.log('SUCCESS!');setErr('Form sumbitted successfully'); setTimeout(()=>setErr(''),2000);e.target.reset(); 
 
-        //     },
-        //     (error) => {
-        //     setIsloading(false)
-        //       console.log('FAILED...', );setErr('Form submission failed'); setTimeout(()=>setErr(''),2000); 
+            },
+            (error) => {
+            setIsloading(false)
+              console.log('FAILED...', );setErr('Form submission failed'); setTimeout(()=>setErr(''),2000); 
 
-        //     },
-        //   );
+            },
+          );
       };
 
-    const handleOptionChange = (event) => {
+    const handleOptionChange = (event: { target: { value: any; name: any; }; }) => {
         setSelectedOption(event.target.value);
         const value = event.target.value
         const name = event.target.name
-        projectDetails[name] = value
-        const data = {...projectDetails}
-        setPRojectDetails(data)
+        projectJson[name] = value
+        // const data = {...projectDetails}
+        // setPRojectDetails(data)
     };
 
     const handleOptionChange2 = (event) => {
         setgroundfloorselectedOption(event.target.value);
     };
 
-    const updateData = (e:any)=>{
-        console.log('vall',e.target)
+    const updateData = (e: React.ChangeEvent<HTMLInputElement>)=>{
+        
         if(e.target.name === "property_type"){
             const temp_data = {...projectJson}
             temp_data.property_type = e.target.value
@@ -226,9 +239,17 @@ const Form = (props: Props) => {
 
         }
         if(e.target.name === "property_extension_type"){
-            const temp_data = {...projectJson}
-            temp_data.property_extension[selectedOption][e.target.value] = e.target.checked
-            setProjectJson(temp_data)
+            if(e.target.value == 'other'){
+                const temp_data = JSON.parse(JSON.stringify(projectJson))
+                temp_data.property_extension[selectedOption][e.target.value].is_selected = e.target.checked
+                setProjectJson(temp_data)
+
+            }else {
+                const temp_data = {...projectJson}
+                temp_data.property_extension[selectedOption][e.target.value] = e.target.checked
+                setProjectJson(temp_data)
+            }
+            
 
         }
         if(e.target.name === 'property_bed_room'){
@@ -265,9 +286,17 @@ const Form = (props: Props) => {
         }
     }
 
+    const changePopertyExtensionVal =(e: React.ChangeEvent<HTMLInputElement>,type: string)=>{
+        const tempData  ={...projectJson}
+       
+        tempData.property_extension[type].other.value = e.target.value
+        setProjectJson(tempData)
+        
+    }
+
 
     // console.log('details',projectDetails)
-    console.log('json data', projectJson)
+    // console.log('json data', projectJson)
 
   return (
     <>
@@ -368,12 +397,13 @@ const Form = (props: Props) => {
                                                             type="checkbox"
                                                             value={val.value}
                                                             // checked={projectDetails.property_extension_type === val.value}
-                                                            checked={projectJson.property_extension.groundfloor[val.value]}
+                                                            checked={val.value == 'other' ? projectJson.property_extension.groundfloor[val.value].is_selected :projectJson.property_extension.groundfloor[val.value]}
                                                             // onChange={handleOptionChange2}
                                                             onChange={(e)=>updateData(e)}
                                                             name='property_extension_type'
                                                         />
-                                                        <div className={projectJson.property_extension.groundfloor[val.value] ? `${style.cards} ${style.card_selected}`: `${style.cards}`}>
+                                                        <div className={
+                                                           val.value == 'other' ? projectJson.property_extension.groundfloor[val.value].is_selected ? `${style.cards} ${style.card_selected}`: `${style.cards}`:projectJson.property_extension.groundfloor[val.value] ? `${style.cards} ${style.card_selected}`: `${style.cards}`}>
                                                             <div className={`${style.cards_details}`}>
                                                                 <img src={val.image} />
                                                                 <span>
@@ -389,6 +419,7 @@ const Form = (props: Props) => {
                                 }
 
                             </fieldset>
+                            {projectJson.property_extension.groundfloor.other.is_selected && <input className='mt-2 p-2' type='text' value={projectJson.property_extension.groundfloor.other.value} placeholder='type  here other option' onChange={(e)=>changePopertyExtensionVal(e,'groundfloor')} />}
                         </div>
                         : selectedOption === 'loft' && projectJson.property_extension.loft.selected
                             ?
@@ -405,12 +436,13 @@ const Form = (props: Props) => {
                                                                 className={`${style.cards_input}`}
                                                                 type="checkbox"
                                                                 value={val.value}
-                                                                // checked={projectDetails.property_extension_type === val.value}
-                                                                checked={projectJson.property_extension.loft[val.value]}
+                                                                checked={val.value == 'other' ? projectJson.property_extension.loft[val.value].is_selected :projectJson.property_extension.loft[val.value]}
                                                                 onChange={(e)=>updateData(e)}
                                                                 name='property_extension_type'
                                                             />
-                                                            <div className={projectJson.property_extension.loft[val.value] ? `${style.cards} ${style.card_selected}`: `${style.cards}`}>
+                                                            <div
+                                                             className={val.value == 'other' ? projectJson.property_extension.loft[val.value].is_selected ? `${style.cards} ${style.card_selected}`: `${style.cards}`:projectJson.property_extension.loft[val.value] ? `${style.cards} ${style.card_selected}`: `${style.cards}`} 
+                                                            >
                                                                 <div className={`${style.cards_details}`}>
                                                                     <img src={val.image} />
                                                                     <span>
@@ -426,7 +458,10 @@ const Form = (props: Props) => {
                                     }
 
                                 </fieldset>
+                                {projectJson.property_extension.loft.other.is_selected && <input value={projectJson.property_extension.loft.other.value} className='mt-2 p-2' type='text' placeholder='type  here other option' onChange={(e)=>changePopertyExtensionVal(e,'loft')} />}
+                               
                             </div>
+
                             : selectedOption === 'firstfloor' && projectJson.property_extension.firstfloor.selected
                                 ?
                                 <div className='mb-5'>
@@ -442,13 +477,12 @@ const Form = (props: Props) => {
                                                                     className={`${style.cards_input}`}
                                                                     type="checkbox"
                                                                     value={val.value}
-                                                                    checked={projectJson.property_extension.firstfloor[val.value]}
+                                                                    checked={val.value == 'other' ? projectJson.property_extension.firstfloor[val.value].is_selected :projectJson.property_extension.firstfloor[val.value]}
                                                                     onChange={(e)=>updateData(e)}
-                                                                    // checked={projectDetails.property_extension_type === val.value}
-                                                                    // onChange={handleOptionChange}
                                                                     name='property_extension_type'
                                                                 />
-                                                                <div className={projectJson.property_extension.firstfloor[val.value] ? `${style.cards} ${style.card_selected}`: `${style.cards}`}>
+                                                                <div 
+                                                                     className={val.value == 'other' ? projectJson.property_extension.firstfloor[val.value].is_selected ? `${style.cards} ${style.card_selected}`: `${style.cards}`:projectJson.property_extension.firstfloor[val.value] ? `${style.cards} ${style.card_selected}`: `${style.cards}`}>
                                                                     <div className={`${style.cards_details}`}>
                                                                         <img src={val.image} />
                                                                         <span>
@@ -462,8 +496,9 @@ const Form = (props: Props) => {
                                                 }
                                             )
                                         }
-
                                     </fieldset>
+                                    {projectJson.property_extension.firstfloor.other.is_selected && 
+                                    <input className='mt-2 p-2' value={projectJson.property_extension.firstfloor.other.value} type='text' placeholder='type  here other option' onChange={(e)=>changePopertyExtensionVal(e,'firstfloor')} />}
                                 </div>
                                 : selectedOption === 'other'
                                     ?
@@ -480,11 +515,13 @@ const Form = (props: Props) => {
                                                                         className={`${style.cards_input}`}
                                                                         type="radio"
                                                                         value={val.value}
-                                                                        checked={projectDetails.property_extension_type === val.value}
-                                                                        onChange={handleOptionChange}
+                                                                        checked={val.value == 'other' ? projectJson.property_extension.other[val.value].is_selected :projectJson.property_extension.other[val.value]}
+                                                                        // onChange={handleOptionChange}
+                                                                        onChange={(e)=>updateData(e)}
                                                                         name='property_extension_type'
                                                                     />
-                                                                    <div className={projectDetails.property_extension_type === val.value ? `${style.cards} ${style.card_selected}`: `${style.cards}`}>
+                                                                    <div 
+                                                                        className={val.value == 'other' ? projectJson.property_extension.other[val.value].is_selected ? `${style.cards} ${style.card_selected}`: `${style.cards}`:projectJson.property_extension.other[val.value] ? `${style.cards} ${style.card_selected}`: `${style.cards}`}>
                                                                         <div className={`${style.cards_details}`}>
                                                                             <img src={val.image} />
                                                                             <span>
@@ -498,8 +535,9 @@ const Form = (props: Props) => {
                                                     }
                                                 )
                                             }
-
                                         </fieldset>
+                                         {projectJson.property_extension.other.other.is_selected && 
+                                         <input className='mt-2 p-2' value={projectJson.property_extension.other.other.value} type='text' placeholder='type  here other option' onChange={(e)=>changePopertyExtensionVal(e,'other')} />}
                                     </div>
                                     : null
                 }
