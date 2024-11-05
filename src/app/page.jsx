@@ -15,28 +15,6 @@ const lora = Lora({ subsets: ["latin"] });
 const Home = () => {
 
   const videoRef = useRef();
-  // const event = ({ action, category, label, value }) => {
-  //   (window).gtag('event', action, {
-  //     event_category: category,
-  //     event_label: label,
-  //     value: value,
-  //   });
-  // };
-
-  // useEffect(()=>{
-  //   const AddToCart =()=>{
-  //     event(
-  //       {
-  //       action: 'add_to_cart',
-  //       category: 'ecommerce',
-  //       label: 'Item added to cart',
-  //       value: 'Tesla',}
-  //     )
-
-  //   }
-  //   AddToCart()
-    
-  // },[])
 
   useEffect(() => {
     const video = videoRef.current;
