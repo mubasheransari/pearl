@@ -89,4 +89,25 @@
             }
         }
     }
+
+    .social_Link{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 50%;
+        margin: auto;
+        padding: 10px;
+
+        a{
+            text-decoration: none;
+            color:#000
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    
 }
