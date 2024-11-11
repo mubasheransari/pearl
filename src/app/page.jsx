@@ -37,7 +37,7 @@ const Home = () => {
           <div className={`${style.video_label} ${lora.className}`}>PEARL ENGINEERS, PLANNERS & PROJECT MANAGERS</div>
         </div>
       </section>
-      <About />
+      <About isMain={true} />
       <Services />
       <Expertise />
       <ContactUs />

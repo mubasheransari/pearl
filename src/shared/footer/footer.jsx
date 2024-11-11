@@ -63,11 +63,30 @@ const Footer = () => {
                         <div className={`${style.social_terms}`}>
                             <span>
                                 <ul>
-                                    <li><FontAwesomeIcon icon={faFacebookF} /></li>
-                                    <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                                    <li><FontAwesomeIcon icon={faX} /></li>
-                                    <li><FontAwesomeIcon icon={faInstagram} /></li>
-                                    <li><FontAwesomeIcon icon={faYoutube} /></li>
+                                    <li>
+                                    <Link href='#'>
+                                    <FontAwesomeIcon icon={faFacebookF} />
+                                    </Link>
+                                    </li>
+                                    <li>
+                                    <Link href={'https://www.linkedin.com/company/pearl-engineers-planners-project-managers/'} target='_blank'><FontAwesomeIcon icon={faLinkedin} />
+                                    </Link>
+                                    </li>
+                                    <li>
+                                    <Link href='#'>
+                                    <FontAwesomeIcon icon={faX} />
+                                    </Link>
+                                    </li>
+                                    <li>
+                                    <Link href='#'>
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                    </Link>
+                                    </li>
+                                    <li>
+                                    <Link href='#'>
+                                    <FontAwesomeIcon icon={faYoutube} />
+                                    </Link>
+                                    </li>
                                 </ul>
                             </span>
                             <span>

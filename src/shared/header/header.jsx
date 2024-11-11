@@ -18,11 +18,10 @@ const Header = () => {
   }, [pathname])
 
   const navLinks = [
-    { link: '/', class: 'nav-link', text: 'Home' },
-    { link: '/about', class: 'nav-link', text: 'About Us' },
-    { link: '/#services', class: 'nav-link', text: 'Our Vision' },
-    { link: '/#expertise', class: 'nav-link', text: 'Our Expertise' },
-    // { link: '/form', class: 'nav-link', text: 'Form' },
+    { link: '/', class: 'nav-link', text: 'Home',type:'text', menu:[] },
+    { link: '/about', class: 'nav-link', text: 'About Us',type:'select', menu:[{name:'About', link:'/about'}] },
+    { link: '/#services', class: 'nav-link', text: 'Our Vision',type:'text', menu:[] },
+    { link: '/#expertise', class: 'nav-link', text: 'Our Expertise',type:'text', menu:[] },
   ]
 
   const categoryLinks = [
@@ -42,24 +41,6 @@ const Header = () => {
     { link: '/planning_and_building_control_services', class: 'dropdown-item', text: 'Planning and Building Control Services' },
   ]
 
-  // useEffect(() => {
-  //   if (window.scrollY > 50) {
-  //     headerRef?.current?.classList.add(`${style.scroll}`)
-  //   }
-  //   document.addEventListener('scroll', scrollFunction)
-  //   return () => {
-  //     document.removeEventListener('scroll', scrollFunction)
-  //   }
-  // }, [])
-
-  // const scrollFunction = () => {
-  //   if (window.scrollY > 50) {
-  //     headerRef?.current?.classList.add(`${style.scroll}`)
-  //   } else {
-  //     headerRef?.current?.classList.remove(`${style.scroll}`)
-  //   }
-  // }
-
   return (
     <header className={style.header}>
       <nav ref={headerRef} className={`navbar navbar-expand-md navbar-dark fixed-top bg-dark ${style.scroll}`}>
@@ -78,12 +59,30 @@ const Header = () => {
           <div className={`collapse navbar-collapse ${style.header_links}`} id="navbarCollapse">
             <ul className="navbar-nav mb-2 mb-md-0">
               {navLinks.map((link, i) => {
-                // ${(location?.hash == link.link?.replace('/', '')) ? style.active : ''}
                 return (
                   <>
+                    {link.type == 'select' ?
+                     <div className={` nav-item dropdown ${style.dropdown_div}`}>
+                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       {link.text}
+                     </a>
+                     <ul className={` dropdown-menu ${style.dropdown_menu}`} aria-labelledby="navbarDropdownMenuLink">
+                       {link.menu.map((item, i) => {
+                         return (
+                           <>
+                             <li>
+                               <Link className={`${link.class}`} href={item.link} >{item.name}</Link>
+                             </li>
+                           </>
+                         )
+                       })}
+                     </ul>
+                   </div>
+                    :
                     <li className={`nav-item`} key={'nav_' + i}>
                       <Link className={`${link.class}`} href={link.link}>{link.text}</Link>
                     </li>
+                    }
                   </>
                 )
               })}
@@ -119,6 +118,9 @@ const Header = () => {
                   })}
                 </ul>
               </div>
+              <li className={`nav-item ${style.contact}`}>
+                <Link className={`nav-link`} href="/career">Career</Link>
+              </li>
               <li className={`nav-item ${style.contact}`}>
                 <Link className={`nav-link`} href="/contact">Contact Us</Link>
               </li>
