@@ -2,12 +2,21 @@
 import React, {useState} from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head';
 const lora = Lora({ subsets: ["latin"] });
+
+export const metadata = {
+    title: 'Quality Management | Pearlepp',
+    description: 'Streamline quality management with solutions for monitoring, control, and improvement. Ensure compliance, boost efficiency, and deliver consistent results.',
+  }
 
 function quality_management() {
 
     return (
         <>
+            <Head>
+            <link  rel="canonical" href="https://www.yourseoshop.com/quality-management" />                                                     
+            </Head>
         <section className={`${style.category}`} id="quality_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

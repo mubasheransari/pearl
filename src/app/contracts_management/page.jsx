@@ -1,13 +1,21 @@
-'use client'
-import React, {useState} from 'react'
+import React from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head';
 const lora = Lora({ subsets: ["latin"] });
+
+export const metadata = {
+    title: 'Contracts Management | Pearlepp',
+    description: 'Efficient contracts management services ensuring compliance, risk mitigation, and seamless administration for smooth project execution and successful results.',
+  }
 
 function Contracts_management() {
 
     return (
         <>
+            <Head>
+            <link  rel="canonical" href="https://www.yourseoshop.com/contracts-management" />             
+            </Head>
             <section className={`${style.category}`} id="contracts_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

@@ -1,8 +1,13 @@
-'use client'
-import React, {useState} from 'react'
+import React from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head';
 const lora = Lora({ subsets: ["latin"] });
+
+export const metadata = {
+    title: 'Structural Enigneering Services | Pearlepp',
+    description: 'Get expert structural engineering services with innovative, safe, and cost-effective solutions. Perfect for buildings, bridges, and all infrastructure projects.',
+  }
 
 const feature_points = [
     {
@@ -43,6 +48,9 @@ function structural_enigneering_services() {
 
     return (
         <>
+            <Head>
+                <link  rel="canonical" href="https://www.yourseoshop.com/architectural-services" />    
+            </Head>
             <section className={`${style.category}`} id="structural_enigneering_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

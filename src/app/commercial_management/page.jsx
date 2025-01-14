@@ -1,14 +1,22 @@
-'use client'
-import React, {useState} from 'react'
+import React from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head';
 const lora = Lora({ subsets: ["latin"] });
+
+export const metadata = {
+    title: 'Commercial Management | Pearlepp',
+    description: 'Enhance commercial management with tools for contracts, cost control, and risk management. Boost profitability and ensure efficient project success.',
+  }
 
 function commercial_management() {
 
     return (
         <>
-        <section className={`${style.category}`} id="commercial_management">
+            <Head>
+            <link  rel="canonical" href="https://www.yourseoshop.com/commercial-management" />                                                           
+            </Head>
+            <section className={`${style.category}`} id="commercial_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
                         <h4 className={lora.className}>Commercial Management</h4>

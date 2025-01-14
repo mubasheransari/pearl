@@ -2,12 +2,21 @@
 import React, {useState} from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head';
 const lora = Lora({ subsets: ["latin"] });
+
+export const metadata = {
+    title: 'Cost Control Value Engineering | Pearlepp',
+    description: 'Expert cost control and value engineering services to optimize budgets, maximize project value, and ensure efficient, innovative solutions for successful delivery.',
+  }
 
 function cost_control_value() {
 
     return (
         <>
+            <Head>
+            <link  rel="canonical" href="https://www.yourseoshop.com/cost-control-value-engineering" />                                   
+            </Head>
         <section className={`${style.category}`} id="cost_control_value">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

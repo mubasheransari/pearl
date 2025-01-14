@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

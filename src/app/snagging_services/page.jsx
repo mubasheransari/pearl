@@ -2,12 +2,21 @@
 import React, {useState} from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head';
 const lora = Lora({ subsets: ["latin"] });
+
+export const metadata = {
+    title: 'Snagging Services | Pearlepp',
+    description: 'Professional snagging services to identify and resolve defects in your property. Ensure quality, safety, and compliance for a flawless finish and peace of mind.',
+  }
 
 function snagging_services() {
 
     return (
         <>
+            <Head>
+            <link  rel="canonical" href="https://www.yourseoshop.com/snagging-services" />                              
+            </Head>
         <section className={`${style.category}`} id="snagging_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

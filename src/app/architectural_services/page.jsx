@@ -1,14 +1,22 @@
-'use client'
-import React, {useState} from 'react'
+import React from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head'
 const lora = Lora({ subsets: ["latin"] });
+
+export const metadata = {
+    title: 'Architectural Services | Pearlepp',
+    description: 'Explore our architectural services offering innovative designs, expert planning, and sustainable solutions to create functional, aesthetic, and timeless spaces.',
+  }
 
 function architectural_services() {
 
     return (
         <>
-        <section className={`${style.category}`} id="architectural_services">
+            <Head>
+                <link  rel="canonical" href="https://www.yourseoshop.com/architectural-services" />    
+            </Head>
+        <div className={`${style.category}`} id="architectural_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
                         <h4 className={lora.className}>Architectural Services</h4>
@@ -45,7 +53,7 @@ function architectural_services() {
                         </div>
                     </div>
                 </div>
-            </section>
+        </div>
         </>
     )
 }

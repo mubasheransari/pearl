@@ -1,7 +1,7 @@
-'use client'
-import React, {useState} from 'react'
+import React from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
+import Head from 'next/head';
 const lora = Lora({ subsets: ["latin"] });
 
 const building_control_point =[
@@ -59,10 +59,18 @@ const signoff_points =[
     },
 ]
 
+export const metadata = {
+    title: 'Planning and Building Control Services | Pearlepp',
+    description: 'Professional planning and building control services ensuring smooth approvals, compliance, and efficient, tailored solutions for all your construction needs.',
+  }
+
 function planning_and_building_control_services() {
 
     return (
         <>
+            <Head>
+            <link  rel="canonical" href="https://www.yourseoshop.com/planning-and-building-control-services" />    
+            </Head>
         <section className={`${style.category}`} id="planning_and_building_control_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
