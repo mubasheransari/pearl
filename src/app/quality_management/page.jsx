@@ -1,5 +1,4 @@
-'use client'
-import React, {useState} from 'react'
+import React from 'react'
 import style from '../style.module.scss'
 import { Lora } from "next/font/google";
 import Head from 'next/head';
