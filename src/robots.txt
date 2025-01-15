@@ -1,0 +1,12 @@
+User-agent: *
+Allow:/ 
+Sitemap: https://www.pearlepp.co.uk/sitemap.xml
+
+# Crawlers Setup
+
+Disallow: /*?dir=*
+Disallow: /*.php$
+
+
+
+
