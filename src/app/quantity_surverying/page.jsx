@@ -14,7 +14,7 @@ function quantity_surverying() {
     return (
         <>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/quantity-surverying" ></link>    
+            <link  rel="canonical" href="https://pearlepp.co.uk/quantity-surverying" ></link>    
             </Head>
         <section className={`${style.category}`} id="quantity_surverying">
                 <div className={`${style.category_box} container py-5 d-flex`}>

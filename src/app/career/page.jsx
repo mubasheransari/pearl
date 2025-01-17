@@ -11,7 +11,7 @@ const Page = () => {
   return (
     <div>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/career" />                                                                                    
+            <link  rel="canonical" href="https://pearlepp.co.uk/career" />                                                                                    
             </Head>
       <Career />
     </div>

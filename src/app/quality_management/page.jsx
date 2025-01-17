@@ -14,7 +14,7 @@ function quality_management() {
     return (
         <>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/quality-management" />                                                     
+            <link  rel="canonical" href="https://pearlepp.co.uk/quality-management" />                                                     
             </Head>
         <section className={`${style.category}`} id="quality_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>

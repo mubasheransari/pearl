@@ -14,7 +14,7 @@ function contractor_management() {
     return (
         <>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/contractor-management" />                                    
+            <link  rel="canonical" href="https://pearlepp.co.uk/contractor-management" />                                    
             </Head>
         <section className={`${style.category}`} id="contractor_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>

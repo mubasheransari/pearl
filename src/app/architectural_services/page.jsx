@@ -14,7 +14,7 @@ function architectural_services() {
     return (
         <>
             <Head>
-                <link  rel="canonical" href="https://www.yourseoshop.com/architectural-services" />    
+                <link  rel="canonical" href="https://pearlepp.co.uk/architectural-services" />    
             </Head>
         <div className={`${style.category}`} id="architectural_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>

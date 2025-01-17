@@ -69,7 +69,7 @@ function planning_and_building_control_services() {
     return (
         <>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/planning-and-building-control-services" />    
+            <link  rel="canonical" href="https://pearlepp.co.uk/planning-and-building-control-services" />    
             </Head>
         <section className={`${style.category}`} id="planning_and_building_control_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>

@@ -13,7 +13,7 @@ function Page(props) {
   return (
     <div className={style.contact_container}>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/career" />                                                                                    
+            <link  rel="canonical" href="https://pearlepp.co.uk/career" />                                                                                    
             </Head>
         <ContactUs />
         <NewContactUs />

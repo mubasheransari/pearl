@@ -14,7 +14,7 @@ function snagging_services() {
     return (
         <>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/snagging-services" />                              
+            <link  rel="canonical" href="https://pearlepp.co.uk/snagging-services" />                              
             </Head>
         <section className={`${style.category}`} id="snagging_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>

@@ -12,7 +12,7 @@ const page = () => {
     return (
         <>
             <Head>
-                <link  rel="canonical" href="https://www.yourseoshop.com/Form" />                                                                                    
+                <link  rel="canonical" href="https://pearlepp.co.uk/Form" />                                                                                    
             </Head>
             <Form />
         </>

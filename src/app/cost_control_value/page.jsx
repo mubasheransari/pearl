@@ -14,7 +14,7 @@ function cost_control_value() {
     return (
         <>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/cost-control-value-engineering" />                                   
+            <link  rel="canonical" href="https://pearlepp.co.uk/cost-control-value-engineering" />                                   
             </Head>
         <section className={`${style.category}`} id="cost_control_value">
                 <div className={`${style.category_box} container py-5 d-flex`}>

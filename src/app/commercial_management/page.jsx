@@ -14,7 +14,7 @@ function commercial_management() {
     return (
         <>
             <Head>
-            <link  rel="canonical" href="https://www.yourseoshop.com/commercial-management" />                                                           
+            <link  rel="canonical" href="https://pearlepp.co.uk/commercial-management" />                                                           
             </Head>
             <section className={`${style.category}`} id="commercial_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>

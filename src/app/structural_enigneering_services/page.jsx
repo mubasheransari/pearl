@@ -49,7 +49,7 @@ function structural_enigneering_services() {
     return (
         <>
             <Head>
-                <link  rel="canonical" href="https://www.yourseoshop.com/architectural-services" />    
+                <link  rel="canonical" href="https://pearlepp.co.uk/architectural-services" />    
             </Head>
             <section className={`${style.category}`} id="structural_enigneering_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
