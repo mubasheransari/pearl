@@ -1,13 +1,14 @@
  
-export const GET = async () => {
+export default async function () {
   const baseUrl = "https://pearlepp.co.uk";
 
   // Replace this with your logic to fetch pages (e.g., from a database or an API)
-  const pages = [
+  return [
         {
           url: 'https://pearlepp.co.uk/',
           priority: 1,
         },
+        
         {
           url: 'https://pearlepp.co.uk/form',
           priority: 0.80,
@@ -71,29 +72,9 @@ export const GET = async () => {
     {
           url: 'https://pearlepp.co.uk/contact',
           priority: 0.80,
-        },
+        }
     
       ]
   
 
-  const sitemap = `
-      <?xml version="1.0" encoding="UTF-8"?>
-      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-          ${pages
-              .map(
-                  (page) => `
-              <url>
-                  <loc>${page.url}</loc>
-                  <priority>${page.priority}</priority>
-              </url>`
-              )
-              .join("")}
-      </urlset>
-  `.trim();
-
-  return new Response(sitemap, {
-      headers: {
-          "Content-Type": "application/xml",
-      },
-  });
-};
+    }
