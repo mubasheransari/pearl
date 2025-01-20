@@ -5,72 +5,72 @@ export default async function () {
   // Replace this with your logic to fetch pages (e.g., from a database or an API)
   return [
         {
-          url: 'https://pearlepp.co.uk/',
+          url: baseUrl,
           priority: 1,
         },
         
         {
-          url: 'https://pearlepp.co.uk/form',
+        url: `${baseUrl}/form`,
           priority: 0.80,
         },
         {
-          url: 'https://pearlepp.co.uk/about',
+          url: `${baseUrl}/about`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/architectural_services',
+          url: `${baseUrl}/architectural_services`,
          
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/structural_enigneering_services',
+          url: `${baseUrl}/structural_enigneering_services`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/planning_and_building_control_services',
+          url: `${baseUrl}/planning_and_building_control_services`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/quantity_surverying',
+          url: `${baseUrl}/quantity_surverying`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/contracts_management',
+          url: `${baseUrl}/contracts_management`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/snagging_services',
+          url: `${baseUrl}/snagging_services`,
          
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/cost_control_value',
+          url: `${baseUrl}/cost_control_value`,
          
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/contractor_management',
+          url: `${baseUrl}/contractor_management`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/quality_management',
+          url: `${baseUrl}/quality_management`,
          
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/commercial_management',
+          url: `${baseUrl}/commercial_management`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/project_management',
+          url: `${baseUrl}/project_management`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/career',
+          url: `${baseUrl}/career`,
           priority: 0.80,
         },
     {
-          url: 'https://pearlepp.co.uk/contact',
+          url: `${baseUrl}/contact`,
           priority: 0.80,
         }
     
