@@ -12,7 +12,7 @@ function Page() {
   return (
     <>
       <Head>
-      <link  rel="canonical" href="https://pearlepp.co.uk/about" />
+      <link  rel="canonical" href="https://pearlepp.co.uk/about"  key="canonical" />
       </Head>
 
     <div className={style.about_container}>
