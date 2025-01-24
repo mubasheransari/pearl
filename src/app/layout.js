@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <GoogleAnalytics />
       <head>
         <link href="/bootstrap.min.css" rel="stylesheet" />
-        {/* <link  rel="canonical" href="https://pearlepp.co.uk/" /> */}
+        <link  rel="canonical" href="https://pearlepp.co.uk/" />
         <link rel="alternate" href="https://pearlepp.co.uk/" hreflang="en-uk" />
         <meta name="google-site-verification" content="5jllG5yaIGP4yMEIFPLQE308aMGx-Y_9jCLesHYeaU4" />
         <meta name="google-site-verification" content="5jllG5yaIGP4yMEIFPLQE308aMGx-Y_9jCLesHYeaU4" />
