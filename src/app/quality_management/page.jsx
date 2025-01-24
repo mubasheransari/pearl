@@ -7,15 +7,15 @@ const lora = Lora({ subsets: ["latin"] });
 export const metadata = {
     title: 'Quality Management | Pearlepp',
     description: 'Streamline quality management with solutions for monitoring, control, and improvement. Ensure compliance, boost efficiency, and deliver consistent results.',
+    alternates:{
+        canonical: "https://pearlepp.co.uk/quality-management"
+      } 
   }
 
 function quality_management() {
 
     return (
         <>
-            <Head>
-            <link  rel="canonical" href="https://pearlepp.co.uk/quality-management" />                                                     
-            </Head>
         <section className={`${style.category}`} id="quality_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

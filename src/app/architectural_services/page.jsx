@@ -7,15 +7,15 @@ const lora = Lora({ subsets: ["latin"] });
 export const metadata = {
     title: 'Architectural Services | Pearlepp',
     description: 'Explore our architectural services offering innovative designs, expert planning, and sustainable solutions to create functional, aesthetic, and timeless spaces.',
-  }
+    alternates:{
+        canonical: "https://pearlepp.co.uk/architectural-services"
+      }  
+}
 
 function architectural_services() {
 
     return (
         <>
-            <Head>
-                <link  rel="canonical" href="https://pearlepp.co.uk/architectural-services" />    
-            </Head>
         <div className={`${style.category}`} id="architectural_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

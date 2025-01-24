@@ -7,15 +7,15 @@ const lora = Lora({ subsets: ["latin"] });
 export const metadata = {
     title: 'Snagging Services | Pearlepp',
     description: 'Professional snagging services to identify and resolve defects in your property. Ensure quality, safety, and compliance for a flawless finish and peace of mind.',
+    alternates:{
+        canonical: "https://pearlepp.co.uk/snagging-services"
+      } 
   }
 
 function snagging_services() {
 
     return (
         <>
-            <Head>
-            <link  rel="canonical" href="https://pearlepp.co.uk/snagging-services" />                              
-            </Head>
         <section className={`${style.category}`} id="snagging_services">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

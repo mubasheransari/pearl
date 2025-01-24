@@ -7,14 +7,14 @@ import Head from 'next/head'
 export const metadata = {
   title: 'Contact | Pearlepp',
   description: 'Get in touch with us for inquiries, support, or collaboration. We re here to assist you—contact us today and let us help you achieve your goals.',
+  alternates:{
+    canonical: "https://pearlepp.co.uk/contact"
+  }    
 }
 
 function Page(props) {
   return (
     <div className={style.contact_container}>
-            <Head>
-            <link  rel="canonical" href="https://pearlepp.co.uk/career" />                                                                                    
-            </Head>
         <ContactUs />
         <NewContactUs />
     </div>

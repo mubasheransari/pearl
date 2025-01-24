@@ -7,15 +7,15 @@ const lora = Lora({ subsets: ["latin"] });
 export const metadata = {
     title: 'Contracts Management | Pearlepp',
     description: 'Efficient contracts management services ensuring compliance, risk mitigation, and seamless administration for smooth project execution and successful results.',
-  }
+    alternates:{
+        canonical: "https://pearlepp.co.uk/contracts-management"
+      }        
+}
 
 function Contracts_management() {
 
     return (
         <>
-            <Head>
-            <link  rel="canonical" href="https://pearlepp.co.uk/contracts-management" />             
-            </Head>
             <section className={`${style.category}`} id="contracts_management">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>

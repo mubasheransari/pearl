@@ -7,15 +7,15 @@ const lora = Lora({ subsets: ["latin"] });
 export const metadata = {
     title: 'Quantity Surverying | Pearlepp',
     description: 'Expert quantity surveying services delivering accurate cost estimates, budget control, and efficient project management for successful construction projects.',
+    alternates:{
+        canonical: "https://pearlepp.co.uk/quantity-surverying"
+      } 
   }
 
 function quantity_surverying() {
 
     return (
         <>
-            <Head>
-            <link  rel="canonical" href="https://pearlepp.co.uk/quantity-surverying" ></link>    
-            </Head>
         <section className={`${style.category}`} id="quantity_surverying">
                 <div className={`${style.category_box} container py-5 d-flex`}>
                     <div className={`${style.left}`}>
