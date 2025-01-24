@@ -10,14 +10,14 @@ import Head from 'next/head'
 export const metadata = {
   title: 'Pearl Engineers, Planners & Project Managers | Pearlepp',
   description: 'Pearl Engineers, Planners & Project Managers offer expert solutions in engineering, planning, and project management for seamless, innovative project execution.',
+  alternates:{
+    canonical: "https://pearlepp.co.uk/"
+  } 
 }
 
 const Home = () => {
   return (
     <>
-    <Head>
-      <link  rel="canonical" href="https://www.pearlepp.co.uk/ " />
-      </Head>
     <BaseLayout>
       <Video />
       <About isMain={true} />
