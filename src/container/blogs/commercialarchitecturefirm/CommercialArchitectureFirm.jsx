@@ -68,7 +68,7 @@ const CommercialArchitectureFirm = () => {
           <li>
             <h3>Architectural Drawings and Planning Submissions</h3>
             <div>
-            PEPP’s commercial architecture firm prepares detailed architectural drawings that form the backbone of planning submissions. These include:
+            PEPP&#44;s commercial architecture firm prepares detailed architectural drawings that form the backbone of planning submissions. These include:
               <ul>
                 <li>Floor plans, elevations, and sections prepared in compliance with RIBA and ARB standards</li>
                 <li>Design and access statements to support planning applications.</li>
@@ -174,18 +174,18 @@ const CommercialArchitectureFirm = () => {
 
       <section className={styles.peppAdvantage}>
         <h2>Trusted by Hundreds of Happy Clients</h2>
-        <p>PEPP’s reputation as a leading commercial architecture firm is built on the satisfaction of hundreds of happy clients. Our ability to balance creativity with technical precision has made us the go-to firm for businesses across various industries.</p>
+        <p>PEPP&#44;s reputation as a leading commercial architecture firm is built on the satisfaction of hundreds of happy clients. Our ability to balance creativity with technical precision has made us the go-to firm for businesses across various industries.</p>
       </section>
 
       <section className={styles.peppAdvantage}>
         <h2>A Complete Partner in Commercial Architecture</h2>
-        <p>At PEPP, we don’t just design buildings; we provide a full suite of services to ensure your project’s success. Our commercial architecture firm collaborates with structural engineers, MEP specialists, and construction teams to deliver cohesive solutions. From initial concept development to final handover, we are with you every step of the way.</p>
+        <p>At PEPP, we don&#44;t just design buildings; we provide a full suite of services to ensure your project&#44;s success. Our commercial architecture firm collaborates with structural engineers, MEP specialists, and construction teams to deliver cohesive solutions. From initial concept development to final handover, we are with you every step of the way.</p>
       </section>
 
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP: Your Commercial Architecture Firm</h2>
         <p>
-        If you’re looking for a professional and innovative commercial architecture firm, trust Pearl Engineers, Planners, and Project Managers (PEPP). With our expertise, commitment to compliance, and dedication to quality, we are here to turn your vision into reality.
+        If you&#44;re looking for a professional and innovative commercial architecture firm, trust Pearl Engineers, Planners, and Project Managers (PEPP). With our expertise, commitment to compliance, and dedication to quality, we are here to turn your vision into reality.
           </p>
       </section>
 

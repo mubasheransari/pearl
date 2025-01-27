@@ -23,7 +23,7 @@ const CommercialConstructionPlans = () => {
       <section className={styles.importance}>
         <h2>Why Commercial Construction Plans Are Crucial</h2>
         <p>
-          Effective commercial construction plans are the foundation of every successful construction project. They provide the blueprint for turning your vision into reality, ensuring that every detail is carefully considered and every regulation is met. PEPP’s commercial construction plans offer:
+          Effective commercial construction plans are the foundation of every successful construction project. They provide the blueprint for turning your vision into reality, ensuring that every detail is carefully considered and every regulation is met. PEPP&#44;s commercial construction plans offer:
         </p>
         <ul>
           <li>
@@ -54,7 +54,7 @@ const CommercialConstructionPlans = () => {
       <section className={styles.services}>
         <h2>Our Comprehensive Commercial Construction Plans Services</h2>
         <p>
-          PEPP’s commercial construction plans cover every aspect of planning and design, ensuring a seamless transition from concept to construction:
+          PEPP&#44;s commercial construction plans cover every aspect of planning and design, ensuring a seamless transition from concept to construction:
         </p>
         <ul>
           <li>

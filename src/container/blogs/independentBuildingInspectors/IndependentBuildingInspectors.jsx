@@ -13,7 +13,7 @@ const IndependentBuildingInspectors = () => {
       </p>
 
       <p>
-        At Pearl Engineers, Planners, and Project Managers (PEPP), we provide reliable and professional independent building inspectors to ensure your construction project meets all regulatory and safety standards. From pre-construction assessments to post-completion inspections, our independent building inspectors deliver impartial, detailed, and actionable insights, safeguarding your project’s compliance and quality.
+        At Pearl Engineers, Planners, and Project Managers (PEPP), we provide reliable and professional independent building inspectors to ensure your construction project meets all regulatory and safety standards. From pre-construction assessments to post-completion inspections, our independent building inspectors deliver impartial, detailed, and actionable insights, safeguarding your project&#44;s compliance and quality.
       </p>
 
       <p>
@@ -182,14 +182,14 @@ const IndependentBuildingInspectors = () => {
       <section className={styles.peppAdvantage}>
         <h2>A Trusted Partner in Building Compliance</h2>
         <p>
-        At PEPP, we recognize that every construction project is unique. Our independent building inspectors work closely with you to provide customized solutions that address your project’s specific needs. Whether you’re constructing a new building, renovating an existing one, or evaluating a property for purchase, our services ensure compliance, safety, and quality at every stage.
+        At PEPP, we recognize that every construction project is unique. Our independent building inspectors work closely with you to provide customized solutions that address your project&#44;s specific needs. Whether you&#44;re constructing a new building, renovating an existing one, or evaluating a property for purchase, our services ensure compliance, safety, and quality at every stage.
         </p>
       </section>
 
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP for Professional Independent Building Inspectors</h2>
         <p>
-        If you’re looking for expert independent building inspectors, trust Pearl Engineers, Planners, and Project Managers (PEPP). With a focus on impartiality, compliance, and quality, our team is dedicated to helping you achieve construction excellence.
+        If you&#44;re looking for expert independent building inspectors, trust Pearl Engineers, Planners, and Project Managers (PEPP). With a focus on impartiality, compliance, and quality, our team is dedicated to helping you achieve construction excellence.
         </p>
       </section>
 

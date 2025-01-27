@@ -111,7 +111,7 @@ function NewContactUs(props) {
                             </li>
                         </ul>
                         <h5 className='mb-3'>Support</h5>
-                        <label className='mb-3'>We’re here to answer your technical questions whenever you need.</label>
+                        <label className='mb-3'>We&#44;re here to answer your technical questions whenever you need.</label>
                         <ul>
                             <li>
                                 <span><FontAwesomeIcon icon={faPhone} /></span>

@@ -10,7 +10,7 @@ const PlanningDrawingServices = () => {
       </p>
 
       <p>
-        At Pearl Engineers, Planners, and Project Managers (PEPP), we specialize in creating exceptional planning drawings that are not only visually appealing but also technically sound and compliant with all relevant regulations. Our planning drawings cover every aspect of the design process, tailored to your project’s specific requirements:
+        At Pearl Engineers, Planners, and Project Managers (PEPP), we specialize in creating exceptional planning drawings that are not only visually appealing but also technically sound and compliant with all relevant regulations. Our planning drawings cover every aspect of the design process, tailored to your project&#44;s specific requirements:
       </p>
 
       <section className={styles.services}>
@@ -56,7 +56,7 @@ const PlanningDrawingServices = () => {
             <div>
               As part of our planning drawings service, we also prepare:
               <ul>
-                <li>Design and Access Statements, detailing the project’s compliance with planning policies.</li>
+                <li>Design and Access Statements, detailing the project&#44;s compliance with planning policies.</li>
                 <li>Sustainability and heritage impact assessments, where applicable.</li>
               </ul>
             </div>
@@ -88,7 +88,7 @@ const PlanningDrawingServices = () => {
           <li>
             <h4>Expertise Across All Project Types</h4>
             <p>
-              Our planning drawings are suitable for residential, commercial, and industrial projects. Whether it’s a small home extension or a multi-story commercial development, we tailor every drawing to your specific needs.
+              Our planning drawings are suitable for residential, commercial, and industrial projects. Whether it&#44;s a small home extension or a multi-story commercial development, we tailor every drawing to your specific needs.
             </p>
           </li>
 
@@ -102,7 +102,7 @@ const PlanningDrawingServices = () => {
           <li>
             <h4>Streamlined Approval Process</h4>
             <p>
-              Our team’s experience with local councils across London and the UK ensures that your planning drawings are optimized for swift and successful approvals
+              Our team&#44;s experience with local councils across London and the UK ensures that your planning drawings are optimized for swift and successful approvals
             </p>
           </li>
 
@@ -159,14 +159,14 @@ const PlanningDrawingServices = () => {
       <section className={styles.peppAdvantage}>
         <h2>From Planning Drawings to Construction</h2>
         <p>
-        At PEPP, we don’t stop at planning drawings. Our integrated approach ensures that we support you through the entire project lifecycle, from design to build. With our trusted partner builders, we provide end-to-end solutions, maintaining control over quality, cost, and timelines
+        At PEPP, we don&#44;t stop at planning drawings. Our integrated approach ensures that we support you through the entire project lifecycle, from design to build. With our trusted partner builders, we provide end-to-end solutions, maintaining control over quality, cost, and timelines
         </p>
       </section>
 
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP for Professional Planning Drawings</h2>
         <p>
-        If you’re looking for expert planning drawings that combine compliance, creativity, and cost-effectiveness, trust Pearl Engineers, Planners, and Project Managers (PEPP). Our team is dedicated to turning your vision into reality with precision and professionalism.
+        If you&#44;re looking for expert planning drawings that combine compliance, creativity, and cost-effectiveness, trust Pearl Engineers, Planners, and Project Managers (PEPP). Our team is dedicated to turning your vision into reality with precision and professionalism.
         </p>
       </section>
 

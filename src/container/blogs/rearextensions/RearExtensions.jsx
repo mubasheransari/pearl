@@ -8,7 +8,7 @@ const Blog = () => {
       <h1 className={styles.blogTitle}>Rear Extension Ideas</h1>
       <h2 className={styles.blogTitle2}>From Simplicity to Architectural Ingenuity</h2>
 
-      <p>A rear extension is a transformative addition to any home, offering opportunities to expand, modernize, and personalize your living space. Whether you’re seeking practical functionality or a bold architectural statement, the spectrum of <Link href="/quantity_surverying">rear extension ideas</Link> can cater to every style, budget, and need. Here, we explore ideas ranging from simple and effective to complex and innovative, ensuring a perfect blend of practicality and creativity.</p>
+      <p>A rear extension is a transformative addition to any home, offering opportunities to expand, modernize, and personalize your living space. Whether you&#39;re seeking practical functionality or a bold architectural statement, the spectrum of <Link href="/quantity_surverying">rear extension ideas</Link> can cater to every style, budget, and need. Here, we explore ideas ranging from simple and effective to complex and innovative, ensuring a perfect blend of practicality and creativity.</p>
 
       <h3 className={styles.blogTitle3}>Simple and Functional Rear Extension Ideas</h3>
       <ul className={styles.list}>
@@ -75,7 +75,7 @@ const Blog = () => {
       </ul>
 
       <h3 className={styles.blogTitle3}>Blending Simplicity with Creativity</h3>
-      <p>From the practical simplicity of a cozy sunroom to the futuristic appeal of cantilevered designs, the array of rear extension ideas ensures there’s something for every homeowner. By thoughtfully blending functionality, aesthetics, and sustainability, these extensions can enhance your home’s value and redefine how you live. Whether you envision a practical family space or an artistic statement piece, the right combination of planning, design, and execution will transform your vision into reality. Let your imagination lead, and let the rear of your home become the canvas for something extraordinary.</p>
+      <p>From the practical simplicity of a cozy sunroom to the futuristic appeal of cantilevered designs, the array of rear extension ideas ensures there&#44;s something for every homeowner. By thoughtfully blending functionality, aesthetics, and sustainability, these extensions can enhance your home&#44;s value and redefine how you live. Whether you envision a practical family space or an artistic statement piece, the right combination of planning, design, and execution will transform your vision into reality. Let your imagination lead, and let the rear of your home become the canvas for something extraordinary.</p>
 
     </div>
   );

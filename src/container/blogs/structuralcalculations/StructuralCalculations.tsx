@@ -173,7 +173,7 @@ const StructuralCalculations = () => {
           <li>
             <h4>End-to-End Support</h4>
             <p>
-            Our services don’t stop at calculations. We collaborate with trusted partner builders to ensure designs are implemented seamlessly, controlling quality, cost, and timelines.
+            Our services don&#44;t stop at calculations. We collaborate with trusted partner builders to ensure designs are implemented seamlessly, controlling quality, cost, and timelines.
               </p>
           </li>
         </ul>
@@ -189,7 +189,7 @@ const StructuralCalculations = () => {
       <section className={styles.contact}>
         <h2>Contact PEPP for Professional Structural Calculations</h2>
         <p>
-          If you’re seeking precise, reliable, and compliant structural calculations, choose Pearl Engineers, Planners, and Project Managers (PEPP). Our expertise ensures that your project is built on a foundation of safety, efficiency, and excellence. Contact us today to discuss your needs and discover how our structural calculations can transform your project.
+          If you&#44;re seeking precise, reliable, and compliant structural calculations, choose Pearl Engineers, Planners, and Project Managers (PEPP). Our expertise ensures that your project is built on a foundation of safety, efficiency, and excellence. Contact us today to discuss your needs and discover how our structural calculations can transform your project.
         </p>
       </section>
     </div>

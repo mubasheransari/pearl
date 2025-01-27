@@ -11,7 +11,7 @@ const ProjectManagerConstruction = () => {
       </p>
 
       <p>
-        At Pearl Engineers, Planners, and Project Managers (PEPP), we provide professional project manager construction services tailored to ensure the successful delivery of your construction project. Whether it’s a residential build, commercial development, or complex infrastructure project, our experienced team ensures seamless coordination, timely execution, and cost-effective results.
+        At Pearl Engineers, Planners, and Project Managers (PEPP), we provide professional project manager construction services tailored to ensure the successful delivery of your construction project. Whether it&#44;s a residential build, commercial development, or complex infrastructure project, our experienced team ensures seamless coordination, timely execution, and cost-effective results.
       </p>
 
       <p>
@@ -186,7 +186,7 @@ const ProjectManagerConstruction = () => {
       <section className={styles.keyFeatures}>
         <h2>Trusted by Hundreds of Happy Customers</h2>
         <p>
-        PEPP’s project manager construction services have earned the trust of hundreds of happy customers across residential, commercial, and industrial sectors. Our clients value our professionalism, attention to detail, and ability to deliver projects that exceed expectations.
+        PEPP&#44;s project manager construction services have earned the trust of hundreds of happy customers across residential, commercial, and industrial sectors. Our clients value our professionalism, attention to detail, and ability to deliver projects that exceed expectations.
         </p>
       </section>
 
@@ -203,7 +203,7 @@ const ProjectManagerConstruction = () => {
       <section className={styles.keyFeatures}>
         <h2>Contact PEPP for Expert Project Manager Construction Services</h2>
         <p>
-        If you’re looking for a reliable and professional project manager construction partner, choose Pearl Engineers, Planners, and Project Managers (PEPP). Our expertise and dedication to quality ensure that every project is a success.
+        If you&#44;re looking for a reliable and professional project manager construction partner, choose Pearl Engineers, Planners, and Project Managers (PEPP). Our expertise and dedication to quality ensure that every project is a success.
         </p>
       </section>
 

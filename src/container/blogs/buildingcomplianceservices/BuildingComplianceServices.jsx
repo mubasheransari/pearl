@@ -53,7 +53,7 @@ const BuildingComplianceServices = () => {
       <section className={styles.services}>
         <h2>Our Comprehensive Building Compliance Services</h2>
         <p>
-          PEPP’s building compliance services are designed to cover every aspect of construction compliance, ensuring your project progresses without delays or complications:
+          PEPP&#44;s building compliance services are designed to cover every aspect of construction compliance, ensuring your project progresses without delays or complications:
         </p>
         <ul>
           <li>
@@ -181,7 +181,7 @@ const BuildingComplianceServices = () => {
       <section className={styles.peppAdvantage}>
         <h2>A Trusted Partner in Building Compliance Services</h2>
         <p>
-        At PEPP, we understand that every project is unique, which is why our building compliance services are fully customizable to your needs. Whether you’re managing a small residential build or a large commercial development, we provide the expertise and support needed to ensure compliance, safety, and success.
+        At PEPP, we understand that every project is unique, which is why our building compliance services are fully customizable to your needs. Whether you&#44;re managing a small residential build or a large commercial development, we provide the expertise and support needed to ensure compliance, safety, and success.
         </p>
         <p>
         Our commitment to excellence extends beyond compliance. We collaborate with architects, engineers, and contractors to provide seamless coordination, ensuring that every aspect of your project is executed to the highest standards.
@@ -191,7 +191,7 @@ const BuildingComplianceServices = () => {
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP for Professional Building Compliance Services</h2>
         <p>
-        If you’re looking for reliable and professional building compliance services, trust Pearl Engineers, Planners, and Project Managers (PEPP). With our expertise in BSR, Building Control, structural inspections, and regulatory compliance, we provide the guidance and support needed to ensure your project is a success.
+        If you&#44;re looking for reliable and professional building compliance services, trust Pearl Engineers, Planners, and Project Managers (PEPP). With our expertise in BSR, Building Control, structural inspections, and regulatory compliance, we provide the guidance and support needed to ensure your project is a success.
         </p>
       </section>
 
