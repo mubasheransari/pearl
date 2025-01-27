@@ -1,0 +1,46 @@
+.container {
+    padding:10px;
+    margin: 20px 20px 0px 20px;
+
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .role,
+  .services,
+  .peppAdvantage,
+  .keyFeatures {
+    margin-bottom: 2rem;
+  }
+  
+  .role ul,
+  .services ul,
+  .peppAdvantage ul,
+  .keyFeatures ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .role li,
+  .services li,
+  .peppAdvantage li,
+  .keyFeatures li {
+    margin-bottom: 1rem;
+  }
+  
+  .role li h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .conclusion {
+    font-style: italic;
+  }

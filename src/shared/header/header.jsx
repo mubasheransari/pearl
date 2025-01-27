@@ -41,6 +41,20 @@ const Header = () => {
     { link: '/planning_and_building_control_services', class: 'dropdown-item', text: 'Planning and Building Control Services' },
   ]
 
+  const blogsLinks = [
+    {link:'/rear-extension-ideas-from-simplicity-to-architectural-ingenuity', class: 'dropdown-item', text: 'Rear Extension Ideas from Simplicity to Architectural Ingenuity' },
+    {link:'/the-importance-of-structural-calculations-in-modern-construction-projects', class: 'dropdown-item', text: 'The Importance of Structural Calculations in Modern Construction Projects' },
+    {link:'/structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach', class: 'dropdown-item', text: 'Structural Integrity Through Meticulous Structural Engineer Calculations the PEPP Approach' },
+    {link:'/how-planning-drawings-services-can-transform-your-architectural-vision-into-reality',class: 'dropdown-item', text:'How Planning Drawings Services Can Transform Your Architectural Vision into Reality' },
+    {link:'/project-manager-construction-service-by-pearl-engineers-planners-and-project-managers-(PEPP)', class: 'dropdown-item', text: 'Project Manager Construction Service by Pearl Engineers Planners and Project Managers (PEPP)' },
+    {link:'/commercial-construction-planning-services-by-pearl-engineers-planners-and-project-managers-(PEPP)', class: 'dropdown-item', text: 'Commercial Construction Planning Services by Pearl Engineers Planners and Project Managers (PEPP)' },
+    {link:'/commercial-construction-plans-by-pearl-engineers-planners-and-project-managers-(pepp)', class: 'dropdown-item', text: 'Commercial Construction Plans by Pearl Engineers Planners and Project Managers (pepp)' },
+    {link:'/building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pepp)', class: 'dropdown-item', text: 'Building Compliance Services by Pearl Engineers Planners and Project Managers (pepp)' },
+    {link:'/independent-building-inspectors-by-pearl-engineers-planners-and-project-managers-(pepp)', class: 'dropdown-item', text: 'Independent Building Inspectors by Pearl Engineers Planners and Project Managers (PEPP)'},
+    {link:'commercial-architecture-firm-pear-engineers-planners-and-project-managers-(PEPP)', class: 'dropdown-item', text: 'Commercial Architecture Firm Pear Engineers Planners and Project Managers (PEPP)'},
+
+  ]
+
   return (
     <header className={style.header}>
       <nav ref={headerRef} className={`navbar navbar-expand-md navbar-dark fixed-top bg-dark ${style.scroll}`}>
@@ -114,6 +128,20 @@ const Header = () => {
                           <Link className={`${link.class}`} href={link.link} >{link.text}</Link>
                         </li>
                       </>
+                    )
+                  })}
+                </ul>
+              </div>
+              <div className={` nav-item dropdown ${style.dropdown_div}`}>
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blogs
+                </a>
+                <ul className={` dropdown-menu ${style.dropdown_menu}`} aria-labelledby="navbarDropdownMenuLink">
+                  {blogsLinks.map((link, i) => {
+                    return (
+                        <li key={'blogs'+i}>
+                          <Link className={`${link.class}`} href={link.link} >{link.text}</Link>
+                        </li>
                     )
                   })}
                 </ul>

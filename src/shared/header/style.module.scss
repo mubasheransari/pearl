@@ -67,6 +67,8 @@
                 .dropdown_div:hover{
                     .dropdown_menu{
                         display: block;
+                        max-height: 400px;
+                        overflow-y: scroll;
                     }
                 }
             }

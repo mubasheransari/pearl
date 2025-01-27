@@ -1,6 +1,5 @@
 import React from 'react'
 import Form from '@/container/form/form'
-import Head from 'next/head'
 
 export const metadata = {
     title: 'Form | Pearlepp',
