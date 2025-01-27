@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ProjectManagerConstruction.module.scss';
+import styles from './projectManagerConstruction.module.scss';
 import Link from 'next/link';
 
 const ProjectManagerConstruction = () => {
