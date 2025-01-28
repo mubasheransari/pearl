@@ -7,6 +7,7 @@ export default async function () {
         {
           url: baseUrl,
           priority: 1,
+          
         },
         
         {
@@ -63,6 +64,46 @@ export default async function () {
         },
     {
           url: `${baseUrl}/project_management`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/rear-extension-ideas-from-simplicity-to-architectural-ingenuity`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/the-importance-of-structural-calculations-in-modern-construction-projects`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/how-planning-drawings-services-can-transform-your-architectural-vision-into-reality`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/project-manager-construction-service-by-pearl-engineers-planners-and-project-managers-(PEPP)`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/commercial-construction-planning-services-by-pearl-engineers-planners-and-project-managers-(PEPP)`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/commercial-construction-plans-by-pearl-engineers-planners-and-project-managers-(pepp)`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pepp)`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/independent-building-inspectors-by-pearl-engineers-planners-and-project-managers-(pepp)`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/commercial-architecture-firm-pear-engineers-planners-and-project-managers-(PEPP)`,
           priority: 0.80,
         },
     {

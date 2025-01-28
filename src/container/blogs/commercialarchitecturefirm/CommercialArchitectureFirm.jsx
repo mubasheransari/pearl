@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './CommercialArchitectureFirm.module.scss';
+import Link from 'next/link';
 
 const CommercialArchitectureFirm = () => {
   return (
@@ -10,7 +11,7 @@ const CommercialArchitectureFirm = () => {
       </p>
 
       <p>
-        At Pearl Engineers, Planners, and Project Managers (PEPP), we are a leading commercial architecture firm dedicated to transforming your business visions into functional, innovative, and aesthetically striking spaces. With expertise spanning retail, office, industrial, and mixed-use developments, our commercial architecture firm delivers bespoke designs that combine creativity with precision and compliance.
+        At Pearl Engineers, Planners, and Project Managers (PEPP), we are a <Link href={'/commercial_management'}>leading commercial architecture firm</Link> dedicated to transforming your business visions into functional, innovative, and aesthetically striking spaces. With expertise spanning retail, office, industrial, and mixed-use developments, our commercial architecture firm delivers bespoke designs that combine creativity with precision and compliance.
       </p>
 
       <p>
@@ -115,7 +116,7 @@ const CommercialArchitectureFirm = () => {
       <section className={styles.complianceStandards}>
         <h2>Compliance and Industry Standards</h2>
         <p>
-          As a leading commercial architecture firm PEPP prioritizes compliance with all relevant regulations and industry standards, including:
+          As a leading <Link href='/commercial_management'>commercial architecture firm PEPP</Link> prioritizes compliance with all relevant regulations and industry standards, including:
         </p>
         <ul>
           <li>

@@ -1,6 +1,7 @@
 import React from 'react';
 // import styles from './StructuralEngineerCalculations.module.scss';
 import styles from './StructuralEngineeringCalculations.module.scss'
+import Link from 'next/link';
 
 const StructuralEngineerCalculations = () => {
   return (
@@ -10,7 +11,7 @@ const StructuralEngineerCalculations = () => {
         Structural Integrity through Meticulous Structural Engineer Calculations: The PEPP Approach
       </h3>
       <p className={styles.intro}>
-      At Pearl Engineers, Planners, and Project Managers (PEPP), our core mission is to provide the structural backbone for safe and efficient construction projects. We achieve this through meticulous structural engineer calculations that underpin every design decision.
+      At Pearl Engineers, Planners, and Project Managers (PEPP), our core mission is to provide the structural backbone for safe and efficient construction projects. We achieve this through meticulous <Link href='/structural_enigneering_services'>structural engineer calculations</Link> that underpin every design decision.
       </p>
 
       <section className={styles.powerOfCalculations}>
@@ -88,6 +89,7 @@ const StructuralEngineerCalculations = () => {
 
       <section className={styles.software}>
         <h2>Advanced Software for Enhanced Structural Engineer Calculations</h2>
+        <p>PEPP leverages cutting-edge software to expedite the <Link href={'/structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach'}>structural engineer calculations</Link> process and minimize errors:</p>
         <ul>
           <li>
             <h4>STAAD.Pro</h4>

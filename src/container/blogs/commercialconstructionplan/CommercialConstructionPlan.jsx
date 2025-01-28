@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './CommercialConstructionPlan.module.scss'
+import Link from 'next/link';
 
 const CommercialConstructionPlans = () => {
   return (
@@ -13,7 +14,7 @@ const CommercialConstructionPlans = () => {
       </p>
 
       <p>
-        At Pearl Engineers, Planners, and Project Managers (PEPP), we excel in delivering comprehensive commercial construction plans tailored to meet the unique demands of every project. From retail developments and office complexes to industrial facilities, our commercial construction plans ensure that every phase of your project is designed for success.
+        At <Link href='/'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>, we excel in delivering comprehensive commercial construction plans tailored to meet the unique demands of every project. From retail developments and office complexes to industrial facilities, our commercial construction plans ensure that every phase of your project is designed for success.
       </p>
 
       <p>
@@ -60,7 +61,7 @@ const CommercialConstructionPlans = () => {
           <li>
             <h3>Feasibility Studies</h3>
             <div>
-              Before drafting your commercial construction plans, we conduct detailed feasibility studies, including:
+              Before drafting your <Link href='/commercial_management'>commercial construction plans</Link>, we conduct detailed feasibility studies, including:
               <ul>
                 <li>Site assessments to identify opportunities and constraints.</li>
                 <li>Budgetary analysis to align with financial goals.</li>
@@ -149,11 +150,53 @@ const CommercialConstructionPlans = () => {
               From office buildings to retail centers and industrial facilities, we have extensive experience in crafting commercial construction plans for diverse projects.
             </p>
           </li>
-          {/* ... other advantages ... */}
+          <li>
+            <h4>Tailored Solutions</h4>
+            <p>
+            We understand that every project is unique, and our commercial construction plans are customized to align with your specific goals and requirements.
+            </p>
+          </li>
+          <li>
+            <h4>Cost and Time Efficiency</h4>
+            <p>
+            Our focus on value engineering and efficient resource allocation ensures that your commercial construction plans save time and money without compromising quality.
+            </p>
+          </li>
+          <li>
+            <h4>Collaboration and Communication</h4>
+            <p>
+            We work closely with architects, engineers, and contractors to ensure that all stakeholders are aligned and informed throughout the process
+            </p>
+          </li>
+          <li>
+            <h4>Sustainability and Future-Readiness</h4>
+            <p>
+              Our commercial construction plans incorporate energy-efficient designs and sustainable practices to enhance long-term value.
+            </p>
+          </li>
         </ul>
       </section>
 
-      {/* ... rest of the content sections ... */}
+      <section className={styles.peppAdvantage}>
+        <h2>A Proven Track Record with Hundreds of Happy Customers</h2>
+        <p>
+        PEPP has delivered commercial construction plans for a wide range of successful projects. With hundreds of satisfied clients, we’ve established a reputation for professionalism, innovation, and reliability in the commercial construction sector.
+        </p>
+      </section>
+
+      <section className={styles.peppAdvantage}>
+        <h2>From Plans to Completion</h2>
+        <p>
+        At PEPP, our commercial construction plans go beyond design. We provide end-to-end support, collaborating with trusted partner builders to ensure that every detail of your plans is executed flawlessly. By maintaining control over quality, costs, and timelines, we ensure a smooth transition from planning to completion.
+        </p>
+      </section>
+
+      <section className={styles.peppAdvantage}>
+        <h2>Contact PEPP for Professional Commercial Construction Plans</h2>
+        <p>
+        If you’re seeking precise, reliable, and innovative commercial construction plans, trust Pearl <Link href={'/'}>Engineers, Planners, and Project Managers (PEPP)</Link>. Our expertise ensures that your project is planned with excellence, executed with efficiency, and delivered with distinction.
+        </p>
+      </section>
 
       <p className={styles.conclusion}>
         Contact PEPP today to discuss your project and experience the difference that expertly crafted commercial construction plans can make.

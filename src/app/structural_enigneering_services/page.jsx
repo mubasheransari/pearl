@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Structural Enigneering Services | Pearlepp',
     description: 'Get expert structural engineering services with innovative, safe, and cost-effective solutions. Perfect for buildings, bridges, and all infrastructure projects.',
     alternates:{
-        canonical: "https://pearlepp.co.uk/architectural-services"
+        canonical: "https://pearlepp.co.uk/structural_engineering_services"
       } 
   }
 

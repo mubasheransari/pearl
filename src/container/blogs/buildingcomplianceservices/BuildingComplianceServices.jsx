@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './BuildingComplianceServices.module.scss';
+import Link from 'next/link';
 
 const BuildingComplianceServices = () => {
   return (
@@ -10,7 +11,7 @@ const BuildingComplianceServices = () => {
       </p>
 
       <p>
-        At Pearl Engineers, Planners, and Project Managers (PEPP), we specialize in delivering reliable and efficient building compliance services to ensure that your project meets all legal, safety, and structural standards. From initial design to post-construction inspections, our building compliance services cover every aspect of the compliance process, safeguarding your project and ensuring peace of mind.
+        At Pearl Engineers, Planners, and Project Managers (PEPP), we specialize in delivering reliable and efficient <Link href='/building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pepp)'>building compliance services</Link> to ensure that your project meets all legal, safety, and structural standards. From initial design to post-construction inspections, our building compliance services cover every aspect of the compliance process, safeguarding your project and ensuring peace of mind.
       </p>
 
       <p>
@@ -53,7 +54,7 @@ const BuildingComplianceServices = () => {
       <section className={styles.services}>
         <h2>Our Comprehensive Building Compliance Services</h2>
         <p>
-          PEPP&#44;s building compliance services are designed to cover every aspect of construction compliance, ensuring your project progresses without delays or complications:
+          PEPP&#44;s <Link href={'/building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pe'}>building compliance services</Link> are designed to cover every aspect of construction compliance, ensuring your project progresses without delays or complications:
         </p>
         <ul>
           <li>
@@ -160,7 +161,7 @@ const BuildingComplianceServices = () => {
           <li>
             <h4>Efficient Approvals</h4>
             <p>
-            We navigate the complexities of Building Control and BSR compliance, saving you time and ensuring a smooth process.
+            We navigate the complexities of <Link href='/cost_control_value'>Building Control</Link> and BSR compliance, saving you time and ensuring a smooth process.
             </p>
           </li>
           <li>
@@ -191,7 +192,7 @@ const BuildingComplianceServices = () => {
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP for Professional Building Compliance Services</h2>
         <p>
-        If you&#44;re looking for reliable and professional building compliance services, trust Pearl Engineers, Planners, and Project Managers (PEPP). With our expertise in BSR, Building Control, structural inspections, and regulatory compliance, we provide the guidance and support needed to ensure your project is a success.
+        If you&#44;re looking for reliable and professional building compliance services, trust <Link href='/'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>. With our expertise in BSR, Building Control, structural inspections, and regulatory compliance, we provide the guidance and support needed to ensure your project is a success.
         </p>
       </section>
 

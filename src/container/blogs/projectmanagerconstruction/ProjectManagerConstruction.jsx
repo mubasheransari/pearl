@@ -15,7 +15,7 @@ const ProjectManagerConstruction = () => {
       </p>
 
       <p>
-        Guided by best practices and standards from professional bodies such as CIOB (Chartered Institute of Building), RICS (Royal Institution of Chartered Surveyors), ICE (Institution of Civil Engineers), IStructE (Institution of Structural Engineers), and CABE (Chartered Association of Building Engineers), our project manager construction services ensure every project meets the highest standards of quality, safety, and efficiency.
+        Guided by best practices and standards from professional bodies such as CIOB (Chartered Institute of Building), RICS (Royal Institution of Chartered Surveyors), ICE (Institution of Civil Engineers), IStructE (Institution of Structural Engineers), and CABE (Chartered Association of Building Engineers), our <Link href={'/project_management'}>project manager construction</Link> services ensure every project meets the highest standards of quality, safety, and efficiency.
       </p>
 
       <section className={styles.role}>
@@ -129,7 +129,7 @@ const ProjectManagerConstruction = () => {
           <li>
             <h4>Tailored Project Solutions</h4>
             <p>
-            Every project is unique, and <Link href='#'>our project manager construction</Link> services are customized to meet your specific goals, timelines, and budgets.
+            Every project is unique, and our <Link href='/project_management'>project manager construction</Link> services are customized to meet your specific goals, timelines, and budgets.
             </p>
           </li>
           <li>

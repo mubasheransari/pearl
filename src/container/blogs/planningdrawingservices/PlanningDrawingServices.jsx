@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './PlanningDrawing.module.scss'
+import Link from 'next/link';
 
 const PlanningDrawingServices = () => {
   return (
@@ -10,7 +11,7 @@ const PlanningDrawingServices = () => {
       </p>
 
       <p>
-        At Pearl Engineers, Planners, and Project Managers (PEPP), we specialize in creating exceptional planning drawings that are not only visually appealing but also technically sound and compliant with all relevant regulations. Our planning drawings cover every aspect of the design process, tailored to your project&#44;s specific requirements:
+        At <Link href='/'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>, we specialize in creating exceptional planning drawings that are not only visually appealing but also technically sound and compliant with all relevant regulations. Our planning drawings cover every aspect of the design process, tailored to your project&#44;s specific requirements:
       </p>
 
       <section className={styles.services}>
@@ -54,7 +55,7 @@ const PlanningDrawingServices = () => {
           <li>
             <h4>Supporting Documents and Statements</h4>
             <div>
-              As part of our planning drawings service, we also prepare:
+              As part of our <Link href='/planning_and_building_control_services'>planning drawings</Link> service, we also prepare:
               <ul>
                 <li>Design and Access Statements, detailing the project&#44;s compliance with planning policies.</li>
                 <li>Sustainability and heritage impact assessments, where applicable.</li>
