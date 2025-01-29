@@ -132,6 +132,10 @@ const Header = () => {
                   })}
                 </ul>
               </div>
+              <li className={`nav-item ${style.contact}`}>
+                <Link className={`nav-link`} href="/sustainability">Sustainability</Link>
+              </li>
+
               <div className={` nav-item dropdown ${style.dropdown_div}`}>
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Blogs
