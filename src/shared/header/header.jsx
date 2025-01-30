@@ -156,6 +156,9 @@ const Header = () => {
               <li className={`nav-item ${style.contact}`}>
                 <Link className={`nav-link`} href="/contact">Contact Us</Link>
               </li>
+              <li className={`nav-item ${style.contact}`}>
+                <Link className={`nav-link`} href="/faq">FAQs</Link>
+              </li>
               <li className={`nav-item ${style.form}`}>
                 <Link className={`nav-link`} href="/form">Instant qoute</Link>
               </li>
