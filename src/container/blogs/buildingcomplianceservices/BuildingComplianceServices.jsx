@@ -54,7 +54,7 @@ const BuildingComplianceServices = () => {
       <section className={styles.services}>
         <h2>Our Comprehensive Building Compliance Services</h2>
         <p>
-          PEPP&#44;s <Link href={'/building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pe'}>building compliance services</Link> are designed to cover every aspect of construction compliance, ensuring your project progresses without delays or complications:
+          PEPP&#44;s <Link href={'https://shorturl.at/cxwO4'}>building compliance services</Link> are designed to cover every aspect of construction compliance, ensuring your project progresses without delays or complications:
         </p>
         <ul>
           <li>
@@ -192,7 +192,7 @@ const BuildingComplianceServices = () => {
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP for Professional Building Compliance Services</h2>
         <p>
-        If you&#44;re looking for reliable and professional building compliance services, trust <Link href='/'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>. With our expertise in BSR, Building Control, structural inspections, and regulatory compliance, we provide the guidance and support needed to ensure your project is a success.
+        If you&#44;re looking for reliable and professional building compliance services, trust <Link href='https://shorturl.at/cxwO4'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>. With our expertise in BSR, Building Control, structural inspections, and regulatory compliance, we provide the guidance and support needed to ensure your project is a success.
         </p>
       </section>
 

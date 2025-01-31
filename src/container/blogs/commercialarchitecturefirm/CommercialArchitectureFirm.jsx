@@ -116,7 +116,7 @@ const CommercialArchitectureFirm = () => {
       <section className={styles.complianceStandards}>
         <h2>Compliance and Industry Standards</h2>
         <p>
-          As a leading <Link href='/commercial_management'>commercial architecture firm PEPP</Link> prioritizes compliance with all relevant regulations and industry standards, including:
+          As a leading <Link href='https://shorturl.at/cxwO4'>commercial architecture firm PEPP</Link> prioritizes compliance with all relevant regulations and industry standards, including:
         </p>
         <ul>
           <li>
@@ -186,7 +186,7 @@ const CommercialArchitectureFirm = () => {
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP: Your Commercial Architecture Firm</h2>
         <p>
-        If you&#44;re looking for a professional and innovative commercial architecture firm, trust Pearl Engineers, Planners, and Project Managers (PEPP). With our expertise, commitment to compliance, and dedication to quality, we are here to turn your vision into reality.
+        If you&#44;re looking for a professional and innovative commercial architecture firm, trust <Link href='https://shorturl.at/cxwO4'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>. With our expertise, commitment to compliance, and dedication to quality, we are here to turn your vision into reality.
           </p>
       </section>
 

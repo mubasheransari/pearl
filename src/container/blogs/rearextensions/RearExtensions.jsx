@@ -34,7 +34,7 @@ const Blog = () => {
       <ul className={styles.list}>
         <li>
           <h4>Indoor-Outdoor Living Spaces</h4>
-          <p>Blur the lines between indoors and outdoors with <Link href="/quantity_surverying">rear extension ideas</Link> that emphasize connectivity. Bi-fuld or sliding glass doors can create a seamless transition to the garden, perfect for alfresco dining or entertaining.</p>
+          <p>Blur the lines between indoors and outdoors with <Link href="https://shorturl.at/cxwO4">rear extension ideas</Link> that emphasize connectivity. Bi-fuld or sliding glass doors can create a seamless transition to the garden, perfect for alfresco dining or entertaining.</p>
         </li>
         <li>
           <h4>Split-Level Designs</h4>

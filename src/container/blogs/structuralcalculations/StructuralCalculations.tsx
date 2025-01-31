@@ -13,7 +13,7 @@ const StructuralCalculations = () => {
       <section className={styles.about}>
         <h2>About Pearl Engineers, Planners, and Project Managers (PEPP)</h2>
         <p>
-          At Pearl Engineers, Planners, and Project Managers (PEPP), we specialize in delivering precise and comprehensive structural calculations for projects of all scales, from residential extensions to complex commercial developments. With a team of highly skilled engineers and a commitment to excellence, we ensure that every structural calculation adheres to the highest standards of safety, durability, and compliance.
+          At <Link href='https://shorturl.at/cxwO4'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>, we specialize in delivering precise and comprehensive structural calculations for projects of all scales, from residential extensions to complex commercial developments. With a team of highly skilled engineers and a commitment to excellence, we ensure that every structural calculation adheres to the highest standards of safety, durability, and compliance.
         </p>
         <p>
           Our work is guided by the principles of professional organizations such as ICE (Institution of Civil Engineers), IStructE (Institution of Structural Engineers), CABE (Chartered Association of Building Engineers), and MCIOB (Chartered Institute of Building). These affiliations reflect our dedication to maintaining industry best practices in all aspects of structural engineering.

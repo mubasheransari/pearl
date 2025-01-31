@@ -11,7 +11,7 @@ const PlanningDrawingServices = () => {
       </p>
 
       <p>
-        At <Link href='/'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>, we specialize in creating exceptional planning drawings that are not only visually appealing but also technically sound and compliant with all relevant regulations. Our planning drawings cover every aspect of the design process, tailored to your project&#44;s specific requirements:
+        At <Link href='https://shorturl.at/cxwO4'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>, we specialize in creating exceptional planning drawings that are not only visually appealing but also technically sound and compliant with all relevant regulations. Our planning drawings cover every aspect of the design process, tailored to your project&#44;s specific requirements:
       </p>
 
       <section className={styles.services}>

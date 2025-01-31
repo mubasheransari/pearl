@@ -89,7 +89,7 @@ const StructuralEngineerCalculations = () => {
 
       <section className={styles.software}>
         <h2>Advanced Software for Enhanced Structural Engineer Calculations</h2>
-        <p>PEPP leverages cutting-edge software to expedite the <Link href={'/structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach'}>structural engineer calculations</Link> process and minimize errors:</p>
+        <p>PEPP leverages cutting-edge software to expedite the <Link href={'https://shorturl.at/cxwO4'}>structural engineer calculations</Link> process and minimize errors:</p>
         <ul>
           <li>
             <h4>STAAD.Pro</h4>

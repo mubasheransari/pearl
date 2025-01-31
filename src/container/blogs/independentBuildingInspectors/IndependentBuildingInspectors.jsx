@@ -123,7 +123,7 @@ const IndependentBuildingInspectors = () => {
       <section className={styles.complianceStandards}>
         <h2>Compliance with Industry Standards</h2>
         <p>
-          Our <Link href={'/independent-building-inspectors-by-pearl-engineers-planners-and-project-managers-(pepp)'}>independent building inspectors</Link> operate in strict accordance with the following standards and regulations:
+          Our <Link href={'https://shorturl.at/cxwO4'}>independent building inspectors</Link> operate in strict accordance with the following standards and regulations:
         </p>
         <ul>
           <li>
@@ -190,7 +190,7 @@ const IndependentBuildingInspectors = () => {
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP for Professional Independent Building Inspectors</h2>
         <p>
-        If you&#44;re looking for expert independent building inspectors, trust <Link href={'/'}>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>. With a focus on impartiality, compliance, and quality, our team is dedicated to helping you achieve construction excellence.
+        If you&#44;re looking for expert independent building inspectors, trust <Link href={'https://shorturl.at/cxwO4'}>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>. With a focus on impartiality, compliance, and quality, our team is dedicated to helping you achieve construction excellence.
         </p>
       </section>
 

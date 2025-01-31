@@ -129,7 +129,7 @@ const ProjectManagerConstruction = () => {
           <li>
             <h4>Tailored Project Solutions</h4>
             <p>
-            Every project is unique, and our <Link href='/project_management'>project manager construction</Link> services are customized to meet your specific goals, timelines, and budgets.
+            Every project is unique, and our <Link href='/https://shorturl.at/cxwO4'>project manager construction</Link> services are customized to meet your specific goals, timelines, and budgets.
             </p>
           </li>
           <li>

@@ -71,7 +71,7 @@ const Header = () => {
             </div>
           </div>
           <div className={`collapse navbar-collapse ${style.header_links}`} id="navbarCollapse">
-            <ul className="navbar-nav mb-2 mb-md-0">
+            <ul className="navbar-nav mb-2 mb-md-0" style={{flexWrap:'wrap', justifyContent:'center',  paddingBottom:'3px'}}>
               {navLinks.map((link, i) => {
                 return (
                   <>

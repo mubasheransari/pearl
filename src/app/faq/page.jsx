@@ -1,5 +1,5 @@
 import React from 'react'
-import Faq from '@/container/blogs/faq'
+import Faq from '@/container/faq'
 
 const Page = () => {
   return (

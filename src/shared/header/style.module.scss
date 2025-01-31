@@ -68,7 +68,8 @@
                     .dropdown_menu{
                         display: block;
                         max-height: 400px;
-                        overflow-y: scroll;
+                        // overflow-y: scroll;
+                        scroll:auto;
                     }
                 }
             }

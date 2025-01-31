@@ -14,7 +14,7 @@ const CommercialConstructionPlans = () => {
       </p>
 
       <p>
-        At <Link href='/'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>, we excel in delivering comprehensive commercial construction plans tailored to meet the unique demands of every project. From retail developments and office complexes to industrial facilities, our commercial construction plans ensure that every phase of your project is designed for success.
+        At <Link href='https://shorturl.at/cxwO4'>Pearl Engineers, Planners, and Project Managers (PEPP)</Link>, we excel in delivering comprehensive commercial construction plans tailored to meet the unique demands of every project. From retail developments and office complexes to industrial facilities, our commercial construction plans ensure that every phase of your project is designed for success.
       </p>
 
       <p>
@@ -194,7 +194,7 @@ const CommercialConstructionPlans = () => {
       <section className={styles.peppAdvantage}>
         <h2>Contact PEPP for Professional Commercial Construction Plans</h2>
         <p>
-        If you’re seeking precise, reliable, and innovative commercial construction plans, trust Pearl <Link href={'/'}>Engineers, Planners, and Project Managers (PEPP)</Link>. Our expertise ensures that your project is planned with excellence, executed with efficiency, and delivered with distinction.
+        If you’re seeking precise, reliable, and innovative commercial construction plans, trust Pearl <Link href={'https://shorturl.at/cxwO4'}>Engineers, Planners, and Project Managers (PEPP)</Link>. Our expertise ensures that your project is planned with excellence, executed with efficiency, and delivered with distinction.
         </p>
       </section>
 

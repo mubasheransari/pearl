@@ -71,7 +71,7 @@ const CommercialConstructionPlanning = () => {
       </section>
 
       <section className={styles.peppAdvantage}>
-        <h2>Why Choose <Link href='/'>PEPP</Link> for Commercial Construction Planning?</h2>
+        <h2>Why Choose <Link href='https://shorturl.at/cxwO4'>PEPP</Link> for Commercial Construction Planning?</h2>
         <ul>
           <li>
             <h4>Expertise Across Sectors</h4>
@@ -110,7 +110,7 @@ const CommercialConstructionPlanning = () => {
       <section className={styles.peppAdvantage}>
         <h2>A Track Record of Success in Commercial Construction Planning</h2>
         <p>
-        With a portfolio of successful projects and hundreds of satisfied clients, PEPP has established itself as a trusted provider of <Link href='/commercial_management'>commercial construction planning</Link> services. Our clients appreciate our dedication to excellence, attention to detail, and ability to deliver results that exceed expectations.
+        With a portfolio of successful projects and hundreds of satisfied clients, PEPP has established itself as a trusted provider of <Link href='https://shorturl.at/cxwO4'>commercial construction planning</Link> services. Our clients appreciate our dedication to excellence, attention to detail, and ability to deliver results that exceed expectations.
         </p>
       </section>
 
