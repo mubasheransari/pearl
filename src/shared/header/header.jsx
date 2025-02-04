@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered, faBuilding, faTools, faRulerCombined, faClipboardCheck, faHardHat, faBriefcase, faProjectDiagram, faBalanceScale, faArchway, faDraftingCompass, faCalendarCheck } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'
 
 const Header = () => {
   const headerRef = useRef()
   const pathname = usePathname()
   const [path, setPath] = useState(null)
+  const [openModal, setOpenModal]  = useState(true)
 
   useEffect(() => {
     setPath(pathname)
@@ -109,6 +111,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />
     </header>
   )
 }
