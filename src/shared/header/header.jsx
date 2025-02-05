@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
@@ -49,6 +50,22 @@ const Navbar = () => {
 
   const sidebarRef = useRef(null);
   const dropdownRef = useRef(null);
+=======
+'use client'
+import React, { useEffect, useRef, useState } from 'react'
+import style from './style.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBarsStaggered, faBuilding, faTools, faRulerCombined, faClipboardCheck, faHardHat, faBriefcase, faProjectDiagram, faBalanceScale, faArchway, faDraftingCompass, faCalendarCheck } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'
+
+const Header = () => {
+  const headerRef = useRef()
+  const pathname = usePathname()
+  const [path, setPath] = useState(null)
+  const [openModal, setOpenModal]  = useState(true)
+>>>>>>> 6a291b0ece0fceb58eef80181730a00d17468a84
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -133,8 +150,15 @@ const Navbar = () => {
           ☰
         </div>
       </nav>
+<<<<<<< HEAD
     </div>
   );
 };
+=======
+      <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />
+    </header>
+  )
+}
+>>>>>>> 6a291b0ece0fceb58eef80181730a00d17468a84
 
 export default Navbar;
