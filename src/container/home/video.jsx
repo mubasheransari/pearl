@@ -16,8 +16,11 @@ const Video = () => {
         video.play().catch(error => {
           console.error('Autoplay was prevented:', error);
         });
+        setTimeout(() => {
+          video.muted = false;
+        }, 3000); // Unmute after 3 seconds
       }
-    }, [videoRef]);
+    }, []);
   return (
     <div className={style.home} id="home">
         <div className={`${style.back_layer}`}></div>
