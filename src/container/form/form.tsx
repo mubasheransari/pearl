@@ -199,7 +199,7 @@ const Form = (props: Props) => {
             () => {
         setIsloading(false);
         setProjectJson(dataJson)
-        console.log('SUCCESS!');setErr('Form sumbitted successfully'); setTimeout(()=>setErr(''),2000);e.target.reset(); 
+        console.log('SUCCESS!');setErr('Form Sumbitted Successfully'); setTimeout(()=>setErr(''),2000);e.target.reset(); 
 
             },
             (error) => {
