@@ -1,192 +1,213 @@
-.header {
-  background-color: black;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f6f6;
+  position: fixed;
+  top: 0; /* Ensure it sticks to the top */
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Higher z-index to bring it above other elements */
+}
 
-  nav {
-    background-color: transparent !important;
-    border-bottom: 1px solid rgba(224, 224, 224, 0.5);
-    transition: background-color 0.5s;
-    padding: 0px;
+.navbar__logo img {
+  height: 100px;
+  padding: 10px;
+}
 
-    &:hover {
-      background-color: #ffffff !important;
-    }
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 
-    &.scroll {
-      background-color: #e5e5e5 !important;
+.navbar__menu li {
+  padding: 10px;
+  margin-top: 10px;
+}
 
-      .header_links {
-        ul {
-          // background-color: rgb(255, 255, 255);
-          margin: 2px;
+/* Top-level link style */
+.navLink {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 30px 10px 40px 10px;
+  transition: color 0.3s;
 
-          .form {
-            background-color: #27247B;
-            border-radius: 50px;
-            // padding: 3px 10px;
+  &:hover {
+    background-color: #ffffff;
+    color: #004aad;
+  }
+}
 
-            a {
-              color: #fff !important;
-              text-decoration: none;
-              font-size: 12px;
-            }
-          }
+/* If a dropdown is open, we might add .activeLink for a white BG (optional) */
+.activeLink {
+  background-color: #ffffff;
+  color: black;
+}
 
-          .form:hover {
-            background-color: #e5e5e5;
-            text-decoration: none;
-          }
+/* ========== DROPDOWN (Shared) ========== */
+.dropdown {
+  position: relative; 
+}
 
-          li {
-            // background-color: #ffffff;
-            padding-top: 18px !important;
-            padding-bottom: 20px !important;
-            display: flex;
-            align-items: center;
-          }
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  background: #ffffff;
+  // border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+  padding: 10px;
+ 
+}
 
-          a {
-            color: #000 !important;
-            font-weight: 600;
-          }
+/* Show the dropdown if .open is toggled by React */
+.dropdownMenu.open {
+  display: block;
+}
 
-          li:hover {
-            background-color: #ffffff;
+/* Common item styles in the dropdown */
 
-            a {
-              color: #000 !important;
-            }
 
-            a:hover {
-              color: #27247b !important;
-            }
-          }
-        }
+.dropdownLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
 
-        .dropdown_div {
-          padding-top: 20px !important;
-          padding-bottom: 20px !important;
-          position: relative;
+  &:hover {
+    color: #004aad;
+    background-color: #fff;
+  }
+}
 
-          li:hover {
-            text-decoration: none;
-            background-color: #ffffff;
-          }
+/* ========== Icon Styles ========== */
+.icon {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: rgb(22, 92, 177); ; /* Same as navbar background */
+  padding: 10px; /* Add padding to center the icon */
+  // border-radius: 50%; /* Optional: Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Fixed width for consistency */
+  height: 30px; /* Fixed height for consistency */
+  @media (max-width: 1380px) {
+    font-size: 5px;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}
 
-          .dropdown_menu,
-          .dropdown_menu_service {
-            display: none;
-            padding: 10px 5px !important;
-            position: absolute;
-            top: 76px;
-            left: -305px; /* Align to the left edge */
-            // width: 100%; /* Make the dropdown fill the width */
-            z-index: 999;
-          }
-        }
+/* ========== Different top offsets ========== */
+.servicesDropdownMenu {
+  top: 75px; /* You can change to 150px, 190px, etc. */
+  left: -290px;
+  width: 400px;
+  
+}
 
-        .dropdown_div:hover {
-          background-color: white;
+.categoriesDropdownMenu {
+  top: 75px; /* You can change to 150px, 190px, etc. */
+  left: -567px;
+  width: 700px;}
 
-          .dropdown_menu {
-            display: block;
-            width: 700px;
-            position: absolute;
-            top: 76px;
-            left: -580px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-          }
+.blogDropdownMenu {
+  top: 75px; /* You can change to 150px, 190px, etc. */
+  left: -320px;
+  width: 400px;}
 
-          .dropdown_menu_service {
-            display: block;
-            width: 400px;
-            position: absolute;
-            top: 76px;
-            right: 1000px;
-          }
-        }
-      }
-    }
-
-    .header_container {
-      .logo_wrap {
-        display: none;
-      }
-
-      .logo_box {
-        display: flex;
-
-        span {
-          width: 180px;
-
-          img {
-            width: 100%;
-          }
-        }
-      }
-
-      .header_links {
-        justify-content: flex-end;
-        gap: 10px;
-
-        ul {
-          li {
-            padding: 0 5px;
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            height: 100%;
-
-            &:hover {
-              background-color: #ffffff;
-            }
-
-            a {
-              color: #fff;
-
-              &.active {
-                font-weight: 600;
-              }
-            }
-          }
-        }
-      }
+/* 2-column layout for categories on desktop if needed */
+.twoColumnDropdown {
+  display: flex;
+  gap: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
     }
   }
 }
 
-/* NEW: Category dropdown styling */
-.category_grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+/* ========== Hamburger (Mobile) ========== */
+.navbar__hamburger {
+  display: none;
+  font-size: 50px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Hide desktop nav at smaller screens, show hamburger */
+@media (max-width: 1380px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__hamburger {
+    display: block;
+  }
+}
+
+/* ========== MOBILE SIDEBAR ========== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto; 
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+font-weight:  bolder;
+  color: #000000;
+  background-color: white;
+  border: none;
+
+}
+
+.sidebar ul {
+  list-style: none;
   padding: 10px;
 }
 
-.category_column {
+.sidebar ul li {
+  padding: 15px 0;
+}
+
+/* 2-column for categories on mobile if desired */
+.twoColumnDropdownMobile {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  flex-wrap: wrap;
+  padding: 10px;
 
-.category_item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+  ul {
+    flex: 1;
+    list-style: none;
+    padding: 0;
 
-.category_icon {
-  color: #27247B;
-  font-size: 16px;
-}
-
-/* NEW: Instant Quote Button */
-.instant_quote_btn {
-  padding: 5px 10px !important;
-  font-size: 12px;
-  background-color: #27247B;
-  border-radius: 50px;
-  color: #fff !important;
-  text-decoration: none;
+    li {
+      margin-bottom: 10px;
+    }
+  }
 }
