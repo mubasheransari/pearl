@@ -3,21 +3,21 @@ import React, { useRef, useState } from 'react'
 import style from './style.module.scss'
 import emailjs from '@emailjs/browser';
 import CircularProgress from '@mui/material/CircularProgress';
-
+//    <source src='/pepp-video.mp4' type="video/mp4" />
 
 const cards1 = [
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "detached", label: 'Detached' },
-    { image: 'https://img.icons8.com/external-outline-black-m-oki-orlando/32/external-semi-detached-house-types-of-houses-outline-outline-black-m-oki-orlando.png', value: "semidetached", label: 'Semi Detached' },
-    { image: 'https://img.icons8.com/windows/32/bungalow.png', value: "terrace", label: 'Terrace' },
-    { image: 'https://img.icons8.com/ios/50/000000/apartment.png', value: "flat", label: 'Flat' },
-    { image: 'https://img.icons8.com/ios-filled/50/bungalow.png', value: "bungalow", label: 'Bungalow' },
+    { image: '/detached.svg', value: "detached", label: 'Detached' },
+    { image: '/semi-detach.png', value: "semidetached", label: 'Semi Detached' },
+    { image: '/terrace.png', value: "terrace", label: 'Terrace' },
+    { image: '/flat-icon.png', value: "flat", label: 'Flat' },
+    { image: '/banglow.png', value: "bungalow", label: 'Bungalow' },
 ]
 
 const cards2 = [
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "groundfloor", label: 'Ground Floor' },
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "loft", label: 'Loft' },
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "firstfloor", label: 'First Floor' },
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "other", label: 'Other' },
+    { image: '/ground-floor.png', value: "groundfloor", label: 'Ground Floor' },
+    { image: '/loft-icon.png', value: "loft", label: 'Loft' },
+    { image: '/first-floor-icon.png', value: "firstfloor", label: 'First Floor' },
+    { image: '/others.png', value: "other", label: 'Other' },
 ]
 
 const groundfloor = [
@@ -48,11 +48,11 @@ const firstfloor = [
 ]
 
 const other = [
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "gardenannex", label: 'Garden - Annex' },
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "garageconversion", label: 'Garage - Conversion' },
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "twostoreyside", label: 'Two Storey - Side' },
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "twostoreyrear", label: 'Two Storey - Rear' },
-    { image: 'https://img.icons8.com/ios/50/country-house.png', value: "other", label: 'Other' },
+    { image: '/garden-icon.png', value: "gardenannex", label: 'Garden - Annex' },
+    { image: '/garage-conversation.png', value: "garageconversion", label: 'Garage - Conversion' },
+    { image: '/two-story.png', value: "twostoreyside", label: 'Two Storey - Side' },
+    { image: '/two-story-rear.png', value: "twostoreyrear", label: 'Two Storey - Rear' },
+    { image: '/others.png', value: "other", label: 'Other' },
 ]
 
 const cards3 = [
@@ -75,7 +75,6 @@ const cards4 = [
 const cards5 = [
     { value: "architectural_drawings", label: 'Architectural drawings' },
     { value: "design_and_planning_advice", label: 'Design and planning advice' },
-    { value: "help_with_financing_my_build", label: 'Help with financing my build' },
     { value: "help_finding_a_builder", label: 'Help finding a builder' },
     { value: "help_finding_other_professionals", label: 'Help finding other professionals' },
 ]
