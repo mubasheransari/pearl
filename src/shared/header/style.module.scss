@@ -75,11 +75,16 @@
 .dropdownLink {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   color: #333;
   text-decoration: none;
   font-weight: 500;
   padding: 10px;
+  @media (max-width: 1200px) {
+    font-size: 15px;
+   
+  }
+  // font-size: 15px;
 
   &:hover {
     color: #004aad;
@@ -99,7 +104,7 @@
   justify-content: center;
   width: 30px; /* Fixed width for consistency */
   height: 30px; /* Fixed height for consistency */
-  @media (max-width: 1380px) {
+  @media (max-width: 1200px) {
     font-size: 5px;
     padding: 4px;
     width: 16px;
