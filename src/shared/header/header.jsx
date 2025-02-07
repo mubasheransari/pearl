@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import styles from './style.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import the modal component
+
 import {
   faArchway,
   faDraftingCompass,
@@ -53,7 +55,7 @@ const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
-
+  const [openModal, setOpenModal] = useState(true); // Modal state to control visibility
   const sidebarRef = useRef(null);
   const dropdownRef = useRef(null);
 
@@ -120,11 +122,11 @@ const Navbar = () => {
               Services ▾
             </Link>
             <ul
-              className={`
-                ${styles.dropdownMenu} 
+              className={
+                `${styles.dropdownMenu} 
                 ${styles.servicesDropdownMenu} 
-                ${servicesOpen ? styles.open : ""}
-              `}
+                ${servicesOpen ? styles.open : ""}`
+              }
             >
               {servicesLinks.map((s) => (
                 <li key={s.link} className={styles.dropdownItem}>
@@ -157,11 +159,11 @@ const Navbar = () => {
               Categories ▾
             </Link>
             <ul
-              className={`
-                ${styles.dropdownMenu} 
+              className={
+                `${styles.dropdownMenu} 
                 ${styles.categoriesDropdownMenu} 
-                ${categoriesOpen ? styles.open : ""}
-              `}
+                ${categoriesOpen ? styles.open : ""}`
+              }
             >
               <div className={styles.twoColumnDropdown}>
                 <ul>
@@ -208,11 +210,11 @@ const Navbar = () => {
               Blog ▾
             </Link>
             <ul
-              className={`
-                ${styles.dropdownMenu} 
+              className={
+                `${styles.dropdownMenu} 
                 ${styles.blogDropdownMenu} 
-                ${blogOpen ? styles.open : ""}
-              `}
+                ${blogOpen ? styles.open : ""}`
+              }
             >
               {blogLinks.map((b) => (
                 <li key={b.link} className={styles.dropdownItem}>
@@ -229,7 +231,7 @@ const Navbar = () => {
           <li><Link href="/career" className={styles.navLink}>Career</Link></li>
           <li><Link href="/sustainability" className={styles.navLink}>Sustainability</Link></li>
           <li><Link href="/contact" className={styles.navLink}>Contact Us</Link></li>
-          <li><Link href="/quote" className={styles.navLink}>Instant Quote</Link></li>
+          <li><Link href="/form" className={styles.navLink}>Instant Quote</Link></li>
         </ul>
 
         {/* Hamburger Icon (mobile) */}
@@ -388,35 +390,11 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
+      {/* Render the modal */}
+      <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />
     </div>
   );
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
