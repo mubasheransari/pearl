@@ -15,14 +15,14 @@ const servicesLinks = [
     { value: 'architectural_services', label: 'Architectural Services' },
     { value: 'structural_enigneering_services', label: 'Structural Engineering Services' },
     { value: 'planning_and_building_control_services', label: 'Planning and Building Control Services' },
-    {value: '/quantity_surverying', label: 'Quantity Surverying'},
-    { value: '/contracts_management', label: 'Contracts Management' },
-    { value: '/snagging_services', label: 'Snagging Works'},
-    { value: '/cost_control_value', label: 'Cost Control & Value Engineering'},
-    { value: '/contractor_management', label: 'Contractor Management' },
-    { value: '/quality_management', label: 'Quality Management'},
-    { value: '/commercial_management', label: 'Commercial Management'},
-    { value: '/project_management', label: 'Project Management'},
+    {value: 'quantity_surverying', label: 'Quantity Surverying'},
+    { value: 'contracts_management', label: 'Contracts Management' },
+    { value: 'snagging_services', label: 'Snagging Works'},
+    { value: 'cost_control_value', label: 'Cost Control & Value Engineering'},
+    { value: 'contractor_management', label: 'Contractor Management' },
+    { value: 'quality_management', label: 'Quality Management'},
+    { value: 'commercial_management', label: 'Commercial Management'},
+    { value: 'project_management', label: 'Project Management'},
   ]
 
 export default function ServiceQueryPopup({open,setOpen}) {
