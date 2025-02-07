@@ -9,19 +9,6 @@ const lora = Lora({ subsets: ["latin"] });
 const Video = () => {
     const videoRef = useRef();
 
-    // useEffect(() => {
-    //   const video = videoRef.current;
-    //   if (video) {
-    //     video.muted = true;
-    //     video.play().catch(error => {
-    //       console.error('Autoplay was prevented:', error);
-    //     });
-    //     setTimeout(() => {
-    //       video.muted = false;
-    //     }, 3000); // Unmute after 3 seconds
-    //   }
-    // }, []);
-
     useEffect(() => {
       const video = videoRef.current;
       if (video) {
