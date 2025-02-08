@@ -6,38 +6,42 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import the modal component
 
 import {
-  faArchway,
-  faDraftingCompass,
-  faCalendarCheck,
-  faRulerCombined,
-  faClipboardCheck,
-  faTools,
-  faBalanceScale,
-  faHardHat,
-  faBuilding,
-  faBriefcase,
+  faCity, 
+  faBalanceScale, 
+  faFileContract, 
+  faHandshake, 
+  faCalculator, 
+  faUsersCog, 
+  faClipboardList, 
+  faBuilding, 
+  faSearchLocation, 
+  faChartLine,
   faProjectDiagram,
+  faFileAlt,
+  faChartBar,
+  faNewspaper,
   faPen
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
 const servicesLinks = [
-  { link: '/architectural_services', text: 'Architectural', icon: faArchway },
-  { link: '/structural_engineering', text: 'Structural Engineering', icon: faDraftingCompass },
-  { link: '/planning_building_control', text: 'Planning & Building Control', icon: faCalendarCheck },
+  { link: '/architectural_services', text: 'Architectural', icon: faCity },
+  { link: '/structural_engineering', text: 'Structural Engineering', icon: faBalanceScale },
+  { link: '/planning_building_control', text: 'Planning & Building Control', icon: faFileContract },
 ];
 
 /* 8 categories, 2 columns on desktop */
 const categoryLinks = [
-  { link: '/quantity_surveying', text: 'Quantity Surveying', icon: faRulerCombined },
-  { link: '/contracts_management', text: 'Contracts Management', icon: faClipboardCheck },
-  { link: '/snagging_services', text: 'Snagging Works', icon: faTools },
-  { link: '/cost_control_value', text: 'Cost Control & Value Engineering', icon: faBalanceScale },
-  { link: '/contractor_management', text: 'Contractor Management', icon: faHardHat },
-  { link: '/quality_management', text: 'Quality Management', icon: faBuilding },
-  { link: '/commercial_management', text: 'Commercial Management', icon: faBriefcase },
+  { link: '/quantity_surveying', text: 'Quantity Surveying', icon: faHandshake },
+  { link: '/contracts_management', text: 'Contracts Management', icon: faCalculator },
+  { link: '/snagging_services', text: 'Snagging Works', icon: faUsersCog },
+  { link: '/cost_control_value', text: 'Cost Control & Value Engineering', icon: faClipboardList },
+  { link: '/contractor_management', text: 'Contractor Management', icon: faBuilding },
+  { link: '/quality_management', text: 'Quality Management', icon: faSearchLocation },
+  { link: '/commercial_management', text: 'Commercial Management', icon: faChartLine },
   { link: '/project_management', text: 'Project Management', icon: faProjectDiagram },
 ];
+
 
 /* Blog: single column */
 const blogLinks = [
