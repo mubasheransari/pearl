@@ -17,9 +17,7 @@ import {
   faSearchLocation, 
   faChartLine,
   faProjectDiagram,
-  faFileAlt,
-  faChartBar,
-  faNewspaper,
+
   faPen
 } from '@fortawesome/free-solid-svg-icons';
 
