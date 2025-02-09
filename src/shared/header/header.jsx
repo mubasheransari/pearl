@@ -386,7 +386,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/quote" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+            <Link href="/form" onClick={() => setMenuOpen(false)} className={styles.navLink}>
               Instant Quote
             </Link>
           </li>
