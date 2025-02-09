@@ -24,13 +24,13 @@ import {
 /* Submenu items do NOT repeat "Services" in their text */
 const servicesLinks = [
   { link: '/architectural_services', text: 'Architectural', icon: faCity },
-  { link: '/structural_engineering', text: 'Structural Engineering', icon: faBalanceScale },
-  { link: '/planning_building_control', text: 'Planning & Building Control', icon: faFileContract },
+  { link: '/structural_enigneering_services', text: 'Structural Engineering', icon: faBalanceScale },
+  { link: '/planning_and_building_control_services', text: 'Planning & Building Control', icon: faFileContract },
 ];
 
 /* 8 categories, 2 columns on desktop */
 const categoryLinks = [
-  { link: '/quantity_surveying', text: 'Quantity Surveying', icon: faHandshake },
+  { link: '/quantity_surverying', text: 'Quantity Surveying', icon: faHandshake },
   { link: '/contracts_management', text: 'Contracts Management', icon: faCalculator },
   { link: '/snagging_services', text: 'Snagging Works', icon: faUsersCog },
   { link: '/cost_control_value', text: 'Cost Control & Value Engineering', icon: faClipboardList },
