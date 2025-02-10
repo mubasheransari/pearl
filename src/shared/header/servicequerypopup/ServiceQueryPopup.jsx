@@ -239,7 +239,7 @@ export default function ServiceQueryPopup({ open, setOpen }) {
                     </Grid>
                     <Grid item xs={12} md={6} sx={{ padding: 1 }}>
                         <DialogTitle sx={{ textAlign: 'center' }}> {/* Heading ko center karega */}
-                            Free Expert Advice on Planning, Architecture, Structural Engineering, or Building Control?
+                            Free Expert Advice on Planning, Architecture, Structural Engineering or Building Control?
                         </DialogTitle>
                         <form onSubmit={handleSubmit(onSubmit)} ref={form}>
                             <DialogContent>
