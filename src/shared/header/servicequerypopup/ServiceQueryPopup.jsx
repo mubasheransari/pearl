@@ -237,15 +237,14 @@ export default function ServiceQueryPopup({ open, setOpen }) {
                     <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff'}}>
                         <img src="/crop-architect-opening-blueprint_23-2147710985.avif" alt="Planning" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </Grid>
-                    <Grid item xs={12} md={6} sx={{ padding: 3 }}>
+                    <Grid item xs={12} md={6} sx={{ padding: 1 }}>
                         <DialogTitle sx={{ textAlign: 'center' }}> {/* Heading ko center karega */}
-                            Free Expert Advice on Planning, Architecture, Structural Engineering, or Building Control?
+                            Free Expert Advice on Planning, Architecture, Structural Engineering or Building Control?
                         </DialogTitle>
                         <form onSubmit={handleSubmit(onSubmit)} ref={form}>
                             <DialogContent>
                                 <DialogContentText sx={{ textAlign: 'center' }}> {/* Paragraph ko center karega */}
-                                    Please enter your email address, contact number, and service you require. We will contact you soon.
-                                </DialogContentText>
+                                Please provide your email address, contact number, and the service you need. We will get in touch with you shortly.                                </DialogContentText>
                                 <TextField
                                     required
                                     margin="dense"
