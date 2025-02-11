@@ -1,132 +1,93 @@
-.get_container{
-    padding-bottom: 40px;
-    background-color: #f5f6f6;
-
-    @media (max-width:1200px) {
-        padding-bottom: 0px;
-        
-    }
-
-    .container_header{
-        background-color: #27247a;
-        min-height: 200px;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        padding-top: 40px;
-    }
-
-    .form_container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: -70px;
-
-        .message {
-            font-size: 26px;
-            
-
-        }
-
-        .form_wrap{
-                padding: 20px 10px;
-                background-color: #fff;
-                border: 1px solid #fff;
-                border-radius: 5px;
-            .input_wrap {
-                display: flex;
-                flex-wrap: wrap;
-                max-width: 800px;
-                justify-content: space-between;
-
-                @media (max-width:767px) {
-                    display: block;
-                    
-                }
-                
-    
-    
-                .input_box{
-                    width: 45%;
-                    margin-bottom: 40px;
-    
-                    input {
-                        width: 300px;
-                    }
-                }
-            }
-
-            .inquery_btn {
-                background-color:#27247a;
-                border: 1px solid #27247a;
-                border-radius: 3px;
-                width: fit-content;
-                padding: 10px;
-                color: #fff;
-                margin-top: 40px; 
-                cursor: pointer;
-                display: flex;
-                margin-left: auto;
-
-                @media (max-width:1200px) {
-                    margin: auto;
-                    margin-top: 40px; 
-                    
-                }
-
-                &:hover {
-                    background-color: transparent;
-                    border: 1px solid;
-                    color: #000;
-                }
-            }
-
-        }
-
-        .locationOverLay {
-           
-            background-color: #27247a;
-            height: calc(100% - 5px);
-            width: 25%;
-            max-width: 400px;
-            color: #fff;
-            padding: 30px;
-
-            @media (max-width:1200px) {
-                width: 100%;
-                max-width: 100%;
-            }
-
-            ul {
-                li {
-                    display: flex;
-                    padding-bottom: 20px;
-
-                    span {
-                        margin-right: 20px;
-                        width: 20px;
-                        height: 20px;
-                        display: inline-block;
-
-                        svg {
-                            font-size: 16px;
-                        }
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: #fff;
-                    }
-
-                    label {
-                        white-space: wrap;
-                        vertical-align: middle;
-                    }
-                }
-            }
-        }
-
-       
-    }
-
+.h2{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+font-family: sans-serif;
 }
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    gap: 50px;
+  }
+  
+  .contactInfo {
+    flex: 1;
+    text-align: left;
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 18px;
+    }
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  
+  .chatLink {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .contactForm {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .formFields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: black;
+    background-color: white;
+    width: 100%;
+  }
+  
+  .nameFields {
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+  .submitBtn {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      background-color: rgb(31, 30, 30);
+    }
+  }
+  
+  .errorMessage {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    .contentWrapper {
+      justify-content: center;
+    }
+    .contactForm {
+      width: 100%;
+    }
+  }
+
+
