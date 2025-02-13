@@ -208,7 +208,7 @@ const ContactForm = () => {
         <div className={style.contentWrapper}>
           <div className={style.contactInfo}>
             <h1>Have a question?</h1>
-            <p>We're here to help! Fill out  the form or reach us via email or phone. Our Customer Care Team is available to help you get the best experience out of K18 Hair whether you have an issue about your order or looking for helpful hair tips.</p>
+            <p>We're here to assist you! Fill out our form or contact us via email or phone. Each inquiry receives a personalized response, so please allow 4-6 hours for a reply.</p>
             <br />
             <p>
               <Email />
@@ -230,7 +230,6 @@ const ContactForm = () => {
     Flat 02 Towerfieds, Westerham Road Bromley, BR2 6HF, London, United Kingdom
   </a>
 </div>
-
           </div>
           <div className={style.contactForm}>
             <form ref={form} onSubmit={sendEmail} className={style.formFields}>
