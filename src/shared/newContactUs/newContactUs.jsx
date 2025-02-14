@@ -216,7 +216,7 @@ const ContactForm = () => {
             </p>
             <p>
               <Phone />
-              <a href="tel:+44 2035763199" className="text-dark text-decoration-none"> +44 2035763199 </a>
+              <a href="tel:+44 7460140474" className="text-dark text-decoration-none"> +44 7460140474 </a>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
   <LocationOn style={{ position: "relative", top: "-12px" }} />
