@@ -1,3 +1,6 @@
+.maindiv{
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,9 +33,9 @@
 .navLink {
   color: #000000;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
-  padding: 30px 5px 30px 5px;
+  padding: 29px 5px 28px 5px;
   transition: color 0.3s;
 
   &:hover {
@@ -97,13 +100,13 @@
   font-size: 15px;
   color: #ffffff;
   background-color: rgb(22, 92, 177); ; /* Same as navbar background */
-  padding: 10px; /* Add padding to center the icon */
+  padding: 4px; /* Add padding to center the icon */
   // border-radius: 50%; /* Optional: Make it circular */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px; /* Fixed width for consistency */
-  height: 30px; /* Fixed height for consistency */
+  width: 16px; /* Fixed width for consistency */
+  height: 16px; /* Fixed height for consistency */
   @media (max-width: 1200px) {
     font-size: 5px;
     padding: 4px;
@@ -216,4 +219,5 @@ font-weight:  bolder;
       margin-bottom: 10px;
     }
   }
+}
 }
