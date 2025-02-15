@@ -241,4 +241,78 @@ font-family: sans-serif;
     max-width: 400px; 
   }
   
-  
+  @media (max-width: 768px) {
+
+    /* Remove padding in .contactContainer */
+    .contactContainer {
+        padding: 0; /* Remove padding */
+    }
+
+    /* Reduce the font size of the heading */
+    .h2 {
+        font-size: 40px;  /* Reduce font size for small screens */
+        margin-top: 10px;
+    }
+
+    /* Form adjustments */
+    .contactForm {
+        width: 100%; /* Ensure the form takes full width */
+        padding: 20px;
+    }
+
+    .formFields {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: black;
+        width: 100%;
+    }
+
+    .input_box {
+        width: 100%;  /* Make inputs full width */
+        margin-bottom: 40px;
+    }
+
+    .input_box input {
+        width: 100%; /* Full width input */
+    }
+
+    .submitBtn {
+        width: 100%; /* Full width button */
+        padding: 20px;
+    }
+
+    .errorMessage {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Hide the contact info on mobile */
+    .contactInfo {
+        display: none;
+    }
+
+    /* Adjust the layout for mobile */
+    .contentWrapper {
+        flex-direction: column; /* Stack the form and contact info */
+        gap: 20px;
+    }
+
+    /* Adjust the location overlay to full width on mobile */
+    .locationOverLay {
+        width: 100%; 
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    /* Adjust the layout of input fields */
+    .input_wrap {
+        flex-direction: column; /* Stack the input fields vertically */
+        justify-content: flex-start;
+    }
+
+    .inquery_btn {
+        width: 100%; /* Full width button */
+    }
+}

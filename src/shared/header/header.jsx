@@ -17,7 +17,6 @@ import {
   faSearchLocation, 
   faChartLine,
   faProjectDiagram,
-
   faPen
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -40,34 +39,58 @@ const categoryLinks = [
   { link: '/project_management', text: 'Project Management', icon: faProjectDiagram },
 ];
 
-
 /* Blog: single column */
 const blogLinks = [
-  { link: 'rear-extension-ideas-from-simplicity-to-architectural-ingenuity', text: 'Rear Extension Ideas', icon: faPen },
-  { link: 'the-importance-of-structural-calculations-in-modern-construction-projects', text: 'Structural Calculations', icon: faPen },
-  { link: 'structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach', text: 'Structural Engineer Calculations', icon: faPen },
-  { link: 'how-planning-drawings-services-can-transform-your-architectural-vision-into-reality', text: 'Planning Drawings', icon: faPen },
-  { link: 'project-manager-construction-service-by-pearl-engineers-planners-and-project-managers-(PEPP)', text: 'Project Manager Construction', icon: faPen },
-  { link: 'commercial-construction-planning-services-by-pearl-engineers-planners-and-project-managers-(PEPP)', text: 'Commercial Construction Planning', icon: faPen },
-  { link: 'commercial-construction-plans-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Commercial Construction Plans', icon: faPen },
-  { link: 'building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Building Compliance Services', icon: faPen },
-  { link: 'independent-building-inspectors-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Independent Building Inspectors', icon: faPen },
-  { link: 'commercial-architecture-firm-pear-engineers-planners-and-project-managers-(PEPP)', text: 'Commercial Architecture Firm', icon: faPen },
-  { link: 'Expert-Architectural-Design-Services-Across-the-UK', text: 'Expert Architectural Design Services Across the UK', icon: faPen },
-  { link: 'Exploring-Cutting-Edge-Structural-Engineering-Solutions-for-Complex-Projects', text: 'Exploring Cutting-Edge Structural Engineering Solutions for Complex Projects', icon: faPen },
-  { link: 'How-a-Residential-Construction-Project-Manager-Ensures-Successful-Home-Building-Projects?', text: 'How a Residential Construction Project Manager Ensures Successful Home Building Projects?', icon: faPen },
-  { link: 'Mastering-Residential-Construction-Project-Management-Essential-Strategies-for-Success', text: 'Residential Construction Project Management', icon: faPen },
-  { link: 'Party-Wall-Surveyor-Cost-by-Pearl-Engineers-Planners-and-Project-Manager-(PEPP)', text: 'Party Wall Surveyor Cost', icon: faPen },
-  { link: 'Exploring-the-Importance-of-Architecture-Drawing-Plans-in-Modern-Design', text: 'Architecture Drawing Plan', icon: faPen },
-  { link: 'Structural-Engineer-London-Services-Ensuring-Safety-and-Innovation-in-Your-Builds', text: 'Structural Engineer London Services', icon: faPen },
-  { link: 'Planning-Agent-Services-Explained-What-You-Need-to-Know-for-Effective-Project-Management', text: 'Planning Agent Services', icon: faPen },
-  { link: 'Rear-Extensions-Transform-Your-Space-with-Innovative-Design-Solutions', text: 'Rear Extension', icon: faPen },
-
+  { link: 'rear-extension-ideas-from-simplicity-to-architectural-ingenuity', text: 'Rear Extension Ideas' },
+  { link: 'the-importance-of-structural-calculations-in-modern-construction-projects', text: 'Structural Calculations' },
+  { link: 'structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach', text: 'Structural Engineer Calculations' },
+  { link: 'how-planning-drawings-services-can-transform-your-architectural-vision-into-reality', text: 'Planning Drawings' },
+  { link: 'project-manager-construction-service-by-pearl-engineers-planners-and-project-managers-(PEPP)', text: 'Project Manager Construction' },
+  { link: 'commercial-construction-planning-services-by-pearl-engineers-planners-and-project-managers-(PEPP)', text: 'Commercial Construction Planning' },
+  { link: 'commercial-construction-plans-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Commercial Construction Plans' },
+  { link: 'building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Building Compliance Services' },
+  { link: 'independent-building-inspectors-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Independent Building Inspectors' },
+  { link: 'commercial-architecture-firm-pear-engineers-planners-and-project-managers-(PEPP)', text: 'Commercial Architecture Firm' },
+  { link: 'Expert-Architectural-Design-Services-Across-the-UK', text: 'Expert Architectural Design Services Across the UK' },
+  { link: 'Exploring-Cutting-Edge-Structural-Engineering-Solutions-for-Complex-Projects', text: 'Exploring Cutting-Edge Structural Engineering Solutions for Complex Projects' },
+  { link: 'How-a-Residential-Construction-Project-Manager-Ensures-Successful-Home-Building-Projects?', text: 'How a Residential Construction Project Manager Ensures Successful Home Building Projects?' },
+  { link: 'Mastering-Residential-Construction-Project-Management-Essential-Strategies-for-Success', text: 'Residential Construction Project Management' },
+  { link: 'Party-Wall-Surveyor-Cost-by-Pearl-Engineers-Planners-and-Project-Manager-(PEPP)', text: 'Party Wall Surveyor Cost' },
+  { link: 'Exploring-the-Importance-of-Architecture-Drawing-Plans-in-Modern-Design', text: 'Architecture Drawing Plan' },
+  { link: 'Structural-Engineer-London-Services-Ensuring-Safety-and-Innovation-in-Your-Builds', text: 'Structural Engineer London Services' },
+  { link: 'Planning-Agent-Services-Explained-What-You-Need-to-Know-for-Effective-Project-Management', text: 'Planning Agent Services' },
+  { link: 'Rear-Extensions-Transform-Your-Space-with-Innovative-Design-Solutions', text: 'Rear Extension' },
 ];
 
 /* For mobile: 2-column layout for Categories */
 const leftCategoryLinks = categoryLinks.slice(0, 4);
 const rightCategoryLinks = categoryLinks.slice(4);
+
+// Helper function to return a blog icon based on text
+const getBlogIcon = (text) => {
+  const lowerText = text.toLowerCase();
+  if (lowerText.includes('rear extension')) {
+    return faBuilding;
+  } else if (lowerText.includes('structural engineer') || lowerText.includes('structural')) {
+    return faBalanceScale;
+  } else if (lowerText.includes('planning')) {
+    return faFileContract;
+  } else if (lowerText.includes('project manager') || lowerText.includes('project management')) {
+    return faProjectDiagram;
+  } else if (lowerText.includes('commercial')) {
+    return faChartLine;
+  } else if (lowerText.includes('building compliance')) {
+    return faClipboardList;
+  } else if (lowerText.includes('independent building inspectors')) {
+    return faSearchLocation;
+  } else if (lowerText.includes('architectural')) {
+    return faCity;
+  } else if (lowerText.includes('residential')) {
+    return faBuilding;
+  } else {
+    return faPen;
+  }
+};
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -129,7 +152,6 @@ const Navbar = () => {
             }}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            {/* If open, add .activeLink for highlight */}
             <Link
               href="#"
               className={
@@ -239,7 +261,7 @@ const Navbar = () => {
               {blogLinks.map((b) => (
                 <li key={b.link} className={styles.dropdownItem}>
                   <Link href={b.link} className={styles.dropdownLink}>
-                    <FontAwesomeIcon icon={b.icon} className={styles.icon} />
+                    <FontAwesomeIcon icon={getBlogIcon(b.text)} className={styles.icon} />
                     {b.text}
                   </Link>
                 </li>
@@ -385,7 +407,7 @@ const Navbar = () => {
                       onClick={() => setMenuOpen(false)}
                       className={styles.dropdownLink}
                     >
-                      <FontAwesomeIcon icon={b.icon} className={styles.icon} />
+                      <FontAwesomeIcon icon={getBlogIcon(b.text)} className={styles.icon} />
                       {b.text}
                     </Link>
                   </li>
@@ -399,6 +421,8 @@ const Navbar = () => {
               Career
             </Link>
           </li>
+          <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
+
           <li>
             <Link href="/contact" onClick={() => setMenuOpen(false)} className={styles.navLink}>
               Contact Us

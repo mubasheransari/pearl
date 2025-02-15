@@ -219,7 +219,7 @@ const ContactForm = () => {
               <a href="tel:+44 7460140474" className="text-dark text-decoration-none"> +44 7460140474 </a>
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-  <LocationOn style={{ position: "relative", top: "-12px" }} />
+  <LocationOn style={{ position: "relative", top: "0px" }} />
   <a 
     href="https://www.google.com/maps/search/?api=1&query=Flat+02+Towerfieds,+Westerham+Road+Bromley,+BR2+6HF,+London,+United+Kingdom" 
     target="_blank" 
