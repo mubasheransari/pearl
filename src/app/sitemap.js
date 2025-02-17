@@ -9,15 +9,15 @@ export default async function () {
           priority: 1,
           
         },
-        
-        {
-        url: `${baseUrl}/form`,
-          priority: 0.80,
-        },
         {
           url: `${baseUrl}/about`,
           priority: 0.80,
         },
+        {
+        url: `${baseUrl}/form`,
+          priority: 0.80,
+        },
+       
     {
           url: `${baseUrl}/architectural_services`,
          
@@ -106,14 +106,54 @@ export default async function () {
           url: `${baseUrl}/commercial-architecture-firm-pear-engineers-planners-and-project-managers-(PEPP)`,
           priority: 0.80,
         },
-    {
-          url: `${baseUrl}/career`,
+        {
+          url: `${baseUrl}/Expert-Architectural-Design-Services-Across-the-UK`,
           priority: 0.80,
         },
-    {
-          url: `${baseUrl}/contact`,
+        {
+          url: `${baseUrl}/Exploring-Cutting-Edge-Structural-Engineering-Solutions-for-Complex-Projects`,
           priority: 0.80,
-        }
+        },
+        {
+          url: `${baseUrl}/How-a-Residential-Construction-Project-Manager-Ensures-Successful-Home-Building-Projects?`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/Mastering-Residential-Construction-Project-Management-Essential-Strategies-for-Success`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/Party-Wall-Surveyor-Cost-by-Pearl-Engineers-Planners-and-Project-Manager-(PEPP)`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/Exploring-the-Importance-of-Architecture-Drawing-Plans-in-Modern-Design`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/Structural-Engineer-London-Services-Ensuring-Safety-and-Innovation-in-Your-Builds`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/Planning-Agent-Services-Explained-What-You-Need-to-Know-for-Effective-Project-Management`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/Rear-Extensions-Transform-Your-Space-with-Innovative-Design-Solutions`,
+          priority: 0.80,
+        },
+        {
+          url: `${baseUrl}/sustainability`,
+          priority: 0.80,
+        },
+        {
+              url: `${baseUrl}/career`,
+              priority: 0.80,
+            },
+        {
+              url: `${baseUrl}/contact`,
+              priority: 0.80,
+            },
     
       ]
   
