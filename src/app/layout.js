@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
                             "image": "https://pearlepp.co.uk/pearl.png",
                             "@id": "",
                             "url": "https://pearlepp.co.uk/",
-                            "telephone": "+44 2035763199",
+                            "telephone": "+44 7460140474",
                             "priceRange": "$",
                             "address": {
                               "@type": "PostalAddress",
