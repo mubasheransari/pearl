@@ -1,0 +1,58 @@
+import React from "react";
+import style from "./card.module.scss";
+
+const PlanningAdvice = () => {
+  return (
+    <div className={style.container}>
+      <div className={style.card}>
+        <div className={style.header}>
+          <img src="/about.jpg" alt="Householder" className={style.image} />
+          <div className={style.overlay}></div>
+          <h2 className={style.title}>Householder - planning advice call</h2>
+        </div>
+        <div className={style.body}>
+          <p className={style.text}><strong>Quick answers, expert guidance – only £59</strong></p>
+          <p className={style.text}>
+            If you’re a homeowner looking for swift and reliable planning guidance, 
+            book a 30-minute call with one of our experienced planning officers. 
+            This service is designed to provide clarity and direction, perfect for:
+          </p>
+          <ul className={style.list}>
+            <li>Understanding planning rules or requirements about your home or flat</li>
+            <li>Gaining insight into local policies and constraints</li>
+            <li>Addressing general planning queries quickly and effectively</li>
+          </ul>
+          <p className={style.text}><strong>Fee:</strong> £59 for a 30-minute session.</p>
+          <a href="#" className={style.button}>Book now ↗</a>
+          <p className={style.note}>By clicking this button you will visit an external booking website.</p>
+        </div>
+      </div>
+
+      <div className={style.card}>
+        <div className={style.header}>
+          <img src="/about.jpg" alt="Commercial" className={style.image} />
+          <div className={style.overlay}></div>
+          <h2 className={style.title}>Commercial - planning advice call</h2>
+        </div>
+        <div className={style.body}>
+          <p className={style.text}><strong>Tailored for commercial advice – £91</strong></p>
+          <p className={style.text}>
+            This service is designed specifically for small and large businesses, 
+            commercial projects, or residential developments - whether you’re pursuing 
+            a change of use, starting a new project, or expanding an existing one.
+          </p>
+          <ul className={style.list}>
+            <li>Understanding planning rules or requirements</li>
+            <li>Gaining insight into local policies and constraints</li>
+            <li>Addressing general planning queries quickly and effectively</li>
+          </ul>
+          <p className={style.text}><strong>Fee:</strong> £91 for a 30-minute guidance call.</p>
+          <a href="#" className={style.button}>Learn more and book ↗</a>
+          <p className={style.note}>By clicking this button you will visit an external booking website.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PlanningAdvice;

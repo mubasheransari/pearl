@@ -1,0 +1,56 @@
+.main {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .header {
+    background-color: rgb(19, 19, 81);
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .content {
+    background-color: #f0f8ff;
+    padding: 15px;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .author {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .terms {
+    margin-top: 30px;
+    background-color: rgb(129, 53, 53);
+  }
+  
+  .terms .header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .terms .content {
+    background-color: #fff;
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .terms a {
+    color: #005baa;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,120 @@
+/* SCSS */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+  @media (max-width: 1200px) {
+    // flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
+  width: 700px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.header {
+  position: relative;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  .image {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(5, 5, 62), transparent);
+  }
+
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+    
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.body {
+  padding: 20px;
+  
+  @media (max-width: 576px) {
+    padding: 15px;
+  }
+}
+
+.list {
+  padding-left: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(19, 19, 81);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+
+  &:hover {
+    background-color: #d1cfdb;
+    color: black;
+  }
+  
+  @media (max-width: 576px) {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.note {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+
+  @media (max-width: 576px) {
+    font-size: 10px;
+  }
+}

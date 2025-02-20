@@ -33,7 +33,7 @@
 .navLink {
   color: #000000;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
   padding: 29px 5px 28px 5px;
   transition: color 0.3s;
@@ -83,7 +83,7 @@
   text-decoration: none;
   font-weight: 500;
   padding: 10px;
-  @media (max-width: 1200px) {
+  @media (max-width: 1215px) {
     font-size: 15px;
    
   }
@@ -107,7 +107,7 @@
   justify-content: center;
   width: 16px; /* Fixed width for consistency */
   height: 16px; /* Fixed height for consistency */
-  @media (max-width: 1200px) {
+  @media (max-width: 1215px) {
     font-size: 5px;
     padding: 4px;
     width: 16px;
@@ -156,7 +156,7 @@
 }
 
 /* Hide desktop nav at smaller screens, show hamburger */
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
   .navbar__menu {
     display: none;
   }
