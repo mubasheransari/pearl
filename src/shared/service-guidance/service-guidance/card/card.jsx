@@ -6,7 +6,7 @@ const PlanningAdvice = () => {
     <div className={style.container}>
       <div className={style.card}>
         <div className={style.header}>
-          <img src="/card-image1.jpeg" alt="Householder" className={style.fullImage} />
+          <img src="/service-card.png" alt="Householder" className={style.fullImage} />
           <h2 className={style.overlayText}>Householder - planning advice call</h2>
         </div>
         <div className={style.body}>
@@ -27,7 +27,7 @@ const PlanningAdvice = () => {
 
       <div className={style.card}>
         <div className={style.header}>
-          <img src="/card-image2.jpeg" alt="Commercial" className={style.fullImage} />
+          <img src="/service-card.png" alt="Commercial" className={style.fullImage} />
           <h2 className={style.overlayText}>Commercial - planning advice call</h2>
         </div>
         <div className={style.body}>

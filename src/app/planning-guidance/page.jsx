@@ -2,7 +2,7 @@ import React from 'react'
 import PlanningGuidance from '@/shared/service-guidance/header/header'
 import PlanningAdvice from '@/shared/service-guidance/card/card'
 import Testimonial from '@/shared/service-guidance/what-our-customer/whatOur'
-import CardLayout from '@/shared/service-guidance/icon/icon'
+import Cards from '@/shared/service-guidance/icon/icon'
 
 const page = () => {
   return (
@@ -10,7 +10,7 @@ const page = () => {
       <PlanningGuidance/>
       <PlanningAdvice/>
       <Testimonial/>
-      <CardLayout/>
+      <Cards/>
     </div>
   )
 }

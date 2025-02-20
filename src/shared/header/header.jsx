@@ -423,8 +423,17 @@ const Navbar = () => {
               Career
             </Link>
           </li>
-          <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
-          <li><Link href="/planning-guidance" className={styles.navLink}>Planning Guidance</Link></li>
+          <li>
+            <Link href="/potfolio" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+            Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link href="/planning-guidance" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+            Planning Guidance
+            </Link>
+          </li>
+
 
 
           <li>

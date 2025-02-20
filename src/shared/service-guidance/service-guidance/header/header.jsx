@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./header.module.scss";
 import Image from "next/image";
-import planningImage from "../../../../public/header.jpeg"; // Public folder में इमेज रखें
+import planningImage from "../../../../public/service-planning.png"; // Public folder में इमेज रखें
 
 const PlanningGuidance = () => {
   return (
