@@ -1,18 +1,24 @@
+
+
 "use client";
 
 import { useEffect, useState, useRef } from "react";
 import * as pdfjsLib from "pdfjs-dist/webpack";
-import { CircularProgress, Box } from "@mui/material";
+import { CircularProgress, Box, IconButton } from "@mui/material";
+import { ZoomIn, ZoomOut } from "@mui/icons-material";
 import styles from "../Development.module.scss"; // SCSS import
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
-export default function Pdf23() {
+export default function PDFImageExtractor() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
-  const isLoaded = useRef(false); // Prevent re-fetching
+  const [zoomLevel, setZoomLevel] = useState(1);
+  const isLoaded = useRef(false);
 
   useEffect(() => {
-    if (isLoaded.current) return; // ✅ Prevents multiple renders
-    isLoaded.current = true; // ✅ Mark as loaded
+    if (isLoaded.current) return;
+    isLoaded.current = true;
 
     const extractImagesFromPDF = async () => {
       try {
@@ -54,22 +60,25 @@ export default function Pdf23() {
           <CircularProgress />
         </Box>
       ) : (
-        <div className={styles.grid}>
-          {images.map((imgSrc, index) => (
-            <div
-              key={index}
-              className={`${styles.imageContainer} ${
-                index % 2 === 0 ? styles.left : styles.right
-              }`}
-            >
-              <img
-                src={imgSrc}
-                alt={`Extracted ${index}`}
-                className={styles.image}
-              />
-            </div>
-          ))}
-        </div>
+        <>
+          <Box display="flex" justifyContent="center" alignItems="center" gap={2} marginBottom={2}>
+         
+          </Box>
+          <div className={styles.grid}>
+            {images.map((imgSrc, index) => (
+              <div key={index} className={`${styles.imageContainer}`}>
+                <Zoom>
+                  <img
+                    src={imgSrc}
+                    alt={`Extracted ${index}`}
+                    className={styles.image}
+                    style={{ transform: `scale(${zoomLevel})` }}
+                  />
+                </Zoom>
+              </div>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

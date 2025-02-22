@@ -154,11 +154,15 @@ font-family: sans-serif;
   .contactInfo {
     flex: 1;
     text-align: left;
-    h1{
-        font-size: 50px;
+    h6{
+        font-size: 22px;
+        font-weight: bolder;
+
     }
+
     p{
-        font-size: 18px;
+      margin-top: 20px;
+        font-size: 16px;
     }
     @media (max-width: 1200px) {
       display: none;

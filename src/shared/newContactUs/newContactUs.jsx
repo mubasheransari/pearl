@@ -207,7 +207,7 @@ const ContactForm = () => {
       <div className={style.contactContainer}>
         <div className={style.contentWrapper}>
           <div className={style.contactInfo}>
-            <h1>Have a question?</h1>
+            <h6>Let’s Talk! From Imagination to Reality—We Build, You Thrive</h6>
             <p>We're here to assist you! Fill out our form or contact us via email or phone. Each inquiry receives a personalized response, so please allow 4-6 hours for a reply.</p>
             <br />
             <p>
