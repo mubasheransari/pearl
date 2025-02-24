@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import the modal component
 
 import {
-  faCity, 
+  faCity,
   faBalanceScale, 
   faFileContract, 
   faHandshake, 
@@ -17,10 +17,24 @@ import {
   faSearchLocation, 
   faChartLine,
   faProjectDiagram,
-  faPen
+  faPen,
+  faEye,
+  faGavel,       // Replacing faBalanceScale (Represents rules & values)
+  faBookOpen,
+  faLightbulb,   // Replacing faPen (Represents ideas & uniqueness)
+  faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
+const aboutLinks = [
+  { link: '/#services', text: 'Our Vision', icon: faEye },
+  // { link: '/structural_enigneering_services', text: 'Core Values', icon: faGavel },
+  // { link: '/planning_and_building_control_services', text: 'Our Intro', icon: faBookOpen },
+  // { link: '/planning_and_building_control_services', text: 'Why Choose PEPP', icon: faLightbulb },
+  { link: '/contact', text: 'Contact Us', icon: faEnvelope },
+];
+
+
 const servicesLinks = [
   { link: '/architectural_services', text: 'Architectural', icon: faCity },
   { link: '/structural_enigneering_services', text: 'Structural Engineering', icon: faBalanceScale },
@@ -94,7 +108,8 @@ const getBlogIcon = (text) => {
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false); 
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
   const [openModal, setOpenModal] = useState(true); // Modal state to control visibility
@@ -112,6 +127,7 @@ const Navbar = () => {
       ) {
         setMenuOpen(false);
         setServicesOpen(false);
+        setAboutOpen(false);
         setCategoriesOpen(false);
         setBlogOpen(false);
       }
@@ -123,6 +139,7 @@ const Navbar = () => {
   // Let only one dropdown be open at a time on desktop
   const closeAllDropdowns = () => {
     setServicesOpen(false);
+    setAboutOpen(false)
     setCategoriesOpen(false);
     setBlogOpen(false);
   };
@@ -139,8 +156,47 @@ const Navbar = () => {
         {/* ========== Desktop Navigation ========== */}
         <ul className={styles.navbar__menu}>
           <li><Link href="/" className={styles.navLink}>Home</Link></li>
-          <li><Link href="/about" className={styles.navLink}>About Us</Link></li>
-          <li><Link href="/#services" className={styles.navLink}>Our Vision</Link></li>
+
+
+        {/* About Dropdown */}
+          <li
+            className={styles.dropdown}
+            onMouseEnter={() => {
+              closeAllDropdowns();
+              setAboutOpen(true);
+            }}
+            onMouseLeave={() => setAboutOpen(false)}
+          >
+            <Link
+              href="#"
+              className={
+                aboutOpen
+                  ? `${styles.navLink} ${styles.activeLink}`
+                  : styles.navLink
+              }
+            >
+              About ▾
+            </Link>
+            <ul
+              className={
+                `${styles.dropdownMenu} 
+                ${styles.aboutDropdownMenu} 
+                ${aboutOpen ? styles.open : ""}`
+              }
+            >
+              {aboutLinks.map((s) => (
+                <li key={s.link} className={styles.dropdownItem}>
+                  <Link href={s.link} className={styles.dropdownLink}>
+                    <FontAwesomeIcon icon={s.icon} className={styles.icon} />
+                    {s.text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </li>
+
+
+          {/* <li><Link href="/#services" className={styles.navLink}>Our Vision</Link></li> */}
           <li><Link href="/#expertise" className={styles.navLink}>Our Expertise</Link></li>
 
           {/* ---- Services Dropdown (hover) ---- */}
@@ -273,9 +329,9 @@ const Navbar = () => {
           <li><Link href="/career" className={styles.navLink}>Career</Link></li>
           <li><Link href="/sustainability" className={styles.navLink}>Sustainability</Link></li>
           <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
-          <li><Link href="/planning-guidance" className={styles.navLink}>Planning Guidance</Link></li>
+          <li><Link href="planing-gudiance" className={styles.navLink}>planning Guidance</Link></li>
 
-          <li><Link href="/contact" className={styles.navLink}>Contact Us</Link></li>
+          {/* <li><Link href="/contact" className={styles.navLink}>Contact Us</Link></li> */}
           <li><Link href="/form" className={styles.navLink}>Instant Quote</Link></li>
         </ul>
 
@@ -305,11 +361,39 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+
+
+        {/* About mobile dropdown */}
           <li>
-            <Link href="/about" onClick={() => setMenuOpen(false)} className={styles.navLink}>
-              About Us
+            <Link
+              href="#"
+              onClick={() => setAboutOpen(!aboutOpen)}
+              className={styles.navLink}
+            >
+              About ▾
             </Link>
+            {aboutOpen && (
+              <ul className={styles.aboutDropdownMenu}>
+                {aboutLinks.map((s) => (
+                  <li key={s.link}>
+                    <Link
+                      href={s.link}
+                      onClick={() => setMenuOpen(false)}
+                      className={styles.dropdownLink}
+                    >
+                      <FontAwesomeIcon icon={s.icon} className={styles.icon} />
+                      {s.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
+
+
+
+
+          
           <li>
             <Link href="/#services" onClick={() => setMenuOpen(false)} className={styles.navLink}>
               Our Vision
@@ -423,18 +507,7 @@ const Navbar = () => {
               Career
             </Link>
           </li>
-          <li>
-            <Link href="/potfolio" onClick={() => setMenuOpen(false)} className={styles.navLink}>
-            Portfolio
-            </Link>
-          </li>
-          <li>
-            <Link href="/planning-guidance" onClick={() => setMenuOpen(false)} className={styles.navLink}>
-            Planning Guidance
-            </Link>
-          </li>
-
-
+          <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
 
           <li>
             <Link href="/contact" onClick={() => setMenuOpen(false)} className={styles.navLink}>
@@ -456,3 +529,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

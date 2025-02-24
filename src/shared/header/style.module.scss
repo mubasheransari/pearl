@@ -1,223 +1,229 @@
 .maindiv{
 
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f5f6f6;
-  position: fixed;
-  top: 0; /* Ensure it sticks to the top */
-  width: 100%; /* Ensure it spans the full width */
-  z-index: 1000; /* Higher z-index to bring it above other elements */
-}
-
-.navbar__logo img {
-  height: 70px;
-  padding: 10px;
-}
-
-.navbar__menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
-.navbar__menu li {
-  padding: 10px;
-  margin-top: 15px;
-}
-
-/* Top-level link style */
-.navLink {
-  color: #000000;
-  text-decoration: none;
-  font-size: 9px;
-  font-weight: 600;
-  padding: 29px 5px 28px 5px;
-  transition: color 0.3s;
-
-  &:hover {
-    background-color: #ffffff;
-    color: #004aad;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f6f6;
+    position: fixed;
+    top: 0; /* Ensure it sticks to the top */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Higher z-index to bring it above other elements */
   }
-}
-
-/* If a dropdown is open, we might add .activeLink for a white BG (optional) */
-.activeLink {
-  background-color: #ffffff;
-  color: black;
-}
-
-/* ========== DROPDOWN (Shared) ========== */
-.dropdown {
-  position: relative; 
-}
-
-.dropdownMenu {
-  display: none;
-  position: absolute;
-  left: 0;
-  background: #ffffff;
-  // border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  z-index: 9999;
-  padding: 10px;
- 
-}
-
-/* Show the dropdown if .open is toggled by React */
-.dropdownMenu.open {
-  display: block;
-}
-
-/* Common item styles in the dropdown */
-
-
-.dropdownLink {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 10px;
-  @media (max-width: 1215px) {
-    font-size: 15px;
+  
+  .navbar__logo img {
+    height: 70px;
+    padding: 10px;
+  }
+  
+  .navbar__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .navbar__menu li {
+    padding: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Top-level link style */
+  .navLink {
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 29px 5px 28px 5px;
+    transition: color 0.3s;
+  
+    &:hover {
+      background-color: #ffffff;
+      color: #004aad;
+    }
+  }
+  
+  /* If a dropdown is open, we might add .activeLink for a white BG (optional) */
+  .activeLink {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  /* ========== DROPDOWN (Shared) ========== */
+  .dropdown {
+    position: relative; 
+  }
+  
+  .dropdownMenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    // border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 9999;
+    padding: 10px;
    
   }
-  // font-size: 15px;
-
-  &:hover {
-    color: #004aad;
-    background-color: #fff;
-  }
-}
-
-/* ========== Icon Styles ========== */
-.icon {
-  font-size: 15px;
-  color: #ffffff;
-  background-color: rgb(22, 92, 177); ; /* Same as navbar background */
-  padding: 4px; /* Add padding to center the icon */
-  // border-radius: 50%; /* Optional: Make it circular */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px; /* Fixed width for consistency */
-  height: 16px; /* Fixed height for consistency */
-  @media (max-width: 1215px) {
-    font-size: 5px;
-    padding: 4px;
-    width: 16px;
-    height: 16px;
-  }
-}
-
-/* ========== Different top offsets ========== */
-.servicesDropdownMenu {
-  top: 60px; /* You can change to 150px, 190px, etc. */
-  left: -281px;
-  width:350px;
   
-}
-
-.categoriesDropdownMenu {
-  top: 60px; /* You can change to 150px, 190px, etc. */
-  left: -618px;
-  width: 700px;}
-
-.blogDropdownMenu {
-  top: 60px; /* You can change to 150px, 190px, etc. */
-  left: -343px;
-  width: 400px;}
-
-/* 2-column layout for categories on desktop if needed */
-.twoColumnDropdown {
-  display: flex;
-  gap: 20px;
-  ul {
-    list-style: none;
-    padding: 0;
-    li {
-      margin-bottom: 10px;
-    }
-  }
-}
-
-/* ========== Hamburger (Mobile) ========== */
-.navbar__hamburger {
-  display: none;
-  font-size: 30px;
-  margin-right: 10px;
-  color: #000;
-  cursor: pointer;
-}
-
-/* Hide desktop nav at smaller screens, show hamburger */
-@media (max-width: 1215px) {
-  .navbar__menu {
-    display: none;
-  }
-  .navbar__hamburger {
+  /* Show the dropdown if .open is toggled by React */
+  .dropdownMenu.open {
     display: block;
   }
-}
-
-/* ========== MOBILE SIDEBAR ========== */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background: #fff;
-  z-index: 9999;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  overflow-y: auto; 
-}
-
-.sidebar.open {
-  transform: translateX(0);
-}
-
-.sidebar__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-font-weight:  bolder;
-  color: #000000;
-  background-color: white;
-  border: none;
-
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 10px;
-}
-
-.sidebar ul li {
-  padding: 15px 0;
-}
-
-/* 2-column for categories on mobile if desired */
-.twoColumnDropdownMobile {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-
-  ul {
-    flex: 1;
-    list-style: none;
-    padding: 0;
-
-    li {
-      margin-bottom: 10px;
+  
+  /* Common item styles in the dropdown */
+  
+  
+  .dropdownLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    @media (max-width: 1250px) {
+      font-size: 15px;
+     
+    }
+    // font-size: 15px;
+  
+    &:hover {
+      color: #004aad;
+      background-color: #fff;
     }
   }
-}
-}
+  
+  /* ========== Icon Styles ========== */
+  .icon {
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(22, 92, 177); ; /* Same as navbar background */
+    padding: 4px; /* Add padding to center the icon */
+    // border-radius: 50%; /* Optional: Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px; /* Fixed width for consistency */
+    height: 16px; /* Fixed height for consistency */
+    @media (max-width: 1250px) {
+      font-size: 5px;
+      padding: 4px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  /* ========== Different top offsets ========== */
+  .aboutDropdownMenu {
+    top: 60px; /* You can change to 150px, 190px, etc. */
+    left: -283px;
+    width:350px;
+    
+  }
+  .servicesDropdownMenu{
+    top: 60px; /* You can change to 150px, 190px, etc. */
+    left: -270px;
+    width:350px;
+  }
+  
+  .categoriesDropdownMenu {
+    top: 60px; /* You can change to 150px, 190px, etc. */
+    left: -603px;
+    width: 700px;}
+  
+  .blogDropdownMenu {
+    top: 60px; /* You can change to 150px, 190px, etc. */
+    left: -340px;
+    width: 400px;}
+  
+  /* 2-column layout for categories on desktop if needed */
+  .twoColumnDropdown {
+    display: flex;
+    gap: 20px;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  /* ========== Hamburger (Mobile) ========== */
+  .navbar__hamburger {
+    display: none;
+    font-size: 30px;
+    margin-right: 10px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  /* Hide desktop nav at smaller screens, show hamburger */
+  @media (max-width: 1250px) {
+    .navbar__menu {
+      display: none;
+    }
+    .navbar__hamburger {
+      display: block;
+    }
+  }
+  
+  /* ========== MOBILE SIDEBAR ========== */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto; 
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+  font-weight:  bolder;
+    color: #000000;
+    background-color: white;
+    border: none;
+  
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .sidebar ul li {
+    padding: 15px 0;
+  }
+  
+  /* 2-column for categories on mobile if desired */
+  .twoColumnDropdownMobile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  
+    ul {
+      flex: 1;
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  }
+
