@@ -7,31 +7,35 @@ import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import
 
 import {
   faCity,
-  faBalanceScale, 
-  faFileContract, 
-  faHandshake, 
-  faCalculator, 
-  faUsersCog, 
-  faClipboardList, 
-  faBuilding, 
-  faSearchLocation, 
+  faBalanceScale,
+  faFileContract,
+  faHandshake,
+  faCalculator,
+  faUsersCog,
+  faClipboardList,
+  faBuilding,
+  faSearchLocation,
   faChartLine,
   faProjectDiagram,
   faPen,
   faEye,
-  faGavel,       // Replacing faBalanceScale (Represents rules & values)
+  faGavel,
   faBookOpen,
-  faLightbulb,   // Replacing faPen (Represents ideas & uniqueness)
-  faEnvelope
+  faLightbulb,
+  faEnvelope,
+  faInfoCircle, // Added for "About Us"
+  faBookReader // Added for "Research Blogs"
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
 const aboutLinks = [
+  { link: '/about', text: 'About Us', icon: faInfoCircle }, // Unique icon for "About Us"
   { link: '/#services', text: 'Our Vision', icon: faEye },
-  // { link: '/structural_enigneering_services', text: 'Core Values', icon: faGavel },
-  // { link: '/planning_and_building_control_services', text: 'Our Intro', icon: faBookOpen },
-  // { link: '/planning_and_building_control_services', text: 'Why Choose PEPP', icon: faLightbulb },
+  { link: '/research-blog', text: 'Research Blogs', icon: faBookReader }, // Unique icon for "Research Blogs"
   { link: '/contact', text: 'Contact Us', icon: faEnvelope },
+
+    // { link: '/planning_and_building_control_services', text: 'Our Intro', icon: faBookOpen },
+  // { link: '/planning_and_building_control_services', text: 'Why Choose PEPP', icon: faLightbulb },
 ];
 
 
@@ -329,7 +333,7 @@ const Navbar = () => {
           <li><Link href="/career" className={styles.navLink}>Career</Link></li>
           <li><Link href="/sustainability" className={styles.navLink}>Sustainability</Link></li>
           <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
-          <li><Link href="planing-gudiance" className={styles.navLink}>planning Guidance</Link></li>
+          <li><Link href="/planning-guidance" className={styles.navLink}>planning Guidance</Link></li>
 
           {/* <li><Link href="/contact" className={styles.navLink}>Contact Us</Link></li> */}
           <li><Link href="/form" className={styles.navLink}>Instant Quote</Link></li>
@@ -507,7 +511,17 @@ const Navbar = () => {
               Career
             </Link>
           </li>
-          <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
+          <li>
+            <Link href="/potfolio" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+            Portfolio
+            </Link>
+          </li>
+          <li>
+
+            <Link href="/planning-guidance" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+            Planning Guidance
+            </Link>
+          </li>
 
           <li>
             <Link href="/contact" onClick={() => setMenuOpen(false)} className={styles.navLink}>
