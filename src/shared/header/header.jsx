@@ -19,6 +19,7 @@ import {
   faProjectDiagram,
   faPen,
   faEye,
+  faBolt,
   faGavel,
   faBookOpen,
   faLightbulb,
@@ -32,6 +33,7 @@ const aboutLinks = [
   { link: '/about', text: 'About Us', icon: faInfoCircle }, // Unique icon for "About Us"
   { link: '/#services', text: 'Our Vision', icon: faEye },
   { link: '/research-blog', text: 'Research Blogs', icon: faBookReader }, // Unique icon for "Research Blogs"
+  { link: '/energy-retrofit', text: 'Energy Retrofit Blog', icon: faBolt },
   { link: '/contact', text: 'Contact Us', icon: faEnvelope },
 
     // { link: '/planning_and_building_control_services', text: 'Our Intro', icon: faBookOpen },

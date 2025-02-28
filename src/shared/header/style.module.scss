@@ -14,7 +14,7 @@
   
   .navbar__logo img {
     height: 70px;
-    padding: 10px;
+    padding: 5px;
   }
   
   .navbar__menu {
@@ -25,15 +25,16 @@
   }
   
   .navbar__menu li {
-    padding: 10px;
-    margin-top: 15px;
+    padding-top : 10px;
+    margin-right: 10px;
+    // margin-top: 15px;
   }
   
   /* Top-level link style */
   .navLink {
     color: #000000;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     padding: 29px 5px 28px 5px;
     transition: color 0.3s;
@@ -83,8 +84,10 @@
     text-decoration: none;
     font-weight: 500;
     padding: 10px;
-    @media (max-width: 1250px) {
-      font-size: 15px;
+    @media (max-width: 1200px) {
+      font-size: 13px;
+      font-weight: bold;
+      padding: 0px;
      
     }
     // font-size: 15px;
@@ -97,7 +100,7 @@
   
   /* ========== Icon Styles ========== */
   .icon {
-    font-size: 15px;
+    // font-size: 15px;
     color: #ffffff;
     background-color: rgb(22, 92, 177); ; /* Same as navbar background */
     padding: 4px; /* Add padding to center the icon */
@@ -105,33 +108,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 16px; /* Fixed width for consistency */
-    height: 16px; /* Fixed height for consistency */
-    @media (max-width: 1250px) {
+    width: 20px; /* Fixed width for consistency */
+    height: 20px; /* Fixed height for consistency */
+    @media (max-width: 1200px) {
       font-size: 5px;
       padding: 4px;
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
     }
   }
   
   /* ========== Different top offsets ========== */
   .aboutDropdownMenu {
     top: 60px; /* You can change to 150px, 190px, etc. */
-    left: -280px;
+    left: -285px;
     width:350px;
     
   }
   .servicesDropdownMenu{
     top: 60px; /* You can change to 150px, 190px, etc. */
-    left: -265px;
+    left: -270px;
     width:350px;
   }
   
   .categoriesDropdownMenu {
     top: 60px; /* You can change to 150px, 190px, etc. */
     left: -600px;
-    width: 700px;}
+    width: 699px;}
   
   .blogDropdownMenu {
     top: 60px; /* You can change to 150px, 190px, etc. */
@@ -161,7 +164,7 @@
   }
   
   /* Hide desktop nav at smaller screens, show hamburger */
-  @media (max-width: 1250px) {
+  @media (max-width: 1200px) {
     .navbar__menu {
       display: none;
     }
