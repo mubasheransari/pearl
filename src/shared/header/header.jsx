@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; // Import usePathname to track route changes
 import styles from './style.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import the modal component
@@ -25,7 +26,7 @@ import {
   faLightbulb,
   faEnvelope,
   faInfoCircle, // Added for "About Us"
-  faBookReader // Added for "Research Blogs"
+  faBookReader, // Added for "Research Blogs"
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
@@ -35,11 +36,7 @@ const aboutLinks = [
   { link: '/research-blog', text: 'Research Blogs', icon: faBookReader }, // Unique icon for "Research Blogs"
   { link: '/energy-retrofit', text: 'Energy Retrofit Blog', icon: faBolt },
   { link: '/contact', text: 'Contact Us', icon: faEnvelope },
-
-    // { link: '/planning_and_building_control_services', text: 'Our Intro', icon: faBookOpen },
-  // { link: '/planning_and_building_control_services', text: 'Why Choose PEPP', icon: faLightbulb },
 ];
-
 
 const servicesLinks = [
   { link: '/architectural_services', text: 'Architectural', icon: faCity },
@@ -114,13 +111,25 @@ const getBlogIcon = (text) => {
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false); 
+  const [servicesOpen, setServicesOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
-  const [openModal, setOpenModal] = useState(true); // Modal state to control visibility
+  const [openModal, setOpenModal] = useState(false); // Modal state to control visibility
   const sidebarRef = useRef(null);
   const dropdownRef = useRef(null);
+
+  // Use usePathname to track route changes
+  const pathname = usePathname();
+
+  // Open modal when the route is /contact
+  useEffect(() => {
+    if (pathname === '/contact') {
+      setOpenModal(true);
+    } else {
+      setOpenModal(false);
+    }
+  }, [pathname]);
 
   // Close everything if user clicks outside
   useEffect(() => {
@@ -145,7 +154,7 @@ const Navbar = () => {
   // Let only one dropdown be open at a time on desktop
   const closeAllDropdowns = () => {
     setServicesOpen(false);
-    setAboutOpen(false)
+    setAboutOpen(false);
     setCategoriesOpen(false);
     setBlogOpen(false);
   };
@@ -163,8 +172,7 @@ const Navbar = () => {
         <ul className={styles.navbar__menu}>
           <li><Link href="/" className={styles.navLink}>Home</Link></li>
 
-
-        {/* About Dropdown */}
+          {/* About Dropdown */}
           <li
             className={styles.dropdown}
             onMouseEnter={() => {
@@ -191,21 +199,19 @@ const Navbar = () => {
               }
             >
               {aboutLinks.map((s) => (
-                <li key={s.link} className={styles.dropdownItem}>
+                <p key={s.link} className={styles.dropdownItem}>
                   <Link href={s.link} className={styles.dropdownLink}>
                     <FontAwesomeIcon icon={s.icon} className={styles.icon} />
                     {s.text}
                   </Link>
-                </li>
+                </p>
               ))}
             </ul>
           </li>
 
-
-          {/* <li><Link href="/#services" className={styles.navLink}>Our Vision</Link></li> */}
           <li><Link href="/#expertise" className={styles.navLink}>Our Expertise</Link></li>
 
-          {/* ---- Services Dropdown (hover) ---- */}
+          {/* Services Dropdown */}
           <li
             className={styles.dropdown}
             onMouseEnter={() => {
@@ -232,17 +238,17 @@ const Navbar = () => {
               }
             >
               {servicesLinks.map((s) => (
-                <li key={s.link} className={styles.dropdownItem}>
+                <p key={s.link} className={styles.dropdownItem}>
                   <Link href={s.link} className={styles.dropdownLink}>
                     <FontAwesomeIcon icon={s.icon} className={styles.icon} />
                     {s.text}
                   </Link>
-                </li>
+                </p>
               ))}
             </ul>
           </li>
 
-          {/* ---- Categories Dropdown (hover) ---- */}
+          {/* Categories Dropdown */}
           <li
             className={styles.dropdown}
             onMouseEnter={() => {
@@ -293,7 +299,7 @@ const Navbar = () => {
             </ul>
           </li>
 
-          {/* ---- Blog Dropdown (hover) ---- */}
+          {/* Blog Dropdown */}
           <li
             className={styles.dropdown}
             onMouseEnter={() => {
@@ -318,7 +324,7 @@ const Navbar = () => {
                 ${styles.blogDropdownMenu} 
                 ${blogOpen ? styles.open : ""}`
               }
-              style={{maxHeight:'400px', overflowY:'scroll'}}
+              style={{ maxHeight: '400px', overflowY: 'scroll' }}
             >
               {blogLinks.map((b) => (
                 <li key={b.link} className={styles.dropdownItem}>
@@ -335,9 +341,7 @@ const Navbar = () => {
           <li><Link href="/career" className={styles.navLink}>Career</Link></li>
           <li><Link href="/sustainability" className={styles.navLink}>Sustainability</Link></li>
           <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
-          <li><Link href="/planning-guidance" className={styles.navLink}>planning Guidance</Link></li>
-
-          {/* <li><Link href="/contact" className={styles.navLink}>Contact Us</Link></li> */}
+          <li><Link href="/planning-guidance" className={styles.navLink}>Planning Guidance</Link></li>
           <li><Link href="/form" className={styles.navLink}>Instant Quote</Link></li>
         </ul>
 
@@ -368,8 +372,7 @@ const Navbar = () => {
             </Link>
           </li>
 
-
-        {/* About mobile dropdown */}
+          {/* About mobile dropdown */}
           <li>
             <Link
               href="#"
@@ -396,10 +399,6 @@ const Navbar = () => {
             )}
           </li>
 
-
-
-
-          
           <li>
             <Link href="/#services" onClick={() => setMenuOpen(false)} className={styles.navLink}>
               Our Vision
@@ -515,21 +514,19 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/potfolio" onClick={() => setMenuOpen(false)} className={styles.navLink}>
-            Portfolio
+              Portfolio
             </Link>
           </li>
           <li>
-
             <Link href="/planning-guidance" onClick={() => setMenuOpen(false)} className={styles.navLink}>
-            Planning Guidance
+              Planning Guidance
             </Link>
           </li>
-
-          <li>
+          {/* <li>
             <Link href="/contact" onClick={() => setMenuOpen(false)} className={styles.navLink}>
               Contact Us
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/form" onClick={() => setMenuOpen(false)} className={styles.navLink}>
               Instant Quote
@@ -538,11 +535,10 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Render the modal */}
-      <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />
+      {/* Render the modal conditionally */}
+      {openModal && <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />}
     </div>
   );
 };
 
 export default Navbar;
-

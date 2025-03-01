@@ -24,7 +24,7 @@ export default function PDFImageExtractor() {
 
     const extractImagesFromPDF = async () => {
       try {
-        const loadingTask = pdfjsLib.getDocument("/drive-download-20250221T123148Z-001/Structural Analysis of Roof for additional loading.pdff");
+        const loadingTask = pdfjsLib.getDocument("/drive-download-20250221T123148Z-001/Structural Analysis of Roof for additional loading.pdf");
         const pdf = await loadingTask.promise;
 
         let extractedImages = [];
