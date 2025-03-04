@@ -12,19 +12,11 @@ const Portfolio = () => {
       {/* Text Content */}
       <div className={style.content}>
         <p>
-          Our planning experts have helped secure <b>600+</b> planning approvals, with <b>850+</b> planning
-          applications pending a decision soon! Click any of our design portfolio projects below to view the required
-          architect drawings and planning statements for each planning application.
+        Pearl Engineers Planners and Project Managers (PEPP) is dedicated to providing expert planning and architectural design services, guiding clients through every stage of the planning process with precision and care. Our team brings a wealth of experience in delivering tailored solutions for a wide range of projects, from residential extensions and conversions to complex commercial developments.
         </p>
+      
         <p>
-          Our team of <b className={style.highlight}>dedicated architectural design experts</b> have put together a
-          portfolio of projects we have helped to support, ranging from conservatory additions to dropped kerbs and flat
-          conversions.
-        </p>
-        <p>
-          We have a variety of partners who can also help support your application. Take a look at our{' '}
-          <b className={style.partnerships}>partnerships</b> today to find out more about what they do and how they
-          might be able to help.
+        With a focus on innovation, functionality, and aesthetics, we ensure that every design not only meets regulatory standards but also enhances the built environment. Our commitment to excellence is reflected in our collaborative approach, working closely with clients and partners to turn visions into reality. At PEPP, we offer comprehensive support to help navigate the planning process smoothly, delivering high-quality outcomes that stand the test of time.
         </p>
       </div>
 

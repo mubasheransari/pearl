@@ -341,7 +341,6 @@ const Navbar = () => {
           <li><Link href="/career" className={styles.navLink}>Career</Link></li>
           <li><Link href="/sustainability" className={styles.navLink}>Sustainability</Link></li>
           <li><Link href="/potfolio" className={styles.navLink}>Portfolio</Link></li>
-          <li><Link href="/planning-guidance" className={styles.navLink}>Planning Guidance</Link></li>
           <li><Link href="/form" className={styles.navLink}>Instant Quote</Link></li>
         </ul>
 
@@ -517,11 +516,11 @@ const Navbar = () => {
               Portfolio
             </Link>
           </li>
-          <li>
-            <Link href="/planning-guidance" onClick={() => setMenuOpen(false)} className={styles.navLink}>
-              Planning Guidance
-            </Link>
-          </li>
+          {/* // <li>
+          //   <Link href="/planning-guidance" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+          //     Planning Guidance
+          //   </Link>
+          // </li> */}
           {/* <li>
             <Link href="/contact" onClick={() => setMenuOpen(false)} className={styles.navLink}>
               Contact Us
