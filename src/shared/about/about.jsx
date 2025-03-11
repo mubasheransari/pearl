@@ -33,7 +33,7 @@ function About({isMain}) {
                     </p>
                         <p>
                         Our team of experienced civil and structural engineers understands that each project presents unique challenges and requires meticulous 
-                        attention to detail. Focused on creating robust, aesthetically pleasing structures, we prioritize safety, functionality, and sustainability. Every project we undertake meets the highest standards, enhancing not only the structural integrity but also the architectural appeal of the built environment—turning visions into lasting, resilient realities.
+                        attention to detail. Focused on creating robust, aesthetically pleasing structures, we prioritize safety, functionality, and sustainability. Every project we undertake meets the highest standards, enhancing not only the structural integrity but also the architectural appeal of the built environment turning visions into lasting, resilient realities.
                         </p>
                     </div>
                 </div>
