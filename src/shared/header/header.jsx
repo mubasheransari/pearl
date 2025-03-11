@@ -7,6 +7,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import the modal component
 
 import {
+  // faCity,
+  // faBalanceScale,
+  // faFileContract,
+  // faHandshake,
+  // faCalculator,
+  // faUsersCog,
+  // faClipboardList,
+  // faBuilding,
+  // faSearchLocation,
+  // faChartLine,
+  // faProjectDiagram,
+  // faPen,
+  // faEye,
+  // faBolt,
+  // faGavel,
+  // faBookOpen,
+  // faLightbulb,
+  // faEnvelope,
+  faInfoCircle, // Added for "About Us"
+  // faBookReader, // Added for "Research Blogs"
+
+
+  faBookReader,
   faCity,
   faBalanceScale,
   faFileContract,
@@ -20,23 +43,39 @@ import {
   faProjectDiagram,
   faPen,
   faEye,
-  faBolt,
   faGavel,
+  faBolt,
   faBookOpen,
   faLightbulb,
   faEnvelope,
-  faInfoCircle, // Added for "About Us"
-  faBookReader, // Added for "Research Blogs"
+
+  
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
 const aboutLinks = [
-  { link: '/about', text: 'About Us', icon: faInfoCircle }, // Unique icon for "About Us"
+  { link: '/about', text: 'About US', icon: faGavel },
   { link: '/#services', text: 'Our Vision', icon: faEye },
-  { link: '/research-blog', text: 'Research Blogs', icon: faBookReader }, // Unique icon for "Research Blogs"
   { link: '/energy-retrofit', text: 'Energy Retrofit Blog', icon: faBolt },
+  { link: '/research-blog', text: 'Research Blogs', icon: faGavel },
+  { link: '/sustainable-structural', text: 'Sustainable structural', icon: faBalanceScale },
+
   { link: '/contact', text: 'Contact Us', icon: faEnvelope },
+  { link: '/the-importance-hiring', text: 'The important of hiring', icon: faLightbulb },
+  { link: '/common-mistake', text: 'Common mistake', icon: faFileContract },
+  { link: '/future-structure', text: 'Future structure', icon: faBuilding },
+  { link: '/inovative-structure', text: 'Innovative structure design', icon: faProjectDiagram },
+  { link: '/key-chanlleges', text: 'Key challenges', icon: faChartLine },
+  { link: '/right-structure', text: 'Choosing right structure design', icon: faSearchLocation },
+  { link: '/Structural-Design', text: 'Structure design', icon: faClipboardList },
+  { link: '/structure-engineers', text: 'Structure engineers', icon: faUsersCog },
+  
+
 ];
+// Split aboutLinks into two columns
+const leftAboutLinks = aboutLinks.slice(0, Math.ceil(aboutLinks.length / 2));
+const rightAboutLinks = aboutLinks.slice(Math.ceil(aboutLinks.length / 2));
+
 
 const servicesLinks = [
   { link: '/architectural_services', text: 'Architectural', icon: faCity },
@@ -198,17 +237,30 @@ const Navbar = () => {
                 ${aboutOpen ? styles.open : ""}`
               }
             >
-              {aboutLinks.map((s) => (
-                <p key={s.link} className={styles.dropdownItem}>
-                  <Link href={s.link} className={styles.dropdownLink}>
-                    <FontAwesomeIcon icon={s.icon} className={styles.icon} />
-                    {s.text}
-                  </Link>
-                </p>
-              ))}
+              <div className={styles.twoColumnDropdown}>
+                <ul>
+                  {leftAboutLinks.map((s) => (
+                    <li key={s.link} className={styles.dropdownItem}>
+                      <Link href={s.link} className={styles.dropdownLink}>
+                        <FontAwesomeIcon icon={s.icon} className={styles.icon} />
+                        {s.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <ul>
+                  {rightAboutLinks.map((s) => (
+                    <li key={s.link} className={styles.dropdownItem}>
+                      <Link href={s.link} className={styles.dropdownLink}>
+                        <FontAwesomeIcon icon={s.icon} className={styles.icon} />
+                        {s.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </ul>
           </li>
-
           <li><Link href="/#expertise" className={styles.navLink}>Our Expertise</Link></li>
 
           {/* Services Dropdown */}
