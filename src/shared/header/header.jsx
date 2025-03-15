@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'; // Import usePathname to track ro
 import styles from './style.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import the modal component
+import HomePopup from './home-page-popup/home-popup';
 
 import {
   // faCity,
@@ -155,11 +156,23 @@ const Navbar = () => {
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false); // Modal state to control visibility
+  const [homePopup, sethomePopup] = useState(false); // Modal state to control visibility
+
+
   const sidebarRef = useRef(null);
   const dropdownRef = useRef(null);
 
   // Use usePathname to track route changes
   const pathname = usePathname();
+
+   // Open modal when the route is /home
+   useEffect(() => {
+    if (pathname === '/') {
+      sethomePopup(true);
+    } else {
+      sethomePopup(false);
+    }
+  }, [pathname]);
 
   // Open modal when the route is /contact
   useEffect(() => {
@@ -169,6 +182,8 @@ const Navbar = () => {
       setOpenModal(false);
     }
   }, [pathname]);
+
+ 
 
   // Close everything if user clicks outside
   useEffect(() => {
@@ -587,6 +602,8 @@ const Navbar = () => {
       </div>
 
       {/* Render the modal conditionally */}
+      {homePopup && <HomePopup open={homePopup} setOpen={sethomePopup} />}
+
       {openModal && <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />}
     </div>
   );
