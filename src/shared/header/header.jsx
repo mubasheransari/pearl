@@ -8,26 +8,7 @@ import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import
 import HomePopup from './home-page-popup/home-popup';
 
 import {
-  // faCity,
-  // faBalanceScale,
-  // faFileContract,
-  // faHandshake,
-  // faCalculator,
-  // faUsersCog,
-  // faClipboardList,
-  // faBuilding,
-  // faSearchLocation,
-  // faChartLine,
-  // faProjectDiagram,
-  // faPen,
-  // faEye,
-  // faBolt,
-  // faGavel,
-  // faBookOpen,
-  // faLightbulb,
-  // faEnvelope,
-  faInfoCircle, // Added for "About Us"
-  // faBookReader, // Added for "Research Blogs"
+
 
 
   faBookReader,
@@ -49,12 +30,33 @@ import {
   faBookOpen,
   faLightbulb,
   faEnvelope,
+  faCog,
+  faDollarSign,
+  faHome,faUsers,faSearch,faChartBar
 
   
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
 const aboutLinks = [
+  { link: '/about/planing-bulding', text: 'Planning and Building Control', icon: faBuilding },
+  { link: '/about/cost-controal-vs', text: 'Cost Control vs. Value Engineering', icon: faChartBar },
+  { link: '/about/cost-of-hiring', text: 'Cost of Hiring a Consultant Engineer', icon: faDollarSign },
+  { link: '/about/finding-Reliable-Structural-engineer', text: 'Finding a Reliable Structural Engineer', icon: faSearch },
+  { link: '/about/best-structural-engineer', text: 'Finding the Best Structural Engineer in London', icon: faUsers },
+  { link: '/about/front-rear-extension', text: 'Front and Rear Extension', icon: faHome },
+  { link: '/about/how-structural-engineer', text: 'How a Structural Engineer', icon: faCog },
+  { link: '/about/structural-engineer-london', text: 'Structural Engineer in London Cost', icon: faDollarSign },
+  { link: '/about/architect-engineer-bromley-cost', text: 'Architect Engineer in Bromley Cost', icon: faDollarSign },
+  { link: '/about/london', text: 'How Structural Engineers in London', icon: faBuilding },
+  { link: '/about/key-factors', text: 'Key Factor', icon: faCog },
+  { link: '/about/role-quantity', text: 'The Role of Quantity Surveying', icon: faGavel },
+
+
+
+
+
+
   { link: '/about', text: 'About US', icon: faGavel },
   { link: '/#services', text: 'Our Vision', icon: faEye },
   { link: '/energy-retrofit', text: 'Energy Retrofit Blog', icon: faBolt },
@@ -74,8 +76,8 @@ const aboutLinks = [
 
 ];
 // Split aboutLinks into two columns
-const leftAboutLinks = aboutLinks.slice(0, Math.ceil(aboutLinks.length / 2));
-const rightAboutLinks = aboutLinks.slice(Math.ceil(aboutLinks.length / 2));
+// const leftAboutLinks = aboutLinks.slice(0, Math.ceil(aboutLinks.length / 2));
+// const rightAboutLinks = aboutLinks.slice(Math.ceil(aboutLinks.length / 2));
 
 
 const servicesLinks = [
@@ -227,55 +229,39 @@ const Navbar = () => {
           <li><Link href="/" className={styles.navLink}>Home</Link></li>
 
           {/* About Dropdown */}
-          <li
-            className={styles.dropdown}
-            onMouseEnter={() => {
-              closeAllDropdowns();
-              setAboutOpen(true);
-            }}
-            onMouseLeave={() => setAboutOpen(false)}
-          >
-            <Link
-              href="#"
-              className={
-                aboutOpen
-                  ? `${styles.navLink} ${styles.activeLink}`
-                  : styles.navLink
-              }
-            >
-              About ▾
-            </Link>
-            <ul
-              className={
-                `${styles.dropdownMenu} 
-                ${styles.aboutDropdownMenu} 
-                ${aboutOpen ? styles.open : ""}`
-              }
-            >
-              <div className={styles.twoColumnDropdown}>
-                <ul>
-                  {leftAboutLinks.map((s) => (
-                    <li key={s.link} className={styles.dropdownItem}>
-                      <Link href={s.link} className={styles.dropdownLink}>
-                        <FontAwesomeIcon icon={s.icon} className={styles.icon} />
-                        {s.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <ul>
-                  {rightAboutLinks.map((s) => (
-                    <li key={s.link} className={styles.dropdownItem}>
-                      <Link href={s.link} className={styles.dropdownLink}>
-                        <FontAwesomeIcon icon={s.icon} className={styles.icon} />
-                        {s.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </ul>
-          </li>
+<li
+  className={styles.dropdown}
+  onMouseEnter={() => {
+    closeAllDropdowns();
+    setAboutOpen(true);
+  }}
+  onMouseLeave={() => setAboutOpen(false)}
+>
+  <Link
+    href="#"
+    className={
+      aboutOpen
+        ? `${styles.navLink} ${styles.activeLink}`
+        : styles.navLink
+    }
+  >
+    About ▾
+  </Link>
+  <ul
+    className={`${styles.dropdownMenu} ${styles.aboutDropdownMenu} ${aboutOpen ? styles.open : ""}`}
+    style={{ maxHeight: '400px', overflowY: 'scroll' }} // Add scroll here
+  >
+    {aboutLinks.map((s) => (
+      <li key={s.link} className={styles.dropdownItem}>
+        <Link href={s.link} className={styles.dropdownLink}>
+          <FontAwesomeIcon icon={s.icon} className={styles.icon} />
+          {s.text}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</li>
+
           <li><Link href="/#expertise" className={styles.navLink}>Our Expertise</Link></li>
 
           {/* Services Dropdown */}

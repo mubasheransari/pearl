@@ -19,6 +19,7 @@ export default function HomePopup() {
     setOpenModal(false);
   };
 
+  // Style for the modal Box
   const modalStyle = {
     position: "absolute",
     top: "50%",
@@ -26,6 +27,8 @@ export default function HomePopup() {
     transform: "translate(-50%, -50%)",
     width: { xs: "90%", sm: 400, md: 500 },
     bgcolor: "#fff",
+    // Removing any border
+    border: "none",
     boxShadow: 24,
     borderRadius: 2,
     overflow: "hidden",
@@ -33,7 +36,8 @@ export default function HomePopup() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
+    // Center everything (including the "Show Modal" button)
+    <div style={{ padding: 20, textAlign: "center" }}>
       {/* Button to show/open the modal */}
       <Button variant="contained" onClick={handleOpen}>
         Show Modal
@@ -41,13 +45,13 @@ export default function HomePopup() {
 
       <Modal open={openModal} onClose={handleClose}>
         <Box sx={modalStyle}>
+          {/* Close IconButton with no black color override */}
           <IconButton
             onClick={handleClose}
             sx={{
               position: "absolute",
               top: 8,
               right: 8,
-              color: "#000",
               svg: {
                 fontSize: { xs: 20, sm: 24 },
               },
@@ -56,6 +60,7 @@ export default function HomePopup() {
             <CloseIcon />
           </IconButton>
 
+          {/* Centered heading */}
           <Typography
             align="center"
             sx={{
@@ -67,13 +72,14 @@ export default function HomePopup() {
             Download Our Mobile App Now!
           </Typography>
 
+          {/* Centered content */}
           <Box sx={{ p: 1.5, textAlign: "center" }}>
             <Typography variant="body2" sx={{ mb: 2 }}>
               Our mobile app is now live on the App Store!
               Get seamless access to our services anytime, anywhere.
             </Typography>
 
-            {/* Button with slight hover background change, no text color change */}
+            {/* Button with hover background change, text remains white */}
             <Button
               component="a"
               href="https://apps.apple.com/us/app/pepp/id6503652490"
@@ -81,12 +87,12 @@ export default function HomePopup() {
               variant="contained"
               sx={{
                 backgroundColor: "primary.main",
-                color: "#fff",          // White text
+                color: "#fff", // White text
                 padding: "8px 20px",
                 fontWeight: "bold",
                 "&:hover": {
-                  backgroundColor: "primary.dark",  // Slightly darker background
-                  color: "#fff",                     // Keep text white (no change)
+                  backgroundColor: "primary.dark", // Slightly darker background
+                  color: "#fff", // Keep text white
                 },
               }}
             >

@@ -1,0 +1,136 @@
+// Main container
+.hiringGuide {
+  margin-top: 75px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+    // Responsive padding for smaller screens
+    @media (max-width: 768px) {
+      padding: 15px;
+    }
+  }
+  
+  // Header
+  .hiringGuide__header {
+    margin-bottom: 30px;
+  
+    // Responsive margin for smaller screens
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+  
+  // Title
+  .hiringGuide__title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  
+    // Responsive font size for smaller screens
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 1.75rem;
+    }
+  }
+  
+  // Intro text
+  .hiringGuide__intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+  
+    // Responsive font size for smaller screens
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  // Section
+  .hiringGuide__section {
+    margin-bottom: 30px;
+  
+    // Responsive margin for smaller screens
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+  
+  // Subtitle
+  .hiringGuide__subtitle {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 15px;
+  
+    // Responsive font size for smaller screens
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 1.25rem;
+    }
+  }
+  
+  // Text
+  .hiringGuide__text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+  
+    // Responsive font size for smaller screens
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  // List
+  .hiringGuide__list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  
+    // Responsive margin for smaller screens
+    @media (max-width: 768px) {
+      margin-left: 0px; // Remove left margin in mobile view
+    }
+  }
+  
+  // List item
+  .hiringGuide__listItem {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  
+    // Responsive font size for smaller screens
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  // Footer
+  .hiringGuide__footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  
+    // Responsive margin for smaller screens
+    @media (max-width: 768px) {
+      margin-top: 30px;
+      padding-top: 15px;
+    }
+  }
+  
+  // Link
+  .hiringGuide__link {
+    color: #1c0fac;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
