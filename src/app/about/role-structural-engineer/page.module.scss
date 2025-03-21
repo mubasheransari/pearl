@@ -1,0 +1,135 @@
+.urbanDevelopment {
+  margin-top: 75px; // Default margin-top for desktop
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  // Responsive adjustments for mobile devices
+  @media (max-width: 768px) {
+    margin-left: 0; // Remove margin-left for mobile
+    padding: 15px; // Adjust padding for mobile
+  }
+
+  .title {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+
+    // Responsive adjustments for mobile devices
+    @media (max-width: 768px) {
+      font-size: 2rem; // Reduce font size for mobile
+    }
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+
+    // Responsive adjustments for mobile devices
+    @media (max-width: 768px) {
+      font-size: 1rem; // Reduce font size for mobile
+    }
+  }
+
+  .section {
+    margin-bottom: 40px;
+
+    .sectionTitle {
+      font-size: 2rem;
+      color: #444;
+      margin-bottom: 15px;
+
+      // Responsive adjustments for mobile devices
+      @media (max-width: 768px) {
+        font-size: 1.5rem; // Reduce font size for mobile
+      }
+    }
+
+    .sectionContent {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+
+      // Responsive adjustments for mobile devices
+      @media (max-width: 768px) {
+        font-size: 1rem; // Reduce font size for mobile
+      }
+    }
+
+    .list {
+      list-style-type: disc;
+      margin-left: 40px;
+      margin-bottom: 20px;
+
+      // Responsive adjustments for mobile devices
+      @media (max-width: 768px) {
+        margin-left: 20px; // Reduce margin-left for mobile
+      }
+
+      li {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+
+        // Responsive adjustments for mobile devices
+        @media (max-width: 768px) {
+          font-size: 1rem; // Reduce font size for mobile
+        }
+      }
+    }
+  }
+
+  .contactSection {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+
+    // Responsive adjustments for mobile devices
+    @media (max-width: 768px) {
+      padding: 15px; // Adjust padding for mobile
+    }
+
+    .contactTitle {
+      font-size: 2rem;
+      color: #444;
+      margin-bottom: 15px;
+
+      // Responsive adjustments for mobile devices
+      @media (max-width: 768px) {
+        font-size: 1.5rem; // Reduce font size for mobile
+      }
+    }
+
+    .contactContent {
+      font-size: 1.1rem;
+      line-height: 1.6;
+
+      // Responsive adjustments for mobile devices
+      @media (max-width: 768px) {
+        font-size: 1rem; // Reduce font size for mobile
+      }
+
+      .contactLink {
+        color: #0f15cf;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .conclusion {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+
+    // Responsive adjustments for mobile devices
+    @media (max-width: 768px) {
+      font-size: 1rem; // Reduce font size for mobile
+    }
+  }
+}

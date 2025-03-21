@@ -1,0 +1,112 @@
+.signsEngineer {
+    margin-top: 75px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  
+  
+  
+    .title {
+      font-size: 2.5rem;
+      color: #222;
+      margin-bottom: 20px;
+  
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  
+    .intro {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+  
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  
+    .section {
+      margin-bottom: 40px;
+  
+      .sectionTitle {
+        font-size: 2rem;
+        color: #444;
+        margin-bottom: 15px;
+  
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+  
+      .sectionContent {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+  
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  
+    .whyChoosePEPP {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+  
+      @media (max-width: 768px) {
+        padding: 15px;
+      }
+    }
+  
+    .contactSection {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+  
+      @media (max-width: 768px) {
+        padding: 15px;
+      }
+  
+      .contactTitle {
+        font-size: 2rem;
+        color: #444;
+        margin-bottom: 15px;
+  
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+  
+      .contactContent {
+        font-size: 1.1rem;
+        line-height: 1.6;
+  
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+  
+        .contactLink {
+          color: #0f15cf;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    .conclusion {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+  
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }

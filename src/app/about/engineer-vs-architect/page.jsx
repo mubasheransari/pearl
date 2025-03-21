@@ -1,0 +1,110 @@
+import React from 'react';
+import styles from './page.module.scss';
+
+const EngineerVsArchitect = () => {
+  return (
+    <div className={styles.engineerVsArchitect}>
+      <h1 className={styles.title}>Structural Engineer vs. Architect in London: Who Do You Need?</h1>
+      <p className={styles.intro}>
+        When planning a construction project in London, it’s essential to understand the difference between a structural engineer and an architect. While both professionals play critical roles in the design and construction process, their responsibilities and expertise vary significantly. Knowing who to hire can save time, reduce costs, and ensure regulatory compliance. Let’s explore the key differences between a structural engineer and an architect, and when you need each professional.
+      </p>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>1. What Does a Structural Engineer Do?</h2>
+        <p className={styles.sectionContent}>
+          A structural engineer focuses on the strength, stability, and safety of buildings and structures. Their responsibilities include:
+        </p>
+        <ul className={styles.list}>
+          <li>Structural calculations to ensure buildings can withstand loads and forces.</li>
+          <li>Foundation and beam assessments to maintain structural integrity.</li>
+          <li>Load-bearing wall modifications to prevent collapses.</li>
+          <li>Subsidence and foundation inspections to detect potential structural risks.</li>
+          <li>Ensuring compliance with UK Building Regulations.</li>
+        </ul>
+        <p className={styles.sectionContent}>
+          Structural engineers work closely with architects and contractors to ensure that designs are not only aesthetically pleasing but also safe and structurally sound.
+        </p>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>2. What Does an Architect Do?</h2>
+        <p className={styles.sectionContent}>
+          An architect is responsible for the design, aesthetics, and functionality of a building. Their tasks include:
+        </p>
+        <ul className={styles.list}>
+          <li>Creating architectural drawings and blueprints.</li>
+          <li>Optimizing space and layout for functionality and aesthetics.</li>
+          <li>Planning permissions and building regulations compliance.</li>
+          <li>Material selection for energy efficiency and sustainability.</li>
+          <li>Overseeing design execution to match the client’s vision.</li>
+        </ul>
+        <p className={styles.sectionContent}>
+          Architects focus on the visual and functional aspects of a project, ensuring it aligns with the client's needs and regulatory requirements.
+        </p>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>3. When Do You Need a Structural Engineer?</h2>
+        <p className={styles.sectionContent}>
+          You should hire a structural engineer in London for:
+        </p>
+        <ul className={styles.list}>
+          <li>Removing or modifying load-bearing walls.</li>
+          <li>Building extensions, loft conversions, or basement renovations.</li>
+          <li>Assessing structural damage, cracks, or subsidence issues.</li>
+          <li>Ensuring the safety of older or listed buildings.</li>
+          <li>Conducting structural calculations for planning applications.</li>
+        </ul>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>4. When Do You Need an Architect?</h2>
+        <p className={styles.sectionContent}>
+          An architect is needed when:
+        </p>
+        <ul className={styles.list}>
+          <li>Designing a new building or major renovation project.</li>
+          <li>Optimizing layouts for better space utilization.</li>
+          <li>Preparing and submitting planning applications.</li>
+          <li>Enhancing the aesthetic and functional appeal of a structure.</li>
+          <li>Coordinating with engineers and contractors on construction plans.</li>
+        </ul>
+      </section>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>5. Do You Need Both an Architect and a Structural Engineer?</h2>
+        <p className={styles.sectionContent}>
+          For large-scale projects, you often need both professionals. An architect will focus on the design and planning, while a structural engineer ensures that the design is structurally viable and safe. Working together, they ensure a seamless, compliant, and efficient building process.
+        </p>
+      </section>
+
+      <section className={styles.whyChoosePEPP}>
+        <h2 className={styles.sectionTitle}>How PEPP Provides Structural Engineering Expertise in London</h2>
+        <p className={styles.sectionContent}>
+          At Pearl Engineers Planners and Project Managers (PEPP), we specialize in structural analysis, safety inspections, and compliance consulting. Our structural engineers work closely with architects to ensure every project is safe, functional, and regulation compliant.
+        </p>
+        <ul className={styles.list}>
+          <li>Expert structural calculations for renovations and new builds.</li>
+          <li>Detailed structural surveys and inspections for residential and commercial properties.</li>
+          <li>Collaborative approach with architects and contractors.</li>
+          <li>Ensuring UK Building Regulations compliance for all projects.</li>
+        </ul>
+      </section>
+
+      <section className={styles.contactSection}>
+        <h2 className={styles.contactTitle}>Contact Us Today!</h2>
+        <p className={styles.contactContent}>
+          Need a structural engineer in London? Contact PEPP today! Call <a href="tel:+447460140474" className={styles.contactLink}>+44 7460140474</a> or email <a href="mailto:info@pearlepp.co.uk" className={styles.contactLink}>info@pearlepp.co.uk</a>. Visit <a href="https://pearlepp.co.uk/" className={styles.contactLink}>PearlEPP.co.uk</a> for expert guidance.
+        </p>
+      </section>
+
+      <section className={styles.conclusion}>
+        <p className={styles.conclusionContent}>
+          Understanding the difference between a structural engineer and an architect is crucial when planning a construction project in London. While architects focus on design, structural engineers ensure stability and safety. For seamless project execution, consider hiring both professionals to achieve the best results. Trust PEPP for all your architectural and structural engineering needs in London.
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default EngineerVsArchitect;

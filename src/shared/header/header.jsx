@@ -29,16 +29,111 @@ import {
   faBolt,
   faBookOpen,
   faLightbulb,
-  faEnvelope,
-  faCog,
-  faDollarSign,
-  faHome,faUsers,faSearch,faChartBar
+  faEnvelope,faInfoCircle,
+  faCog,faCheckCircle,faPoundSign,
+  faDollarSign,faDraftingCompass,
+  faHome,faUsers,faSearch,faChartBar,faListOl,faUserTie
+  ,faExclamationCircle,faHardHat,faExclamationTriangle,faExchangeAlt,faTools
 
   
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
 const aboutLinks = [
+  {
+    link: '/about/role-quantity-surveying',
+    text: 'The Role of Quantity Surveying',
+    icon: faBalanceScale
+  },
+  {
+    link: '/about/key-factor',
+    text: 'Key Factors to Consider',
+    icon: faClipboardList
+  },
+  {
+    link: '/about/role-structural-engineer',
+    text: 'The Role of a Structural Engineer in London',
+    icon: faHardHat
+  },
+  {
+    link: '/about/need-structural-engineer',
+    text: 'Signs That You Need a Structural Engineer',
+    icon: faExclamationTriangle
+  },
+  {
+    link: '/about/engineer-vs-architect',
+    text: 'Structural Engineer vs. Architect in London',
+    icon: faExchangeAlt
+  },
+  {
+    link: '/about/structural-engineering-challenges',
+    text: 'Structural Engineering Challenges',
+    icon: faTools
+  },
+  {
+    link: '/about/benefits-working',
+    text: 'The Benefits of Working',
+    icon: faHandshake
+  },
+  {
+    link: '/about/future-structural-engineering-london',
+    text: 'The Future of Structural Engineering in London',
+    icon: faCity
+  },
+  {
+    link: '/about/top-reasons',
+    text: 'Top Reasons You Need a Structural Engineer',
+    icon: faListOl
+  },
+  {
+    link: '/about/does-engineering',
+    text: 'What Does an Engineering Consultant Do',
+    icon: faUserTie
+  },
+  {
+    link: '/about/architect-surveying',
+    text: 'What Is Architect Surveying',
+    icon: faDraftingCompass
+  },
+  {
+    link: '/about/engineer-london-cost',
+    text: 'Structural Engineer in London Cost',
+    icon: faPoundSign
+  },
+  {
+    link: '/about/factors',
+    text: 'Key Factors to Consider When Hiring a Structural Engineer in London',
+    icon: faCheckCircle
+  },
+  {
+    link: '/about/quantity-surveying-bromley',
+    text: 'The Role of Quantity Surveying',
+    icon: faCalculator
+  },
+  {
+    link: '/about/urban-development',
+    text: 'Structural Engineer in London’s Urban Development',
+    icon: faBuilding
+  },
+  {
+    link: '/about/signs-that',
+    text: 'Signs That You Need a Structural Engineer',
+    icon: faExclamationCircle
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   { link: '/about/planing-bulding', text: 'Planning and Building Control', icon: faBuilding },
   { link: '/about/cost-controal-vs', text: 'Cost Control vs. Value Engineering', icon: faChartBar },
   { link: '/about/cost-of-hiring', text: 'Cost of Hiring a Consultant Engineer', icon: faDollarSign },
@@ -47,17 +142,23 @@ const aboutLinks = [
   { link: '/about/front-rear-extension', text: 'Front and Rear Extension', icon: faHome },
   { link: '/about/how-structural-engineer', text: 'How a Structural Engineer', icon: faCog },
   { link: '/about/structural-engineer-london', text: 'Structural Engineer in London Cost', icon: faDollarSign },
-  { link: '/about/architect-engineer-bromley-cost', text: 'Architect Engineer in Bromley Cost', icon: faDollarSign },
-  { link: '/about/london', text: 'How Structural Engineers in London', icon: faBuilding },
+  {
+    link: '/about/architect-engineer-bromley-cost',
+    text: 'Architect Engineer in Bromley Cost',
+    icon: faPoundSign
+  },
+    { link: '/about/london', text: 'How Structural Engineers in London', icon: faBuilding },
   { link: '/about/key-factors', text: 'Key Factor', icon: faCog },
-  { link: '/about/role-quantity', text: 'The Role of Quantity Surveying', icon: faGavel },
-
-
-
-
-
-
-  { link: '/about', text: 'About US', icon: faGavel },
+  {
+    link: '/about/role-quantity',
+    text: 'The Role of Quantity Surveying',
+    icon: faBalanceScale
+  },
+  {
+    link: '/about',
+    text: 'About US',
+    icon: faInfoCircle
+  },
   { link: '/#services', text: 'Our Vision', icon: faEye },
   { link: '/energy-retrofit', text: 'Energy Retrofit Blog', icon: faBolt },
   { link: '/research-blog', text: 'Research Blogs', icon: faGavel },
