@@ -42,7 +42,7 @@ import {
 const aboutLinks = [
   {
     link: '/about/role-quantity-surveying',
-    text: 'The Role of Quantity Surveying',
+    text: 'Role of Quantity Surveying',
     icon: faBalanceScale
   },
   {
@@ -62,7 +62,7 @@ const aboutLinks = [
   },
   {
     link: '/about/engineer-vs-architect',
-    text: 'Structural Engineer vs. Architect in London',
+    text: 'Structural Engineer VS Architect in London',
     icon: faExchangeAlt
   },
   {
@@ -72,12 +72,12 @@ const aboutLinks = [
   },
   {
     link: '/about/benefits-working',
-    text: 'The Benefits of Working',
+    text: 'Benefits of Working',
     icon: faHandshake
   },
   {
     link: '/about/future-structural-engineering-london',
-    text: 'The Future of Structural Engineering in London',
+    text: 'Future of Structural Engineering in London',
     icon: faCity
   },
   {
@@ -107,7 +107,7 @@ const aboutLinks = [
   },
   {
     link: '/about/quantity-surveying-bromley',
-    text: 'The Role of Quantity Surveying',
+    text: 'Role of Quantity Surveying',
     icon: faCalculator
   },
   {
@@ -148,7 +148,7 @@ const aboutLinks = [
     icon: faPoundSign
   },
     { link: '/about/london', text: 'How Structural Engineers in London', icon: faBuilding },
-  { link: '/about/key-factors', text: 'Key Factor', icon: faCog },
+  { link: '/about/key-factors', text: 'Key Factors', icon: faCog },
   {
     link: '/about/role-quantity',
     text: 'The Role of Quantity Surveying',
@@ -156,23 +156,23 @@ const aboutLinks = [
   },
   {
     link: '/about',
-    text: 'About US',
+    text: 'About Us',
     icon: faInfoCircle
   },
   { link: '/#services', text: 'Our Vision', icon: faEye },
   { link: '/energy-retrofit', text: 'Energy Retrofit Blog', icon: faBolt },
-  { link: '/research-blog', text: 'Research Blogs', icon: faGavel },
-  { link: '/sustainable-structural', text: 'Sustainable structural', icon: faBalanceScale },
+  { link: '/research-blog', text: 'Research Blog', icon: faGavel },
+  { link: '/sustainable-structural', text: 'Sustainable Structure', icon: faBalanceScale },
 
   { link: '/contact', text: 'Contact Us', icon: faEnvelope },
-  { link: '/the-importance-hiring', text: 'The important of hiring', icon: faLightbulb },
-  { link: '/common-mistake', text: 'Common mistake', icon: faFileContract },
-  { link: '/future-structure', text: 'Future structure', icon: faBuilding },
-  { link: '/inovative-structure', text: 'Innovative structure design', icon: faProjectDiagram },
-  { link: '/key-chanlleges', text: 'Key challenges', icon: faChartLine },
-  { link: '/right-structure', text: 'Choosing right structure design', icon: faSearchLocation },
-  { link: '/Structural-Design', text: 'Structure design', icon: faClipboardList },
-  { link: '/structure-engineers', text: 'Structure engineers', icon: faUsersCog },
+  { link: '/the-importance-hiring', text: 'The importance of hiring', icon: faLightbulb },
+  { link: '/common-mistake', text: 'Common Mistakes', icon: faFileContract },
+  { link: '/future-structure', text: 'Future Structure', icon: faBuilding },
+  { link: '/inovative-structure', text: 'Innovative Structural Design', icon: faProjectDiagram },
+  { link: '/key-chanlleges', text: 'Key Challenges', icon: faChartLine },
+  { link: '/right-structure', text: 'Choosing Right Structural Design', icon: faSearchLocation },
+  { link: '/Structural-Design', text: 'Structural Design', icon: faClipboardList },
+  { link: '/structure-engineers', text: 'Structural Engineers', icon: faUsersCog },
   
 
 ];
