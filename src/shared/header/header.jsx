@@ -10,7 +10,6 @@ import HomePopup from './home-page-popup/home-popup';
 import {
 
 
-
   faBookReader,
   faCity,
   faBalanceScale,
@@ -29,131 +28,47 @@ import {
   faBolt,
   faBookOpen,
   faLightbulb,
-  faEnvelope,faInfoCircle,
-  faCog,faCheckCircle,faPoundSign,
-  faDollarSign,faDraftingCompass,
-  faHome,faUsers,faSearch,faChartBar,faListOl,faUserTie
-  ,faExclamationCircle,faHardHat,faExclamationTriangle,faExchangeAlt,faTools
+  faEnvelope,
+  faInfoCircle,
+  faCog,
+  faCheckCircle,
+  faPoundSign,
+  faDollarSign,
+  faDraftingCompass,
+  faHome,
+  faUsers,
+  faSearch,
+  faChartBar,
+  faListOl,
+  faUserTie,
+  faExclamationCircle,
+  faHardHat,
+  faExclamationTriangle,
+  faExchangeAlt,
+  faTools,
+  faRulerCombined,
+  faCalculatorAlt,
+  faPenRuler,
+  faBuildingCircleCheck,
+  faSearchPlus,
+  faIndustry,
+  faFileAlt,
+  faUserCheck,
+  faDrawPolygon,
+  faRulerHorizontal,
+  faTrowel,
+  faHouseChimney,
+  faPeopleCarry,
+  faHammer,
+  faShieldAlt,
+  faCogs
 
   
 } from '@fortawesome/free-solid-svg-icons';
 
 /* Submenu items do NOT repeat "Services" in their text */
 const aboutLinks = [
-  {
-    link: '/about/role-quantity-surveying',
-    text: 'The Role of Quantity Surveying',
-    icon: faBalanceScale
-  },
-  {
-    link: '/about/key-factor',
-    text: 'Key Factors to Consider',
-    icon: faClipboardList
-  },
-  {
-    link: '/about/role-structural-engineer',
-    text: 'The Role of a Structural Engineer in London',
-    icon: faHardHat
-  },
-  {
-    link: '/about/need-structural-engineer',
-    text: 'Signs That You Need a Structural Engineer',
-    icon: faExclamationTriangle
-  },
-  {
-    link: '/about/engineer-vs-architect',
-    text: 'Structural Engineer vs. Architect in London',
-    icon: faExchangeAlt
-  },
-  {
-    link: '/about/structural-engineering-challenges',
-    text: 'Structural Engineering Challenges',
-    icon: faTools
-  },
-  {
-    link: '/about/benefits-working',
-    text: 'The Benefits of Working',
-    icon: faHandshake
-  },
-  {
-    link: '/about/future-structural-engineering-london',
-    text: 'The Future of Structural Engineering in London',
-    icon: faCity
-  },
-  {
-    link: '/about/top-reasons',
-    text: 'Top Reasons You Need a Structural Engineer',
-    icon: faListOl
-  },
-  {
-    link: '/about/does-engineering',
-    text: 'What Does an Engineering Consultant Do',
-    icon: faUserTie
-  },
-  {
-    link: '/about/architect-surveying',
-    text: 'What Is Architect Surveying',
-    icon: faDraftingCompass
-  },
-  {
-    link: '/about/engineer-london-cost',
-    text: 'Structural Engineer in London Cost',
-    icon: faPoundSign
-  },
-  {
-    link: '/about/factors',
-    text: 'Key Factors to Consider When Hiring a Structural Engineer in London',
-    icon: faCheckCircle
-  },
-  {
-    link: '/about/quantity-surveying-bromley',
-    text: 'The Role of Quantity Surveying',
-    icon: faCalculator
-  },
-  {
-    link: '/about/urban-development',
-    text: 'Structural Engineer in London’s Urban Development',
-    icon: faBuilding
-  },
-  {
-    link: '/about/signs-that',
-    text: 'Signs That You Need a Structural Engineer',
-    icon: faExclamationCircle
-  },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  { link: '/about/planing-bulding', text: 'Planning and Building Control', icon: faBuilding },
-  { link: '/about/cost-controal-vs', text: 'Cost Control vs. Value Engineering', icon: faChartBar },
-  { link: '/about/cost-of-hiring', text: 'Cost of Hiring a Consultant Engineer', icon: faDollarSign },
-  { link: '/about/finding-Reliable-Structural-engineer', text: 'Finding a Reliable Structural Engineer', icon: faSearch },
-  { link: '/about/best-structural-engineer', text: 'Finding the Best Structural Engineer in London', icon: faUsers },
-  { link: '/about/front-rear-extension', text: 'Front and Rear Extension', icon: faHome },
-  { link: '/about/how-structural-engineer', text: 'How a Structural Engineer', icon: faCog },
-  { link: '/about/structural-engineer-london', text: 'Structural Engineer in London Cost', icon: faDollarSign },
-  {
-    link: '/about/architect-engineer-bromley-cost',
-    text: 'Architect Engineer in Bromley Cost',
-    icon: faPoundSign
-  },
-    { link: '/about/london', text: 'How Structural Engineers in London', icon: faBuilding },
-  { link: '/about/key-factors', text: 'Key Factor', icon: faCog },
-  {
-    link: '/about/role-quantity',
-    text: 'The Role of Quantity Surveying',
-    icon: faBalanceScale
-  },
   {
     link: '/about',
     text: 'About US',
@@ -177,8 +92,8 @@ const aboutLinks = [
 
 ];
 // Split aboutLinks into two columns
-// const leftAboutLinks = aboutLinks.slice(0, Math.ceil(aboutLinks.length / 2));
-// const rightAboutLinks = aboutLinks.slice(Math.ceil(aboutLinks.length / 2));
+const leftAboutLinks = aboutLinks.slice(0, Math.ceil(aboutLinks.length / 2));
+const rightAboutLinks = aboutLinks.slice(Math.ceil(aboutLinks.length / 2));
 
 
 const servicesLinks = [
@@ -200,26 +115,254 @@ const categoryLinks = [
 ];
 
 /* Blog: single column */
+
+
 const blogLinks = [
-  { link: 'rear-extension-ideas-from-simplicity-to-architectural-ingenuity', text: 'Rear Extension Ideas' },
-  { link: 'the-importance-of-structural-calculations-in-modern-construction-projects', text: 'Structural Calculations' },
-  { link: 'structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach', text: 'Structural Engineer Calculations' },
-  { link: 'how-planning-drawings-services-can-transform-your-architectural-vision-into-reality', text: 'Planning Drawings' },
-  { link: 'project-manager-construction-service-by-pearl-engineers-planners-and-project-managers-(PEPP)', text: 'Project Manager Construction' },
-  { link: 'commercial-construction-planning-services-by-pearl-engineers-planners-and-project-managers-(PEPP)', text: 'Commercial Construction Planning' },
-  { link: 'commercial-construction-plans-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Commercial Construction Plans' },
-  { link: 'building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Building Compliance Services' },
-  { link: 'independent-building-inspectors-by-pearl-engineers-planners-and-project-managers-(pepp)', text: 'Independent Building Inspectors' },
-  { link: 'commercial-architecture-firm-pear-engineers-planners-and-project-managers-(PEPP)', text: 'Commercial Architecture Firm' },
-  { link: 'Expert-Architectural-Design-Services-Across-the-UK', text: 'Expert Architectural Design Services Across the UK' },
-  { link: 'Exploring-Cutting-Edge-Structural-Engineering-Solutions-for-Complex-Projects', text: 'Exploring Cutting-Edge Structural Engineering Solutions for Complex Projects' },
-  { link: 'How-a-Residential-Construction-Project-Manager-Ensures-Successful-Home-Building-Projects?', text: 'How a Residential Construction Project Manager Ensures Successful Home Building Projects?' },
-  { link: 'Mastering-Residential-Construction-Project-Management-Essential-Strategies-for-Success', text: 'Residential Construction Project Management' },
-  { link: 'Party-Wall-Surveyor-Cost-by-Pearl-Engineers-Planners-and-Project-Manager-(PEPP)', text: 'Party Wall Surveyor Cost' },
-  { link: 'Exploring-the-Importance-of-Architecture-Drawing-Plans-in-Modern-Design', text: 'Architecture Drawing Plan' },
-  { link: 'Structural-Engineer-London-Services-Ensuring-Safety-and-Innovation-in-Your-Builds', text: 'Structural Engineer London Services' },
-  { link: 'Planning-Agent-Services-Explained-What-You-Need-to-Know-for-Effective-Project-Management', text: 'Planning Agent Services' },
-  { link: 'Rear-Extensions-Transform-Your-Space-with-Innovative-Design-Solutions', text: 'Rear Extension' },
+  {
+    link: '/blog/A-Guide-to-Planning-and-Building-Control-in-Bromley-What-You-Need-to-Know',
+    text: 'A Guide to Planning and Building Control in Bromley: What You Need to Know',
+    icon: faBalanceScale
+  },
+  {
+    link: '/blog/Choosing-the-Right-Structural-Design-Engineer-in-Bromley-London-A-Guide',
+    text: 'Choosing the Right Structural Design Engineer in Bromley, London: A Guide',
+    icon: faClipboardList
+  },
+  {
+    link: '/blog/How-Cost-Control-and-Value-Engineering-Benefit-Construction-Projects-in-Bromley',
+    text: 'How Cost Control and Value Engineering Benefit Construction Projects in Bromley',
+    icon: faHardHat
+  },
+  {
+    link: '/blog/Cost-Control-vs-Value-Engineering-Understanding-the-Key-Differences',
+    text: 'Cost Control vs. Value Engineering: Understanding the Key Differences',
+    icon: faExclamationTriangle
+  },
+  {
+    link: '/blog/Cost-of-Hiring-a-Consultant-Engineer-in-Bromley-What-to-Expect',
+    text: 'Cost of Hiring a Consultant Engineer in Bromley: What to Expect',
+    icon: faExchangeAlt
+  },
+  {
+    link: '/blog/Finding-a-Reliable-Structural-Engineer-Near-Me-What-to-Look-For',
+    text: 'Finding a Reliable Structural Engineer Near Me: What to Look For',
+    icon: faTools
+  },
+  {
+    link: '/blog/Finding-the-Best-Structural-Engineer-in-London-A-Complete-Guide',
+    text: 'Finding the Best Structural Engineer in London: A Complete Guide',
+    icon: faHandshake
+  },
+  {
+    link: '/blog/Front-and-Rear-Extension',
+    text: 'Front and Rear Extension: Maximizing Your Buildings Space and Value',
+    icon: faCity
+  },
+  {
+    link: '/blog/How-a-Structural-Engineer-Near-Me-Can-Save-You-Time-and-Money',
+    text: 'How a Structural Engineer Near Me Can Save You Time and Money?',
+    icon: faListOl
+  },
+  {
+    link: '/blog/How-Much-Does-a-Structural-Engineer-in-London-Cost',
+    text: 'How Much Does a Structural Engineer in London Cost',
+    icon: faUserTie
+  },
+  {
+    link: '/blog/How-Much-Does-an-Architect-Engineer-in-Bromley-Cost',
+    text: 'How Much Does an Architect Engineer in Bromley Cost?',
+    icon: faDraftingCompass
+  },
+  {
+    link: '/blog/How-Structural-Engineers-in-London-Ensure-Safe-and-Sustainable-Buildings',
+    text: 'How Structural Engineers in London Ensure Safe and Sustainable Buildings',
+    icon: faPoundSign
+  },
+  {
+    link: '/blog/How-to-Find-the-Best-Structural-Engineer-Near-Me-A-Complete-Guide',
+    text: 'How to Find the Best Structural Engineer Near Me: A Complete Guide?',
+    icon: faCheckCircle
+  },
+  {
+    link: '/blog/Key-Factors-to-Consider-When-Hiring-a-Structural-Engineer-in-London',
+    text: 'Key Factors to Consider When Hiring a Structural Engineer in London',
+    icon: faCalculator
+  },
+  {
+    link: '/blog/The-Role-of-Quantity-Surveying-in-Bromley-Growing-Construction-Industry',
+    text: 'The Role of Quantity Surveying in Bromley Growing Construction Industry',
+    icon: faBuilding
+  },
+  { 
+    link: '/blog/The-Role-of-a-Structural-Engineer-in-London-Urban-Development', 
+    text: 'What Is Contractor Management? A Complete Guide for Businesses', 
+    icon: faGavel 
+  },
+  { 
+    link: '/blog/Signs-That-You-Need-a-Structural-Engineer-Near-Me', 
+    text: 'Signs That You Need a Structural Engineer Near Me', 
+    icon: faRulerCombined 
+  },
+  { 
+    link: '/blog/Structural-Engineer-vs-Architect-in-London-Who-Do-You-Need', 
+    text: 'Structural Engineer vs. Architect in London: Who Do You Need', 
+    icon: faHome 
+  },
+  { 
+    link: '/blog/Structural-Engineering-Challenges-and-Solutions-in-London', 
+    text: 'Structural Engineering Challenges and Solutions in London', 
+    icon: faCalculatorAlt 
+  },
+  { 
+    link: '/blog/The-Benefits-of-Working-with-a-Structural-Engineer-Near-Me', 
+    text: 'The Benefits of Working with a Structural Engineer Near Me', 
+    icon: faPenRuler 
+  },
+  { 
+    link: '/blog/The-Future-of-Structural-Engineering-in-London-Trends-and-Innovations', 
+    text: 'The Future of Structural Engineering in London: Trends and Innovations', 
+    icon: faUsersCog 
+  },
+  { 
+    link: '/blog/Top-Reasons-You-Need-a-Structural-Engineer-Near-Me-for-Your-Project', 
+    text: 'Top Reasons You Need a Structural Engineer Near Me for Your Project', 
+    icon: faBuildingCircleCheck 
+  },
+  { 
+    link: '/blog/What-Does-an-Engineering-Consultant-Do-A-Comprehensive-Guide', 
+    text: 'What Does an Engineering Consultant Do? A Comprehensive Guide', 
+    icon: faSearchPlus 
+  },
+  { 
+    link: '/blog/What-Is-Architect-Surveying-a-Comprehensive-Guide', 
+    text: 'What Is Architect Surveying a Comprehensive Guide', 
+    icon: faIndustry 
+  },
+  { 
+    link: '/blog/What-Is-Contractor-Management-A-Complete-Guide-for-Businesses', 
+    text: 'What Is Architect Surveying a Comprehensive Guide', 
+    icon: faFileAlt 
+  },
+  { 
+    link: '/blog/What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners', 
+    text: 'What Is Architect Surveying a Comprehensive Guide', 
+    icon: faUserCheck 
+  },
+  { 
+    link: '/blog/Why-You-Should-Hire-a-Consultant-Engineer-in-Bromley-for-Your-Project', 
+    text: 'Why You Should Hire a Consultant Engineer in Bromley for Your Project', 
+    icon: faDrawPolygon 
+  },
+  { 
+    link: '/blog/Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters', 
+    text: 'Why Hiring a Local Structural Engineer Near Me Matters', 
+    icon: faRulerHorizontal 
+  },
+  { 
+    link: '/blog/Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project', 
+    text: 'Why You Need a Structural Engineer in London for Your Construction Project', 
+    icon: faTrowel 
+  },
+  { 
+    link: '/blog/Why-You-Need-an-Architect-Engineer-in-Bromley-for-Your-Construction-Project', 
+    text: 'Why You Need an Architect Engineer in Bromley for Your Construction Project', 
+    icon: faHouseChimney 
+  },
+  { 
+    link: 'rear-extension-ideas-from-simplicity-to-architectural-ingenuity', 
+    text: 'Rear Extension Ideas', 
+    icon: faFileContract 
+  },
+  { 
+    link: 'the-importance-of-structural-calculations-in-modern-construction-projects', 
+    text: 'Structural Calculations', 
+    icon: faPeopleCarry 
+  },
+  { 
+    link: 'structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach', 
+    text: 'Structural Engineer Calculations', 
+    icon: faHammer 
+  },
+  { 
+    link: 'how-planning-drawings-services-can-transform-your-architectural-vision-into-reality', 
+    text: 'Planning Drawings', 
+    icon: faLightbulb 
+  },
+  { 
+    link: 'project-manager-construction-service-by-pearl-engineers-planners-and-project-managers-(PEPP)', 
+    text: 'Project Manager Construction', 
+    icon: faChartLine 
+  },
+  { 
+    link: 'commercial-construction-planning-services-by-pearl-engineers-planners-and-project-managers-(PEPP)', 
+    text: 'Commercial Construction Planning', 
+    icon: faShieldAlt 
+  },
+  { 
+    link: 'commercial-construction-plans-by-pearl-engineers-planners-and-project-managers-(pepp)', 
+    text: 'Commercial Construction Plans', 
+    icon: faCogs 
+  },
+  { 
+    link: 'building-compliance-services-by-pearl-engineers-planners-and-project-managers-(pepp)', 
+    text: 'Building Compliance Services', 
+    icon: faEye 
+  },
+  { 
+    link: 'independent-building-inspectors-by-pearl-engineers-planners-and-project-managers-(pepp)', 
+    text: 'Independent Building Inspectors', 
+    icon: faSearchPlus 
+  },
+  { 
+    link: 'commercial-architecture-firm-pear-engineers-planners-and-project-managers-(PEPP)', 
+    text: 'Commercial Architecture Firm', 
+    icon: faBuilding 
+  },
+  { 
+    link: 'Expert-Architectural-Design-Services-Across-the-UK', 
+    text: 'Expert Architectural Design Services Across the UK', 
+    icon: faDraftingCompass 
+  },
+  { 
+    link: 'Exploring-Cutting-Edge-Structural-Engineering-Solutions-for-Complex-Projects', 
+    text: 'Exploring Cutting-Edge Structural Engineering Solutions for Complex Projects', 
+    icon: faCalculatorAlt 
+  },
+  { 
+    link: 'How-a-Residential-Construction-Project-Manager-Ensures-Successful-Home-Building-Projects?', 
+    text: 'How a Residential Construction Project Manager Ensures Successful Home Building Projects?', 
+    icon: faHome 
+  },
+  { 
+    link: 'Mastering-Residential-Construction-Project-Management-Essential-Strategies-for-Success', 
+    text: 'Residential Construction Project Management', 
+    icon: faUsersCog 
+  },
+  { 
+    link: 'Party-Wall-Surveyor-Cost-by-Pearl-Engineers-Planners-and-Project-Manager-(PEPP)', 
+    text: 'Party Wall Surveyor Cost', 
+    icon: faFileContract 
+  },
+  { 
+    link: 'Exploring-the-Importance-of-Architecture-Drawing-Plans-in-Modern-Design', 
+    text: 'Architecture Drawing Plan', 
+    icon: faDrawPolygon 
+  },
+  { 
+    link: 'Structural-Engineer-London-Services-Ensuring-Safety-and-Innovation-in-Your-Builds', 
+    text: 'Structural Engineer London Services', 
+    icon: faShieldAlt 
+  },
+  { 
+    link: 'Planning-Agent-Services-Explained-What-You-Need-to-Know-for-Effective-Project-Management', 
+    text: 'Planning Agent Services', 
+    icon: faListOl 
+  },
+  { 
+    link: 'Rear-Extensions-Transform-Your-Space-with-Innovative-Design-Solutions', 
+    text: 'Rear Extension', 
+    icon: faHouseChimney 
+  }
 ];
 
 /* For mobile: 2-column layout for Categories */
