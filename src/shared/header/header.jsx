@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'; // Import usePathname to track ro
 import styles from './style.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup'; // Import the modal component
-import HomePopup from './home-page-popup/home-popup';
+// import HomePopup from './home-page-popup/home-popup';
 
 import {
 
@@ -832,7 +832,7 @@ const Navbar = () => {
       </div>
 
       {/* Render the modal conditionally */}
-      {homePopup && <HomePopup open={homePopup} setOpen={sethomePopup} />}
+      {/* {homePopup && <HomePopup open={homePopup} setOpen={sethomePopup} />} */}
 
       {openModal && <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />}
     </div>
