@@ -52,6 +52,15 @@ const Footer = () => {
                                         <FontAwesomeIcon icon={faLocationDot} />
                                         <label className='ms-2'>Flat 02 Towerfieds, Westerham Road Bromley, BR2 6HF, London, United Kingdom</label>
                                     </li>
+                                    <li>
+        <Link href="https://apps.apple.com/us/app/pepp/id6503652490">
+            <img 
+                src="/apple2.png" 
+                alt="About Me" 
+                style={{cursor: 'pointer', width: '180px', height: '60px'}} 
+            />
+        </Link>
+    </li>
                                 </ul>
                             </span>
                         </div>
@@ -87,6 +96,7 @@ const Footer = () => {
                                     <FontAwesomeIcon icon={faYoutube} />
                                     </Link>
                                     </li>
+                                    
                                 </ul>
                             </span>
                             <span>

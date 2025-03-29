@@ -1,0 +1,303 @@
+// Variables
+$primary-color: #004aad;
+$accent-color: #1c0fac;
+$text-dark: #333;
+$text-medium: #555;
+$text-light: #666;
+$background-light: #f9f9f9;
+$border-color: #eee;
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+// Base Styles
+.container {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: $text-dark;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Header Styles
+.header {
+  background: $primary-color;
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 0 0 8px 8px;
+  margin-top: 75px;
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+}
+
+// Content Sections
+.contentSection {
+  padding: 0 1rem 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: $accent-color;
+    }
+  }
+
+  p {
+    color: $text-medium;
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Lists
+.benefitsList {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+
+  li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: $accent-color;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    strong {
+      color: $primary-color;
+    }
+  }
+}
+
+// Price Table
+.priceTable {
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.priceRow {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid $border-color;
+
+  &:nth-child(odd) {
+    background: $background-light;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.service {
+  flex: 2;
+  font-weight: 500;
+}
+
+.price {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: $text-light;
+  font-style: italic;
+}
+
+// Value Grid
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.valueCard {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: $box-shadow;
+  border-top: 4px solid $accent-color;
+
+  h3 {
+    color: $primary-color;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+// Highlight Box
+.highlightBox {
+  background: $background-light;
+  border-left: 4px solid $accent-color;
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.servicesList {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+
+  li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 2rem;
+
+    &::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: $accent-color;
+      font-weight: bold;
+    }
+
+    strong {
+      color: $primary-color;
+    }
+  }
+}
+
+// CTA Section
+.ctaSection {
+  background: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+
+  h2 {
+    color: white;
+    margin-top: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  p {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ctaLink {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.ctaButton {
+  background: white;
+  color: $primary-color;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Conclusion
+.conclusion {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: $background-light;
+  border-radius: 8px;
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .priceRow {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .service, .price {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem 1rem;
+
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
