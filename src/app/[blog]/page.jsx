@@ -10,6 +10,7 @@ export const metadata = {
 }
 
 const titles= {
+  
   'rear-extension-ideas-from-simplicity-to-architectural-ingenuity':'Rear Extension Ideas from Simplicity to Architectural Ingenuity',
   'the-importance-of-structural-calculations-in-modern-construction-projects':'The Importance of Structural Calculations in Modern Construction Projects',
   'structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach':'Structural Integrity through Meticulous Structural Engineer Calculations: The PEPP Approach',
@@ -30,9 +31,75 @@ const titles= {
   'Planning-Agent-Services-Explained-What-You-Need-to-Know-for-Effective-Project-Management':'Planning Agent Services Explained: What You Need to Know for Effective Project Management',
   'Rear-Extensions-Transform-Your-Space-with-Innovative-Design-Solutions':'Rear Extensions: Transform Your Space with Innovative Design Solutions',
 
+
+
+  'structuralengineerlondonservices':'Cost of Hiring a Consultant Engineer in Bromley: What to Expect',
+  'Cost-Control-vs-Value-Engineering-Understanding-the-Key-Differences':"Cost Control vs. Value Engineering: Understanding the Key Differences",
+  'Choosing-the-Right-Structural-Design-Engineer-in-Bromley-London-A-Guide':'Choosing the Right Structural Design Engineer in Bromley, London: A Guide',
+  'How-to-Find-the-Best-Structural-Engineer-Near-Me-A-Complete-Guide':'How to Find the Best Structural Engineer Near Me: A Complete Guide?',
+  'A-Guide-to-Planning-and-Building-Control-in-Bromley-What-You-Need-to-Know':'A Guide to Planning and Building Control in Bromley: What You Need to Know',
+  'Finding-a-Reliable-Structural-Engineer-Near-Me-What-to-Look-For':'Finding a Reliable Structural Engineer Near Me: What to Look For',
+  'Finding-the-Best-Structural-Engineer-in-London-A-Complete-Guide':'Finding the Best Structural Engineer in London: A Complete Guide',
+  'Front-and-Rear-Extension':"Front and Rear Extension: Maximizing Your Building's Space and Value",
+  'How-a-Structural-Engineer-Near-Me-Can-Save-You-Time-and-Money':"How a Structural Engineer Near Me Can Save You Time and Money? | PEPP",
+  'How-Cost-Control-and-Value-Engineering-Benefit-Construction-Projects-in-Bromley':"How Cost Control and Value Engineering Benefit Construction Projects in Bromley",
+  'How-Much-Does-a-Structural-Engineer-in-London-Cost':'How Much Does a Structural Engineer in London Cost | PEPP',
+  'How-Much-Does-an-Architect-Engineer-in-Bromley-Cost':'How Much Does an Architect Engineer in Bromley Cost? | PEPP',
+  'How-Structural-Engineers-in-London-Ensure-Safe-and-Sustainable-Buildings':'How Structural Engineers in London Ensure Safe and Sustainable Buildings | PEPP',
+  'Key-Factors-to-Consider-When-Hiring-a-Structural-Engineer-in-London':'Key Factors to Consider When Hiring a Structural Engineer in London | PEPP',
+  'Signs-That-You-Need-a-Structural-Engineer-Near-Me':'Signs That You Need a Structural Engineer Near Me',
+  'Structural-Engineer-vs-Architect-in-London-Who-Do-You-Need':'Structural Engineer vs. Architect in London: Who Do You Need',
+  'Structural-Engineering-Challenges-and-Solutions-in-London':'Structural Engineering Challenges and Solutions in London',
+  'The-Benefits-of-Working-with-a-Structural-Engineer-Near-Me':'The Benefits of Working with a Structural Engineer Near Me',
+  'The-Future-of-Structural-Engineering-in-London-Trends-and-Innovations':'The Future of Structural Engineering in London Trends and Innovations',
+  'The-Role-of-a-Structural-Engineer-in-London-Urban-Development':'The Role of a Structural Engineer in London Urban Development',
+  'The-Role-of-Quantity-Surveying-in-Bromley-Growing-Construction-Industry':'The Role of Quantity Surveying in Bromley Growing Construction Industry',
+  'Top-Reasons-You-Need-a-Structural-Engineer-Near-Me-for-Your-Project':'Top Reasons You Need a Structural Engineer Near Me for Your Project',
+  'What-Does-an-Engineering-Consultant-Do-A-Comprehensive-Guide':'What Does an Engineering Consultant Do? A Comprehensive Guide',
+  'What-Is-Contractor-Management-A-Complete-Guide-for-Businesses':'What Is Contractor Management? A Complete Guide for Businesses',
+  'What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners':'What Is Planning and Building Control A Complete Guide for Homeowners',
+  'Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters':'Why Hiring a Local Structural Engineer Near Me Matters',
+  'Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project':'Why You Need a Structural Engineer in London for Your Construction Project',
+
+
 }
 
 const descriptions = {
+  'Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project':'Experienced structural engineer in London providing expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!',
+  'Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters':'Find a trusted structural engineer near me for expert design, analysis, and compliance solutions for residential & commercial projects. Get a consultation today!',
+  'What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners':'Professional planning and building control services ensuring compliance, safety, and efficiency for residential & commercial projects. Get expert guidance today!',
+  'What-Is-Contractor-Management-A-Complete-Guide-for-Businesses':'Expert contractor management services ensuring efficient project execution, cost control, and quality assurance for residential & commercial developments.',
+  'What-Does-an-Engineering-Consultant-Do-A-Comprehensive-Guide':'Experienced engineering consultant providing expert solutions in design, analysis, and project management for residential & commercial developments. Contact us!',
+  'Top-Reasons-You-Need-a-Structural-Engineer-Near-Me-for-Your-Project':'Looking for a trusted structural engineer near me? Get expert design, analysis, and compliance solutions for residential & commercial projects. Contact us now!',
+  'The-Role-of-Quantity-Surveying-in-Bromley-Growing-Construction-Industry':'Professional quantity surveying in Bromley providing cost estimation, budgeting, and project management for residential & commercial developments. Contact us!',
+  'The-Role-of-a-Structural-Engineer-in-London-Urban-Development':'Expert structural engineer in London providing safe, efficient, and compliant solutions for residential & commercial projects. Contact us for a consultation!',
+  'The-Future-of-Structural-Engineering-in-London-Trends-and-Innovations':'Expert structural engineering services in London providing safe, efficient, and compliant solutions for residential & commercial projects. Contact us today!',
+  'The-Benefits-of-Working-with-a-Structural-Engineer-Near-Me':'Find a reliable structural engineer near me for expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!',
+  'Structural-Engineering-Challenges-and-Solutions-in-London':'Expert structural engineering services ensuring safe, efficient, and compliant designs for residential & commercial projects. Contact us for a consultation!',
+  'Structural-Engineer-vs-Architect-in-London-Who-Do-You-Need':'Experienced structural engineer offering expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!',
+  "Signs-That-You-Need-a-Structural-Engineer-Near-Me":"Find a trusted structural engineer near me for expert design, analysis, and compliance solutions for residential & commercial projects. Get a consultation today!",
+  'Key-Factors-to-Consider-When-Hiring-a-Structural-Engineer-in-London':'Reliable structural engineer in London offering expert design, analysis, and compliance solutions for residential & commercial projects. Get in touch today!',
+  'How-Structural-Engineers-in-London-Ensure-Safe-and-Sustainable-Buildings':'Experienced structural engineers in London providing reliable design, analysis, and compliance solutions for residential & commercial projects. Contact us now!',
+  'How-Much-Does-an-Architect-Engineer-in-Bromley-Cost':'Expert architect engineer in Bromley offering innovative design, planning, and structural solutions for residential & commercial projects. Contact us today!',
+  'How-Much-Does-a-Structural-Engineer-in-London-Cost':'Expert structural engineer in London providing safe, innovative, and compliant solutions for residential & commercial projects. Contact us for consultations!',
+  "How-Cost-Control-and-Value-Engineering-Benefit-Construction-Projects-in-Bromley":"Optimize project budgets with expert cost control and value engineering services. Maximize efficiency, reduce costs, and enhance project value.",
+  'How-a-Structural-Engineer-Near-Me-Can-Save-You-Time-and-Money':'Find a trusted structural engineer near you for expert design, analysis, and compliance solutions for residential and commercial projects. Contact us today!',
+  "Front-and-Rear-Extension":'Enhance your home with a stylish and functional rear extension. Expert design, planning, and construction services to maximize space and add value.',
+  "Finding-the-Best-Structural-Engineer-in-London-A-Complete-Guide":'Experienced structural engineer in London offering expert design, analysis, and compliance solutions for residential and commercial projects. Contact us today!',
+  'Finding-a-Reliable-Structural-Engineer-Near-Me-What-to-Look-For':'Looking for a reliable structural engineer near you? Get expert solutions for safe, efficient, and compliant residential & commercial projects today!',
+  'structuralengineerlondonservices':'Expert consultant engineer in Bromley, London, UK, providing innovative, cost-effective solutions for structural design, planning, and project management.',
+  'Cost-Control-vs-Value-Engineering-Understanding-the-Key-Differences':'Expert planning and building control services ensuring compliance, safety, and efficiency for residential & commercial projects. Get professional guidance today!',
+  'Choosing-the-Right-Structural-Design-Engineer-in-Bromley-London-A-Guide':'Experienced structural design engineer in Bromley offering expert solutions for residential & commercial projects. Ensuring safety, stability & compliance.',
+  'How-to-Find-the-Best-Structural-Engineer-Near-Me-A-Complete-Guide':'Find a professional structural engineer near you for expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!',
+  'A-Guide-to-Planning-and-Building-Control-in-Bromley-What-You-Need-to-Know':'Expert cost control and value engineering services to optimize budgets, reduce expenses, and enhance project value for maximum efficiency and success.',
+
+
+
+
+
+
+
+
   'rear-extension-ideas-from-simplicity-to-architectural-ingenuity':'Discover inspiring rear extension ideas to maximize space and style in your home with creative, functional designs. Perfect for any property!',
   'the-importance-of-structural-calculations-in-modern-construction-projects':'Get precise structural calculations for safe and efficient construction projects. Tailored solutions for residential, commercial, and industrial needs!',
   'structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach':'Accurate structural engineer calculations for safe and efficient construction. Tailored solutions for residential, commercial, and industrial projects.',

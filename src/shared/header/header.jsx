@@ -112,151 +112,143 @@ const categoryLinks = [
 /* Blog: single column */
 const blogLinks = [
   {
-    link: '/blog/A-Guide-to-Planning-and-Building-Control-in-Bromley-What-You-Need-to-Know',
-    text: 'A Guide to Planning and Building Control in Bromley: What You Need to Know',
-    icon: faBalanceScale
-},
-{
-    link: '/blog/Choosing-the-Right-Structural-Design-Engineer-in-Bromley-London-A-Guide',
-    text: 'Choosing the Right Structural Design Engineer in Bromley, London: A Guide',
-    icon: faClipboardList
-},
-{
-    link: '/blog/How-Cost-Control-and-Value-Engineering-Benefit-Construction-Projects-in-Bromley',
-    text: 'How Cost Control and Value Engineering Benefit Construction Projects in Bromley',
+    link: 'Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project',
+    text: 'Why You Need a Structural Engineer in London for Your Construction Project',
     icon: faHardHat
 },
 {
-    link: '/blog/Cost-Control-vs-Value-Engineering-Understanding-the-Key-Differences',
-    text: 'Cost Control vs. Value Engineering: Understanding the Key Differences',
+    link: 'Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters',
+    text: 'Why Hiring a Local Structural Engineer Near Me Matters',
     icon: faExclamationTriangle
 },
 {
-    link: '/blog/Cost-of-Hiring-a-Consultant-Engineer-in-Bromley-What-to-Expect',
-    text: 'Cost of Hiring a Consultant Engineer in Bromley: What to Expect',
+    link: 'What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners',
+    text: 'What Is Planning and Building Control A Complete Guide for Homeowners',
     icon: faExchangeAlt
 },
 {
-    link: '/blog/Finding-a-Reliable-Structural-Engineer-Near-Me-What-to-Look-For',
-    text: 'Finding a Reliable Structural Engineer Near Me: What to Look For',
+    link: 'What-Is-Contractor-Management-A-Complete-Guide-for-Businesses',
+    text: 'What Is Contractor Management? A Complete Guide for Businesses',
     icon: faTools
 },
 {
-    link: '/blog/Finding-the-Best-Structural-Engineer-in-London-A-Complete-Guide',
-    text: 'Finding the Best Structural Engineer in London: A Complete Guide',
+    link: 'What-Does-an-Engineering-Consultant-Do-A-Comprehensive-Guide',
+    text: 'What Does an Engineering Consultant Do? A Comprehensive Guide',
     icon: faHandshake
 },
 {
-    link: '/blog/Front-and-Rear-Extension',
-    text: 'Front and Rear Extension: Maximizing Your Buildings Space and Value',
+    link: 'Top-Reasons-You-Need-a-Structural-Engineer-Near-Me-for-Your-Project',
+    text: 'Top Reasons You Need a Structural Engineer Near Me for Your Project',
     icon: faCity
 },
 {
-    link: '/blog/How-a-Structural-Engineer-Near-Me-Can-Save-You-Time-and-Money',
-    text: 'How a Structural Engineer Near Me Can Save You Time and Money?',
+    link: 'The-Role-of-Quantity-Surveying-in-Bromley-Growing-Construction-Industry',
+    text: 'The Role of Quantity Surveying in Bromley Growing Construction Industry',
     icon: faListOl
 },
 {
-    link: '/blog/How-Much-Does-a-Structural-Engineer-in-London-Cost',
-    text: 'How Much Does a Structural Engineer in London Cost',
+    link: 'The-Role-of-a-Structural-Engineer-in-London-Urban-Development',
+    text: 'The Role of a Structural Engineer in London Urban Development',
     icon: faUserTie
 },
 {
-    link: '/blog/How-Much-Does-an-Architect-Engineer-in-Bromley-Cost',
+    link: 'The-Future-of-Structural-Engineering-in-London-Trends-and-Innovations',
     text: 'How Much Does an Architect Engineer in Bromley Cost?',
     icon: faDraftingCompass
 },
 {
-    link: '/blog/How-Structural-Engineers-in-London-Ensure-Safe-and-Sustainable-Buildings',
-    text: 'How Structural Engineers in London Ensure Safe and Sustainable Buildings',
+    link: 'The-Benefits-of-Working-with-a-Structural-Engineer-Near-Me',
+    text: 'The Benefits of Working with a Structural Engineer Near Me',
     icon: faPoundSign
 },
 
 {
-    link: '/blog/Key-Factors-to-Consider-When-Hiring-a-Structural-Engineer-in-London',
-    text: 'Key Factors to Consider When Hiring a Structural Engineer in London',
+    link: 'Structural-Engineering-Challenges-and-Solutions-in-London',
+    text: 'Structural Engineering Challenges and Solutions in London',
     icon: faCalculator
 },
 {
-    link: '/blog/The-Role-of-Quantity-Surveying-in-Bromley-Growing-Construction-Industry',
-    text: 'The Role of Quantity Surveying in Bromley Growing Construction Industry',
+    link: 'Structural-Engineer-vs-Architect-in-London-Who-Do-You-Need',
+    text: 'Structural Engineer vs. Architect in London: Who Do You Need',
     icon: faBuilding
 },
 {
-    link: '/blog/The-Role-of-a-Structural-Engineer-in-London-Urban-Development',
-    text: 'What Is Contractor Management? A Complete Guide for Businesses',
+    link: 'Signs-That-You-Need-a-Structural-Engineer-Near-Me',
+    text: 'Signs That You Need a Structural Engineer Near Me',
     icon: faGavel
 },
 {
-    link: '/blog/Signs-That-You-Need-a-Structural-Engineer-Near-Me',
-    text: 'Signs That You Need a Structural Engineer Near Me',
+    link: 'Key-Factors-to-Consider-When-Hiring-a-Structural-Engineer-in-London',
+    text: 'Key Factors to Consider When Hiring a Structural Engineer in London | PEPP',
     icon: faRulerCombined
 },
 {
-    link: '/blog/Structural-Engineer-vs-Architect-in-London-Who-Do-You-Need',
-    text: 'Structural Engineer vs. Architect in London: Who Do You Need',
+    link: 'How-Structural-Engineers-in-London-Ensure-Safe-and-Sustainable-Buildings',
+    text: 'How Structural Engineers in London Ensure Safe and Sustainable Buildings | PEPP',
     icon: faHome
 },
 {
-    link: '/blog/Structural-Engineering-Challenges-and-Solutions-in-London',
-    text: 'Structural Engineering Challenges and Solutions in London',
+    link: 'How-Much-Does-an-Architect-Engineer-in-Bromley-Cost',
+    text: 'How Much Does an Architect Engineer in Bromley Cost? | PEPP',
     icon: faCalculatorAlt
 },
 {
-    link: '/blog/The-Benefits-of-Working-with-a-Structural-Engineer-Near-Me',
-    text: 'The Benefits of Working with a Structural Engineer Near Me',
+    link: 'How-Much-Does-a-Structural-Engineer-in-London-Cost',
+    text: 'How Much Does a Structural Engineer in London Cost | PEPP',
     icon: faPenRuler
 },
 {
-    link: '/blog/The-Future-of-Structural-Engineering-in-London-Trends-and-Innovations',
-    text: 'The Future of Structural Engineering in London: Trends and Innovations',
+    link: 'How-Cost-Control-and-Value-Engineering-Benefit-Construction-Projects-in-Bromley',
+    text: 'How Cost Control and Value Engineering Benefit Construction Projects in Bromley',
     icon: faUsersCog
 },
 {
-    link: '/blog/Top-Reasons-You-Need-a-Structural-Engineer-Near-Me-for-Your-Project',
-    text: 'Top Reasons You Need a Structural Engineer Near Me for Your Project',
+    link: 'How-a-Structural-Engineer-Near-Me-Can-Save-You-Time-and-Money',
+    text: 'How a Structural Engineer Near Me Can Save You Time and Money? | PEPP',
     icon: faBuildingCircleCheck
 },
 {
-    link: '/blog/What-Does-an-Engineering-Consultant-Do-A-Comprehensive-Guide',
-    text: 'What Does an Engineering Consultant Do? A Comprehensive Guide',
+    link: 'Front-and-Rear-Extension',
+    text: 'Front and Rear Extension: Maximizing Your Buildings Space and Value',
     icon: faSearchPlus
 },
 {
-    link: '/blog/What-Is-Architect-Surveying-a-Comprehensive-Guide',
+    link: 'Finding-the-Best-Structural-Engineer-in-London-A-Complete-Guide',
     text: 'What Is Architect Surveying a Comprehensive Guide',
     icon: faIndustry
 },
 {
-    link: '/blog/What-Is-Contractor-Management-A-Complete-Guide-for-Businesses',
-    text: 'What Is Contractor Management? A Complete Guide for Businesses',
+    link: 'Finding-a-Reliable-Structural-Engineer-Near-Me-What-to-Look-For',
+    text: 'Finding a Reliable Structural Engineer Near Me: What to Look For',
     icon: faFileAlt
 },
 {
-    link: '/blog/What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners',
-    text: 'What Is Planning and Building Control? A Complete Guide for Homeowners',
+    link: 'structuralengineerlondonservices',
+    text: 'Cost of Hiring a Consultant Engineer in Bromley: What to Expect',
     icon: faUserCheck
 },
 {
-    link: '/blog/Why-You-Should-Hire-a-Consultant-Engineer-in-Bromley-for-Your-Project',
-    text: 'Why You Should Hire a Consultant Engineer in Bromley for Your Project',
+    link: 'Cost-Control-vs-Value-Engineering-Understanding-the-Key-Differences',
+    text: 'Cost Control vs. Value Engineering: Understanding the Key Differences',
     icon: faDrawPolygon
 },
 {
-    link: '/blog/Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters',
-    text: 'Why Hiring a Local Structural Engineer Near Me Matters',
+    link: 'Choosing-the-Right-Structural-Design-Engineer-in-Bromley-London-A-Guide',
+    text: 'Choosing the Right Structural Design Engineer in Bromley, London: A Guide',
     icon: faRulerHorizontal
 },
 {
-    link: '/blog/Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project',
-    text: 'Why You Need a Structural Engineer in London for Your Construction Project',
+    link: 'How-to-Find-the-Best-Structural-Engineer-Near-Me-A-Complete-Guide',
+    text: 'How to Find the Best Structural Engineer Near Me: A Complete Guide?',
     icon: faTrowel
 },
 {
-    link: '/blog/Why-You-Need-an-Architect-Engineer-in-Bromley-for-Your-Construction-Project',
-    text: 'Why You Need an Architect Engineer in Bromley for Your Construction Project',
+    link: 'A-Guide-to-Planning-and-Building-Control-in-Bromley-What-You-Need-to-Know',
+    text: 'A Guide to Planning and Building Control in Bromley: What You Need to Know',
     icon: faHouseChimney
 },
+
+
 {
     link: 'rear-extension-ideas-from-simplicity-to-architectural-ingenuity',
     text: 'Rear Extension Ideas',
@@ -352,7 +344,6 @@ const blogLinks = [
     text: 'Rear Extension',
     icon: faExpandAlt
 }
-
 ];
 
 /* For mobile: 2-column layout for Categories */
