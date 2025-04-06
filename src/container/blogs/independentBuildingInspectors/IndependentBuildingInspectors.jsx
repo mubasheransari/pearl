@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const IndependentBuildingInspectors = () => {
   return (
+    <>
+    <Head>
+      <title>Independent Building Inspectors UK | PEPP Compliance Experts</title>
+      <meta 
+        name="description" 
+        content="Professional independent building inspectors for UK construction projects. Full compliance with Building Regulations & BSR. Get impartial quality assessments." 
+      />
+      <meta name="keywords" content="independent building inspectors, building compliance UK, construction inspections, BSR compliance, building regulations" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/independent-building-inspectors" />
+    </Head>
     <div className={styles.container}>
       <h1>Independent Building Inspectors</h1>
       <p>
@@ -198,6 +208,7 @@ const IndependentBuildingInspectors = () => {
         Contact PEPP today to discuss your requirements and discover how our independent building inspectors can safeguard your project and provide peace of mind.
       </p>
     </div>
+    </>
   );
 };
 

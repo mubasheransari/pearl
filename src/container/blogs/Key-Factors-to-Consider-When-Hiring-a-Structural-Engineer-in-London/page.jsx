@@ -5,10 +5,11 @@ import styles from './page.module.scss';
 const HiringGuide = () => {
   return (
     <>
-      <Head>
-        <title>Key Factors to Consider When Hiring a Structural Engineer in London | PEPP</title>
-        <meta name="description" content="Reliable structural engineer in London offering expert design, analysis, and compliance solutions for residential & commercial projects. Get in touch today!" />
-      </Head>
+       <Head>
+      <title>Key Factors to Consider When Hiring a Structural Engineer in London | PEPP</title>
+      <meta name="description" content="Reliable structural engineer in London offering expert design, analysis, and compliance solutions for residential & commercial projects. Get in touch today!" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/key-factors-hiring-structural-engineer-london" />
+    </Head>
 
       <div className={styles.container}>
         <header className={styles.header}>

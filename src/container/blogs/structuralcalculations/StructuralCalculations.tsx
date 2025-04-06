@@ -4,7 +4,17 @@ import Link from 'next/link';
 
 const StructuralCalculations = () => {
   return (
+    <>   <title>Professional Structural Calculations UK | BS & Eurocode Compliant | PEPP</title>
+    <meta 
+      name="description" 
+      content="Expert structural calculations for residential & commercial projects. Fully compliant with BS EN standards & Eurocodes. Get precise load assessments & foundation designs." 
+    />
+    <meta name="keywords" content="structural calculations, engineering calculations UK, BS EN standards, Eurocode compliance, load assessments" />
+    <link rel="canonical" href="https://www.pearlepp.co.uk/structural-calculations" />
+
+    
     <div className={styles.container}>
+      
       <h1 className={styles.heading}>Structural Calculations</h1>
       <p className={styles.intro}>
         The Importance of Structural Calculations in Modern Construction Projects
@@ -193,6 +203,7 @@ const StructuralCalculations = () => {
         </p>
       </section>
     </div>
+    </>
   );
 };
 

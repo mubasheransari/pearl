@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const PlanningDrawingServices = () => {
   return (
+    <>
+    <Head>
+      <title>Professional Planning Drawings Services UK | PEPP</title>
+      <meta 
+        name="description" 
+        content="Expert planning drawings for UK projects. RIBA/ARB compliant designs for planning applications & building control. Get a free consultation today." 
+      />
+      <meta name="keywords" content="planning drawings, architectural drawings UK, planning application drawings, RIBA compliant designs" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/planning-drawings" />
+    </Head>
     <div className={styles.container}>
       <h1>Planning Drawings</h1>
       <p className={styles.intro}>
@@ -175,6 +185,7 @@ const PlanningDrawingServices = () => {
         Contact PEPP today to discuss your project and experience the expertise of a team committed to delivering exceptional planning drawings.
       </p>
     </div>
+    </>
   );
 };
 

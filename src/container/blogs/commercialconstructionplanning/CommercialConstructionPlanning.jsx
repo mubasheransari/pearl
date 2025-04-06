@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const CommercialConstructionPlanning = () => {
   return (
+    <>
+    <Head>
+      <title>Expert Commercial Construction Planning Services | PEPP UK</title>
+      <meta 
+        name="description" 
+        content="Professional commercial construction planning for office, retail & industrial projects. RIBA/ARB compliant, BS EN certified. Get comprehensive planning solutions." 
+      />
+      <meta name="keywords" content="commercial construction planning, building regulations compliance, construction project management, RIBA planning services" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/commercial-construction-planning" />
+    </Head>
     <div className={styles.container}>
       <h1>Commercial Construction Planning Services</h1>
       <p className={styles.intro}>
@@ -132,6 +142,7 @@ const CommercialConstructionPlanning = () => {
         Contact PEPP today to discuss your project and discover how our commercial construction planning expertise can make all the difference.
       </p>
     </div>
+    </>
   );
 };
 

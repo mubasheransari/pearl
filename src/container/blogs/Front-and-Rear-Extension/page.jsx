@@ -8,12 +8,13 @@ const ExtensionsGuide = () => {
 
   return (
     <>
-      <Head>
-        <title>{metaTitle}</title>
-        <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={metaTitle} />
-        <meta property="og:description" content={metaDescription} />
-      </Head>
+   <Head>
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={metaTitle} />
+      <meta property="og:description" content={metaDescription} />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/front-and-rear-extension-maximizing-space-value" />
+    </Head>
 
       <div className={styles.container}>
         <header className={styles.header}>

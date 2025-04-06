@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const ExpertArchitecturalDesignServices = () => {
   return (
+    <>
+    <Head>
+      <title>Expert Architectural Design Services UK | RIBA & ARB Compliant | PEPP</title>
+      <meta 
+        name="description" 
+        content="Professional architectural design services across the UK. RIBA & ARB compliant planning, structural engineering & project management. Get a free consultation." 
+      />
+      <meta name="keywords" content="architectural design services UK, RIBA architects, ARB compliant designs, structural engineering UK" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/expert-architectural-design-services" />
+    </Head>
     <div className={styles.container}>
       <h1>Expert Architectural Design Services Across the UK </h1>
       <p>
@@ -133,6 +143,7 @@ const ExpertArchitecturalDesignServices = () => {
       </p>
 
     </div>
+    </>
   );
 };
 

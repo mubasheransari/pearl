@@ -4,6 +4,15 @@ import Link from 'next/link';
 
 const CommercialArchitectureFirm = () => {
   return (
+    <>
+    <Head>
+      <title>Top Commercial Architecture Firm in UK | PEPP Design & Planning</title>
+      <meta 
+        name="description" 
+        content="Leading UK commercial architecture firm specialising in innovative retail, office & industrial designs. RIBA/ARB certified, full regulatory compliance & bespoke solutions." 
+      />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/commercial-architecture-firm" />
+    </Head>
     <div className={styles.container}>
       <h1>Commercial Architecture Firm</h1>
       <p>
@@ -194,6 +203,7 @@ const CommercialArchitectureFirm = () => {
         Contact PEPP today to discuss your project and discover why PEPP is the trusted choice for commercial architecture firm solutions.
       </p>
     </div>
+    </>
   );
 };
 

@@ -6,9 +6,10 @@ const ArchitectEngineerCost = () => {
   return (
     <>
       <Head>
-        <title>How Much Does an Architect Engineer in Bromley Cost? | PEPP</title>
-        <meta name="description" content="Expert architect engineer in Bromley offering innovative design, planning, and structural solutions for residential & commercial projects. Contact us today!" />
-      </Head>
+      <title>How Much Does an Architect Engineer in Bromley Cost? | PEPP</title>
+      <meta name="description" content="Expert architect engineer in Bromley offering innovative design, planning, and structural solutions for residential & commercial projects. Contact us today!" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/how-much-does-architect-engineer-bromley-cost" />
+    </Head>
 
       <div className={styles.container}>
         <header className={styles.header}>

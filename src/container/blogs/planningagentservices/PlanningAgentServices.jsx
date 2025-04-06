@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const PlanningAgentServices = () => {
   return (
+    <>
+    <Head>
+      <title>Professional Planning Agent Services London | PEPP</title>
+      <meta 
+        name="description" 
+        content="Expert planning agent services for London & UK. Specialists in planning submissions & approvals with proven success across multiple councils. Get a free consultation." 
+      />
+      <meta name="keywords" content="planning agent services, planning permission London, planning applications UK, council planning submissions" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/planning-agent-services" />
+    </Head>
     <div className={styles.container}>
       <h1>Planning Agent Services Explained: What You Need to Know for Effective Project Management</h1>
 
@@ -115,6 +125,7 @@ const PlanningAgentServices = () => {
         Contact us today to find out how our planning agent services can help turn your vision into reality.
       </p>
     </div>
+    </>
   );
 };
 

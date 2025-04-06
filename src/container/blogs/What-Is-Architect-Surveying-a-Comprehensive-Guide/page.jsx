@@ -4,9 +4,11 @@ import styles from './page.module.scss';
 const ArchitectSurveying = () => {
   return (
     <div className={styles.container}>
+     <Head>
       <meta name="title" content="What Is Architect Surveying a Comprehensive Guide" />
-      <meta name="description" content="professional architect surveying services offering expert planning, design, and property assessments for residential & commercial projects. Contact us today!" />
-
+      <meta name="description" content="Professional architect surveying services offering expert planning, design, and property assessments for residential & commercial projects. Contact us today!" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/what-is-architect-surveying-comprehensive-guide" />
+    </Head>
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>What Is Architect Surveying? A Comprehensive Guide</h1>

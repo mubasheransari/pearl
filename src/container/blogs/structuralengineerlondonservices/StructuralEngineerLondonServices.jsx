@@ -4,6 +4,14 @@ import Link from 'next/link';
 
 const StructuralEngineerLondonServices = () => {
   return (
+    <>
+         <title>Structural Engineer London Services | BS & Eurocode Compliant | PEPP</title>
+        <meta 
+          name="description" 
+          content="Professional structural engineering services in London. Specialists in residential & commercial projects. Fully compliant with BS EN standards & Eurocodes." 
+        />
+        <meta name="keywords" content="structural engineer London, structural engineering services, London building regulations, structural calculations London" />
+        <link rel="canonical" href="https://www.pearlepp.co.uk/structural-engineer-london" />
     <div className={styles.container}>
       <h1>Structural Engineer London Services: Ensuring Safety and Innovation in Your Builds</h1>
 
@@ -124,6 +132,7 @@ const StructuralEngineerLondonServices = () => {
         Contact us today to discuss your project and discover why PEPP is the trusted name in <Link href='https://shorturl.at/cxwO4'>structural engineer London services</Link>.
       </p>
     </div>
+    </>
   );
 };
 

@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const Blog = () => {
   return (
+    <>
+    <Head>
+      <title>50+ Inspiring Rear Extension Ideas for UK Homes | PEPP</title>
+      <meta 
+        name="description" 
+        content="Discover innovative rear extension ideas from simple kitchen expansions to bold architectural designs. Get expert tips for your UK home renovation project." 
+      />
+      <meta name="keywords" content="rear extension ideas, home extension designs, UK house extensions, kitchen extensions, architectural extensions" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/rear-extension-ideas" />
+    </Head>
     <div className={styles.container}>
       <h1 className={styles.blogTitle}>Rear Extension Ideas</h1>
       <h2 className={styles.blogTitle2}>From Simplicity to Architectural Ingenuity</h2>
@@ -78,6 +88,7 @@ const Blog = () => {
       <p>From the practical simplicity of a cozy sunroom to the futuristic appeal of cantilevered designs, the array of rear extension ideas ensures there&#44;s something for every homeowner. By thoughtfully blending functionality, aesthetics, and sustainability, these extensions can enhance your home&#44;s value and redefine how you live. Whether you envision a practical family space or an artistic statement piece, the right combination of planning, design, and execution will transform your vision into reality. Let your imagination lead, and let the rear of your home become the canvas for something extraordinary.</p>
 
     </div>
+    </>
   );
 };
 

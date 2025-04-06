@@ -5,10 +5,11 @@ import styles from './page.module.scss';
 const StructuralEngineerNearMe = () => {
   return (
     <>
-      <Head>
-        <title>How a Structural Engineer Near Me Can Save You Time and Money? | PEPP</title>
-        <meta name="description" content="Find a trusted structural engineer near you for expert design, analysis, and compliance solutions for residential and commercial projects. Contact us today!" />
-      </Head>
+       <Head>
+      <title>How a Structural Engineer Near Me Can Save You Time and Money? | PEPP</title>
+      <meta name="description" content="Find a trusted structural engineer near you for expert design, analysis, and compliance solutions for residential and commercial projects. Contact us today!" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/how-structural-engineer-near-me-save-time-money" />
+    </Head>
 
       <div className={styles.container}>
         <header className={styles.header}>

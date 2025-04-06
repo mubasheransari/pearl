@@ -4,9 +4,11 @@ import styles from './page.module.scss';
 const LondonStructuralEngineer = () => {
   return (
     <div className={styles.container}>
+        <Head>
       <meta name="title" content="Why You Need a Structural Engineer in London for Your Construction Project" />
       <meta name="description" content="Experienced structural engineer in London providing expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!" />
-
+      <link rel="canonical" href="https://www.pearlepp.co.uk/why-you-need-structural-engineer-london-construction-project" />
+    </Head>
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>Why You Need a Structural Engineer in London for Your Construction Project</h1>

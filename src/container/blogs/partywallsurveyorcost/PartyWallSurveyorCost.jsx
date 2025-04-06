@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const PartyWallSurveyorCost = () => {
   return (
+    <>
+    <Head>
+      <title>Party Wall Surveyor Cost UK | From £350+VAT | PEPP</title>
+      <meta 
+        name="description" 
+        content="Affordable party wall surveyor services from £350+VAT. Expert Party Wall Act compliance for extensions, basements & conversions. Get a free quote today." 
+      />
+      <meta name="keywords" content="party wall surveyor cost, party wall agreement cost, Party Wall Act surveyor, boundary wall surveyor UK" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/party-wall-surveyor-cost" />
+    </Head>
     <div className={styles.container}>
       <h1>Party Wall Surveyor Cost by Pearl Engineers, Planners, and Project Managers (PEPP)</h1>
 
@@ -123,6 +133,7 @@ const PartyWallSurveyorCost = () => {
         PEPP: Affordable, Professional Party Wall Surveyor Costs You Can Trust.
       </p>
     </div>
+    </>
   );
 };
 

@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const ArchitectureDrawingPlans = () => {
   return (
+    <>
+    <Head>
+    <title>Professional Architecture Drawing Plans Services | PEPP</title>
+    <meta 
+      name="description" 
+      content="PEPP provides professional architecture drawing plans compliant with BS, RIBA & ARB standards. Residential, commercial & industrial design services across the UK." 
+    />
+    <link rel="canonical" href="https://www.pearlepp.co.uk/architecture-drawing-plans" />
+  </Head>
+
     <div className={styles.container}>
       <h1>Exploring the Importance of Architecture Drawing Plans in Modern Design</h1>
 
@@ -149,6 +159,7 @@ const ArchitectureDrawingPlans = () => {
         Get in touch today to discuss your project and let PEPP provide the perfect architecture drawing plan for your next venture.
       </p>
     </div>
+    </>
   );
 };
 

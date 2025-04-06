@@ -5,10 +5,11 @@ import styles from './page.module.scss';
 const StructuralSafety = () => {
   return (
     <>
-      <Head>
-        <title>How Structural Engineers in London Ensure Safe and Sustainable Buildings | PEPP</title>
-        <meta name="description" content="Experienced structural engineers in London providing reliable design, analysis, and compliance solutions for residential & commercial projects. Contact us now!" />
-      </Head>
+     <Head>
+      <title>How Structural Engineers in London Ensure Safe and Sustainable Buildings | PEPP</title>
+      <meta name="description" content="Experienced structural engineers in London providing reliable design, analysis, and compliance solutions for residential & commercial projects. Contact us now!" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/how-structural-engineers-london-ensure-safe-sustainable-buildings" />
+    </Head>
 
       <div className={styles.container}>
         <header className={styles.header}>

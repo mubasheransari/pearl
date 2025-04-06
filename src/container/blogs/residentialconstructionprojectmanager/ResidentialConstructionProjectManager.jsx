@@ -4,6 +4,16 @@ import styles from './ResidentialConstructionProjectManager.module.scss';
 
 const ResidentialConstructionProjectManager = () => {
   return (
+    <>
+    <Head>
+      <title>Residential Construction Project Manager Services UK | PEPP</title>
+      <meta 
+        name="description" 
+        content="Expert residential construction project management for UK homes. Full project oversight from planning to completion. Get compliant, on-time, on-budget results." 
+      />
+      <meta name="keywords" content="residential construction project manager, home building project management, construction management UK, house build coordination" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/residential-construction-project-management" />
+    </Head>
     <div className={styles.container}>
       <h1>How a Residential Construction Project Manager Ensures Successful Home Building Projects?</h1>
 
@@ -64,6 +74,7 @@ const ResidentialConstructionProjectManager = () => {
       </section>
 
     </div>
+    </>
   );
 };
 

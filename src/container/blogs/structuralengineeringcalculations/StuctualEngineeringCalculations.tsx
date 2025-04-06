@@ -5,6 +5,16 @@ import Link from 'next/link';
 
 const StructuralEngineerCalculations = () => {
   return (
+    <>
+  
+      <title>Structural Engineer Calculations UK | BS & Eurocode Compliant | PEPP</title>
+      <meta 
+        name="description" 
+        content="Professional structural engineer calculations for residential & commercial projects. Fully compliant with BS EN standards & Eurocodes. Get precise load assessments & foundation designs." 
+      />
+      <meta name="keywords" content="structural engineer calculations, engineering calculations UK, structural analysis, BS EN standards, Eurocode compliance" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/structural-engineer-calculations" />
+    
     <div className={styles.container}>
       <h1 className={styles.heading}>Structural Engineer Calculations</h1>
       <h3>
@@ -158,6 +168,7 @@ const StructuralEngineerCalculations = () => {
         Contact PEPP today to discuss your project and experience the difference that meticulous structural engineer calculations can make.
       </p>
     </div>
+  </>
   );
 };
 

@@ -4,6 +4,16 @@ import styles from './ExploringCuttingEdgeStructuralEngineeringSolutions.module.
 
 const ExploringCuttingEdgeStructuralEngineeringSolutions = () => {
   return (
+    <>
+    <Head>
+      <title>Cutting-Edge Structural Engineering Solutions UK | PEPP</title>
+      <meta 
+        name="description" 
+        content="Expert structural engineering solutions including foundation design, wall systems & roof structures. BS & Eurocode compliant. Get a free consultation today." 
+      />
+      <meta name="keywords" content="structural engineering solutions, foundation design UK, building compliance, structural surveys, BS EN standards" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/structural-engineering-solutions" />
+    </Head>
     <div className={styles.container}>
       <h1>Exploring Cutting-Edge Structural Engineering Solutions</h1>
       <p>
@@ -147,6 +157,7 @@ const ExploringCuttingEdgeStructuralEngineeringSolutions = () => {
         PEPP: Engineering the Future with Integrity and Innovation.
       </p>
     </div>
+    </>
   );
 };
 

@@ -4,9 +4,11 @@ import styles from './page.module.scss';
 const StructuralEngineerNeartop = () => {
   return (
     <div className={styles.container}>
+      <Head>
       <meta name="title" content="Top Reasons You Need a Structural Engineer Near Me for Your Project" />
       <meta name="description" content="Looking for a trusted structural engineer near me? Get expert design, analysis, and compliance solutions for residential & commercial projects. Contact us now!" />
-
+      <link rel="canonical" href="https://www.pearlepp.co.uk/top-reasons-you-need-structural-engineer-near-me" />
+    </Head>
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>Top Reasons You Need a Structural Engineer Near Me for Your Project</h1>

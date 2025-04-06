@@ -4,9 +4,11 @@ import styles from './page.module.scss';
 const PlanningBuilding = () => {
   return (
     <div className={styles.container}>
+      <Head>
       <meta name="title" content="What Is Planning and Building Control A Complete Guide for Homeowners" />
       <meta name="description" content="Professional planning and building control services ensuring compliance, safety, and efficiency for residential & commercial projects. Get expert guidance today!" />
-
+      <link rel="canonical" href="https://www.pearlepp.co.uk/what-is-planning-building-control-complete-guide-homeowners" />
+    </Head>
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>What Is Planning and Building Control? A Complete Guide for Homeowners</h1>

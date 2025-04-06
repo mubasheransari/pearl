@@ -4,9 +4,11 @@ import styles from './page.module.scss';
 const ContractorManagement = () => {
   return (
     <div className={styles.container}>
+       <Head>
       <meta name="title" content="What Is Contractor Management? A Complete Guide for Businesses" />
       <meta name="description" content="Expert contractor management services ensuring efficient project execution, cost control, and quality assurance for residential & commercial developments." />
-
+      <link rel="canonical" href="https://www.pearlepp.co.uk/what-is-contractor-management-complete-guide-businesses" />
+    </Head>
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>What Is Contractor Management? A Complete Guide for Businesses</h1>

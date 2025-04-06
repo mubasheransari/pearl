@@ -4,6 +4,16 @@ import Link from 'next/link';
 
 const RearExtensionsTransform = () => {
   return (
+    <>
+    <Head>
+      <title>Professional Rear Extensions UK | Design & Build Services | PEPP</title>
+      <meta 
+        name="description" 
+        content="Expert rear extension services from design to construction. RIBA-compliant designs, structural engineering & full building regulation compliance. Get a free quote." 
+      />
+      <meta name="keywords" content="rear extensions, home extensions UK, house extension design, building regulations compliance" />
+      <link rel="canonical" href="https://www.pearlepp.co.uk/rear-extensions" />
+    </Head>
     <div className={styles.container}>
       <h1>Rear Extensions: Transform Your Space with Innovative Design Solutions</h1>
 
@@ -150,6 +160,7 @@ const RearExtensionsTransform = () => {
         Contact us today to discuss your project and experience the expertise of a team dedicated to quality, cost-effectiveness, and timely delivery.
       </p>
     </div>
+    </>
   );
 };
 

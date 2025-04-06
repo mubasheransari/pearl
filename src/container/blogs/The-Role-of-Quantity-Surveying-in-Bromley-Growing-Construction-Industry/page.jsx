@@ -4,9 +4,11 @@ import styles from './page.module.scss';
 const QuantitySurveying = () => {
   return (
     <div className={styles.container}>
+      <Head>
       <meta name="title" content="The Role of Quantity Surveying in Bromley Growing Construction Industry" />
       <meta name="description" content="Professional quantity surveying in Bromley providing cost estimation, budgeting, and project management for residential & commercial developments. Contact us!" />
-
+      <link rel="canonical" href="https://www.pearlepp.co.uk/role-quantity-surveying-bromley-construction-industry" />
+    </Head>
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>The Role of Quantity Surveying in Bromley's Growing Construction Industry</h1>

@@ -4,9 +4,11 @@ import styles from './page.module.scss';
 const FutureEngineering = () => {
   return (
     <div className={styles.container}>
+          <Head>
       <meta name="title" content="The Future of Structural Engineering in London Trends and Innovations" />
       <meta name="description" content="Expert structural engineering services in London providing safe, efficient, and compliant solutions for residential & commercial projects. Contact us today!" />
-
+      <link rel="canonical" href="https://www.pearlepp.co.uk/future-structural-engineering-london-trends-innovations" />
+    </Head>
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>The Future of Structural Engineering in London: Trends and Innovations</h1>
