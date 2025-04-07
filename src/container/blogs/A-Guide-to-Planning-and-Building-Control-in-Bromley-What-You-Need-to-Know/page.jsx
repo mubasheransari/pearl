@@ -8,13 +8,13 @@ const PlanningBuildingControl = () => {
 
   return (
     <>
-       <Head>
+      
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
       <link rel="canonical" href="https://www.pearlepp.co.uk/guide-to-planning-and-building-control-bromley" />
-    </Head>
+    
 
       <div className={styles.planningBuildingControl}>
         <header className={styles.header}>

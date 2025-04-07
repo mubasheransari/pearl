@@ -5,7 +5,7 @@ import styles from './ResidentialConstructionProjectManager.module.scss';
 const ResidentialConstructionProjectManager = () => {
   return (
     <>
-    <Head>
+  
       <title>Residential Construction Project Manager Services UK | PEPP</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const ResidentialConstructionProjectManager = () => {
       />
       <meta name="keywords" content="residential construction project manager, home building project management, construction management UK, house build coordination" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/residential-construction-project-management" />
-    </Head>
+    
     <div className={styles.container}>
       <h1>How a Residential Construction Project Manager Ensures Successful Home Building Projects?</h1>
 

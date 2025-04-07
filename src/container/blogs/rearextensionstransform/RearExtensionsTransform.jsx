@@ -5,7 +5,7 @@ import Link from 'next/link';
 const RearExtensionsTransform = () => {
   return (
     <>
-    <Head>
+  
       <title>Professional Rear Extensions UK | Design & Build Services | PEPP</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const RearExtensionsTransform = () => {
       />
       <meta name="keywords" content="rear extensions, home extensions UK, house extension design, building regulations compliance" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/rear-extensions" />
-    </Head>
+    
     <div className={styles.container}>
       <h1>Rear Extensions: Transform Your Space with Innovative Design Solutions</h1>
 

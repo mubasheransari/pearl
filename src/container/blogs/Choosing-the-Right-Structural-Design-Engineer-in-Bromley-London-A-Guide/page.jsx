@@ -8,13 +8,13 @@ const StructuralDesignEngineerGuide = () => {
 
   return (
     <>
-        <Head>
+    
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
       <link rel="canonical" href="https://www.pearlepp.co.uk/choosing-right-structural-design-engineer-bromley-london" />
-    </Head>
+  
 
       <div className={styles.container}>
         <header className={styles.header}>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 const PlanningAgentServices = () => {
   return (
     <>
-    <Head>
+  
       <title>Professional Planning Agent Services London | PEPP</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const PlanningAgentServices = () => {
       />
       <meta name="keywords" content="planning agent services, planning permission London, planning applications UK, council planning submissions" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/planning-agent-services" />
-    </Head>
+    
     <div className={styles.container}>
       <h1>Planning Agent Services Explained: What You Need to Know for Effective Project Management</h1>
 

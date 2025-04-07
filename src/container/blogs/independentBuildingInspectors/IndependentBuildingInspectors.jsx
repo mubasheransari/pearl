@@ -5,7 +5,6 @@ import Link from 'next/link';
 const IndependentBuildingInspectors = () => {
   return (
     <>
-    <Head>
       <title>Independent Building Inspectors UK | PEPP Compliance Experts</title>
       <meta 
         name="description" 
@@ -13,7 +12,7 @@ const IndependentBuildingInspectors = () => {
       />
       <meta name="keywords" content="independent building inspectors, building compliance UK, construction inspections, BSR compliance, building regulations" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/independent-building-inspectors" />
-    </Head>
+
     <div className={styles.container}>
       <h1>Independent Building Inspectors</h1>
       <p>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 const MasteringResidentialConstructionProjectManagement = () => {
   return (
     <>
-    <Head>
+
       <title>Residential Construction Project Management UK | PEPP Experts</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const MasteringResidentialConstructionProjectManagement = () => {
       />
       <meta name="keywords" content="residential construction project management, building project management UK, home construction management, CDM compliance" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/residential-construction-project-management" />
-    </Head>
+  
     <div className={styles.container}>
       <h1>Mastering Residential Construction Project Management</h1>
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 const PartyWallSurveyorCost = () => {
   return (
     <>
-    <Head>
+
       <title>Party Wall Surveyor Cost UK | From £350+VAT | PEPP</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const PartyWallSurveyorCost = () => {
       />
       <meta name="keywords" content="party wall surveyor cost, party wall agreement cost, Party Wall Act surveyor, boundary wall surveyor UK" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/party-wall-surveyor-cost" />
-    </Head>
+  
     <div className={styles.container}>
       <h1>Party Wall Surveyor Cost by Pearl Engineers, Planners, and Project Managers (PEPP)</h1>
 

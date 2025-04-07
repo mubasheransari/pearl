@@ -5,7 +5,7 @@ import Link from 'next/link';
 const ProjectManagerConstruction = () => {
   return (
     <>
-    <Head>
+
       <title>Professional Construction Project Management UK | PEPP</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const ProjectManagerConstruction = () => {
       />
       <meta name="keywords" content="construction project management, project manager construction, building project management UK, construction planning services" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/construction-project-management" />
-    </Head>
+  
     <div className={styles.container}>
       <h1>Project Manager Construction</h1>
       <p className={styles.intro}>

@@ -5,14 +5,14 @@ import styles from './best.module.scss';
 const FindStructuralEngineer = () => {
   return (
     <>
-      <Head>
+
         <title>How to Find the Best Structural Engineer Near Me: A Complete Guide</title>
         <meta 
           name="description" 
           content="Find a professional structural engineer near you for expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!" 
         />
         <link rel="canonical" href="https://www.pearlepp.co.uk/find-structural-engineer" />
-      </Head>
+  
 
       <div className={styles.findStructuralEngineer}>
         <header className={styles.header}>

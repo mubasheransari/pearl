@@ -5,11 +5,11 @@ import styles from './page.module.scss';
 const StructuralEngineerCost = () => {
   return (
     <>
-      <Head>
+    
       <title>How Much Does a Structural Engineer in London Cost | PEPP</title>
       <meta name="description" content="Expert structural engineer in London providing safe, innovative, and compliant solutions for residential & commercial projects. Contact us for consultations!" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/how-much-does-structural-engineer-london-cost" />
-    </Head>
+    
 
       <div className={styles.container}>
         <header className={styles.header}>

@@ -8,13 +8,13 @@ const CostControlValueEngineering = () => {
 
   return (
     <>
-      <Head>
+  
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <link rel="canonical" href="https://www.pearlepp.co.uk/cost-control-vs-value-engineering" />
-      </Head>
+    
 
       <div className={styles.container}>
         <header className={styles.header}>

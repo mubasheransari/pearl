@@ -6,14 +6,14 @@ import Link from 'next/link';
 const BuildingComplianceServices = () => {
   return (
     <>
-      <Head>
+    
         <title>Building Compliance Services | PEPP UK | Safety & Regulatory Compliance</title>
         <meta 
           name="description" 
           content="Professional building compliance services ensuring your project meets all UK safety regulations. BSR, Building Control, structural inspections & full regulatory compliance." 
         />
         <link rel="canonical" href="https://www.pearlepp.co.uk/building-compliance-services" />
-      </Head>
+      
 
       <div className={styles.container}>
         <h1>Building Compliance Services</h1>

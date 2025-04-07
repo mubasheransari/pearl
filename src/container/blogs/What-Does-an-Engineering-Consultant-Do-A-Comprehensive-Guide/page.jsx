@@ -4,11 +4,11 @@ import styles from './page.module.scss';
 const EngineeringConsultant = () => {
   return (
     <div className={styles.container}>
-   <Head>
+  
       <meta name="title" content="What Does an Engineering Consultant Do? A Comprehensive Guide" />
       <meta name="description" content="Experienced engineering consultant providing expert solutions in design, analysis, and project management for residential & commercial developments. Contact us!" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/what-does-an-engineering-consultant-do" />
-    </Head>
+    
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>What Does an Engineering Consultant Do? A Comprehensive Guide</h1>

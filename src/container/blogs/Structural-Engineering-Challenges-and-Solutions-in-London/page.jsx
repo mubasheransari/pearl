@@ -4,11 +4,11 @@ import styles from './page.module.scss';
 const EngineeringChallenges = () => {
   return (
     <div className={styles.container}>
-      <Head>
+
       <meta name="title" content="Structural Engineering Challenges and Solutions in London" />
       <meta name="description" content="Expert structural engineering services ensuring safe, efficient, and compliant designs for residential & commercial projects. Contact us for a consultation!" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/structural-engineering-challenges-solutions-london" />
-    </Head>
+
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>Structural Engineering Challenges and Solutions in London</h1>

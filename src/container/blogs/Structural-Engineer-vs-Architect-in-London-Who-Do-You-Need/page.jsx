@@ -4,11 +4,11 @@ import styles from './page.module.scss';
 const EngineerVsArchitect = () => {
   return (
     <div className={styles.container}>
-     <Head>
+    
       <meta name="title" content="Structural Engineer vs. Architect in London: Who Do You Need" />
       <meta name="description" content="Experienced structural engineer offering expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/structural-engineer-vs-architect-london" />
-    </Head>
+    
       <article className={styles.article}>
         <header className={styles.header}>
           <h1 className={styles.title}>Structural Engineer vs. Architect in London: Who Do You Need?</h1>

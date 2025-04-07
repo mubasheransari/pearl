@@ -5,7 +5,7 @@ import Link from 'next/link';
 const PlanningDrawingServices = () => {
   return (
     <>
-    <Head>
+
       <title>Professional Planning Drawings Services UK | PEPP</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const PlanningDrawingServices = () => {
       />
       <meta name="keywords" content="planning drawings, architectural drawings UK, planning application drawings, RIBA compliant designs" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/planning-drawings" />
-    </Head>
+  
     <div className={styles.container}>
       <h1>Planning Drawings</h1>
       <p className={styles.intro}>

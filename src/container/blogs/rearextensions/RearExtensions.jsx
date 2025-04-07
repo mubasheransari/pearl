@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Blog = () => {
   return (
     <>
-    <Head>
+  
       <title>50+ Inspiring Rear Extension Ideas for UK Homes | PEPP</title>
       <meta 
         name="description" 
@@ -13,7 +13,7 @@ const Blog = () => {
       />
       <meta name="keywords" content="rear extension ideas, home extension designs, UK house extensions, kitchen extensions, architectural extensions" />
       <link rel="canonical" href="https://www.pearlepp.co.uk/rear-extension-ideas" />
-    </Head>
+    
     <div className={styles.container}>
       <h1 className={styles.blogTitle}>Rear Extension Ideas</h1>
       <h2 className={styles.blogTitle2}>From Simplicity to Architectural Ingenuity</h2>
