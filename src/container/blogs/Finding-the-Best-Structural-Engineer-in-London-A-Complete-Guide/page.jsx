@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineerGuideLondon = () => {
   const metaTitle = "Finding the Best Structural Engineer in London: A Complete Guide";
@@ -20,7 +21,10 @@ const StructuralEngineerGuideLondon = () => {
         <header className={styles.header}>
           <h1>{metaTitle}</h1>
           <p className={styles.intro}>
-            Hiring a structural engineer in London is crucial for ensuring the safety, stability, and compliance of any construction or renovation project. With numerous options available, selecting the right professional can be challenging. This guide will help you identify the best structural engineer in London by focusing on key factors such as experience, qualifications, reputation, and service offerings.
+            Hiring a structural engineer in London is crucial for ensuring the safety, stability, and compliance of any
+             construction or renovation project. With numerous options available, selecting the right professional can be
+              challenging. This guide will help you identify the best <Link href="/structural_enigneering_services" className={styles.link1}> structural engineer in London </Link>  by focusing
+               on key factors such as experience, qualifications, reputation, and service offerings.
           </p>
         </header>
 
@@ -113,14 +117,14 @@ const StructuralEngineerGuideLondon = () => {
           <h2 className={styles.sectionTitle}>Contact Us Today!</h2>
           <p className={styles.sectionText}>
             Looking for the best structural engineer in London? Contact PEPP today! Call +44 7460140474 or email info@pearlepp.co.uk. Visit{' '}
-            <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for expert guidance.
+            <a href="https://pearlepp.co.uk/" className={styles.link1}>PearlEPP.co.uk</a> for expert guidance.
           </p>
         </section>
 
         <section className={styles.conclusionSection}>
           <h2 className={styles.sectionTitle}>Conclusion</h2>
           <p className={styles.sectionText}>
-            Choosing the best structural engineer in London requires careful evaluation of qualifications, experience, reputation, and service quality. Trust PEPP for professional, reliable, and efficient structural engineering services that deliver quality and peace of mind.
+            Choosing the best <Link href="/structural_enigneering_services" className={styles.link}> structural engineer in London </Link> requires careful evaluation of qualifications, experience, reputation, and service quality. Trust PEPP for professional, reliable, and efficient structural engineering services that deliver quality and peace of mind.
           </p>
         </section>
       </div>

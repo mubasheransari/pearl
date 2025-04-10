@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from "./page.module.scss";
+import Link from 'next/link';
 
 const ExtensionsGuide = () => {
   const metaTitle = "Front and Rear Extension: Maximizing Your Building's Space and Value";
@@ -20,7 +21,7 @@ const ExtensionsGuide = () => {
         <header className={styles.header}>
           <h1>{metaTitle}</h1>
           <p className={styles.intro}>
-            Expanding your home or commercial property with a front or rear extension is one of the most effective ways to increase space, enhance functionality, and add value to your building. Whether you need extra living space, a larger kitchen, or a commercial expansion, front and rear extensions offer a cost-effective solution to maximize your property's potential in Bromley, London, UK.
+            Expanding your home or commercial property with a front or <Link href="/rear-extension-ideas-from-simplicity-to-architectural-ingenuity" className={styles.link}> rear extension </Link>  is one of the most effective ways to increase space, enhance functionality, and add value to your building. Whether you need extra living space, a larger kitchen, or a commercial expansion, front and rear extensions offer a cost-effective solution to maximize your property's potential in Bromley, London, UK.
           </p>
         </header>
 
@@ -117,7 +118,7 @@ const ExtensionsGuide = () => {
         <section className={styles.conclusionSection}>
           <h2 className={styles.sectionTitle}>Conclusion</h2>
           <p className={styles.sectionText}>
-            A front or rear extension is a smart way to maximize space, enhance property value, and improve functionality. With professional planning and execution, you can achieve a seamless, high-quality expansion. Trust PEPP to help you navigate every step of the process for a stress-free, efficient, and value-adding extension project in Bromley, London, UK.
+            A front or <Link href="/rear-extension-ideas-from-simplicity-to-architectural-ingenuity" className={styles.link}> rear extension </Link>  is a smart way to maximize space, enhance property value, and improve functionality. With professional planning and execution, you can achieve a seamless, high-quality expansion. Trust PEPP to help you navigate every step of the process for a stress-free, efficient, and value-adding extension project in Bromley, London, UK.
           </p>
         </section>
       </div>

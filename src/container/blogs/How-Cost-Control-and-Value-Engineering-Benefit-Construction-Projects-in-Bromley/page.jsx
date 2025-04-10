@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const CostControlValueEngineer = () => {
   const metaTitle = "How Cost Control and Value Engineering Benefit Construction Projects in Bromley";
@@ -20,7 +21,9 @@ const CostControlValueEngineer = () => {
         <header className={styles.header}>
           <h1 className={styles.mainTitle}>{metaTitle}</h1>
           <p className={styles.intro}>
-            Effective financial management is crucial for the success of construction projects in Bromley, London, UK. Two key strategies that help ensure cost efficiency and high-quality outcomes are cost control and value engineering. These approaches optimize project budgets, minimize waste, and enhance the overall value of construction projects.
+            Effective financial management is crucial for the success of construction projects in Bromley, London, UK.
+             Two key strategies that help ensure cost efficiency and high-quality outcomes are
+              <Link href="/cost_control_value"  className={styles.link}>cost control and value engineering</Link> . These approaches optimize project budgets, minimize waste, and enhance the overall value of construction projects.
           </p>
         </header>
 
@@ -92,7 +95,7 @@ const CostControlValueEngineer = () => {
         </section>
 
         <section className={styles.highlightSection}>
-          <h2 className={styles.sectionTitle}>4. How PEPP Implements Cost Control and Value Engineering in Bromley</h2>
+          <h2 className={styles.sectionTitle}>4. How PEPP Implements<Link href="/cost_control_value"  className={styles.link1}> cost control and value engineering Bromley</Link> </h2>
           <p className={styles.sectionText}>
             At Pearl Engineers Planners and Project Managers (PEPP), we provide expert financial management solutions for construction projects in Bromley, London, UK. Our services include:
           </p>

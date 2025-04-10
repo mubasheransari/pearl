@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineerNearMe = () => {
   return (
@@ -15,7 +16,7 @@ const StructuralEngineerNearMe = () => {
         <header className={styles.header}>
           <h1>How a Structural Engineer Near Me Can Save You Time and Money</h1>
           <p className={styles.intro}>
-            Hiring a structural engineer near me is not just about ensuring safety and compliance—it's also a smart financial decision. 
+            Hiring a <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  is not just about ensuring safety and compliance—it's also a smart financial decision. 
             Whether you're building new, renovating, or dealing with damages, a structural engineer can streamline the process and prevent costly mistakes.
           </p>
         </header>
@@ -40,7 +41,7 @@ const StructuralEngineerNearMe = () => {
           <section className={styles.section}>
             <h2>3. Ensuring Compliance with Building Codes</h2>
             <p>
-              Failing to meet regulations can result in fines and delays. A structural engineer near me ensures all designs adhere to 
+              Failing to meet regulations can result in fines and delays. A  <Link href="/structural_enigneering_services">structural engineer near me</Link> ensures all designs adhere to 
               local building codes, avoiding costly rework.
             </p>
           </section>

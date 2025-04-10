@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineerNeartop = () => {
   return (
@@ -13,7 +14,7 @@ const StructuralEngineerNeartop = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>Top Reasons You Need a Structural Engineer Near Me for Your Project</h1>
           <p className={styles.intro}>
-            Hiring a structural engineer near me is a crucial step in ensuring the safety, stability, and longevity of any construction or renovation project. 
+            Hiring a <Link href="./structural_enigneering_services" className={styles.link1}>structural engineer near me</Link> is a crucial step in ensuring the safety, stability, and longevity of any construction or renovation project. 
             Whether you're working on a new building, an extension, or a structural modification, a professional structural engineer will provide expert guidance 
             to ensure compliance with regulations and avoid costly mistakes.
           </p>
@@ -69,7 +70,7 @@ const StructuralEngineerNeartop = () => {
             </div>
             <div className={styles.reasonContent}>
               <p className={styles.reasonDescription}>
-                If you're planning to modify an existing structure, a structural engineer can evaluate the current foundation and load-bearing elements.
+                If you're planning to modify an existing structure, a <Link href="./structural_enigneering_services" className={styles.link}>structural engineer near me</Link> can evaluate the current foundation and load-bearing elements.
               </p>
               <div className={styles.reasonDetails}>
                 <ul className={styles.benefitList}>
@@ -151,7 +152,7 @@ const StructuralEngineerNeartop = () => {
             </div>
             <div className={styles.reasonContent}>
               <p className={styles.reasonDescription}>
-                If you're purchasing a property, a structural engineer can conduct a thorough assessment.
+                If you're purchasing a property, a <Link href="./structural_enigneering_services" className={styles.link}>structural engineer near me</Link> can conduct a thorough assessment.
               </p>
               <div className={styles.reasonDetails}>
                 <ul className={styles.benefitList}>
@@ -215,7 +216,7 @@ const StructuralEngineerNeartop = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Looking for a structural engineer near me?</p>
+            <p className={styles.ctaText}>Looking for a <Link href="./structural_enigneering_services" className={styles.link1}>structural engineer near me</Link>?Contact PEPP today! </p>
             <div className={styles.contactMethods}>
               <a href="tel:+447460140474" className={styles.contactLink}>
                 <span className={styles.contactIcon}>📞</span> +44 7460140474

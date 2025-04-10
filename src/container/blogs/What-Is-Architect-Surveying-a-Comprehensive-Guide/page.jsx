@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const ArchitectSurveying = () => {
   return (
@@ -13,9 +14,8 @@ const ArchitectSurveying = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>What Is Architect Surveying? A Comprehensive Guide</h1>
           <p className={styles.intro}>
-            Architect surveying is a crucial aspect of construction, renovation, and land development projects. 
-            It involves assessing and mapping land, buildings, and infrastructure to ensure projects are designed 
-            and executed with precision, safety, and compliance.
+          Architect surveying is a crucial aspect of construction, renovation, and land development projects. It involves assessing and mapping land, buildings, and infrastructure to ensure projects are designed and executed with precision, safety, and compliance. Whether you are planning a new build, an extension, or property renovations, understanding
+          <Link href="/quantity_surverying" className={styles.link}>architect surveying</Link>  helps you make informed decisions.
           </p>
         </header>
 
@@ -164,7 +164,7 @@ const ArchitectSurveying = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Looking for professional architect surveying services in Bromley, London, UK?</p>
+            <p className={styles.ctaText}>Looking for professional  <Link href="/quantity_surverying" className={styles.link}>architect surveying</Link> services in Bromley, London, UK?</p>
             <div className={styles.contactMethods}>
               <a href="tel:+447460140474" className={styles.contactLink}>
                 <span className={styles.contactIcon}>📞</span> +44 7460140474

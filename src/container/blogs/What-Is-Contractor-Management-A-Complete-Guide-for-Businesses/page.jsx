@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const ContractorManagement = () => {
   return (
@@ -13,9 +14,8 @@ const ContractorManagement = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>What Is Contractor Management? A Complete Guide for Businesses</h1>
           <p className={styles.intro}>
-            Contractor management is a crucial process for businesses involved in construction, engineering, 
-            and project-based industries. It ensures successful project completion through proper selection, 
-            coordination, and monitoring of contractors and subcontractors.
+          Contractor management is a crucial process for businesses involved in construction, engineering, and project-based industries. It involves the selection, coordination, compliance monitoring, and performance evaluation of contractors and subcontractors to ensure successful project completion. Effective 
+          <Link href="/contracts_management" className={styles.link}> contractor management</Link>  helps businesses reduce risks, maintain compliance, and improve efficiency in their operations.
           </p>
         </header>
 
@@ -144,7 +144,7 @@ const ContractorManagement = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Need professional contractor management services in Bromley, London, UK?</p>
+            <p className={styles.ctaText}>Need professional   <Link href="/contracts_management" className={styles.link}> contractor management</Link> services in Bromley, London, UK?</p>
             <div className={styles.contactMethods}>
               <a href="tel:+447460140474" className={styles.contactLink}>
                 <span className={styles.contactIcon}>📞</span> +44 7460140474

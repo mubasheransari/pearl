@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './cost.module.scss';
+import Link from 'next/link';
 
 const ConsultantEngineerCost = () => {
   const metaTitle = "Cost of Hiring a Consultant Engineer in Bromley: What to Expect";
@@ -20,13 +21,14 @@ const ConsultantEngineerCost = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>{metaTitle}</h1>
           <p className={styles.intro}>
-            When planning a construction, renovation, or infrastructure project, hiring a consultant engineer in Bromley, London, UK is crucial to ensure project feasibility, structural integrity, and regulatory compliance. Understanding the cost factors involved in consultancy services can help you budget efficiently and avoid unexpected expenses.
+            When planning a construction, renovation, or infrastructure project, hiring a
+            <Link href="/structure-engineers" className={styles.link}> consultant engineer in Bromley, London, UK </Link> is crucial to ensure project feasibility, structural integrity, and regulatory compliance. Understanding the cost factors involved in consultancy services can help you budget efficiently and avoid unexpected expenses.
           </p>
         </header>
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>1. Key Factors Influencing Consultant Engineer Costs in Bromley</h2>
-          <p>The cost of hiring a consultant engineer depends on several critical factors, including:</p>
+          <p>The cost of  hiring a consultant engineer depends on several critical factors, including:</p>
           
           <ul className={styles.featureList}>
             <li>
@@ -123,9 +125,9 @@ const ConsultantEngineerCost = () => {
         <section className={styles.ctaSection}>
           <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
           <p>
-            Looking for an expert consultant engineer in Bromley, London, UK?<br />
+            Looking for an expert <Link href="/structure-engineers" className={styles.link}> consultant engineer in Bromley, London, UK </Link>?<br />
             Contact PEPP today! Call <strong>+44 7460140474</strong> or email <strong>info@pearlepp.co.uk</strong>.<br />
-            Visit <a href="https://pearlepp.co.uk/" className={styles.ctaLink}>PearlEPP.co.uk</a> for professional engineering guidance.
+            Visit <Link href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</Link> for professional engineering guidance.
           </p>
         </section>
 

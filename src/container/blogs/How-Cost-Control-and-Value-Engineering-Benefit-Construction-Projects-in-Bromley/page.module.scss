@@ -149,7 +149,9 @@ $box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
   }
 }
-
+.link{
+  color: white
+}
 // Benefits Grid
 .benefitsGrid {
   @include responsive-grid(250px);

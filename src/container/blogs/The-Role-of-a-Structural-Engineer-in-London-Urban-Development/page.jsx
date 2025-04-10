@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineering = () => {
   return (
@@ -13,7 +14,8 @@ const StructuralEngineering = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>The Role of a Structural Engineer in London's Urban Development</h1>
           <p className={styles.intro}>
-            London's rapid urban growth demands innovative and structurally sound solutions. A structural engineer in London plays a pivotal role in shaping the city's skyline, ensuring safety, sustainability, and compliance with modern regulations.
+            London's rapid urban growth demands innovative and structurally sound solutions. A
+            <Link href="/structural engineer in London" className={styles.link}></Link>  plays a pivotal role in shaping the city's skyline, ensuring safety, sustainability, and compliance with modern regulations.
           </p>
         </header>
 
@@ -137,7 +139,7 @@ const StructuralEngineering = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            A structural engineer in London is vital to shaping a resilient, modern, and sustainable city. Trust PEPP for expert structural engineering solutions that contribute to London's evolving skyline.
+            A  <Link href="/structural engineer in London" className={styles.link}></Link>  is vital to shaping a resilient, modern, and sustainable city. Trust PEPP for expert structural engineering solutions that contribute to London's evolving skyline.
           </p>
         </footer>
       </article>

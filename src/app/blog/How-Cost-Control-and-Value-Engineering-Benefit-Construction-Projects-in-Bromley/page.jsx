@@ -13,6 +13,7 @@ const CostControlValueEngineering = () => {
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
+        <link rel="canonical" href="https://pearlepp.co.uk/how-cost-control-and-value-engineering-benefit-construction-projects-in-bromley"></link>
       </Head>
 
       <div className={styles.container}>

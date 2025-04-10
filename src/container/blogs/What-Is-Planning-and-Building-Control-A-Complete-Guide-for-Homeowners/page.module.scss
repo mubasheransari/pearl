@@ -9,7 +9,7 @@ $text-light: #777;
 $background-light: #f9f9f9;
 $border-color: #e0e0e0;
 $box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-$warning-color: #ff6b6b;
+$warning-color: #1c0fac;
 
 // Base Styles
 .container {
@@ -19,6 +19,9 @@ $warning-color: #ff6b6b;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: $text-dark;
+}
+.link1{
+  color: white;
 }
 
 .article {
@@ -107,7 +110,6 @@ $warning-color: #ff6b6b;
 
 // Warning Card
 .warningCard {
-  background: lighten($warning-color, 35%);
   padding: 1.5rem;
   border-radius: 8px;
   border-left: 4px solid $warning-color;

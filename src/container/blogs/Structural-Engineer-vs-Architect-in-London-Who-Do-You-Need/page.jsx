@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const EngineerVsArchitect = () => {
   return (
@@ -13,7 +14,7 @@ const EngineerVsArchitect = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>Structural Engineer vs. Architect in London: Who Do You Need?</h1>
           <p className={styles.intro}>
-            When planning a construction project in London, it's essential to understand the difference between a structural engineer and an architect. 
+            When planning a  <Link href="/project_management" className={styles.link}>construction project in London</Link>, it's essential to understand the difference between a structural engineer and an architect. 
             While both professionals play critical roles in the design and construction process, their responsibilities and expertise vary significantly.
           </p>
         </header>
@@ -115,7 +116,7 @@ const EngineerVsArchitect = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Need a structural engineer in London?</p>
+            <p className={styles.ctaText}>Need a  <Link href="/project_management" className={styles.link}>construction project in London</Link>? Contact Pepp today!</p>
             <div className={styles.contactMethods}>
               <a href="tel:+447460140474" className={styles.contactLink}>
                 <span className={styles.contactIcon}>📞</span> +44 7460140474
@@ -132,7 +133,7 @@ const EngineerVsArchitect = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Understanding the difference between a structural engineer and an architect is crucial when planning a construction 
+            Understanding the difference between a  <Link href="/project_management" className={styles.link1}>structural engineer</Link>  and an architect is crucial when planning a construction 
             project in London. While architects focus on design, structural engineers ensure stability and safety. For seamless 
             project execution, consider hiring both professionals to achieve the best results. Trust PEPP for all your architectural 
             and structural engineering needs in London.

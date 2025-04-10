@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const FutureEngineering = () => {
   return (
@@ -13,7 +14,8 @@ const FutureEngineering = () => {
           <h1 className={styles.title}>The Future of Structural Engineering in London: Trends and Innovations</h1>
           <p className={styles.intro}>
             London's skyline is constantly evolving, with new developments pushing the boundaries of structural engineering and design. 
-            As technology advances and sustainability becomes a greater priority, structural engineers in London are adopting innovative 
+            As technology advances and sustainability becomes a greater priority,
+            <Link href="/structural_enigneering_services" className={styles.link1}>structural engineers in London</Link>  are adopting innovative 
             solutions to meet future challenges.
           </p>
         </header>
@@ -75,7 +77,7 @@ const FutureEngineering = () => {
             </div>
             <div className={styles.trendContent}>
               <p className={styles.trendDescription}>
-                Artificial intelligence (AI) and Building Information Modeling (BIM) are transforming structural engineering approaches.
+                Artificial intelligence (AI) and Building Information Modeling (BIM) are transforming  <Link href="/structural_enigneering_services" className={styles.link}>structural engineers in London</Link> approaches.
               </p>
               
               <div className={styles.trendDetails}>
@@ -123,7 +125,7 @@ const FutureEngineering = () => {
             </div>
             <div className={styles.trendContent}>
               <p className={styles.trendDescription}>
-                As climate risks increase, structural engineers are focusing on adaptive solutions.
+                As climate risks increase,  <Link href="/structural_enigneering_services" className={styles.link}>structural engineers in London</Link> are focusing on adaptive solutions.
               </p>
               
               <div className={styles.trendDetails}>

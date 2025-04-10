@@ -1,6 +1,8 @@
+// structural_enigneering_services
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralDesignEngineerGuide = () => {
   const metaTitle = "Choosing the Right Structural Design Engineer in Bromley, London: A Guide";
@@ -27,7 +29,8 @@ const StructuralDesignEngineerGuide = () => {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>1. Verify Qualifications and Certifications</h2>
           <p className={styles.sectionText}>
-            A professional structural design engineer in Bromley, London, UK should hold relevant qualifications, such as a degree in civil or structural engineering. They should also be registered with recognized institutions such as:
+         
+            A professional <Link href="/structural_enigneering_services" className={styles.link1}>structural design engineer in Bromley</Link> , London, UK should hold relevant qualifications, such as a degree in civil or structural engineering. They should also be registered with recognized institutions such as:
           </p>
           <ul className={styles.list}>
             <li>Institution of Structural Engineers (IStructE)</li>
@@ -82,7 +85,7 @@ const StructuralDesignEngineerGuide = () => {
         <section className={styles.ctaSection}>
           <h2 className={styles.sectionTitle}>Contact Us Today!</h2>
           <p className={styles.sectionText}>
-            Looking for a reliable structural design engineer in Bromley, London, UK? Contact PEPP for expert consultation. Call +44 7460140474 or email info@pearlepp.co.uk. Visit{' '}
+            Looking for a reliable <Link href="/structural_enigneering_services" className={styles.link}>structural design engineer in Bromley, London</Link>, UK? Contact PEPP for expert consultation. Call +44 7460140474 or email info@pearlepp.co.uk. Visit{' '}
             <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> to learn more about our services.
           </p>
         </section>

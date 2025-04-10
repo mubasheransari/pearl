@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralSafety = () => {
   return (
@@ -15,8 +16,8 @@ const StructuralSafety = () => {
         <header className={styles.header}>
           <h1>How Structural Engineers in London Ensure Safe and Sustainable Buildings</h1>
           <p className={styles.intro}>
-            Structural engineers play a key role in designing buildings that meet modern safety and sustainability standards. 
-            Discover how they enhance building longevity, energy efficiency, and environmental sustainability in London.
+          A structural engineer in London plays a key role in designing and maintaining safe and sustainable buildings that meet modern standards. With growing concerns over climate change, urban expansion, and structural safety, structural engineers implement innovative solutions to enhance building longevity, energy efficiency, and environmental sustainability. Here’s how 
+         <Link href="/structural_enigneering_services"  className={styles.link1}>structural engineers in London</Link>  ensure safe and eco-friendly buildings.
           </p>
         </header>
 
@@ -131,7 +132,7 @@ const StructuralSafety = () => {
           <section className={styles.section}>
             <h2>6. Sustainable Retrofitting</h2>
             <p>
-              Rather than demolition, structural engineers focus on upgrading existing buildings through:
+              Rather than demolition,  <Link href="/structural_enigneering_services"  className={styles.link}>structural engineers in London</Link> focus on upgrading existing buildings through:
             </p>
             <ul className={styles.retrofitList}>
               <li>Energy efficiency improvements (insulation, glazing, HVAC)</li>
@@ -159,7 +160,7 @@ const StructuralSafety = () => {
 
           <section className={styles.ctaSection}>
             <h2>Contact PEPP Today</h2>
-            <p>Need a structural engineer committed to safety and sustainability?</p>
+            <p>Looking for a structural engineer in London? Contact PEPP today!</p>
             <div className={styles.contactOptions}>
               <a href="tel:+447460140474" className={styles.phoneLink}>Call +44 7460140474</a>
               <a href="mailto:info@pearlepp.co.uk" className={styles.emailLink}>Email info@pearlepp.co.uk</a>
@@ -168,9 +169,10 @@ const StructuralSafety = () => {
           </section>
 
           <section className={styles.conclusion}>
-            <h2>Building London's Sustainable Future</h2>
+            <h2>Conclusion</h2>
             <p>
-              Structural engineers are essential in creating safer, more sustainable buildings for London. 
+
+              <Link href="/structural_enigneering_services"  className={styles.link}>structural engineers in London</Link> are essential in creating safer, more sustainable buildings for London. 
               Through innovative design, responsible material selection, and climate-adaptive strategies, 
               they ensure structures meet today's needs while preserving resources for future generations. 
               Trust PEPP for structural engineering solutions that prioritize both safety and environmental responsibility.

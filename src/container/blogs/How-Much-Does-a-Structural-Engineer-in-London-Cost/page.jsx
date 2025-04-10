@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineerCost = () => {
   return (
@@ -15,7 +16,8 @@ const StructuralEngineerCost = () => {
         <header className={styles.header}>
           <h1>How Much Does a Structural Engineer in London Cost?</h1>
           <p className={styles.intro}>
-            When planning a construction project, renovation, or structural assessment, understanding the cost of hiring a structural engineer in London is essential. 
+            When planning a construction project, renovation, or structural assessment, understanding the cost of hiring a 
+            <Link href="/structural_enigneering_services" className={styles.link}> structural engineer in London</Link> is essential. 
             This guide outlines the key factors influencing costs and what you can expect to pay.
           </p>
         </header>
@@ -36,7 +38,7 @@ const StructuralEngineerCost = () => {
 
           <section className={styles.section}>
             <h2>2. Average Cost Breakdown for Structural Engineering Services</h2>
-            <p>While prices vary, here's an approximate breakdown in London:</p>
+            <p>While prices can vary, here is an approximate breakdown of  <Link href="/structural_enigneering_services">structural engineer in London</Link> </p>
             
             <div className={styles.priceTable}>
               <div className={styles.priceRow}>

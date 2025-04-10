@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const LocalEngineer = () => {
   return (
@@ -13,8 +14,7 @@ const LocalEngineer = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>Why Hiring a Local Structural Engineer Near Me Matters</h1>
           <p className={styles.intro}>
-            Choosing a local structural engineer offers significant advantages for your construction or renovation project. 
-            Local expertise, regulatory knowledge, and accessibility make them the ideal choice for your structural needs.
+          When planning a construction, renovation, or structural assessment, choosing a local <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  offers significant advantages. Local engineers bring regional expertise, familiarity with building regulations, and accessibility, making them the best choice for your project. Here’s why hiring a local structural engineer is beneficial.
           </p>
         </header>
 
@@ -144,7 +144,7 @@ const LocalEngineer = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Hiring a local structural engineer near me ensures compliance, efficiency, and cost savings for your project. 
+            Hiring a local <Link href="/structural_enigneering_services" className={styles.link1}>structural engineer near me</Link> ensures compliance, efficiency, and cost savings for your project. 
             With PEPP, you gain a partner who understands local regulations, environmental conditions, and construction 
             practices. Our commitment to quality and community ensures your project's success from foundation to completion.
           </p>

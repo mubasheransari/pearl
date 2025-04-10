@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const EngineeringConsultant = () => {
   return (
@@ -15,7 +16,7 @@ const EngineeringConsultant = () => {
           <p className={styles.intro}>
             Engineering consultants play a crucial role in construction, infrastructure development, and industrial projects. 
             Their expertise ensures that projects are technically sound, efficient, and compliant with regulations. 
-            This guide explains what an engineering consultant does and why their role is essential.
+            This guide explains what an <Link href="/structural_enigneering_services" className={styles.link}>engineering consultant</Link> does and why their role is essential.
           </p>
         </header>
 
@@ -41,7 +42,7 @@ const EngineeringConsultant = () => {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>2. Key Responsibilities of an Engineering Consultant</h2>
           <p className={styles.sectionText}>
-            The role of an engineering consultant varies depending on the industry and project requirements.
+            The role of an <Link href="/structural_enigneering_services" className={styles.link}>engineering consultant</Link> varies depending on the industry and project requirements.
           </p>
           
           <div className={styles.responsibilityCards}>
@@ -143,7 +144,7 @@ const EngineeringConsultant = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Looking for a trusted engineering consultant in London?</p>
+            <p className={styles.ctaText}>Looking for a trusted <Link href="/structural_enigneering_services" className={styles.link}>engineering consultant in London?</Link> Contact PEPP today! </p>
             <div className={styles.contactMethods}>
               <a href="tel:+447460140474" className={styles.contactLink}>
                 <span className={styles.contactIcon}>📞</span> +44 7460140474

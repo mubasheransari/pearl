@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const LondonStructuralEngineer = () => {
   return (
@@ -16,8 +17,7 @@ const LondonStructuralEngineer = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>Why You Need a Structural Engineer in London for Your Construction Project</h1>
           <p className={styles.intro}>
-            A structural engineer in London plays a critical role in ensuring the safety, stability, and compliance of any construction project. 
-            Their expertise helps avoid costly mistakes and enhances project efficiency.
+          A <Link href="/structural_enigneering_services" className={styles.link}>structural engineer in London</Link>  plays a critical role in ensuring the safety, stability, and compliance of any construction project. Whether you are planning a new build, renovation, or structural alteration, hiring an expert structural engineer can help you avoid costly mistakes, ensure regulatory adherence, and enhance project efficiency. Here’s why a structural engineer in London is essential for your construction project
           </p>
         </header>
 
@@ -160,7 +160,7 @@ const LondonStructuralEngineer = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Hiring a structural engineer in London is crucial for ensuring safety, compliance, and efficiency in your construction project. 
+            Hiring a <Link href="/structural_enigneering_services" className={styles.link1}>structural engineer in London</Link> is crucial for ensuring safety, compliance, and efficiency in your construction project. 
             Whether you're building new, modifying existing structures, or conducting safety inspections, PEPP provides professional 
             engineering services that guarantee long-term stability and success for your London project.
           </p>

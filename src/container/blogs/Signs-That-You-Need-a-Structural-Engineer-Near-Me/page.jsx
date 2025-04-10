@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineerSigns = () => {
   return (
@@ -13,7 +14,7 @@ const StructuralEngineerSigns = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>Signs That You Need a Structural Engineer Near Me</h1>
           <p className={styles.intro}>
-            A structural engineer near me plays a vital role in assessing the integrity, safety, and stability of buildings. 
+            A <Link href="/structural_enigneering_services" className={styles.link1}>structural engineer near me</Link>  plays a vital role in assessing the integrity, safety, and stability of buildings. 
             Whether you are planning a construction project or facing structural concerns in your property, recognizing the signs 
             that you need professional assistance can help you avoid costly damages and ensure safety.
           </p>
@@ -102,7 +103,7 @@ const StructuralEngineerSigns = () => {
                 <h3 className={styles.signTitle}>Leaning or Bowing Walls</h3>
                 <p className={styles.signDescription}>
                   Walls that lean, bow, or bulge may be experiencing excessive pressure from soil movement, moisture intrusion, 
-                  or structural failure. A structural engineer near me will provide the necessary assessment and solutions.
+                  or structural failure. A <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  will provide the necessary assessment and solutions.
                 </p>
               </div>
             </div>
@@ -149,7 +150,7 @@ const StructuralEngineerSigns = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Recognizing the signs that you need a structural engineer near me can help prevent major issues, maintain property value, 
+            Recognizing the signs that you need a<Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  can help prevent major issues, maintain property value, 
             and ensure safety. From foundation problems and structural cracks to renovation planning and disaster damage assessment, 
             a structural engineer provides the expertise needed for safe and long-lasting buildings. Choose PEPP for professional, 
             reliable, and expert engineering services.

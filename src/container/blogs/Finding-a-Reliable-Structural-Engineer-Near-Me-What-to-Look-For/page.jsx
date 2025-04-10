@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './finding.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineerGuide = () => {
   const metaTitle = "Finding a Reliable Structural Engineer Near Me: What to Look For";
@@ -21,7 +22,10 @@ const StructuralEngineerGuide = () => {
         <header className={styles.header}>
           <h1>{metaTitle}</h1>
           <p className={styles.intro}>
-            Choosing a reliable structural engineer near me is a critical step in ensuring the safety, durability, and compliance of your construction or renovation project. A professional engineer can provide expert advice, help you avoid costly mistakes, and ensure your project meets local building regulations.
+            Choosing a reliable structural engineer near me is a critical step in ensuring the safety, durability, and compliance of your construction or renovation project.
+             A professional engineer can provide expert advice, help you avoid costly mistakes, and ensure your project meets local 
+             building regulations.Here’s what to consider when hiring a
+              <Link href="/structural_enigneering_services" className={styles.link}> structural engineer near me </Link> .
           </p>
         </header>
 
@@ -124,7 +128,7 @@ const StructuralEngineerGuide = () => {
         <section className={styles.ctaSection}>
           <h2>Contact Us Today!</h2>
           <p>
-            Looking for a reliable structural engineer near me?<br />
+            Looking for a reliable <Link href="/structural_enigneering_services"   className={styles.link}> structural engineer near me </Link>?<br />
             Contact PEPP today! Call <strong>+44 7460140474</strong> or email <strong>info@pearlepp.co.uk</strong><br />
             Visit <a href="https://pearlepp.co.uk/" className={styles.ctaLink}>PearlEPP.co.uk</a> to learn more.
           </p>

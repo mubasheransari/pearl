@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const HiringGuide = () => {
   return (
@@ -12,10 +13,9 @@ const HiringGuide = () => {
 
       <div className={styles.container}>
         <header className={styles.header}>
-          <h1>Key Factors to Consider When Hiring a Structural Engineer in London</h1>
+          <h1>Key Factors to Consider When Hiring a Structural Engineer in London </h1>
           <p className={styles.intro}>
-            Selecting the right structural engineer is crucial for your project's safety, efficiency, and compliance. 
-            This guide outlines the essential considerations for making an informed decision.
+          Hiring a <Link href="/structural_enigneering_services" className={styles.link}>structural engineer in London</Link> is a crucial step in ensuring the safety, efficiency, and compliance of your construction or renovation project. With so many options available, selecting the right professional requires careful evaluation. Here are the key factors to consider before making your decision.
           </p>
         </header>
 
@@ -205,7 +205,7 @@ const HiringGuide = () => {
 
           <section className={styles.ctaSection}>
             <h2>Ready to Hire a Structural Engineer?</h2>
-            <p>Contact PEPP for professional, reliable engineering services in London:</p>
+            <p>Looking for a qualified and experienced  <Link href="/structural_enigneering_services" className={styles.link}>structural engineer in London</Link>? Contact PEPP today! </p>
             <div className={styles.contactOptions}>
               <a href="tel:+447460140474" className={styles.phoneLink}>Call +44 7460140474</a>
               <a href="mailto:info@pearlepp.co.uk" className={styles.emailLink}>Email info@pearlepp.co.uk</a>
@@ -216,7 +216,7 @@ const HiringGuide = () => {
           <section className={styles.conclusion}>
             <h2>Making the Right Choice</h2>
             <p>
-              Selecting the right structural engineer requires careful evaluation of their qualifications, 
+           Hiring the right <Link href="/structural_enigneering_services" className={styles.link1}>structural engineer in London</Link> requires careful evaluation of their qualifications, 
               experience, regulatory knowledge, and reputation. By considering these key factors, you can 
               ensure your project meets the highest standards of safety and compliance. PEPP combines all 
               these qualities with transparent communication and competitive pricing, making us the ideal 

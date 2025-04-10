@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const QuantitySurveying = () => {
   return (
@@ -14,7 +15,7 @@ const QuantitySurveying = () => {
           <h1 className={styles.title}>The Role of Quantity Surveying in Bromley's Growing Construction Industry</h1>
           <p className={styles.intro}>
             As Bromley, London, UK continues to expand with new residential, commercial, and infrastructure developments, 
-            the role of quantity surveying in Bromley has become more crucial than ever. Quantity surveyors play a vital 
+            the role of <Link href="/quantity_surverying" className={styles.link}>quantity surveying in Bromley</Link>  has become more crucial than ever. Quantity surveyors play a vital 
             role in cost estimation, financial planning, and project efficiency, ensuring that construction projects remain 
             financially viable and legally compliant.
           </p>
@@ -105,7 +106,7 @@ const QuantitySurveying = () => {
         <section className={styles.ctaSection}>
           <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
           <p className={styles.ctaText}>
-            Looking for expert quantity surveying services in Bromley, London, UK? Contact PEPP today!
+            Looking for expert <Link href="/quantity_surverying" className={styles.link}>quantity surveying in Bromley</Link> UK? Contact PEPP today!
           </p>
           <div className={styles.contactInfo}>
             <p className={styles.contactItem}>Call <a href="tel:+447460140474" className={styles.contactLink}>+44 7460140474</a></p>

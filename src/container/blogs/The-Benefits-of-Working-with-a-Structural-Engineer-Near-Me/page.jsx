@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const StructuralEngineerNear = () => {
   return (
@@ -13,7 +14,8 @@ const StructuralEngineerNear = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>The Benefits of Working with a Structural Engineer Near Me</h1>
           <p className={styles.intro}>
-            When planning a construction, renovation, or structural inspection, working with a structural engineer near me offers a range of advantages. 
+            When planning a construction, renovation, or structural inspection, working with a
+            <Link href="/structural_enigneering_services" className={styles.link1}> structural engineer near me </Link>  offers a range of advantages. 
             Whether you are dealing with a new project or addressing potential structural concerns, having an expert on board ensures stability, 
             compliance, and long-term durability.
           </p>
@@ -42,7 +44,8 @@ const StructuralEngineerNear = () => {
             </div>
             <div className={styles.benefitContent}>
               <p className={styles.benefitDescription}>
-                Early detection of potential structural weaknesses is crucial. A structural engineer near me conducts detailed assessments, 
+                Early detection of potential structural weaknesses is crucial. A
+                 <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link> conducts detailed assessments, 
                 site inspections, and structural calculations to ensure the building can withstand various forces. Their insights help in 
                 mitigating risks before they turn into costly issues.
               </p>
@@ -99,7 +102,7 @@ const StructuralEngineerNear = () => {
             </div>
             <div className={styles.benefitContent}>
               <p className={styles.benefitDescription}>
-                Before buying or selling a property, hiring a structural engineer near me can help assess the condition of foundations, walls, 
+                Before buying or selling a property, hiring a <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link> can help assess the condition of foundations, walls, 
                 and other critical elements. Their reports provide valuable insights for real estate transactions and future investments.
               </p>
             </div>
@@ -191,7 +194,7 @@ const StructuralEngineerNear = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            A structural engineer near me provides specialized expertise that enhances safety, efficiency, and sustainability. From tailored structural 
+            A <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link> provides specialized expertise that enhances safety, efficiency, and sustainability. From tailored structural 
             solutions and early risk assessments to material optimization and property evaluations, their role is indispensable. Trust PEPP for reliable, 
             forward-thinking engineering solutions that ensure the long-term success of your project.
           </p>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const PlanningBuilding = () => {
   return (
@@ -13,8 +14,7 @@ const PlanningBuilding = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>What Is Planning and Building Control? A Complete Guide for Homeowners</h1>
           <p className={styles.intro}>
-            Planning and building control are crucial aspects of any construction or renovation project in the UK. 
-            Understanding these regulations ensures your project is legally compliant, safe, and structurally sound.
+          Planning and building control are crucial aspects of any construction or renovation project in the UK. Whether you are planning a new build, an extension, or structural modifications, understanding these regulations ensures your project is legally compliant, safe, and structurally sound. This guide explains <Link href="/planning_and_building_control_services" className={styles.link1}>planning and building control</Link>  their differences, and how they impact homeowners in Bromley, London, UK.
           </p>
         </header>
 
@@ -129,7 +129,7 @@ const PlanningBuilding = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Need assistance with planning and building control?</p>
+            <p className={styles.ctaText}>Need assistance with <Link href="/planning_and_building_control_services" className={styles.link1}>planning and building control</Link>? Contact PEPP today!</p>
             <div className={styles.contactMethods}>
               <a href="tel:+447460140474" className={styles.contactLink}>
                 <span className={styles.contactIcon}>📞</span> +44 7460140474
@@ -146,7 +146,7 @@ const PlanningBuilding = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Understanding planning and building control is vital for safe, legal construction projects. 
+            Understanding <Link href="/planning_and_building_control_services" className={styles.link}>planning and building control</Link> is vital for safe, legal construction projects. 
             Whether you need planning approval or building regulation compliance, working with PEPP 
             guarantees a smooth process for your project in Bromley, London, UK.
           </p>

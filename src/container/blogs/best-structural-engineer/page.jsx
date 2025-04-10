@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './best.module.scss';
+import Link from 'next/link';
 
 const FindStructuralEngineer = () => {
   return (
@@ -18,14 +19,14 @@ const FindStructuralEngineer = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>How to Find the Best Structural Engineer Near Me: A Complete Guide?</h1>
           <p className={styles.intro}>
-            Finding the right structural engineer near me is crucial for ensuring the safety, stability, and success of your construction project. Whether you're planning a new build, renovation, or structural inspection, choosing a qualified engineer with the right expertise can save you time and money. Here's a complete guide to help you find the best structural engineer near me.
+            Finding the right <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  is crucial for ensuring the safety, stability, and success of your construction project. Whether you're planning a new build, renovation, or structural inspection, choosing a qualified engineer with the right expertise can save you time and money. Here's a complete guide to help you find the best structural engineer near me.
           </p>
         </header>
 
         <section className={styles.section}>
           <h2 className={styles.subtitle}>1. Search for Locally Experienced Structural Engineers</h2>
           <p className={styles.text}>
-            When looking for a structural engineer near me, prioritize those with experience in local building regulations, planning laws, and environmental conditions. Engineers familiar with your area's specific requirements can navigate the approval process more efficiently and recommend suitable materials for construction.
+            When looking for a <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>, prioritize those with experience in local building regulations, planning laws, and environmental conditions. Engineers familiar with your area's specific requirements can navigate the approval process more efficiently and recommend suitable materials for construction.
           </p>
         </section>
 
@@ -82,7 +83,7 @@ const FindStructuralEngineer = () => {
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Conclusion</h2>
           <p className={styles.text}>
-            Finding the best structural engineer near me requires careful consideration of experience, credentials, and communication skills. By following this guide, you can ensure a successful and hassle-free construction project. Choose PEPP for trusted and professional structural engineering services that deliver quality and compliance.
+            Finding the best <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link> requires careful consideration of experience, credentials, and communication skills. By following this guide, you can ensure a successful and hassle-free construction project. Choose PEPP for trusted and professional structural engineering services that deliver quality and compliance.
           </p>
         </section>
       </div>

@@ -13,6 +13,7 @@ const CostControlValueEngineering = () => {
         <meta name="description" content={metaDescription} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
+        <link rel="canonical" href="https://yourwebsite.com/cost-control-vs-value-engineering" />
       </Head>
 
       <div className={styles.container}>

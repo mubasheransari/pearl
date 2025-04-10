@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const ArchitectEngineerCost = () => {
   return (
@@ -15,8 +16,8 @@ const ArchitectEngineerCost = () => {
         <header className={styles.header}>
           <h1>How Much Does an Architect Engineer in Bromley Cost?</h1>
           <p className={styles.intro}>
-            When planning construction or renovation in Bromley, hiring an architect engineer ensures structural integrity, aesthetic appeal, and compliance. 
-            This guide explains pricing factors and how to find cost-effective solutions.
+          When planning a construction, renovation, or extension project, hiring an
+          <Link href="/architectural_services" className={styles.link}> architect engineer in Bromley, London, UK </Link>  is a vital step to ensure structural integrity, aesthetic appeal, and legal compliance. Understanding the cost factors involved in architectural and structural engineering services can help you budget effectively and make informed decisions. This guide provides insights into the pricing structure and how to find cost-effective solutions for your project.
           </p>
         </header>
 
@@ -136,7 +137,7 @@ const ArchitectEngineerCost = () => {
 
           <section className={styles.ctaSection}>
             <h2>Contact PEPP Today!</h2>
-            <p>Need a trusted architect engineer in Bromley?</p>
+            <p>Looking for a trusted and affordable       <Link href="/architectural_services" className={styles.link}> architect engineer in Bromley London </Link> UK? Contact PEPP today! </p>
             <div className={styles.ctaButtons}>
               <a href="tel:+447460140474" className={styles.ctaPhone}>Call +44 7460140474</a>
               <a href="mailto:info@pearlepp.co.uk" className={styles.ctaEmail}>Email info@pearlepp.co.uk</a>
