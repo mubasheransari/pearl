@@ -1,3 +1,5 @@
+
+/* ===== Base Styles ===== */
 .container {
   margin-top: 70px;
   padding: 20px;
@@ -26,6 +28,7 @@
   justify-content: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  background-color: #fff;
 }
 
 .page {
@@ -51,8 +54,10 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  user-select: none;
 }
 
+/* ===== Controls ===== */
 .controls {
   position: absolute;
   bottom: 20px;
@@ -73,26 +78,44 @@
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   z-index: 20;
+  transition: all 0.2s ease;
+}
+
+.navButtonLeft:hover,
+.navButtonRight:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.05);
 }
 
 .navButtonLeft {
-  left: 10px;
+  left: 20px;
 }
 
 .navButtonRight {
-  right: 10px;
+  right: 20px;
 }
 
+/* ===== Loading State ===== */
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Drawer (left side panel) without animation */
+/* ===== Drawer Styles ===== */
 .drawer {
   position: absolute;
   top: 0;
@@ -103,27 +126,41 @@
   overflow-y: auto;
   box-shadow: 2px 0 5px rgba(0,0,0,0.15);
   z-index: 999;
+  transition: transform 0.3s ease;
 }
 
-/* Instantly hidden when closed */
 .drawerClosed {
   transform: translateX(-100%);
 }
 
-/* Instantly visible when open */
 .drawerOpen {
   transform: translateX(0);
 }
 
-/* Thumbnails */
+.drawerHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* ===== Thumbnail Styles ===== */
 .thumbnailContainer {
   padding: 8px;
   cursor: pointer;
   text-align: center;
+  transition: background-color 0.2s ease;
 }
 
 .thumbnailContainer:hover {
-  background-color: #ddd;
+  background-color: #e0e0e0;
+}
+
+.thumbnailContainer.active {
+  background-color: #d0d0d0;
 }
 
 .thumbnail {
@@ -133,22 +170,30 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
   margin-bottom: 5px;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.02);
 }
 
 .thumbnailLabel {
-  font-size: 14px;
+  font-size: 12px;
   color: #333;
   margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* Lightbox (full-image modal) */
+/* ===== Lightbox Styles ===== */
 .lightboxOverlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,122 +204,89 @@
   position: relative;
   max-width: 90%;
   max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lightboxImage {
-  max-width: 75%;
-  // max-height: 50%;
+  max-width: 90%;
+  max-height: 80vh;
   width: auto;
   height: auto;
   display: block;
   margin: 0 auto;
   border: 2px solid #fff;
   border-radius: 4px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-
-.drawerHeader {
+.lightboxControls {
+  margin-top: 15px;
   display: flex;
-  justify-content: flex-end; /* Aligns the close button to the right */
-  padding: 10px;
+  gap: 10px;
 }
 
-.closeButton {
-  position: absolute !important;
-  top: 10px !important;
-  right: 160px !important;
-  background: #fff !important;
-  z-index: 9999 !important;
+/* ===== Mobile Viewer Styles ===== */
+.mobileViewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-// /* Responsive adjustments */
-// @media (max-width: 768px) {
-//   .controls {
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     bottom: 10px;
-//   }
-//   .navButtonLeft,
-//   .navButtonRight {
-//     top: auto;
-//     bottom: 70px;
-//     transform: none;
-//   }
-// }
+.mobileImage {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  cursor: pointer;
+}
 
-/* ===== Responsive Adjustments for Screens Below 600px ===== */
-/* ===== Responsive Adjustments for Screens Below 600px ===== */
-/* ===== Responsive Adjustments for Screens Below 600px ===== */
-/* ===== Responsive Adjustments for Screens Below 600px ===== */
-@media (max-width: 600px) {
+.pageIndicator {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 767px) {
   .container {
     padding: 10px;
-    height: 0% ;
+    height: auto;
+    min-height: 60vh;
+    margin-top: 60px;
   }
 
   .zoomableContainer {
-    // flex-direction: column;
-    width: 100%;
-    // height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 50vh;
   }
 
   .flipBook {
-    width: 80%;
-    max-width: 300px; /* Small centered flipbook */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 95%;
+    max-width: 400px;
   }
 
-  .page {
-    width: 100%;
-    // height: auto;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .image {
-    width: 80%;
-    // height: auto;
-    max-height: 250px; /* Smaller image */
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* Controls - Adjusted for Small Screens */
   .controls {
-    // flex-wrap: wrap;
-    justify-content: center;
+    position: fixed;
     bottom: 10px;
-    padding: 6px;
-    gap: 5px;
-    font-size: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    gap: 8px;
+    font-size: 14px;
   }
 
-  /* Navigation Buttons - Inside Image */
   .navButtonLeft,
   .navButtonRight {
-    position: absolute;
-    top: 15%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    border: none;
-    padding: 5px;
-    font-size: 12px;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
   }
 
   .navButtonLeft {
@@ -285,43 +297,71 @@
     right: 5px;
   }
 
-  /* Thumbnails - Smaller */
-  .thumbnailContainer {
-    // width: 100%;
-    display: flex;
-    // flex-wrap: wrap;
-    justify-content: center;
-    padding: 5px;
+  .drawer {
+    width: 180px;
   }
 
   .thumbnail {
-    width: 0px;
-    height: 0px;
-    margin: 2px;
+    margin-bottom: 3px;
   }
 
   .thumbnailLabel {
-    font-size: 10px;
+    font-size: 11px;
   }
 
-  /* Lightbox - Smaller Image */
   .lightboxImage {
-    max-width: 80%;
-    max-height: 250px;
+    max-width: 95%;
+    max-height: 70vh;
   }
 
-  /* Close Button - Always Fixed */
   .closeButton {
-    position: fixed !important;
     top: 5px !important;
     right: 5px !important;
-    font-size: 12px !important;
-    padding: 4px !important;
-    width: 25px;
-    height: 25px;
-    background: rgba(255, 255, 255, 0.8) !important;
-    border-radius: 50%;
-    z-index: 99999 !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 30px;
+    height: 30px;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: auto;
+    min-height: 50vh;
+    margin-top: 50px;
+  }
+
+  .zoomableContainer {
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .controls {
+    bottom: 5px;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .navButtonLeft,
+  .navButtonRight {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .drawer {
+    width: 160px;
+  }
+
+  .thumbnailContainer {
+    padding: 6px;
+  }
+
+  .pageIndicator {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+
+  .lightboxImage {
+    max-height: 50vh;
   }
 }

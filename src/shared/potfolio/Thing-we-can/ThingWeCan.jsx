@@ -21,6 +21,7 @@ import Pdf16 from './All-compoent/pdf16/16';
 import Pdf17 from './All-compoent/pdf17/17';
 import Pdf18 from './All-compoent/pdf18/18';
 import Pdf19 from './All-compoent/pdf18/18';
+
 import Pdf20 from './All-compoent/pdf20/20';
 import Pdf21 from './All-compoent/pdf21/21';
 import Pdf22 from './All-compoent/pdf22/22';
@@ -73,12 +74,18 @@ function ClientSideTabs() {
   };
 
   const tabLabels = [
-    "Double Storey Rear Butterfly Roof", "Garage Conversion B regs  ", "Intrenal Remodeling Wall removal Open plan","New Build Larger", "Planning  Decision  LFDC ", 
-    "Planning  Decision Double Sotrey Rear & Elevation Alterations",  "   Planning Prior Approval For Larger Extension",  "Rear & Loft PD","Rear & Remodeling Timber Frame Cosntruction","Rear Larger Extension & Remodeling",
+
+// , "Intrenal Remodeling Wall removal Open plan"    "Planning  Decision Double Sotrey Rear & Elevation Alterations",  "   Planning Prior Approval For Larger Extension",  "Rear & Loft PD",
+
+
+
+    "Double Storey Rear Butterfly Roof", "Garage Conversion B regs  ","New Build Larger", "Planning  Decision  LFDC ", 
+ "Rear & Remodeling Timber Frame Cosntruction","Rear Larger Extension & Remodeling",
     "Residential Property Survey ","chimney calcs","Small Wall Removal","Earth Retaining Steel Structure Stair Design","Outbuilding with Screw Piles Structural Design",
     " chimney"," Double sotrey Side & Rear"," home buyer","measure survey"," Measured Survey"," New Build Design Calcs"," New Build Small"," Project 6 Rear & Loft With 3D Prespectives"," Project Conversion",
-    " project Rear & Loft"," Rear Extension With 3D Prespectives"," Rear Single Storey Small Extension"," report land sliding"," report strutural Damages",
-    " Underpining Drawings"," wall removal calcs"," wall removal DWG"," Wrap Around Extension"," Larger Loft & Kitchen Extension","Structural Analysis of Roof for additional loading","Garage Sample Structure Calculation Report"
+    " project Rear & Loft"," Rear Extension With 3D Prespectives"," Rear Single Storey Small Extension"," report land sliding"
+    // ," report strutural Damages",
+    // " Underpining Drawings"," wall removal calcs"," wall removal DWG"," Wrap Around Extension"," Larger Loft & Kitchen Extension","Structural Analysis of Roof for additional loading","Garage Sample Structure Calculation Report"
 
   
 
@@ -106,40 +113,40 @@ function ClientSideTabs() {
         <div className={styles.tabsContent}>
           <CustomTabPanel value={value} index={0}><Development /></CustomTabPanel>
           <CustomTabPanel value={value} index={1}><Ecommerce /></CustomTabPanel>
-          <CustomTabPanel value={value} index={2}><Cbs /></CustomTabPanel>
-          <CustomTabPanel value={value} index={3}><WebApplication /></CustomTabPanel>
-          <CustomTabPanel value={value} index={4}><Ai /></CustomTabPanel>
-          <CustomTabPanel value={value} index={5}><MobileAppDevelopment /></CustomTabPanel>
-          <CustomTabPanel value={value} index={6}><DataScraping /></CustomTabPanel>
-          <CustomTabPanel value={value} index={7}><DotNet /></CustomTabPanel>
-          <CustomTabPanel value={value} index={8}><Shopify /></CustomTabPanel>
-          <CustomTabPanel value={value} index={9}><Pdf10 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={10}><Pdf11 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={11}><Pdf12 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={12}><Pdf13 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={13}><Pdf14 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={14}><Pdf15 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={15}><Pdf16 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={16}><Pdf17 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={17}><Pdf18 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={18}><Pdf19 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={19}><Pdf20 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={20}><Pdf21 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={21}><Pdf22 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={22}><Pdf23 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={23}><Pdf24 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={24}><Pdf25 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={25}><Pdf26 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={26}><Pdf27 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={27}><Pdf28 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={28}><Pdf29 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={29}><Pdf30 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={30}><Pdf31 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={31}><Pdf32 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={32}><Pdf33 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={33}><Pdf34 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={34}><Pdf35 /></CustomTabPanel>
-          <CustomTabPanel value={value} index={35}><Pdf36 /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={2}><Cbs /></CustomTabPanel> */}
+          <CustomTabPanel value={value} index={2}><WebApplication /></CustomTabPanel>
+          <CustomTabPanel value={value} index={3}><Ai /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={5}><MobileAppDevelopment /></CustomTabPanel> */}
+          {/* <CustomTabPanel value={value} index={6}><DataScraping /></CustomTabPanel> */}
+          {/* <CustomTabPanel value={value} index={4}><DotNet /></CustomTabPanel> */}
+          <CustomTabPanel value={value} index={4}><Shopify /></CustomTabPanel>
+          <CustomTabPanel value={value} index={5}><Pdf10 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={6}><Pdf11 /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={7}><Pdf12 /></CustomTabPanel> */}
+          {/* <CustomTabPanel value={value} index={7}><Pdf13 /></CustomTabPanel> */}
+          <CustomTabPanel value={value} index={7}><Pdf14 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={8}><Pdf15 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={9}><Pdf16 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={10}><Pdf17 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={11}><Pdf18 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={12}><Pdf19 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={13}><Pdf20 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={14}><Pdf21 /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={15}><Pdf22 /></CustomTabPanel> */}
+          <CustomTabPanel value={value} index={15}><Pdf23 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={16}><Pdf24 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={17}><Pdf25 /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={18}><Pdf26 /></CustomTabPanel> */}
+          <CustomTabPanel value={value} index={18}><Pdf27 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={19}><Pdf28 /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={20}><Pdf29 /></CustomTabPanel> */}
+          {/* <CustomTabPanel value={value} index={20}><Pdf30 /></CustomTabPanel> */}
+          <CustomTabPanel value={value} index={20}><Pdf31 /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={21}><Pdf32 /></CustomTabPanel> */}
+          <CustomTabPanel value={value} index={21}><Pdf33 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={22}><Pdf34 /></CustomTabPanel>
+          <CustomTabPanel value={value} index={23}><Pdf35 /></CustomTabPanel>
+          {/* <CustomTabPanel value={value} index={24}><Pdf36 /></CustomTabPanel> */}
 
 
         </div>

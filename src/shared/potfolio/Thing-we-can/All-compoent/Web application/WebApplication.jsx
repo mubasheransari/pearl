@@ -1,20 +1,16 @@
 
 
-
 "use client";
 
 import { useEffect, useState, useRef } from "react";
 import * as pdfjsLib from "pdfjs-dist/webpack";
-import { CircularProgress, Box, IconButton } from "@mui/material";
-import { ZoomIn, ZoomOut } from "@mui/icons-material";
+import { CircularProgress, Box } from "@mui/material";
+import Link from "next/link";
 import styles from "../Development.module.scss"; // SCSS import
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
 
 export default function PDFImageExtractor() {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [zoomLevel, setZoomLevel] = useState(1);
   const isLoaded = useRef(false);
 
   useEffect(() => {
@@ -23,7 +19,8 @@ export default function PDFImageExtractor() {
 
     const extractImagesFromPDF = async () => {
       try {
-        const loadingTask = pdfjsLib.getDocument("/drive-download-20250221T123148Z-001/Sample   Intrenal Remodeling Wall removal Open plan.pdf");
+        const loadingTask = pdfjsLib.getDocument("/drive-download-20250221T123148Z-001/Sample   Intrenal Remodeling Wall removal Open plan.pdf")
+        ;
         const pdf = await loadingTask.promise;
 
         let extractedImages = [];
@@ -63,19 +60,18 @@ export default function PDFImageExtractor() {
       ) : (
         <>
           <Box display="flex" justifyContent="center" alignItems="center" gap={2} marginBottom={2}>
-         
+            {/* Additional controls can be added here if needed */}
           </Box>
           <div className={styles.grid}>
             {images.map((imgSrc, index) => (
-              <div key={index} className={`${styles.imageContainer}`}>
-                <Zoom>
+              <div key={index} className={styles.imageContainer}>
+                <Link href="/potfolio/detail3">
                   <img
                     src={imgSrc}
                     alt={`Extracted ${index}`}
                     className={styles.image}
-                    style={{ transform: `scale(${zoomLevel})` }}
                   />
-                </Zoom>
+                </Link>
               </div>
             ))}
           </div>

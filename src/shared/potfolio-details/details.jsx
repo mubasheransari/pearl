@@ -22,7 +22,7 @@ const PDFImageBookViewer = () => {
 
   // The direct URL/path to your PDF file
   const pdfUrl =
-    "/drive-download-20250221T123148Z-001/Sample   Double Storey Rear Butterfly Roof.pdf";
+    "/drive-download-20250221T123148Z-001/Smaple Larger Loft & Kitchen Extension.pdf";
 
   // Zoom and Pan States
   const [scale, setScale] = useState(1);
