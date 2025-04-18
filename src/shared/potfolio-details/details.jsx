@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import * as pdfjsLib from "pdfjs-dist/webpack";
 import styles from "./details.module.scss";
-import { CircularProgress, IconButton } from "@mui/material";
+import { CircularProgress, IconButton }  from "@mui/material";
 import {
   ViewList,
   ZoomIn,
@@ -14,7 +14,9 @@ import {
   FileDownload,
   Share,
   Close,
-} from "@mui/icons-material";
+} from "@mui/icons-material"; 
+
+
 
 const PDFImageBookViewer = () => {
   const [images, setImages] = useState([]);

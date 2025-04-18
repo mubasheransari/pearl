@@ -4,7 +4,7 @@ import style from './layout.module.scss'
 
 const BaseLayout = (props) => {
 
-    const [isHome, setIsHome] = useState(true)
+    const [isHome, setIsHome] =    useState(true)
 
     useEffect(() => {
         if(location.pathname != '/') {
