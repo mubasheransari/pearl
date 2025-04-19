@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './cost.control.module.scss';
+import Link from 'next/link';
 
 const CostControlValueEngineering = () => {
   const metaTitle = "Cost Control vs. Value Engineering: Understanding the Key Differences";
@@ -20,8 +21,7 @@ const CostControlValueEngineering = () => {
         <header className={styles.header}>
           <h1>{metaTitle}</h1>
           <p className={styles.intro}>
-            Managing costs effectively is crucial in construction, engineering, and infrastructure projects. Two widely used approaches to financial management are cost control and value engineering. While both aim to optimize project expenses, they differ in methodology and objectives.
-          </p>
+          Managing costs effectively is crucial in construction, engineering, and infrastructure projects. Two widely used approaches to financial management are cost control and value engineering. While both aim to optimize project expenses, they differ in methodology and objectives. This guide explains the differences between <Link href="/cost_control_value" className={styles.link}>cost control and value engineering</Link> their benefits, and how businesses can implement them for efficient project execution.          </p>
         </header>
 
         <section className={styles.section}>
@@ -135,7 +135,7 @@ const CostControlValueEngineering = () => {
         <section className={styles.conclusion}>
           <h2>Conclusion</h2>
           <p>
-            Understanding the difference between cost control and value engineering is essential for efficient project execution. While cost control ensures budgets are maintained, value engineering enhances overall project value. Businesses that integrate both strategies can achieve cost-efficient, high-quality, and well-optimized projects.
+            Understanding the difference between <Link href="/cost_control_value">cost control and value engineering</Link> is essential for efficient project execution. While cost control ensures budgets are maintained, value engineering enhances overall project value. Businesses that integrate both strategies can achieve cost-efficient, high-quality, and well-optimized projects.
           </p>
         </section>
       </div>

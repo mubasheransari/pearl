@@ -14,8 +14,7 @@ const StructuralEngineering = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>The Role of a Structural Engineer in London's Urban Development</h1>
           <p className={styles.intro}>
-            London's rapid urban growth demands innovative and structurally sound solutions. A
-            <Link href="/structural engineer in London" className={styles.link}></Link>  plays a pivotal role in shaping the city's skyline, ensuring safety, sustainability, and compliance with modern regulations.
+            London's rapid urban growth demands innovative and structurally sound solutions. A <Link href="/structural_enigneering_services" className={styles.link}>structural engineer in London</Link>  plays a pivotal role in shaping the city's skyline, ensuring safety, sustainability, and compliance with modern regulations.
           </p>
         </header>
 
