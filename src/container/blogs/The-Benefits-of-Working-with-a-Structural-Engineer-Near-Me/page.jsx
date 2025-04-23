@@ -14,8 +14,7 @@ const StructuralEngineerNear = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>The Benefits of Working with a Structural Engineer Near Me</h1>
           <p className={styles.intro}>
-            When planning a construction, renovation, or structural inspection, working with a
-            <Link href="/structural_enigneering_services" className={styles.link1}> structural engineer near me </Link>  offers a range of advantages. 
+            When planning a construction, renovation, or structural inspection, working with a <Link href="/structural_enigneering_services" className={styles.link1}> structural engineer near me </Link>  offers a range of advantages. 
             Whether you are dealing with a new project or addressing potential structural concerns, having an expert on board ensures stability, 
             compliance, and long-term durability.
           </p>
@@ -44,8 +43,7 @@ const StructuralEngineerNear = () => {
             </div>
             <div className={styles.benefitContent}>
               <p className={styles.benefitDescription}>
-                Early detection of potential structural weaknesses is crucial. A
-                 <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link> conducts detailed assessments, 
+                Early detection of potential structural weaknesses is crucial. A <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link> conducts detailed assessments, 
                 site inspections, and structural calculations to ensure the building can withstand various forces. Their insights help in 
                 mitigating risks before they turn into costly issues.
               </p>

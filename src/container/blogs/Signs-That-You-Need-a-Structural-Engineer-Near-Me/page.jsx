@@ -150,7 +150,7 @@ const StructuralEngineerSigns = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Recognizing the signs that you need a<Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  can help prevent major issues, maintain property value, 
+            Recognizing the signs that you need a <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  can help prevent major issues, maintain property value, 
             and ensure safety. From foundation problems and structural cracks to renovation planning and disaster damage assessment, 
             a structural engineer provides the expertise needed for safe and long-lasting buildings. Choose PEPP for professional, 
             reliable, and expert engineering services.

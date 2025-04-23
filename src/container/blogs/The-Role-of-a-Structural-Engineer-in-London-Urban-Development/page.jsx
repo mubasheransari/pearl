@@ -138,7 +138,7 @@ const StructuralEngineering = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            A  <Link href="/structural engineer in London" className={styles.link}></Link>  is vital to shaping a resilient, modern, and sustainable city. Trust PEPP for expert structural engineering solutions that contribute to London's evolving skyline.
+            A  <Link href="/structural_enigneering_services" >structural engineer in London</Link> is vital to shaping a resilient, modern, and sustainable city. Trust PEPP for expert structural engineering solutions that contribute to London's evolving skyline.
           </p>
         </footer>
       </article>

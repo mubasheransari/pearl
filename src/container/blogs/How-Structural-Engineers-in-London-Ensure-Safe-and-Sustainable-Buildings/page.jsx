@@ -16,8 +16,7 @@ const StructuralSafety = () => {
         <header className={styles.header}>
           <h1>How Structural Engineers in London Ensure Safe and Sustainable Buildings</h1>
           <p className={styles.intro}>
-          A structural engineer in London plays a key role in designing and maintaining safe and sustainable buildings that meet modern standards. With growing concerns over climate change, urban expansion, and structural safety, structural engineers implement innovative solutions to enhance building longevity, energy efficiency, and environmental sustainability. Here’s how 
-         <Link href="/structural_enigneering_services"  className={styles.link1}>structural engineers in London</Link>  ensure safe and eco-friendly buildings.
+          A structural engineer in London plays a key role in designing and maintaining safe and sustainable buildings that meet modern standards. With growing concerns over climate change, urban expansion, and structural safety, structural engineers implement innovative solutions to enhance building longevity, energy efficiency, and environmental sustainability. Here’s how  <Link href="/structural_enigneering_services"  className={styles.link1}>structural engineers in London</Link>  ensure safe and eco-friendly buildings.
           </p>
         </header>
 

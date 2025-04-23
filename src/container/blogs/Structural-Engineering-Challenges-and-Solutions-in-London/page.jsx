@@ -14,8 +14,7 @@ const EngineeringChallenges = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>Structural Engineering Challenges and Solutions in London</h1>
           <p className={styles.intro}>
-          London's ever-evolving skyline and infrastructure projects present complex challenges for structural engineers. With an aging building stock, increasing population density, and environmental concerns, structural engineers must develop innovative solutions to ensure safety, sustainability, and regulatory compliance. Here are some of the most pressing 
-          <Link href="/structural_enigneering_services" className={styles.link1}>structural engineering</Link> challenges in London and how they are being addressed.
+          London's ever-evolving skyline and infrastructure projects present complex challenges for structural engineers. With an aging building stock, increasing population density, and environmental concerns, structural engineers must develop innovative solutions to ensure safety, sustainability, and regulatory compliance. Here are some of the most pressing  <Link href="/structural_enigneering_services" className={styles.link1}>structural engineering</Link> challenges in London and how they are being addressed.
           </p>
         </header>
 
