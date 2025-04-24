@@ -118,7 +118,7 @@ const ExtensionsGuide = () => {
         <section className={styles.conclusionSection}>
           <h2 className={styles.sectionTitle}>Conclusion</h2>
           <p className={styles.sectionText}>
-            A front or <Link href="/rear-extension-ideas-from-simplicity-to-architectural-ingenuity" className={styles.link}> rear extension </Link>  is a smart way to maximize space, enhance property value, and improve functionality. With professional planning and execution, you can achieve a seamless, high-quality expansion. Trust PEPP to help you navigate every step of the process for a stress-free, efficient, and value-adding extension project in Bromley, London, UK.
+            A front or <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}> rear extension </Link>  is a smart way to maximize space, enhance property value, and improve functionality. With professional planning and execution, you can achieve a seamless, high-quality expansion. Trust PEPP to help you navigate every step of the process for a stress-free, efficient, and value-adding extension project in Bromley, London, UK.
           </p>
         </section>
       </div>

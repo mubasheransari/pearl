@@ -93,7 +93,14 @@ const BromleyPlanningGuide = () => {
         <section className={styles.ctaSection}>
           <h2>Contact Us Today!</h2>
           <p>
-            Need assistance with <Link href="/planning_and_building_control_services" className={styles.link}>planning and building control</Link> for your project? Contact PEPP today! Call <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for expert consultation.
+            Need assistance with  <a
+    href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.link}
+  >
+    planning and building control
+  </a>  for your project? Contact PEPP today! Call <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for expert consultation.
           </p>
         </section>
 

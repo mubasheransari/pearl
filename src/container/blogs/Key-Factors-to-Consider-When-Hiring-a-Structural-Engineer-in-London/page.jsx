@@ -216,7 +216,7 @@ const HiringGuide = () => {
           <section className={styles.conclusion}>
             <h2>Making the Right Choice</h2>
             <p>
-           Hiring the right <Link href="/structural_enigneering_services" className={styles.link1}>structural engineer in London</Link> requires careful evaluation of their qualifications, 
+           Hiring the right <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link1}>structural engineer in London</Link> requires careful evaluation of their qualifications, 
               experience, regulatory knowledge, and reputation. By considering these key factors, you can 
               ensure your project meets the highest standards of safety and compliance. PEPP combines all 
               these qualities with transparent communication and competitive pricing, making us the ideal 

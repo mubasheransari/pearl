@@ -171,7 +171,7 @@ const StructuralSafety = () => {
             <h2>Conclusion</h2>
             <p>
 
-              <Link href="/structural_enigneering_services"  className={styles.link}>structural engineers in London</Link> are essential in creating safer, more sustainable buildings for London. 
+              <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e"  className={styles.link}>structural engineers in London</Link> are essential in creating safer, more sustainable buildings for London. 
               Through innovative design, responsible material selection, and climate-adaptive strategies, 
               they ensure structures meet today's needs while preserving resources for future generations. 
               Trust PEPP for structural engineering solutions that prioritize both safety and environmental responsibility.

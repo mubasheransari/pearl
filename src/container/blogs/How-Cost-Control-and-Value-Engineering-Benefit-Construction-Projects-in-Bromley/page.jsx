@@ -22,7 +22,7 @@ const CostControlValueEngineer = () => {
           <h1 className={styles.mainTitle}>{metaTitle}</h1>
           <p className={styles.intro}>
             Effective financial management is crucial for the success of construction projects in Bromley, London, UK.
-             Two key strategies that help ensure cost efficiency and high-quality outcomes are <Link href="/cost_control_value"  className={styles.link}>cost control and value engineering</Link> . These approaches optimize project budgets, minimize waste, and enhance the overall value of construction projects.
+             Two key strategies that help ensure cost efficiency and high-quality outcomes are <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e"  className={styles.link}>cost control and value engineering</Link> . These approaches optimize project budgets, minimize waste, and enhance the overall value of construction projects.
           </p>
         </header>
 

@@ -214,7 +214,7 @@ const EngineeringChallenges = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            The challenges faced by   <Link href="/structural_enigneering_services" className={styles.link}>structural engineering</Link> in London require innovative, sustainable, and regulation-compliant solutions. 
+            The challenges faced by   <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}>structural engineering</Link> in London require innovative, sustainable, and regulation-compliant solutions. 
             Whether dealing with aging infrastructure, urban development constraints, climate resilience, or compliance requirements, 
             engineers play a vital role in shaping the city's future. Trust PEPP to provide structural expertise that ensures safety, 
             durability, and environmental responsibility in all projects.

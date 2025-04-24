@@ -160,7 +160,7 @@ const LondonStructuralEngineer = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Hiring a <Link href="/structural_enigneering_services" className={styles.link1}>structural engineer in London</Link> is crucial for ensuring safety, compliance, and efficiency in your construction project. 
+            Hiring a <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link1}>structural engineer in London</Link> is crucial for ensuring safety, compliance, and efficiency in your construction project. 
             Whether you're building new, modifying existing structures, or conducting safety inspections, PEPP provides professional 
             engineering services that guarantee long-term stability and success for your London project.
           </p>

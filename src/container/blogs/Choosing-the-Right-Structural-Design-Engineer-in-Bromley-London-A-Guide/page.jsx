@@ -85,7 +85,7 @@ const StructuralDesignEngineerGuide = () => {
         <section className={styles.ctaSection}>
           <h2 className={styles.sectionTitle}>Contact Us Today!</h2>
           <p className={styles.sectionText}>
-            Looking for a reliable <Link href="/structural_enigneering_services" className={styles.link}>structural design engineer in Bromley, London</Link>, UK? Contact PEPP for expert consultation. Call +44 7460140474 or email info@pearlepp.co.uk. Visit{' '}
+            Looking for a reliable <a href="https://www.google.com/maps/place/PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS/@51.3656843,0.0389717,17z/data=!3m1!4b1!4m6!3m5!1s0xa3b5037e790e7b4d:0x7b2b7f048a5b2fd!8m2!3d51.3656843!4d0.0389717!16s%2Fg%2F11y4c5th_1?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" className={styles.link}>structural design engineer in Bromley, London</a>, UK? Contact PEPP for expert consultation. Call +44 7460140474 or email info@pearlepp.co.uk. Visit{' '}
             <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> to learn more about our services.
           </p>
         </section>

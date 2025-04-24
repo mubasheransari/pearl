@@ -12,7 +12,7 @@ const PlanningBuilding = () => {
     
       <article className={styles.article}>
         <header className={styles.header}>
-          <h1 className={styles.title}>What Is Planning and Building Control? A Complete Guide for Homeowners</h1>
+          <h1 className={styles.title}>What Is Planning and Building Control? A Complete Guide for Home owners</h1>
           <p className={styles.intro}>
           Planning and building control are crucial aspects of any construction or renovation project in the UK. Whether you are planning a new build, an extension, or structural modifications, understanding these regulations ensures your project is legally compliant, safe, and structurally sound. This guide explains <Link href="/planning_and_building_control_services" className={styles.link1}>planning and building control</Link>  their differences, and how they impact homeowners in Bromley, London, UK.
           </p>
@@ -146,7 +146,7 @@ const PlanningBuilding = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Understanding <Link href="/planning_and_building_control_services" className={styles.link}>planning and building control</Link> is vital for safe, legal construction projects. 
+            Understanding <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}>planning and building control</Link> is vital for safe, legal construction projects. 
             Whether you need planning approval or building regulation compliance, working with PEPP 
             guarantees a smooth process for your project in Bromley, London, UK.
           </p>

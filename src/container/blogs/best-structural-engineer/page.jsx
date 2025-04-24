@@ -83,7 +83,7 @@ const FindStructuralEngineer = () => {
         <section className={styles.section}>
           <h2 className={styles.subtitle}>Conclusion</h2>
           <p className={styles.text}>
-            Finding the best <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link> requires careful consideration of experience, credentials, and communication skills. By following this guide, you can ensure a successful and hassle-free construction project. Choose PEPP for trusted and professional structural engineering services that deliver quality and compliance.
+            Finding the best <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}>structural engineer near me</Link> requires careful consideration of experience, credentials, and communication skills. By following this guide, you can ensure a successful and hassle-free construction project. Choose PEPP for trusted and professional structural engineering services that deliver quality and compliance.
           </p>
         </section>
       </div>

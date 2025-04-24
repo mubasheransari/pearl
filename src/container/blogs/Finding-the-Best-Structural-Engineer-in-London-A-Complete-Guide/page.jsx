@@ -124,7 +124,7 @@ const StructuralEngineerGuideLondon = () => {
         <section className={styles.conclusionSection}>
           <h2 className={styles.sectionTitle}>Conclusion</h2>
           <p className={styles.sectionText}>
-            Choosing the best <Link href="/structural_enigneering_services" className={styles.link}> structural engineer in London </Link> requires careful evaluation of qualifications, experience, reputation, and service quality. Trust PEPP for professional, reliable, and efficient structural engineering services that deliver quality and peace of mind.
+            Choosing the best <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}> structural engineer in London </Link> requires careful evaluation of qualifications, experience, reputation, and service quality. Trust PEPP for professional, reliable, and efficient structural engineering services that deliver quality and peace of mind.
           </p>
         </section>
       </div>

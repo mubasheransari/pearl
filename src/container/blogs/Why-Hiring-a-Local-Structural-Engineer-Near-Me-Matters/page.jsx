@@ -144,7 +144,7 @@ const LocalEngineer = () => {
 
         <footer className={styles.conclusion}>
           <p className={styles.conclusionText}>
-            Hiring a local <Link href="/structural_enigneering_services" className={styles.link1}>structural engineer near me</Link> ensures compliance, efficiency, and cost savings for your project. 
+            Hiring a local <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link1}>structural engineer near me</Link> ensures compliance, efficiency, and cost savings for your project. 
             With PEPP, you gain a partner who understands local regulations, environmental conditions, and construction 
             practices. Our commitment to quality and community ensures your project's success from foundation to completion.
           </p>
