@@ -135,10 +135,10 @@ const PlanningBuilding = () => {
                 <span className={styles.contactIcon}>📞</span> +44 7460140474
               </a>
               <a href="mailto:info@pearlepp.co.uk" className={styles.contactLink}>
-                <span className={styles.contactIcon}>✉️</span> info@pearlepp.co.uk
+                <span className={styles.contactIcon}>✉️</span>  info@pearlepp.co.uk
               </a>
               <a href="https://pearlepp.co.uk/" className={styles.websiteButton}>
-                <span className={styles.contactIcon}>🌐</span> PearlEPP.co.uk
+                <span className={styles.contactIcon}>🌐</span>  PearlEPP.co.uk
               </a>
             </div>
           </div>

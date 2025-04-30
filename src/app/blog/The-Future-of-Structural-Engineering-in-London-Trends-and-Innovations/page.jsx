@@ -11,7 +11,7 @@ const FutureEngineering = () => {
         <header className={styles.header}>
           <h1 className={styles.title}>The Future of Structural Engineering in London: Trends and Innovations</h1>
           <p className={styles.intro}>
-            London's skyline is constantly evolving, with new developments pushing the boundaries of structural engineering and design. 
+            London's skyline is  constantly evolving, with new developments pushing the boundaries of structural engineering and design. 
             As technology advances and sustainability becomes a greater priority, structural engineers in London are adopting innovative 
             solutions to meet future challenges.
           </p>
