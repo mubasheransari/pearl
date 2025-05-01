@@ -19,7 +19,7 @@ const Video = () => {
               video.muted = false;
               video.currentTime = 0; // Restart to ensure playback
               video.play(); // Restart playback after unmuting
-            }, 3000);
+            }, );
           })
           .catch((error) => console.error("Autoplay prevented:", error));
       }
