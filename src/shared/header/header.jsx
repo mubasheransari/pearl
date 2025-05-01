@@ -68,21 +68,21 @@ import {
 
 /* Submenu items do NOT repeat "Services" in their text */
 const aboutLinks = [
-  { link: '/about', text: 'About US', icon: faGavel },
+  { link: '/about', text: 'About Us', icon: faGavel },
   { link: '/#services', text: 'Our Vision', icon: faEye },
   { link: '/energy-retrofit', text: 'Energy Retrofit Blog', icon: faBolt },
-  { link: '/research-blog', text: 'Research Blogs', icon: faGavel },
-  { link: '/sustainable-structural', text: 'Sustainable structural', icon: faBalanceScale },
+  { link: '/research-blog', text: 'Research Blog', icon: faGavel },
+  { link: '/sustainable-structural', text: 'Sustainable Structure', icon: faBalanceScale },
 
   { link: '/contact', text: 'Contact Us', icon: faEnvelope },
-  { link: '/the-importance-hiring', text: 'The important of hiring', icon: faLightbulb },
-  { link: '/common-mistake', text: 'Common mistake', icon: faFileContract },
-  { link: '/future-structure', text: 'Future structure', icon: faBuilding },
-  { link: '/inovative-structure', text: 'Innovative structure design', icon: faProjectDiagram },
-  { link: '/key-chanlleges', text: 'Key challenges', icon: faChartLine },
-  { link: '/right-structure', text: 'Choosing right structure design', icon: faSearchLocation },
-  { link: '/Structural-Design', text: 'Structure design', icon: faClipboardList },
-  { link: '/structure-engineers', text: 'Structure engineers', icon: faUsersCog },
+  { link: '/the-importance-hiring', text: 'Importance Of Hiring', icon: faLightbulb },
+  { link: '/common-mistake', text: 'Common Mistakes', icon: faFileContract },
+  { link: '/future-structure', text: 'Future Structure', icon: faBuilding },
+  { link: '/inovative-structure', text: 'Innovative Structural Design', icon: faProjectDiagram },
+  { link: '/key-chanlleges', text: 'Key Challenges', icon: faChartLine },
+  { link: '/right-structure', text: 'Choosing Right Structural Design', icon: faSearchLocation },
+  { link: '/Structural-Design', text: 'Structural Design', icon: faClipboardList },
+  { link: '/structure-engineers', text: 'Structural Engineers', icon: faUsersCog },
   
 
 ];
