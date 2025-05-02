@@ -17,15 +17,15 @@ const Video = () => {
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
         if (isSafari) {
-          // If Safari, don't mute the video
-          video.muted = false;
+          // If Safari, do not mute the video (autoplay with sound)
+          video.muted = true;
         } else {
-          // If not Safari (assume Chrome), mute the video
+          // If not Safari (assume Chrome or other browser), mute the video for autoplay
           video.muted = true;
         }
 
-        video.play()
-          .catch((error) => console.error("Autoplay prevented:", error));
+        // Start playing the video after setting the muted state
+        video.play().catch((error) => console.error("Autoplay prevented:", error));
       }
     }, []);
 
