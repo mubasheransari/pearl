@@ -1,157 +1,125 @@
-import React from 'react';
+
+
+
+import Head from 'next/head';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const LocalEngineer = () => {
+const LocalStructuralEngineer = () => {
   return (
     <div className={styles.container}>
-    
-      <meta name="title" content="Why Hiring a Local Structural Engineer Near Me Matters" />
-      <meta name="description" content="Find a trusted structural engineer near me for expert design, analysis, and compliance solutions for residential & commercial projects. Get a consultation today!" />
-      <link rel="canonical" href="https://www.pearlepp.co.uk/why-hiring-local-structural-engineer-near-me-matters" />
- 
-      <article className={styles.article}>
-        <header className={styles.header}>
-          <h1 className={styles.title}>Why Hiring a Local Structural Engineer Near Me Matters</h1>
-          <p className={styles.intro}>
-          When planning a construction, renovation, or structural assessment, choosing a local <Link href="/structural_enigneering_services" className={styles.link}>structural engineer near me</Link>  offers significant advantages. Local engineers bring regional expertise, familiarity with building regulations, and accessibility, making them the best choice for your project. Here’s why hiring a local structural engineer is beneficial.
-          </p>
-        </header>
+      <Head>
+        <title>Why Hiring a Local Structural Engineer Near Me Matters</title>
+        <meta
+          name="description"
+          content="Find a trusted structural engineer near me for expert design, analysis, and compliance solutions for residential & commercial projects. Get a consultation today!"
+        />
+        <link
+          rel="canonical"
+          href="https://pearlepp.co.uk/Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters"
+        />
+      </Head>
 
-        <section className={styles.benefitsSection}>
-          {/* Benefit 1 */}
-          <div className={styles.benefitCard}>
-            <div className={styles.benefitIcon}>🏛️</div>
-            <div className={styles.benefitContent}>
-              <h2 className={styles.benefitTitle}>Expertise in Local Building Regulations</h2>
-              <ul className={styles.benefitList}>
-                <li>Knowledge of area-specific building codes and planning permissions</li>
-                <li>Assistance with plan submissions and approvals</li>
-                <li>Prevention of costly fines and project delays</li>
-              </ul>
-            </div>
-          </div>
+      <main className={styles.main}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1>Why Hiring a Local Structural Engineer Near Me Matters</h1>
+          </header>
 
-          {/* Benefit 2 */}
-          <div className={styles.benefitCard}>
-            <div className={styles.benefitIcon}>🌍</div>
-            <div className={styles.benefitContent}>
-              <h2 className={styles.benefitTitle}>Knowledge of Regional Environmental Conditions</h2>
-              <ul className={styles.benefitList}>
-                <li>Understanding of local soil types and ground stability</li>
-                <li>Solutions tailored to climate and weather patterns</li>
-                <li>Protection against flood risks and other environmental factors</li>
-              </ul>
-            </div>
-          </div>
+          <section className={styles.introSection}>
+            <p>
+              When planning a construction, renovation, or structural assessment, choosing a local <Link href="/structural_enigneering_services" >structural engineer near me</Link> offers significant advantages. Local engineers bring regional expertise, familiarity with building regulations, and
+              accessibility, making them the best choice for your project. Here’s why hiring a local structural engineer is beneficial.
+            </p>
+          </section>
 
-          {/* Benefit 3 */}
-          <div className={styles.benefitCard}>
-            <div className={styles.benefitIcon}>⏱️</div>
-            <div className={styles.benefitContent}>
-              <h2 className={styles.benefitTitle}>Faster Response and On-Site Availability</h2>
-              <ul className={styles.benefitList}>
-                <li>Quick site visits and assessments</li>
-                <li>Immediate problem-solving for urgent issues</li>
-                <li>In-person evaluations and real-time adjustments</li>
-              </ul>
-            </div>
-          </div>
+          <section className={styles.section}>
+            <h2>1. Expertise in Local Building Regulations</h2>
+            <p>
+              A local structural engineer is well-versed in the building codes, planning permissions, and safety regulations specific
+              to your area. They ensure that your project complies with local laws, preventing costly fines and delays. They also help
+              with the submission of plans and approvals, ensuring that your project moves forward without unnecessary roadblocks.
+            </p>
+          </section>
 
-          {/* Benefit 4 */}
-          <div className={styles.benefitCard}>
-            <div className={styles.benefitIcon}>🤝</div>
-            <div className={styles.benefitContent}>
-              <h2 className={styles.benefitTitle}>Strong Local Relationships</h2>
-              <ul className={styles.benefitList}>
-                <li>Connections with planning authorities and building control</li>
-                <li>Network of reliable contractors and suppliers</li>
-                <li>Streamlined permit approvals and construction processes</li>
-              </ul>
-            </div>
-          </div>
+          <section className={styles.section}>
+            <h2>2. Knowledge of Regional Environmental Conditions</h2>
+            <p>
+              Different locations have unique soil types, climate conditions, and structural challenges. A local engineer understands
+              these factors and designs solutions suited to the area’s requirements, ensuring structural durability and safety. They
+              consider potential issues such as flood risks, ground stability, and weather-related impacts that may affect your project.
+            </p>
+          </section>
 
-          {/* Benefit 5 */}
-          <div className={styles.benefitCard}>
-            <div className={styles.benefitIcon}>💰</div>
-            <div className={styles.benefitContent}>
-              <h2 className={styles.benefitTitle}>Cost-Effective Services</h2>
-              <ul className={styles.benefitList}>
-                <li>Reduced travel and logistical expenses</li>
-                <li>Access to competitive local material prices</li>
-                <li>Energy-efficient and sustainable building suggestions</li>
-              </ul>
-            </div>
-          </div>
+          <section className={styles.section}>
+            <h2>3. Faster Response and On-Site Availability</h2>
+            <p>
+              Working with a local engineer means quicker site visits, assessments, and consultations. If urgent issues arise, they can
+              address problems swiftly, minimizing project disruptions and delays. Their ability to provide in-person evaluations and
+              real-time adjustments makes them an invaluable part of the construction process.
+            </p>
+          </section>
 
-          {/* Benefit 6 */}
-          <div className={styles.benefitCard}>
-            <div className={styles.benefitIcon}>⭐</div>
-            <div className={styles.benefitContent}>
-              <h2 className={styles.benefitTitle}>Personalized Service and Accountability</h2>
-              <ul className={styles.benefitList}>
-                <li>Community-focused with strong local reputation</li>
-                <li>Clear communication and customer satisfaction focus</li>
-                <li>Tailored solutions for your specific project needs</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>4. Strong Relationships with Local Authorities and Contractors</h2>
+            <p>
+              Local engineers have established connections with planning authorities, building control offices, and reliable
+              contractors. Their network helps streamline permit approvals and construction processes. Their relationships with local
+              builders and suppliers also ensure you get cost-effective materials and quality workmanship.
+            </p>
+          </section>
 
-        <section className={styles.peppSection}>
-          <h2 className={styles.sectionTitle}>Why Choose PEPP for Structural Engineering Near You?</h2>
-          <p className={styles.sectionText}>
-            At Pearl Engineers Planners and Project Managers (PEPP), we provide expert structural engineering services with:
-          </p>
-          
-          <div className={styles.expertiseGrid}>
-            <div className={styles.expertiseCard}>
-              <h3 className={styles.expertiseTitle}>Local Compliance</h3>
-              <p>Deep knowledge of regional regulations and requirements</p>
-            </div>
-            <div className={styles.expertiseCard}>
-              <h3 className={styles.expertiseTitle}>Safety Assurance</h3>
-              <p>Thorough structural assessments for your peace of mind</p>
-            </div>
-            <div className={styles.expertiseCard}>
-              <h3 className={styles.expertiseTitle}>Cost Efficiency</h3>
-              <p>Innovative solutions that optimize your budget</p>
-            </div>
-            <div className={styles.expertiseCard}>
-              <h3 className={styles.expertiseTitle}>Project Success</h3>
-              <p>Seamless execution from planning to completion</p>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>5. Cost-Effective Services</h2>
+            <p>
+              Hiring a local <Link href="/structure-engineers" >structural engineer near me</Link> reduces travel costs, additional consultancy fees, and logistical expenses.
+              Their familiarity with local suppliers also helps source materials at competitive rates. Additionally, they can suggest
+              energy-efficient and sustainable building practices, which can lower long-term operational costs.
+            </p>
+          </section>
 
-        <section className={styles.ctaSection}>
-          <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Looking for a trusted local structural engineer near me?</p>
-            <div className={styles.contactMethods}>
-              <a href="tel:+447460140474" className={styles.contactLink}>
-                <span className={styles.contactIcon}>📞</span> +44 7460140474
-              </a>
-              <a href="mailto:info@pearlepp.co.uk" className={styles.contactLink}>
-                <span className={styles.contactIcon}>✉️</span> info@pearlepp.co.uk
-              </a>
-              <a href="https://pearlepp.co.uk/" className={styles.websiteButton}>
-                <span className={styles.contactIcon}>🌐</span> PearlEPP.co.uk
-              </a>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>6. Personalized Service and Accountability</h2>
+            <p>
+              A local structural engineer is invested in maintaining a strong reputation in their community. They prioritize customer
+              satisfaction, clear communication, and high-quality results. Their accountability ensures they remain committed to
+              delivering a successful project tailored to your specific needs.
+            </p>
+          </section>
 
-        <footer className={styles.conclusion}>
-          <p className={styles.conclusionText}>
-            Hiring a local <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link1}>structural engineer near me</Link> ensures compliance, efficiency, and cost savings for your project. 
-            With PEPP, you gain a partner who understands local regulations, environmental conditions, and construction 
-            practices. Our commitment to quality and community ensures your project's success from foundation to completion.
-          </p>
-        </footer>
-      </article>
+          <section className={styles.section}>
+            <h2>Why Choose PEPP for Structural Engineering Near You?</h2>
+            <p>
+              At Pearl Engineers Planners and Project Managers (PEPP), we provide expert structural engineering services tailored to
+              meet local compliance, safety, and construction needs. Our deep knowledge of the local landscape and regulations ensures
+              a seamless project experience. We specialize in residential, commercial, and industrial projects, offering cost-effective
+              and innovative engineering solutions.
+            </p>
+          </section>
+
+          <section className={styles.ctaSection}>
+            <h2>Contact Us Today!</h2>
+            <p>
+              Looking for a trusted local structural engineer near me? Contact PEPP today! Call{' '}
+              <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email{' '}
+              <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit{' '}
+              <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> to learn more.
+            </p>
+          </section>
+
+          <section className={styles.conclusion}>
+            <h2>Conclusion</h2>
+            <p>
+              Hiring a local <Link href="https://g.co/kgs/wJmR8pW" >structural engineer near me</Link> ensures compliance, efficiency, and cost savings for your project. With
+              expertise in local regulations, environmental conditions, and industry connections, local engineers provide unmatched
+              benefits. They also offer faster response times, better access to resources, and in-depth knowledge of local construction
+              practices. Choose PEPP for reliable, professional, and local structural engineering solutions that stand the test of time.
+            </p>
+          </section>
+        </article>
+      </main>
     </div>
   );
 };
 
-export default LocalEngineer;
+export default LocalStructuralEngineer;

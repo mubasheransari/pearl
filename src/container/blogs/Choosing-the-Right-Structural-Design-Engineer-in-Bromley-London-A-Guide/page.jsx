@@ -1,43 +1,43 @@
-// structural_enigneering_services
-import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const StructuralDesignEngineerGuide = () => {
-  const metaTitle = "Choosing the Right Structural Design Engineer in Bromley, London: A Guide";
-  const metaDescription = "Experienced structural design engineer in Bromley offering expert solutions for residential & commercial projects. Ensuring safety, stability & compliance.";
-
+const StructuralEngineerGuide = () => {
   return (
-    <>
-    
-      <title>{metaTitle}</title>
-      <meta name="description" content={metaDescription} />
-      <meta property="og:title" content={metaTitle} />
-      <meta property="og:description" content={metaDescription} />
-      <link rel="canonical" href="https://www.pearlepp.co.uk/choosing-right-structural-design-engineer-bromley-london" />
-  
+    <div className={styles.container}>
+      <Head>
+        <title>Choosing the Right Structural Design Engineer in Bromley, London: A Guide</title>
+        <meta 
+          name="description" 
+          content="Experienced structural design engineer in Bromley offering expert solutions for residential & commercial projects. Ensuring safety, stability & compliance." 
+        />
+        <link rel="canonical" href="https://pearlepp.co.uk/Choosing-the-Right-Structural-Design-Engineer-in-Bromley-London-A-Guide" />
+      </Head>
 
-      <div className={styles.container}>
+      <article className={styles.article}>
         <header className={styles.header}>
-          <h1>{metaTitle}</h1>
-          <p className={styles.intro}>
-            Selecting the right structural design engineer for your project in Bromley, London, UK is essential for ensuring safety, durability, and compliance with local building regulations. Whether you're planning a new construction, renovation, or structural assessment, working with an experienced and qualified engineer will save you time, money, and potential legal complications.
-          </p>
+          <h1 className={styles.title}>Choosing the Right Structural Design Engineer in Bromley, London: A Guide</h1>
         </header>
+
+        <section className={styles.introSection}>
+          <p className={styles.introText}>
+            Selecting the right structural design engineer for your project in Bromley, London, UK is essential for ensuring safety, durability, and compliance with local building regulations. Whether you're planning a new construction, renovation, or structural assessment, working with an experienced and qualified engineer will save you time, money, and potential legal complications. This guide will help you understand what to look for when choosing the right structural engineer for your project.
+          </p>
+        </section>
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>1. Verify Qualifications and Certifications</h2>
           <p className={styles.sectionText}>
-         
-            A professional <Link href="/structural_enigneering_services" className={styles.link1}>structural design engineer in Bromley</Link> , London, UK should hold relevant qualifications, such as a degree in civil or structural engineering. They should also be registered with recognized institutions such as:
+            A professional <Link href="/structural_enigneering_services">structural design engineer</Link>  in Bromley, London, UK should hold relevant qualifications, such as a degree in civil or structural engineering. They should also be registered with recognized institutions such as:
           </p>
           <ul className={styles.list}>
             <li>Institution of Structural Engineers (IStructE)</li>
             <li>Institution of Civil Engineers (ICE)</li>
             <li>Chartered Engineer (CEng) status</li>
           </ul>
-          <p className={styles.sectionText}>These accreditations indicate expertise and adherence to industry standards.</p>
+          <p className={styles.sectionText}>
+            These accreditations indicate expertise and adherence to industry standards.
+          </p>
         </section>
 
         <section className={styles.section}>
@@ -75,7 +75,7 @@ const StructuralDesignEngineerGuide = () => {
           </p>
         </section>
 
-        <section className={styles.highlightSection}>
+        <section className={styles.peppSection}>
           <h2 className={styles.sectionTitle}>Why Choose PEPP for Structural Engineering Services?</h2>
           <p className={styles.sectionText}>
             At Pearl Engineers Planners and Project Managers (PEPP), we offer expert structural engineering solutions in Bromley, London, UK. With a team of qualified and experienced engineers, we ensure regulatory compliance, innovative designs, and cost-effective solutions for every project.
@@ -83,22 +83,22 @@ const StructuralDesignEngineerGuide = () => {
         </section>
 
         <section className={styles.ctaSection}>
-          <h2 className={styles.sectionTitle}>Contact Us Today!</h2>
-          <p className={styles.sectionText}>
-            Looking for a reliable <a href="https://www.google.com/maps/place/PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS/@51.3656843,0.0389717,17z/data=!3m1!4b1!4m6!3m5!1s0xa3b5037e790e7b4d:0x7b2b7f048a5b2fd!8m2!3d51.3656843!4d0.0389717!16s%2Fg%2F11y4c5th_1?entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D" className={styles.link}>structural design engineer in Bromley, London</a>, UK? Contact PEPP for expert consultation. Call +44 7460140474 or email info@pearlepp.co.uk. Visit{' '}
-            <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> to learn more about our services.
+          <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
+          <p className={styles.ctaText}>
+            Looking for a reliable <Link href="https://www.google.com/maps/place/PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS/@51.3656843,0.0389717,17z/data=!3m1!4b1!4m6!3m5!1s0xa3b5037e790e7b4d:0x7b2b7f048a5b2fd!8m2!3d51.3656843!4d0.0389717!16s%2Fg%2F11y4c5th_1?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D">structural design engineer in Bromley, London,</Link>  UK? Contact PEPP for expert consultation. Call <a href="tel:+447460140474" className={styles.ctaLink}>+44 7460140474</a> or email <a href="mailto:info@pearlepp.co.uk" className={styles.ctaLink}>info@pearlepp.co.uk</a>. Visit <a href="https://pearlepp.co.uk/" className={styles.ctaLink}>PearlEPP.co.uk</a> to learn more about our services.
           </p>
         </section>
 
-        <section className={styles.conclusionSection}>
-          <h2 className={styles.sectionTitle}>Conclusion</h2>
-          <p className={styles.sectionText}>
+        <section className={styles.conclusion}>
+       
+          <p className={styles.conclusionText}>
+          <h2 className={styles.ctaTitle}>Conclusion</h2>
             Choosing the right structural design engineer is crucial for the success, safety, and efficiency of your project. By considering qualifications, experience, regulatory knowledge, and client feedback, you can make an informed decision. Trust PEPP for professional, high-quality structural engineering services in Bromley, London, UK.
           </p>
         </section>
-      </div>
-    </>
+      </article>
+    </div>
   );
 };
 
-export default StructuralDesignEngineerGuide;
+export default StructuralEngineerGuide;

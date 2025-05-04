@@ -1,186 +1,155 @@
-import React from 'react';
-import Head from 'next/head';
+
+    import Head from 'next/head';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const StructuralSafety = () => {
+const SafeSustainableBuildingsLondon = () => {
   return (
-    <>
-  
-      <title>How Structural Engineers in London Ensure Safe and Sustainable Buildings | PEPP</title>
-      <meta name="description" content="Experienced structural engineers in London providing reliable design, analysis, and compliance solutions for residential & commercial projects. Contact us now!" />
-      <link rel="canonical" href="https://www.pearlepp.co.uk/how-structural-engineers-london-ensure-safe-sustainable-buildings" />
-  
+    <div className={styles.container}>
+      <Head>
+        <title>How Structural Engineers in London Ensure Safe and Sustainable Buildings</title>
+        <meta
+          name="description"
+          content="Experienced structural engineers in London providing reliable design, analysis, and compliance solutions for residential & commercial projects. Contact us now!"
+        />
+        <link
+          rel="canonical"
+          href="https://pearlepp.co.uk/How-Structural-Engineers-in-London-Ensure-Safe-and-Sustainable-Buildings"
+        />
+      </Head>
 
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <h1>How Structural Engineers in London Ensure Safe and Sustainable Buildings</h1>
-          <p className={styles.intro}>
-          A structural engineer in London plays a key role in designing and maintaining safe and sustainable buildings that meet modern standards. With growing concerns over climate change, urban expansion, and structural safety, structural engineers implement innovative solutions to enhance building longevity, energy efficiency, and environmental sustainability. Here’s how  <Link href="/structural_enigneering_services"  className={styles.link1}>structural engineers in London</Link>  ensure safe and eco-friendly buildings.
-          </p>
-        </header>
+      <main className={styles.main}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1>How Structural Engineers in London Ensure Safe and Sustainable Buildings</h1>
+          </header>
 
-        <main className={styles.contentSection}>
+          <section className={styles.introSection}>
+            <p>
+              A structural engineer in London plays a key role in designing and maintaining safe and sustainable
+              buildings that meet modern standards. With growing concerns over climate change, urban expansion, and
+              structural safety, structural engineers implement innovative solutions to enhance building longevity,
+              energy efficiency, and environmental sustainability. Here’s how <Link href="/structural_enigneering_services"  className={styles.link1}>structural engineers in London</Link>
+ ensure
+              safe and eco-friendly buildings.
+            </p>
+          </section>
+
           <section className={styles.section}>
             <h2>1. Compliance with Building Regulations and Safety Standards</h2>
             <p>
-              London's strict building codes require structural engineers to ensure compliance with UK Building Regulations, including:
-            </p>
-            <ul className={styles.complianceList}>
-              <li>Fire safety engineering</li>
-              <li>Precise load-bearing calculations</li>
-              <li>Earthquake resistance measures</li>
-              <li>Comprehensive risk assessments</li>
-              <li>Structural safety audits</li>
-            </ul>
-            <p>
-              These measures prevent potential hazards and structural failures in both new and existing buildings.
+              London has strict building codes and regulations that must be followed to ensure structural integrity.
+              Structural engineers ensure compliance with UK Building Regulations, including fire safety, load-bearing
+              calculations, and earthquake resistance. By conducting risk assessments and safety audits, they prevent
+              potential hazards and structural failures.
             </p>
           </section>
 
           <section className={styles.section}>
             <h2>2. Sustainable Material Selection</h2>
+            <p>To reduce the environmental impact of construction, structural engineers choose eco-friendly and energy-efficient materials such as:</p>
+            <ul className={styles.list}>
+              <li>Recycled steel and concrete</li>
+              <li>Bamboo and sustainably sourced timber</li>
+              <li>Low-carbon cement</li>
+              <li>Energy-efficient insulation materials</li>
+            </ul>
             <p>
-              Structural engineers reduce environmental impact through eco-conscious material choices:
+              These materials help lower carbon footprints, improve thermal efficiency, and enhance building durability.
             </p>
-            <div className={styles.materialGrid}>
-              <div className={styles.materialCard}>
-                <div className={styles.materialIcon}>♻️</div>
-                <h3>Recycled Materials</h3>
-                <p>Steel, concrete and other materials with high recycled content</p>
-              </div>
-              <div className={styles.materialCard}>
-                <div className={styles.materialIcon}>🎋</div>
-                <h3>Sustainable Timber</h3>
-                <p>Bamboo and FSC-certified wood products</p>
-              </div>
-              <div className={styles.materialCard}>
-                <div className={styles.materialIcon}>🏗️</div>
-                <h3>Low-Carbon Alternatives</h3>
-                <p>Innovative low-carbon cement formulations</p>
-              </div>
-              <div className={styles.materialCard}>
-                <div className={styles.materialIcon}>❄️</div>
-                <h3>Efficient Insulation</h3>
-                <p>Advanced thermal and acoustic insulation materials</p>
-              </div>
-            </div>
           </section>
 
           <section className={styles.section}>
             <h2>3. Energy-Efficient Structural Designs</h2>
-            <div className={styles.designFeatures}>
-              <div className={styles.designCard}>
-                <h3>Passive Solar Design</h3>
-                <p>Optimizing building orientation and window placement for natural heating and lighting</p>
-              </div>
-              <div className={styles.designCard}>
-                <h3>Green Infrastructure</h3>
-                <p>Incorporating living roofs and walls for improved insulation and air quality</p>
-              </div>
-              <div className={styles.designCard}>
-                <h3>Smart Building Systems</h3>
-                <p>Automated shading and ventilation to reduce energy consumption</p>
-              </div>
-              <div className={styles.designCard}>
-                <h3>High-Performance Glazing</h3>
-                <p>Advanced windows that minimize thermal transfer</p>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.section}>
-            <h2>4. Climate Resilience Strategies</h2>
-            <div className={styles.resilienceGrid}>
-              <div className={styles.resilienceItem}>
-                <h3>Flood Protection</h3>
-                <p>Elevated foundations and advanced drainage systems</p>
-              </div>
-              <div className={styles.resilienceItem}>
-                <h3>Wind Resistance</h3>
-                <p>Aerodynamic designs and reinforced structures</p>
-              </div>
-              <div className={styles.resilienceItem}>
-                <h3>Fire Safety</h3>
-                <p>Non-combustible materials and compartmentalization</p>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.section}>
-            <h2>5. Advanced Load Management</h2>
-            <p>
-              Structural engineers use sophisticated analysis to ensure buildings can withstand:
-            </p>
-            <div className={styles.loadGrid}>
-              <div className={styles.loadCard}>
-                <h3>Static Loads</h3>
-                <p>Permanent structural weight and fixed installations</p>
-              </div>
-              <div className={styles.loadCard}>
-                <h3>Dynamic Loads</h3>
-                <p>Occupants, furniture, and movable equipment</p>
-              </div>
-              <div className={styles.loadCard}>
-                <h3>Environmental Forces</h3>
-                <p>Wind, snow, seismic activity, and temperature changes</p>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.section}>
-            <h2>6. Sustainable Retrofitting</h2>
-            <p>
-              Rather than demolition,  <Link href="/structural_enigneering_services"  className={styles.link}>structural engineers in London</Link> focus on upgrading existing buildings through:
-            </p>
-            <ul className={styles.retrofitList}>
-              <li>Energy efficiency improvements (insulation, glazing, HVAC)</li>
-              <li>Structural strengthening to extend service life</li>
-              <li>Adaptive reuse of existing structures</li>
-              <li>Material recycling during renovations</li>
+            <p>Modern structural engineers integrate energy-efficient designs into buildings by incorporating:</p>
+            <ul className={styles.list}>
+              <li>Passive solar design to optimize natural lighting and heating</li>
+              <li>Green roofs and living walls to improve insulation and air quality</li>
+              <li>Smart shading systems to reduce cooling loads</li>
+              <li>High-performance glazing to minimize energy loss</li>
             </ul>
             <p>
-              This approach preserves architectural heritage while meeting modern standards.
+              By designing low-energy buildings, engineers contribute to sustainable urban development in London.
             </p>
           </section>
 
-          <div className={styles.peppHighlight}>
+          <section className={styles.section}>
+            <h2>4. Strengthening Buildings for Climate Resilience</h2>
+            <p>
+              With the increasing effects of climate change, structural engineers design buildings that can withstand
+              extreme weather conditions such as:
+            </p>
+            <ul className={styles.list}>
+              <li>Flood-resistant foundations and drainage systems</li>
+              <li>Wind-resistant and stormproof structures</li>
+              <li>Fire-resistant building materials</li>
+            </ul>
+            <p>
+              These strategies help ensure long-term safety and adaptability in changing environments.
+            </p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>5. Structural Safety and Load Management</h2>
+            <p>Structural engineers perform detailed load-bearing calculations to ensure that buildings can withstand:</p>
+            <ul className={styles.list}>
+              <li>Dead loads (permanent weight of the structure)</li>
+              <li>Live loads (occupants, furniture, and equipment)</li>
+              <li>Environmental loads (wind, rain, snow, seismic forces)</li>
+            </ul>
+            <p>
+              By using advanced simulation tools and real-world testing, they enhance building stability and resilience.
+            </p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>6. Sustainable Retrofitting and Renovation</h2>
+            <p>
+              Instead of demolishing old structures, <Link href="/structure-engineers">structural engineers in London</Link> focus on retrofitting existing
+              buildings to improve:
+            </p>
+            <ul className={styles.list}>
+              <li>Energy efficiency with modern insulation and glazing</li>
+              <li>Structural reinforcement to extend building lifespan</li>
+              <li>Adaptive reuse of buildings to minimize construction waste</li>
+            </ul>
+            <p>
+              This approach reduces environmental impact and preserves historical architecture.
+            </p>
+          </section>
+
+          <section className={styles.section}>
             <h2>Why Choose PEPP for Structural Engineering in London?</h2>
             <p>
-              At PEPP, we combine safety expertise with sustainable design principles to deliver:
+              At Pearl Engineers Planners and Project Managers (PEPP), we specialize in safe, energy-efficient, and
+              sustainable structural designs. Our expert engineers ensure that buildings comply with modern safety
+              standards while minimizing their carbon footprint.
             </p>
-            <ul className={styles.peppBenefits}>
-              <li>Fully compliant structural solutions</li>
-              <li>Innovative low-carbon designs</li>
-              <li>Climate-resilient building strategies</li>
-              <li>Cost-effective retrofitting options</li>
-            </ul>
-          </div>
+          </section>
 
           <section className={styles.ctaSection}>
-            <h2>Contact PEPP Today</h2>
-            <p>Looking for a structural engineer in London? Contact PEPP today!</p>
-            <div className={styles.contactOptions}>
-              <a href="tel:+447460140474" className={styles.phoneLink}>Call +44 7460140474</a>
-              <a href="mailto:info@pearlepp.co.uk" className={styles.emailLink}>Email info@pearlepp.co.uk</a>
-              <a href="https://pearlepp.co.uk/" className={styles.buttonLink}>Visit Our Website</a>
-            </div>
+            <h2>Contact Us Today!</h2>
+            <p>
+              Looking for a structural engineer in London? Contact PEPP today! Call{' '}
+              <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email{' '}
+              <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit{' '}
+              <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for expert guidance.
+            </p>
           </section>
 
           <section className={styles.conclusion}>
             <h2>Conclusion</h2>
             <p>
-
-              <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e"  className={styles.link}>structural engineers in London</Link> are essential in creating safer, more sustainable buildings for London. 
-              Through innovative design, responsible material selection, and climate-adaptive strategies, 
-              they ensure structures meet today's needs while preserving resources for future generations. 
-              Trust PEPP for structural engineering solutions that prioritize both safety and environmental responsibility.
+              <Link href="https://g.co/kgs/wJmR8pW">Structural engineers in London</Link> play a crucial role in creating safer, stronger, and more sustainable
+              buildings. From compliance with regulations and climate resilience to eco-friendly material selection and
+              energy-efficient designs, their expertise ensures that London’s buildings remain future-proof. Trust PEPP
+              for innovative, reliable, and sustainable structural engineering solutions.
             </p>
           </section>
-        </main>
-      </div>
-    </>
+        </article>
+      </main>
+    </div>
   );
 };
 
-export default StructuralSafety;
+export default SafeSustainableBuildingsLondon;

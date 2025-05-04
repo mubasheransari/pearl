@@ -1,147 +1,143 @@
-import React from 'react';
+
+
+import Head from 'next/head';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const EngineerVsArchitect = () => {
+const StructuralEngineerVsArchitect = () => {
   return (
     <div className={styles.container}>
-    
-      <meta name="title" content="Structural Engineer vs. Architect in London: Who Do You Need" />
-      <meta name="description" content="Experienced structural engineer offering expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!" />
-      <link rel="canonical" href="https://www.pearlepp.co.uk/structural-engineer-vs-architect-london" />
-    
-      <article className={styles.article}>
-        <header className={styles.header}>
-          <h1 className={styles.title}>Structural Engineer vs. Architect in London: Who Do You Need?</h1>
-          <p className={styles.intro}>
-            When planning a  <Link href="/project_management" className={styles.link}>construction project in London</Link>, it's essential to understand the difference between a structural engineer and an architect. 
-            While both professionals play critical roles in the design and construction process, their responsibilities and expertise vary significantly.
-          </p>
-        </header>
+      <Head>
+        <title>Structural Engineer vs. Architect in London: Who Do You Need</title>
+        <meta
+          name="description"
+          content="Experienced structural engineer offering expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!"
+        />
+        <link
+          rel="canonical"
+          href="https://pearlepp.co.uk/Structural-Engineer-vs.-Architect-in-London-Who-Do-You-Need"
+        />
+      </Head>
 
-        <section className={styles.comparisonSection}>
-          <div className={styles.comparisonGrid}>
-            {/* Structural Engineer */}
-            <div className={styles.professionalCard}>
-              <div className={styles.professionalHeader}>
-                <div className={`${styles.professionalIcon} ${styles.engineerIcon}`}>🏗️</div>
-                <h2 className={styles.professionalTitle}>Structural Engineer</h2>
-              </div>
-              <div className={styles.professionalContent}>
-                <h3 className={styles.subtitle}>Key Responsibilities:</h3>
-                <ul className={styles.responsibilitiesList}>
-                  <li className={styles.responsibilityItem}>Structural calculations to ensure buildings can withstand loads</li>
-                  <li className={styles.responsibilityItem}>Foundation and beam assessments</li>
-                  <li className={styles.responsibilityItem}>Load-bearing wall modifications</li>
-                  <li className={styles.responsibilityItem}>Subsidence and foundation inspections</li>
-                  <li className={styles.responsibilityItem}>Ensuring compliance with UK Building Regulations</li>
-                </ul>
+      <main className={styles.main}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1>Structural Engineer vs. Architect in London: Who Do You Need?</h1>
+          </header>
 
-                <h3 className={styles.subtitle}>When You Need One:</h3>
-                <ul className={styles.useCasesList}>
-                  <li className={styles.useCaseItem}>Removing/modifying load-bearing walls</li>
-                  <li className={styles.useCaseItem}>Building extensions or loft conversions</li>
-                  <li className={styles.useCaseItem}>Assessing structural damage</li>
-                  <li className={styles.useCaseItem}>Safety evaluations for older buildings</li>
-                  <li className={styles.useCaseItem}>Structural calculations for planning</li>
-                </ul>
-              </div>
-            </div>
+          <section className={styles.introSection}>
+            <p>
+              When planning a <Link href="/project_management" >construction project in London</Link> it’s essential to understand the difference between a
+              structural engineer and an architect. While both professionals play critical roles in the design and
+              construction process, their responsibilities and expertise vary significantly. Knowing who to hire can save
+              time, reduce costs, and ensure regulatory compliance. Let’s explore the key differences between a structural
+              engineer and an architect, and when you need each professional.
+            </p>
+          </section>
 
-            {/* Architect */}
-            <div className={styles.professionalCard}>
-              <div className={styles.professionalHeader}>
-                <div className={`${styles.professionalIcon} ${styles.architectIcon}`}>📐</div>
-                <h2 className={styles.professionalTitle}>Architect</h2>
-              </div>
-              <div className={styles.professionalContent}>
-                <h3 className={styles.subtitle}>Key Responsibilities:</h3>
-                <ul className={styles.responsibilitiesList}>
-                  <li className={styles.responsibilityItem}>Creating architectural drawings</li>
-                  <li className={styles.responsibilityItem}>Optimizing space and layout</li>
-                  <li className={styles.responsibilityItem}>Planning permissions compliance</li>
-                  <li className={styles.responsibilityItem}>Material selection for sustainability</li>
-                  <li className={styles.responsibilityItem}>Overseeing design execution</li>
-                </ul>
+          <section className={styles.section}>
+            <h2>1. What Does a Structural Engineer Do?</h2>
+            <p>A structural engineer focuses on the strength, stability, and safety of buildings and structures. Their responsibilities include:</p>
+            <ul className={styles.list}>
+              <li>Structural calculations to ensure buildings can withstand loads and forces.</li>
+              <li>Foundation and beam assessments to maintain structural integrity.</li>
+              <li>Load-bearing wall modifications to prevent collapses.</li>
+              <li>Subsidence and foundation inspections to detect potential structural risks.</li>
+              <li>Ensuring compliance with UK Building Regulations.</li>
+            </ul>
+            <p>
+              Structural engineers work closely with architects and contractors to ensure that designs are not only
+              aesthetically pleasing but also safe and structurally sound.
+            </p>
+          </section>
 
-                <h3 className={styles.subtitle}>When You Need One:</h3>
-                <ul className={styles.useCasesList}>
-                  <li className={styles.useCaseItem}>Designing new buildings</li>
-                  <li className={styles.useCaseItem}>Major renovation projects</li>
-                  <li className={styles.useCaseItem}>Optimizing space utilization</li>
-                  <li className={styles.useCaseItem}>Preparing planning applications</li>
-                  <li className={styles.useCaseItem}>Enhancing aesthetic appeal</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>2. What Does an Architect Do?</h2>
+            <p>An architect is responsible for the design, aesthetics, and functionality of a building. Their tasks include:</p>
+            <ul className={styles.list}>
+              <li>Creating architectural drawings and blueprints.</li>
+              <li>Optimizing space and layout for functionality and aesthetics.</li>
+              <li>Planning permissions and building regulations compliance.</li>
+              <li>Material selection for energy efficiency and sustainability.</li>
+              <li>Overseeing design execution to match the client’s vision.</li>
+            </ul>
+            <p>
+              Architects focus on the visual and functional aspects of a project, ensuring it aligns with the client's
+              needs and regulatory requirements.
+            </p>
+          </section>
 
-        <section className={styles.collaborationSection}>
-          <h2 className={styles.sectionTitle}>5. Do You Need Both an Architect and a Structural Engineer?</h2>
-          <p className={styles.sectionText}>
-            For large-scale projects, you often need both professionals. An architect will focus on the design and planning, 
-            while a structural engineer ensures that the design is structurally viable and safe. Working together, they ensure 
-            a seamless, compliant, and efficient building process.
-          </p>
-        </section>
+          <section className={styles.section}>
+            <h2>3. When Do You Need a Structural Engineer?</h2>
+            <p>You should hire a <Link href="/structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach" >construction project </Link>  in London for:</p>
+            <ul className={styles.list}>
+              <li>Removing or modifying load-bearing walls.</li>
+              <li>Building extensions, loft conversions, or basement renovations.</li>
+              <li>Assessing structural damage, cracks, or subsidence issues.</li>
+              <li>Ensuring the safety of older or listed buildings.</li>
+              <li>Conducting structural calculations for planning applications.</li>
+            </ul>
+          </section>
 
-        <section className={styles.peppSection}>
-          <h2 className={styles.sectionTitle}>How PEPP Provides Structural Engineering Expertise in London</h2>
-          <p className={styles.sectionText}>
-            At Pearl Engineers Planners and Project Managers (PEPP), we specialize in structural analysis, safety inspections, 
-            and compliance consulting.
-          </p>
-          
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>Structural Calculations</h3>
-              <p>For renovations and new builds</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>Structural Surveys</h3>
-              <p>Detailed inspections for all property types</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>Collaborative Approach</h3>
-              <p>Working with architects and contractors</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>Regulation Compliance</h3>
-              <p>Ensuring UK Building Regulations are met</p>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>4. When Do You Need an Architect?</h2>
+            <p>An architect is needed when:</p>
+            <ul className={styles.list}>
+              <li>Designing a new building or major renovation project.</li>
+              <li>Optimizing layouts for better space utilization.</li>
+              <li>Preparing and submitting planning applications.</li>
+              <li>Enhancing the aesthetic and functional appeal of a structure.</li>
+              <li>Coordinating with engineers and contractors on construction plans.</li>
+            </ul>
+          </section>
 
-        <section className={styles.ctaSection}>
-          <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Need a  <Link href="/project_management" className={styles.link}>construction project in London</Link>? Contact Pepp today!</p>
-            <div className={styles.contactMethods}>
-              <a href="tel:+447460140474" className={styles.contactLink}>
-                <span className={styles.contactIcon}>📞</span> +44 7460140474
-              </a>
-              <a href="mailto:info@pearlepp.co.uk" className={styles.contactLink}>
-                <span className={styles.contactIcon}>✉️</span> info@pearlepp.co.uk
-              </a>
-              <a href="https://pearlepp.co.uk/" className={styles.websiteButton}>
-                <span className={styles.contactIcon}>🌐</span> PearlEPP.co.uk
-              </a>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>5. Do You Need Both an Architect and a Structural Engineer?</h2>
+            <p>
+              For large-scale projects, you often need both professionals. An architect will focus on the design and
+              planning, while a structural engineer ensures that the design is structurally viable and safe. Working
+              together, they ensure a seamless, compliant, and efficient building process.
+            </p>
+          </section>
 
-        <footer className={styles.conclusion}>
-          <p className={styles.conclusionText}>
-            Understanding the difference between a  <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link1}>structural engineer</Link>  and an architect is crucial when planning a construction 
-            project in London. While architects focus on design, structural engineers ensure stability and safety. For seamless 
-            project execution, consider hiring both professionals to achieve the best results. Trust PEPP for all your architectural 
-            and structural engineering needs in London.
-          </p>
-        </footer>
-      </article>
+          <section className={styles.section}>
+            <h2>How PEPP Provides Structural Engineering Expertise in London</h2>
+            <p>
+              At Pearl Engineers Planners and Project Managers (PEPP), we specialize in structural analysis, safety
+              inspections, and compliance consulting. Our structural engineers work closely with architects to ensure every
+              project is safe, functional, and regulation compliant.
+            </p>
+            <ul className={styles.list}>
+              <li>Expert structural calculations for renovations and new builds.</li>
+              <li>Detailed structural surveys and inspections for residential and commercial properties.</li>
+              <li>Collaborative approach with architects and contractors.</li>
+              <li>Ensuring UK Building Regulations compliance for all projects.</li>
+            </ul>
+          </section>
+
+          <section className={styles.ctaSection}>
+            <h2>Contact Us Today!</h2>
+            <p>
+              Need a <Link href="/structural_enigneering_services" >construction project in London</Link> ? Contact PEPP today! Call{' '}
+              <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email{' '}
+              <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit{' '}
+              <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for expert guidance.
+            </p>
+          </section>
+
+          <section className={styles.conclusion}>
+            <h2>Conclusion</h2>
+            <p>
+              Understanding the difference between a <Link href="https://g.co/kgs/wJmR8pW">structural engineer</Link>  and an architect is crucial when planning a
+              construction project in London. While architects focus on design, structural engineers ensure stability and
+              safety. For seamless project execution, consider hiring both professionals to achieve the best results. Trust
+              PEPP for all your architectural and structural engineering needs in London.
+            </p>
+          </section>
+        </article>
+      </main>
     </div>
   );
 };
 
-export default EngineerVsArchitect;
+export default StructuralEngineerVsArchitect;

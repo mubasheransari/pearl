@@ -1,136 +1,66 @@
-// Main container
-.findStructuralEngineer {
- margin-top: 75px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  
-    // Responsive padding for smaller screens
-    @media (max-width: 768px) {
-      padding: 15px;
-    }
-  }
-  
-  // Header
-  .header {
-    margin-bottom: 30px;
-  
-    // Responsive margin for smaller screens
-    @media (max-width: 768px) {
-      margin-bottom: 20px;
-    }
-  }
-  
-  // Title
-  .title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  
-    // Responsive font size for smaller screens
-    @media (max-width: 768px) {
-      font-size: 2rem;
-    }
-  
-    @media (max-width: 480px) {
-      font-size: 1.75rem;
-    }
-  }
-  
-  // Intro text
-  .intro {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 20px;
-  
-    // Responsive font size for smaller screens
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
-  }
-  
-  // Section
-  .section {
-    margin-bottom: 30px;
-  
-    // Responsive margin for smaller screens
-    @media (max-width: 768px) {
-      margin-bottom: 20px;
-    }
-  }
-  
-  // Subtitle
-  .subtitle {
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.article {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.header {
+  padding-top: 2rem;
+  padding-left: 2rem;
+ 
+
+  h1 {
     font-size: 2rem;
-    color: #444;
-    margin-bottom: 15px;
-  
-    // Responsive font size for smaller screens
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-  
-    @media (max-width: 480px) {
-      font-size: 1.25rem;
-    }
+    margin-bottom: 0.5rem;
   }
-  
-  // Text
-  .text {
-    font-size: 1rem;
+}
+
+.introSection,
+.section,
+.ctaSection,
+.conclusion {
+  padding: 2rem;
+  border-bottom: 1px solid #eee;
+
+  h2 {
+    color: #2a5885;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
     line-height: 1.6;
-    color: #666;
-    margin-bottom: 15px;
-  
-    // Responsive font size for smaller screens
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
   }
-  
-  // List
-  .list {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
-  
-    // Responsive margin for smaller screens
-    @media (max-width: 768px) {
-      margin-left: 0px; // Remove left margin in mobile view
-    }
+}
+
+.list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+
+  li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
   }
-  
-  // List item
-  .listItem {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
-  
-    // Responsive font size for smaller screens
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
-  }
-  
-  // Footer
-  .footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-  
-    // Responsive margin for smaller screens
-    @media (max-width: 768px) {
-      margin-top: 30px;
-      padding-top: 15px;
-    }
-  }
-  
-  // Link
-  .link {
-    color: #1c0fac;
+}
+
+.link {
+  color: #2a5885;
+  text-decoration: underline;
+
+  &:hover {
     text-decoration: none;
-  
-    &:hover {
-      text-decoration: underline;
-    }
   }
+}

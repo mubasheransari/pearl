@@ -18,7 +18,7 @@ const Video = () => {
 
         if (isSafari) {
           // If Safari, do not mute the video (autoplay with sound)
-          video.muted = true;
+          video.muted = false;
         } else {
           // If not Safari (assume Chrome or other browser), mute the video for autoplay
           video.muted = true;
@@ -62,3 +62,39 @@ const Video = () => {
 };
 
 export default Video;
+
+
+// 'use client';
+// import React, { useRef } from 'react';
+// import style from './video.module.scss';
+// import { Lora } from "next/font/google";
+
+// const lora = Lora({ subsets: ["latin"] });
+
+// const Video = () => {
+//   const videoRef = useRef();
+
+//   return (
+//     <div className={style.home} id="home">
+//       <div className={style.back_layer}></div>
+//       <div className={style.video_box}>
+//         <video
+//           ref={videoRef}
+//           className={style.video_div}
+//           preload="auto"
+//           playsInline
+//           autoPlay
+//           loop
+//           muted={false} // Ensure the video plays with sound
+//         >
+//           <source src='/pepp-video.mp4' type="video/mp4" />
+//         </video>
+//         <div className={`${style.video_label} ${lora.className}`}>
+//           PEARL ENGINEERS, PLANNERS & PROJECT MANAGERS
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Video;

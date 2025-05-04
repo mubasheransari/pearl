@@ -1,162 +1,163 @@
-import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const ArchitectEngineerCost = () => {
+const ArchitectEngineerCostBromley = () => {
   return (
-    <>
-  
-      <title>How Much Does an Architect Engineer in Bromley Cost? | PEPP</title>
-      <meta name="description" content="Expert architect engineer in Bromley offering innovative design, planning, and structural solutions for residential & commercial projects. Contact us today!" />
-      <link rel="canonical" href="https://www.pearlepp.co.uk/how-much-does-architect-engineer-bromley-cost" />
-  
+    <div className={styles.container}>
+      <Head>
+        <title>How Much Does an Architect Engineer in Bromley Cost?</title>
+        <meta
+          name="description"
+          content="Expert architect engineer in Bromley offering innovative design, planning, and structural solutions for residential & commercial projects. Contact us today!"
+        />
+        <link
+          rel="canonical"
+          href="https://pearlepp.co.uk/How-Much-Does-an-Architect-Engineer-in-Bromley-Cost"
+        />
+      </Head>
 
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <h1>How Much Does an Architect Engineer in Bromley Cost?</h1>
-          <p className={styles.intro}>
-          When planning a construction, renovation, or extension project, hiring an
-          <Link href="/architectural_services" className={styles.link}> architect engineer in Bromley, London, UK </Link>  is a vital step to ensure structural integrity, aesthetic appeal, and legal compliance. Understanding the cost factors involved in architectural and structural engineering services can help you budget effectively and make informed decisions. This guide provides insights into the pricing structure and how to find cost-effective solutions for your project.
-          </p>
-        </header>
+      <main className={styles.main}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1>How Much Does an Architect Engineer in Bromley Cost?</h1>
+          </header>
 
-        <main className={styles.contentSection}>
-          <section className={styles.section}>
-            <h2>1. Key Factors Influencing Architect Engineer Costs in Bromley</h2>
-            <div className={styles.factorsGrid}>
-              <div className={styles.factorCard}>
-                <h3>Project Complexity</h3>
-                <p>Simple extensions cost less than commercial projects requiring detailed structural calculations.</p>
-              </div>
-              <div className={styles.factorCard}>
-                <h3>Scope of Services</h3>
-                <p>Costs vary for conceptual design, full drawings, structural calculations, or project management.</p>
-              </div>
-              <div className={styles.factorCard}>
-                <h3>Property Type</h3>
-                <p>Residential projects typically need less engineering than heritage or commercial buildings.</p>
-              </div>
-              <div className={styles.factorCard}>
-                <h3>Regulatory Compliance</h3>
-                <p>Planning permissions and Building Regulations approval add to costs.</p>
-              </div>
-              <div className={styles.factorCard}>
-                <h3>Urgency</h3>
-                <p>Expedited services for urgent assessments cost more.</p>
-              </div>
-              <div className={styles.factorCard}>
-                <h3>Technology & Materials</h3>
-                <p>Sustainable materials and smart designs may increase initial costs but save long-term.</p>
-              </div>
-            </div>
+          <section className={styles.introSection}>
+            <p>
+              When planning a construction, renovation, or extension project, hiring an <Link href="/architectural_services" className={styles.link}> architect engineer in Bromley, London, UK </Link> 
+ is a vital step to ensure structural integrity, aesthetic appeal, and legal compliance.
+              Understanding the cost factors involved in architectural and structural engineering services can help you
+              budget effectively and make informed decisions. This guide provides insights into the pricing structure and
+              how to find cost-effective solutions for your project.
+            </p>
           </section>
 
           <section className={styles.section}>
-            <h2>2. Average Cost Estimates in Bromley</h2>
-            <div className={styles.priceTable}>
-              <div className={styles.tableHeader}>
-                <div className={styles.serviceCol}>Service</div>
-                <div className={styles.priceCol}>Price Range</div>
-              </div>
-              <div className={styles.priceRow}>
-                <div className={styles.service}>Initial Consultation & Feasibility Study</div>
-                <div className={styles.price}>£500 – £1,500</div>
-              </div>
-              <div className={styles.priceRow}>
-                <div className={styles.service}>Planning Drawings & Permission Applications</div>
-                <div className={styles.price}>£800 – £2,500</div>
-              </div>
-              <div className={styles.priceRow}>
-                <div className={styles.service}>Building Regulations & Structural Calculations</div>
-                <div className={styles.price}>£1,000 – £3,500</div>
-              </div>
-              <div className={styles.priceRow}>
-                <div className={styles.service}>Full Architectural Design & 3D Modeling</div>
-                <div className={styles.price}>£2,500 – £10,000+</div>
-              </div>
-              <div className={styles.priceRow}>
-                <div className={styles.service}>Load-Bearing Wall Removal Reports</div>
-                <div className={styles.price}>£500 – £2,500</div>
-              </div>
-              <div className={styles.priceRow}>
-                <div className={styles.service}>On-Site Inspections & Supervision</div>
-                <div className={styles.price}>£800 – £5,000</div>
-              </div>
-            </div>
-            <p className={styles.priceNote}>Prices vary based on project complexity and customization needs.</p>
+            <h2>1. Key Factors Influencing Architect Engineer Costs in Bromley</h2>
+            <p>The cost of hiring an architect engineer depends on several critical factors, including:</p>
+            <ul className={styles.list}>
+              <li>
+                <strong>Project Complexity –</strong> A simple home extension costs significantly less than a full-scale
+                commercial or industrial project, which requires detailed structural calculations and advanced
+                engineering.
+              </li>
+              <li>
+                <strong>Scope of Services –</strong> The cost varies based on whether you need conceptual design, full
+                architectural drawings, structural calculations, or project management.
+              </li>
+              <li>
+                <strong>Property Type –</strong> Residential properties typically require less engineering work compared to
+                heritage buildings, commercial spaces, or high-rise developments.
+              </li>
+              <li>
+                <strong>Regulatory Compliance –</strong> Projects that require planning permissions, structural approvals,
+                and compliance with UK Building Regulations involve additional fees.
+              </li>
+              <li>
+                <strong>Urgency and Timelines –</strong> Expedited services often come with higher costs, especially for
+                urgent assessments or planning submissions.
+              </li>
+              <li>
+                <strong>Technology and Materials Used –</strong> The incorporation of sustainable building materials, smart
+                design solutions, and energy-efficient layouts can also impact costs.
+              </li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>2. Average Cost Estimates for Architect Engineering Services in Bromley</h2>
+            <p>While every project is unique, below is a general pricing breakdown for architect engineering services:</p>
+            <ul className={styles.list}>
+              <li>Initial Consultation & Feasibility Study – £500 – £1,500</li>
+              <li>Planning Drawings & Permission Applications – £800 – £2,500</li>
+              <li>Building Regulations & Structural Engineering Calculations – £1,000 – £3,500</li>
+              <li>Full Architectural Design & 3D Modeling – £2,500 – £10,000+</li>
+              <li>Load-Bearing Wall Removal & Structural Reinforcement Reports – £500 – £2,500</li>
+              <li>On-Site Structural Inspections & Project Supervision – £800 – £5,000</li>
+            </ul>
+            <p>
+              Costs can fluctuate based on project complexity, customization requirements, and additional engineering
+              evaluations.
+            </p>
           </section>
 
           <section className={styles.section}>
             <h2>3. Why Investing in an Architect Engineer is Essential</h2>
-            <div className={styles.benefitsGrid}>
-              <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>📐</div>
-                <h3>Precision in Design</h3>
-                <p>Reduces errors and delays by aligning engineering and architectural components.</p>
-              </div>
-              <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>🏛️</div>
-                <h3>Regulatory Compliance</h3>
-                <p>Ensures planning approvals and building control certifications.</p>
-              </div>
-              <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>🌱</div>
-                <h3>Sustainable Designs</h3>
-                <p>Eco-friendly materials and energy-efficient techniques save long-term costs.</p>
-              </div>
-              <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>📈</div>
-                <h3>Value Maximization</h3>
-                <p>Enhances functionality and increases property valuation.</p>
-              </div>
-            </div>
+            <ul className={styles.list}>
+              <li>
+                <strong>Precision in Design and Execution –</strong> Reduces errors and unnecessary delays by ensuring that
+                the engineering and architectural components align perfectly.
+              </li>
+              <li>
+                <strong>Regulatory and Safety Compliance –</strong> Experienced professional helps secure planning
+                approvals, building control certifications, and environmental compliance.
+              </li>
+              <li>
+                <strong>Sustainable and Future-Proof Designs –</strong> Integrating eco-friendly materials and
+                energy-efficient construction techniques can lead to long-term cost savings.
+              </li>
+              <li>
+                <strong>Maximizing Space & Value –</strong> Thoughtful design and engineering solutions enhance functional
+                efficiency and increase property valuation.
+              </li>
+            </ul>
           </section>
 
-          <div className={styles.peppSection}>
-            <h2>4. How PEPP Offers Cost-Effective Solutions in Bromley</h2>
-            <div className={styles.peppGrid}>
-              <div className={styles.peppCard}>
-                <h3>Transparent Pricing</h3>
-                <p>Clear, upfront costs with fixed fees for standard services.</p>
-              </div>
-              <div className={styles.peppCard}>
-                <h3>Innovative Designs</h3>
-                <p>Modern materials and smart technologies for future-proof buildings.</p>
-              </div>
-              <div className={styles.peppCard}>
-                <h3>Comprehensive Management</h3>
-                <p>Full project handling from concept to completion.</p>
-              </div>
-              <div className={styles.peppCard}>
-                <h3>Personalized Consultation</h3>
-                <p>Custom solutions tailored to your vision and budget.</p>
-              </div>
-            </div>
-          </div>
+          <section className={styles.section}>
+            <h2>4. How PEPP Offers Cost-Effective Architect Engineering Solutions in Bromley, London</h2>
+            <p>
+              At Pearl Engineers Planners and Project Managers (PEPP), we deliver tailored architectural and structural
+              engineering solutions with a focus on affordability, precision, and efficiency. Our approach includes:
+            </p>
+            <ul className={styles.list}>
+              <li>
+                <strong>Transparent Pricing & Fixed Fees –</strong> We offer clear, upfront costs for standard architectural
+                and engineering services, so clients know exactly what to expect.
+              </li>
+              <li>
+                <strong>Innovative & Sustainable Designs –</strong> We integrate modern building materials, smart
+                technologies, and energy-efficient layouts to optimize costs and future-proof designs.
+              </li>
+              <li>
+                <strong>Comprehensive Project Management –</strong> From concept to completion, our team handles design,
+                compliance, and execution while ensuring adherence to UK building regulations.
+              </li>
+              <li>
+                <strong>Personalized Consultation –</strong> We understand that every project is unique, which is why we
+                provide customized architectural plans and engineering solutions tailored to your vision and budget.
+              </li>
+            </ul>
+          </section>
 
           <section className={styles.ctaSection}>
-            <h2>Contact PEPP Today!</h2>
-            <p>Looking for a trusted and affordable       <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}> architect engineer in Bromley London </Link> UK? Contact PEPP today! </p>
-            <div className={styles.ctaButtons}>
-              <a href="tel:+447460140474" className={styles.ctaPhone}>Call +44 7460140474</a>
-              <a href="mailto:info@pearlepp.co.uk" className={styles.ctaEmail}>Email info@pearlepp.co.uk</a>
-              <a href="https://pearlepp.co.uk/" className={styles.ctaButton}>Visit Our Website</a>
-            </div>
+            <h2>Contact Us Today!</h2>
+            <p>
+              Looking for a trusted and affordable   <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}> architect engineer in Bromley London </Link> UK? Contact PEPP today! Call{' '}
+              <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email{' '}
+              <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit{' '}
+              <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for expert guidance.
+            </p>
           </section>
 
           <section className={styles.conclusion}>
             <h2>Conclusion</h2>
             <p>
-              Architect engineer costs in Bromley vary by project requirements and complexity. 
-              Professional services ensure efficient execution, compliance, and long-term value. 
-              PEPP delivers high-quality, cost-effective architectural and structural engineering solutions in Bromley.
+              The cost of hiring an architect engineer in Bromley varies depending on project requirements, design
+              complexity, and regulatory needs. Investing in a skilled professional ensures that your project is executed
+              efficiently, meets compliance standards, and delivers long-term value. Trust PEPP for high-quality,
+              cost-effective architectural and structural engineering solutions in Bromley, London, UK.
             </p>
           </section>
-        </main>
-      </div>
-    </>
+        </article>
+      </main>
+    </div>
   );
 };
 
-export default ArchitectEngineerCost;
+export default ArchitectEngineerCostBromley;
+
+
+
+
+

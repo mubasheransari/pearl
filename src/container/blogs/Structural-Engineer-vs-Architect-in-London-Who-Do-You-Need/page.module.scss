@@ -1,340 +1,66 @@
-// EngineerVsArchitect.module.scss
-
-// Variables
-$primary-color: #004aad;
-$accent-color: #1c0fac;
-$engineer-color: #004aad;
-$architect-color: #1c0fac;
-$text-dark: #333;
-$text-medium: #555;
-$text-light: #777;
-$background-light: #f9f9f9;
-$border-color: #e0e0e0;
-$box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-// Base Styles
 .container {
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: $text-dark;
+  padding: 0 1rem;
 }
-.link{
-  color: white;
+
+.main {
+  padding: 2rem 0;
 }
 
 .article {
-  background: white;
+  background: #fff;
   border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  box-shadow: $box-shadow;
 }
 
-// Header Styles
 .header {
-    // margin-top: 75px;
-
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, $primary-color, $accent-color);
-  color: white;
-  text-align: center;
-  
-  .title {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.3;
-  }
-  
-  .intro {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    opacity: 0.9;
-  }
-}
-
-// Comparison Section
-.comparisonSection {
-  padding: 2rem;
-}
-
-.comparisonGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.professionalCard {
-  background: white;
-  border-radius: 8px;
-  box-shadow: $box-shadow;
-  overflow: hidden;
-}
-
-.professionalHeader {
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid $border-color;
-}
-
-.professionalIcon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  margin-right: 1.5rem;
-}
-
-.engineerIcon {
-  background: rgba($engineer-color, 0.1);
-  color: $engineer-color;
-}
-
-.architectIcon {
-  background: rgba($architect-color, 0.1);
-  color: $architect-color;
-}
-
-.professionalTitle {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-.professionalContent {
-  padding: 1.5rem;
-}
-
-.subtitle {
-  color: $primary-color;
-  font-size: 1.2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.responsibilitiesList, .useCasesList {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 2rem;
-}
-
-.responsibilityItem, .useCaseItem {
+  padding-top: 2rem;
   padding-left: 2rem;
-  position: relative;
-  margin-bottom: 0.75rem;
-  color: $text-medium;
-  
-  &::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: $accent-color;
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 1;
-  }
-}
 
-// Collaboration Section
-.collaborationSection {
-  padding: 2rem;
-  background: $background-light;
-  text-align: center;
-  
-  .sectionTitle {
-    color: $primary-color;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .sectionText {
-    color: $text-medium;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-}
 
-// PEPP Section
-.peppSection {
-  padding: 2rem;
-  text-align: center;
-  
-  .sectionTitle {
-    color: $primary-color;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .sectionText {
-    color: $text-medium;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    font-size: 1.1rem;
-  }
-}
-
-.servicesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.serviceCard {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: $box-shadow;
-  border-top: 4px solid $primary-color;
-  
-  .serviceTitle {
-    color: $primary-color;
-    margin-top: 0;
+  h1 {
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
-  
-  p {
-    margin: 0;
-    color: $text-medium;
-    font-size: 0.95rem;
-  }
 }
 
-// CTA Section
-.ctaSection {
-  background: $primary-color;
-  color: white;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.ctaContent {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.ctaTitle {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.ctaText {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
-.contactMethods {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.contactLink, .websiteButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 1.5rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.contactLink {
-  background: white;
-  color: $primary-color;
-  
-  &:hover {
-    background: darken(white, 5%);
-  }
-}
-
-.websiteButton {
-  background: $accent-color;
-  color: white;
-  
-  &:hover {
-    background: darken($accent-color, 5%);
-    color: white;
-  }
-}
-
-.contactIcon {
-  margin-right: 0.75rem;
-  font-size: 1.2rem;
-}
-
-// Conclusion
+.introSection,
+.section,
+.ctaSection,
 .conclusion {
   padding: 2rem;
-  text-align: center;
-  
-  .conclusionText {
-    color: $text-medium;
-    max-width: 1600px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.7;
-  }
-}
+  border-bottom: 1px solid #eee;
 
-// Responsive Styles
-@media (max-width: 768px) {
-  .header {
-    padding: 2rem 1rem;
-    
-    .title {
-      font-size: 1.8rem;
-    }
-  }
-  
-  .comparisonGrid {
-    grid-template-columns: 1fr;
-  }
-  
-  .professionalHeader {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .professionalIcon {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
-    padding: 1.5rem 1rem;
-    
-    .title {
-      font-size: 1.5rem;
-    }
-    
-    .intro {
-      font-size: 1rem;
-    }
-  }
-  
-  .ctaTitle {
+  h2 {
+    color: #2a5885;
+    margin-bottom: 1.5rem;
     font-size: 1.5rem;
   }
-  
-  .ctaText {
-    font-size: 1rem;
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
   }
-  
-  .contactMethods {
-    max-width: 100%;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+
+  li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+}
+
+.link {
+  color: #2a5885;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
   }
 }

@@ -1,195 +1,112 @@
-import React from 'react';
+import Head from 'next/head';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const ArchitectSurveying = () => {
+const ArchitectSurveyingGuide = () => {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>What Is Architect Surveying a Comprehensive Guide</title>
+        <meta
+          name="description"
+          content="Professional architect surveying services offering expert planning, design, and property assessments for residential & commercial projects. Contact us today!"
+        />
+        <link
+          rel="canonical"
+          href="https://pearlepp.co.uk/What-Is-Architect-Surveying-a-Comprehensive-Guide"
+        />
+      </Head>
 
-      <meta name="title" content="What Is Architect Surveying a Comprehensive Guide" />
-      <meta name="description" content="Professional architect surveying services offering expert planning, design, and property assessments for residential & commercial projects. Contact us today!" />
-      <link rel="canonical" href="https://www.pearlepp.co.uk/what-is-architect-surveying-comprehensive-guide" />
+      <main className={styles.main}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1>What Is Architect Surveying? A Comprehensive Guide</h1>
+          </header>
 
-      <article className={styles.article}>
-        <header className={styles.header}>
-          <h1 className={styles.title}>What Is Architect Surveying? A Comprehensive Guide</h1>
-          <p className={styles.intro}>
-          Architect surveying is a crucial aspect of construction, renovation, and land development projects. It involves assessing and mapping land, buildings, and infrastructure to ensure projects are designed and executed with precision, safety, and compliance. Whether you are planning a new build, an extension, or property renovations, understanding
-          <Link href="/quantity_surverying" className={styles.link}>architect surveying</Link>  helps you make informed decisions.
-          </p>
-        </header>
+          <section className={styles.introSection}>
+            <p>
+              Architect surveying is a crucial aspect of construction, renovation, and land development projects. It involves assessing and mapping land, buildings, and infrastructure to ensure projects are designed and executed with precision, safety, and compliance. Whether you are planning a new build, an extension, or property renovations, understanding <Link href="/quantity_surverying">architect surveying</Link>  helps you make informed decisions.
+            </p>
+          </section>
 
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>1. Understanding Architect Surveying</h2>
-          <p className={styles.sectionText}>
-            Architect surveying involves the measurement, analysis, and mapping of physical spaces to guide 
-            architectural designs and structural integrity. This process ensures that a project is feasible, 
-            structurally sound, and adheres to UK regulations.
-          </p>
-          
-          <div className={styles.surveyTypes}>
-            <h3 className={styles.subtitle}>Types of Architect Surveying:</h3>
-            <div className={styles.typeCards}>
-              <div className={styles.typeCard}>
-                <h4 className={styles.typeTitle}>Topographical Surveys</h4>
-                <p>Mapping the natural and man-made features of land</p>
-              </div>
-              <div className={styles.typeCard}>
-                <h4 className={styles.typeTitle}>Measured Building Surveys</h4>
-                <p>Recording the dimensions and details of existing structures</p>
-              </div>
-              <div className={styles.typeCard}>
-                <h4 className={styles.typeTitle}>Site Analysis Surveys</h4>
-                <p>Assessing environmental factors like drainage and soil stability</p>
-              </div>
-              <div className={styles.typeCard}>
-                <h4 className={styles.typeTitle}>Structural Condition Surveys</h4>
-                <p>Evaluating the integrity of buildings before renovation</p>
-              </div>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>1. Understanding Architect Surveying</h2>
+            <p>
+              Architect surveying involves the measurement, analysis, and mapping of physical spaces to guide architectural designs and structural integrity. This process ensures that a project is feasible, structurally sound, and adheres to UK regulations.
+            </p>
+            <p>Types of Architect Surveying:</p>
+            <ul>
+              <li>Topographical Surveys – Mapping the natural and man-made features of land.</li>
+              <li>Measured Building Surveys – Recording the dimensions and details of existing structures.</li>
+              <li>Site Analysis Surveys – Assessing environmental factors like drainage, soil stability, and access.</li>
+              <li>Structural Condition Surveys – Evaluating the integrity of buildings before renovation or construction.</li>
+            </ul>
+          </section>
 
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>2. Why Is Architect Surveying Important?</h2>
-          <p className={styles.sectionText}>
-            Architect surveying provides critical data that helps:
-          </p>
-          <div className={styles.importanceGrid}>
-            <div className={styles.importanceItem}>
-              <div className={styles.importanceIcon}>✓</div>
-              <p>Ensure structural safety and prevent design flaws</p>
-            </div>
-            <div className={styles.importanceItem}>
-              <div className={styles.importanceIcon}>✓</div>
-              <p>Optimize spatial planning and land usage</p>
-            </div>
-            <div className={styles.importanceItem}>
-              <div className={styles.importanceIcon}>✓</div>
-              <p>Identify potential risks like land instability</p>
-            </div>
-            <div className={styles.importanceItem}>
-              <div className={styles.importanceIcon}>✓</div>
-              <p>Comply with UK Building Regulations</p>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>2. Why Is Architect Surveying Important?</h2>
+            <p><Link href="/commercial-construction-planning-services-by-pearl-engineers-planners-and-project-managers-(PEPP)">architect surveying</Link>  provides critical data that helps:</p>
+            <ul>
+              <li>Ensure structural safety and prevent design flaws.</li>
+              <li>Optimize spatial planning and land usage.</li>
+              <li>Identify potential risks such as land instability or drainage issues.</li>
+              <li>Comply with UK Building Regulations and planning permissions.</li>
+            </ul>
+          </section>
 
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>3. How Architect Surveying Works in Construction Projects</h2>
-          <div className={styles.processSteps}>
-            <div className={styles.processStep}>
-              <div className={styles.stepNumber}>1</div>
-              <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>Initial Site Assessment</h3>
-                <p>Understanding the landscape and existing structures</p>
-              </div>
-            </div>
-            <div className={styles.processStep}>
-              <div className={styles.stepNumber}>2</div>
-              <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>Surveying and Data Collection</h3>
-                <p>Using laser scanners, GPS, and drones for accuracy</p>
-              </div>
-            </div>
-            <div className={styles.processStep}>
-              <div className={styles.stepNumber}>3</div>
-              <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>Creating Detailed Drawings</h3>
-                <p>Producing 3D models, blueprints, and topographic maps</p>
-              </div>
-            </div>
-            <div className={styles.processStep}>
-              <div className={styles.stepNumber}>4</div>
-              <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>Regulatory Compliance Checks</h3>
-                <p>Ensuring designs align with local planning policies</p>
-              </div>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>3. How Architect Surveying Works in Construction Projects</h2>
+            <p>Before construction begins, an architectural surveyor assesses the project site using specialized tools and software to collect precise data. The process includes:</p>
+            <ol>
+              <li>Initial Site Assessment – Understanding the landscape and existing structures.</li>
+              <li>Surveying and Data Collection – Using laser scanners, GPS, and drones for accuracy.</li>
+              <li>Creating Detailed Drawings – Producing 3D models, blueprints, and topographic maps.</li>
+              <li>Regulatory Compliance Checks – Ensuring designs align with local planning policies and building codes.</li>
+            </ol>
+          </section>
 
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>4. Do You Need an Architect Surveyor?</h2>
-          <p className={styles.sectionText}>
-            You should hire an architect surveyor if you are:
-          </p>
-          <div className={styles.scenarios}>
-            <div className={styles.scenario}>
-              <div className={styles.scenarioIcon}>🏗️</div>
-              <p>Planning a new construction project needing accurate site measurements</p>
-            </div>
-            <div className={styles.scenario}>
-              <div className={styles.scenarioIcon}>🏠</div>
-              <p>Renovating or extending a property requiring compliance with safety standards</p>
-            </div>
-            <div className={styles.scenario}>
-              <div className={styles.scenarioIcon}>💰</div>
-              <p>Purchasing land or property needing an assessment of its condition</p>
-            </div>
-            <div className={styles.scenario}>
-              <div className={styles.scenarioIcon}>📝</div>
-              <p>Seeking planning permission requiring topographical reports</p>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>4. Do You Need an Architect Surveyor?</h2>
+            <p>You should hire an architect surveyor if you are:</p>
+            <ul>
+              <li>Planning a new construction project and need accurate site measurements.</li>
+              <li>Renovating or extending a property and require compliance with structural safety standards.</li>
+              <li>Purchasing land or property and need an assessment of its condition.</li>
+              <li>Seeking planning permission and require topographical and site analysis reports.</li>
+            </ul>
+          </section>
 
-        <section className={styles.peppSection}>
-          <h2 className={styles.sectionTitle}>5. How PEPP Provides Expert Architect Surveying Services</h2>
-          <p className={styles.sectionText}>
-            At Pearl Engineers Planners and Project Managers (PEPP), we specialize in architect surveying 
-            to ensure projects in Bromley, London, UK are executed with accuracy and compliance.
-          </p>
-          
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>Topographical Surveys</h3>
-              <p>Comprehensive land surveys for site planning</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>Measured Building Surveys</h3>
-              <p>Detailed assessments for renovations and extensions</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>Structural Assessments</h3>
-              <p>Thorough condition evaluations to prevent safety risks</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3 className={styles.serviceTitle}>3D Modeling</h3>
-              <p>Digital blueprint creation for architects and builders</p>
-            </div>
-          </div>
-        </section>
+          <section className={styles.section}>
+            <h2>5. How PEPP Provides Expert Architect Surveying Services</h2>
+            <p>At Pearl Engineers Planners and Project Managers (PEPP), we specialize in architect surveying to ensure that projects in Bromley, London, UK are executed with accuracy and compliance. Our services include:</p>
+            <ul>
+              <li>Topographical and land surveys for site planning.</li>
+              <li>Measured building surveys to support renovations and extensions.</li>
+              <li>Structural condition assessments to prevent safety risks.</li>
+              <li>Digital 3D modeling and blueprint creation for architects and builders.</li>
+            </ul>
+          </section>
 
-        <section className={styles.ctaSection}>
-          <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>Contact Us Today!</h2>
-            <p className={styles.ctaText}>Looking for professional  <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link}>architect surveying</Link> services in Bromley, London, UK?</p>
-            <div className={styles.contactMethods}>
-              <a href="tel:+447460140474" className={styles.contactLink}>
-                <span className={styles.contactIcon}>📞</span> +44 7460140474
-              </a>
-              <a href="mailto:info@pearlepp.co.uk" className={styles.contactLink}>
-                <span className={styles.contactIcon}>✉️</span> info@pearlepp.co.uk
-              </a>
-              <a href="https://pearlepp.co.uk/" className={styles.websiteButton}>
-                <span className={styles.contactIcon}>🌐</span> PearlEPP.co.uk
-              </a>
-            </div>
-          </div>
-        </section>
+          <section className={styles.ctaSection}>
+            <h2>Contact Us Today!</h2>
+            <p>
+              Looking for professional <Link href="https://g.co/kgs/wJmR8pW">architect surveying services in Bromley</Link>  London, UK? Contact PEPP today! Call{' '}
+              <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email{' '}
+              <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit{' '}
+              <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for expert guidance.
+            </p>
+          </section>
 
-        <footer className={styles.conclusion}>
-          <p className={styles.conclusionText}>
-            Architect surveying plays a vital role in construction, renovation, and land development by providing 
-            accurate data, structural assessments, and regulatory compliance support. Whether you are a homeowner, 
-            developer, or architect, hiring expert surveyors like PEPP ensures that your project is designed and 
-            built with precision, efficiency, and safety.
-          </p>
-        </footer>
-      </article>
+          <section className={styles.conclusion}>
+            <h2>Conclusion</h2>
+            <p>
+              Architect surveying plays a vital role in construction, renovation, and land development by providing accurate data, structural assessments, and regulatory compliance support. Whether you are a homeowner, developer, or architect, hiring expert surveyors like PEPP ensures that your project is designed and built with precision, efficiency, and safety.
+            </p>
+          </section>
+        </article>
+      </main>
     </div>
   );
 };
 
-export default ArchitectSurveying;
+export default ArchitectSurveyingGuide;

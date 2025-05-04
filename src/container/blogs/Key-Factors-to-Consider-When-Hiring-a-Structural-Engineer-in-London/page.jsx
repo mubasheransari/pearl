@@ -1,232 +1,176 @@
-import React from 'react';
 import Head from 'next/head';
 import styles from './page.module.scss';
 import Link from 'next/link';
 
-const HiringGuide = () => {
+const KeyFactorsStructuralEngineerLondon = () => {
   return (
-    <>
+    <div className={styles.container}>
+      <Head>
+        <title>Key Factors to Consider When Hiring a Structural Engineer in London</title>
+        <meta
+          name="description"
+          content="Reliable structural engineer in London offering expert design, analysis, and compliance solutions for residential & commercial projects. Get in touch today!"
+        />
+        <link
+          rel="canonical"
+          href="https://pearlepp.co.uk/Key-Factors-to-Consider-When-Hiring-a-Structural-Engineer-in-London"
+        />
+      </Head>
 
-      <title>Key Factors to Consider When Hiring a Structural Engineer in London | PEPP</title>
-      <meta name="description" content="Reliable structural engineer in London offering expert design, analysis, and compliance solutions for residential & commercial projects. Get in touch today!" />
-      <link rel="canonical" href="https://www.pearlepp.co.uk/key-factors-hiring-structural-engineer-london" />
+      <main className={styles.main}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1>Key Factors to Consider When Hiring a Structural Engineer in London</h1>
+          </header>
 
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <h1>Key Factors to Consider When Hiring a Structural Engineer in London </h1>
-          <p className={styles.intro}>
-          Hiring a <Link href="/structural_enigneering_services" className={styles.link}>structural engineer in London</Link> is a crucial step in ensuring the safety, efficiency, and compliance of your construction or renovation project. With so many options available, selecting the right professional requires careful evaluation. Here are the key factors to consider before making your decision.
-          </p>
-        </header>
-
-        <main className={styles.contentSection}>
-          <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <div className={styles.sectionNumber}>1</div>
-              <h2>Qualifications and Industry Accreditations</h2>
-            </div>
+          <section className={styles.introSection}>
             <p>
-              Ensure your engineer holds relevant qualifications from recognized institutions:
+              Hiring a <Link href="/structural_enigneering_services">structural engineer in London</Link>  is a crucial step in ensuring the safety, efficiency, and compliance
+              of your construction or renovation project. With so many options available, selecting the right professional
+              requires careful evaluation. Here are the key factors to consider before making your decision.
             </p>
-            <div className={styles.accreditationGrid}>
-              <div className={styles.accreditationCard}>
-                <h3>IStructE</h3>
-                <p>Institution of Structural Engineers</p>
-              </div>
-              <div className={styles.accreditationCard}>
-                <h3>ICE</h3>
-                <p>Institution of Civil Engineers</p>
-              </div>
-              <div className={styles.accreditationCard}>
-                <h3>CEng</h3>
-                <p>Chartered Engineer Status</p>
-              </div>
-              <div className={styles.accreditationCard}>
-                <h3>CIOB</h3>
-                <p>Chartered Institute of Building</p>
-              </div>
-            </div>
           </section>
 
           <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <div className={styles.sectionNumber}>2</div>
-              <h2>Experience and Expertise</h2>
-            </div>
+            <h2>1. Qualifications and Industry Accreditations</h2>
             <p>
-              Look for experience relevant to your project type:
+              A qualified structural engineer should have a degree in civil or structural engineering and hold
+              professional accreditations from recognized bodies such as:
             </p>
-            <div className={styles.expertiseGrid}>
-              <div className={styles.expertiseCard}>
-                <h3>Residential</h3>
-                <ul>
-                  <li>Loft conversions</li>
-                  <li>Extensions</li>
-                  <li>Basement developments</li>
-                </ul>
-              </div>
-              <div className={styles.expertiseCard}>
-                <h3>Commercial</h3>
-                <ul>
-                  <li>Office buildings</li>
-                  <li>Retail spaces</li>
-                  <li>Mixed-use developments</li>
-                </ul>
-              </div>
-              <div className={styles.expertiseCard}>
-                <h3>Specialist</h3>
-                <ul>
-                  <li>Historical buildings</li>
-                  <li>Structural repairs</li>
-                  <li>Seismic retrofitting</li>
-                </ul>
-              </div>
-            </div>
+            <ul className={styles.list}>
+              <li>RIBA (Royal Institute of British Architects)</li>
+              <li>Institution of Structural Engineers (IStructE)</li>
+              <li>Institution of Civil Engineers (ICE)</li>
+              <li>Chartered Engineer (CEng) Status</li>
+              <li>Chartered Association of Building Engineers (CABE)</li>
+              <li>Chartered Institute of Building (CIOB)</li>
+              <li>Chartered Institution of Building Services Engineers (CIBSE)</li>
+              <li>Chartered Institution of Civil Engineering Surveyors (CICES)</li>
+            </ul>
           </section>
 
           <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <div className={styles.sectionNumber}>3</div>
-              <h2>Regulatory Knowledge and Compliance</h2>
-            </div>
-            <div className={styles.complianceGrid}>
-              <div className={styles.complianceItem}>
-                <h3>Building Regulations</h3>
-                <p>Part A (Structure), Part B (Fire Safety), etc.</p>
-              </div>
-              <div className={styles.complianceItem}>
-                <h3>Planning Permissions</h3>
-                <p>Local authority requirements</p>
-              </div>
-              <div className={styles.complianceItem}>
-                <h3>Safety Standards</h3>
-                <p>CDM regulations, health & safety</p>
-              </div>
-            </div>
+            <h2>2. Experience and Expertise</h2>
+            <p>
+              The engineer’s experience should align with the type of project you are undertaking, whether it is
+              residential, commercial, industrial, or historical preservation. Areas of expertise to look for include:
+            </p>
+            <ul className={styles.list}>
+              <li>Load-bearing wall assessments</li>
+              <li>Foundation design and stability analysis</li>
+              <li>Loft conversions and basement extensions</li>
+              <li>Structural inspections and surveys</li>
+              <li>Compliance with UK Building Regulations</li>
+            </ul>
           </section>
 
           <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <div className={styles.sectionNumber}>4</div>
-              <h2>Reputation and Client Reviews</h2>
-            </div>
-            <div className={styles.reviewGrid}>
-              <div className={styles.reviewSource}>
-                <h3>Review Sources</h3>
-                <ul>
-                  <li>Google Business Profile</li>
-                  <li>Trustpilot</li>
-                  <li>Checkatrade</li>
-                  <li>Professional directories</li>
-                </ul>
-              </div>
-              <div className={styles.reviewMetrics}>
-                <h3>What to Check</h3>
-                <ul>
-                  <li>Overall rating (4.5+ stars)</li>
-                  <li>Response rate to queries</li>
-                  <li>Consistency across projects</li>
-                  <li>Handling of issues</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <div className={styles.sectionNumber}>5</div>
-              <h2>Communication and Transparency</h2>
-            </div>
-            <div className={styles.communicationGrid}>
-              <div className={styles.communicationItem}>
-                <h3>Initial Consultation</h3>
-                <p>Clear explanation of process and requirements</p>
-              </div>
-              <div className={styles.communicationItem}>
-                <h3>Project Updates</h3>
-                <p>Regular progress reports</p>
-              </div>
-              <div className={styles.communicationItem}>
-                <h3>Technical Clarity</h3>
-                <p>Ability to explain complex concepts simply</p>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <div className={styles.sectionNumber}>6</div>
-              <h2>Cost and Budget Considerations</h2>
-            </div>
-            <div className={styles.costTable}>
-              <div className={styles.costRow}>
-                <div className={styles.costFactor}>Service</div>
-                <div className={styles.costRange}>Typical Price Range</div>
-              </div>
-              <div className={styles.costRow}>
-                <div className={styles.costFactor}>Structural Calculations</div>
-                <div className={styles.costRange}>£500 - £2,500</div>
-              </div>
-              <div className={styles.costRow}>
-                <div className={styles.costFactor}>Site Inspection</div>
-                <div className={styles.costRange}>£300 - £800</div>
-              </div>
-              <div className={styles.costRow}>
-                <div className={styles.costFactor}>Full Design Package</div>
-                <div className={styles.costRange}>£1,500 - £10,000+</div>
-              </div>
-            </div>
-            <p className={styles.costNote}>
-              Prices vary based on project complexity and location within London
+            <h2>3. Regulatory Knowledge and Compliance</h2>
+            <p>London has strict building regulations and safety standards. Your structural engineer should be well-versed in:</p>
+            <ul className={styles.list}>
+              <li>UK Building Regulations</li>
+              <li>Local planning permissions</li>
+              <li>Health and safety laws</li>
+              <li>Building control approvals</li>
+            </ul>
+            <p>
+              Failure to comply with these regulations can lead to legal issues, project delays, and costly penalties.
             </p>
           </section>
 
-          <div className={styles.peppHighlight}>
+          <section className={styles.section}>
+            <h2>4. Reputation and Client Reviews</h2>
+            <p>Before hiring, check for:</p>
+            <ul className={styles.list}>
+              <li>Google reviews and Trustpilot ratings</li>
+              <li>Testimonials from previous clients</li>
+              <li>Case studies of completed projects</li>
+              <li>Recommendations from architects and builders</li>
+            </ul>
+            <p>
+              A highly rated structural engineer with a strong reputation will provide peace of mind that your project is
+              in good hands.
+            </p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>5. Clear Communication and Transparency</h2>
+            <p>Your structural engineer should:</p>
+            <ul className={styles.list}>
+              <li>Clearly explain technical details in a way that’s easy to understand.</li>
+              <li>Provide a structured plan for your project.</li>
+              <li>Be transparent about pricing, timelines, and deliverables.</li>
+              <li>Offer regular updates throughout the project lifecycle.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>6. Cost and Budget Considerations</h2>
+            <p>
+              Structural engineering fees vary based on project size, complexity, and required services. Get multiple
+              quotes and ensure the estimate includes:
+            </p>
+            <ul className={styles.list}>
+              <li>Structural calculations and reports</li>
+              <li>Site inspections and assessments</li>
+              <li>Permit and regulatory compliance fees</li>
+              <li>Additional consultation services if needed</li>
+            </ul>
+            <p>
+              Avoid choosing a structural engineer based on price alone—expertise and reliability are far more important
+              factors.
+            </p>
+          </section>
+
+          <section className={styles.section}>
             <h2>Why Choose PEPP for Structural Engineering in London?</h2>
-            <div className={styles.peppBenefits}>
-              <div className={styles.peppBenefit}>
-                <h3>Chartered Engineers</h3>
-                <p>IStructE and ICE accredited professionals</p>
-              </div>
-              <div className={styles.peppBenefit}>
-                <h3>Comprehensive Expertise</h3>
-                <p>Residential, commercial, and specialist projects</p>
-              </div>
-              <div className={styles.peppBenefit}>
-                <h3>Regulatory Assurance</h3>
-                <p>Full compliance with London building regulations</p>
-              </div>
-              <div className={styles.peppBenefit}>
-                <h3>Transparent Pricing</h3>
-                <p>Clear quotes with no hidden costs</p>
-              </div>
-            </div>
-          </div>
+            <p>
+              At Pearl Engineers Planners and Project Managers (PEPP), we go beyond standard structural engineering
+              services. Our expertise ensures that every project meets UK Building Regulations, industry best practices,
+              and sustainability goals.
+            </p>
+            <p>
+              PEPP employs chartered structural engineers accredited by IStructE, ICE, CIOB, and CABE, ensuring services
+              from professionals with industry-recognized credentials.
+            </p>
+            <p>
+              Our experience spans residential extensions, commercial developments, and complex infrastructure projects.
+              We specialize in foundation engineering, load-bearing assessments, and structural reinforcements,
+              guaranteeing safe structural solutions tailored to your project.
+            </p>
+            <p>
+              We streamline compliance by leveraging Building Information Modeling (BIM), ensuring full regulatory
+              adherence while avoiding costly delays. Our transparent communication provides clear project timelines,
+              structured engineering plans, and regular progress updates.
+            </p>
+          </section>
 
           <section className={styles.ctaSection}>
-            <h2>Ready to Hire a Structural Engineer?</h2>
-            <p>Looking for a qualified and experienced  <Link href="/structural_enigneering_services" className={styles.link}>structural engineer in London</Link>? Contact PEPP today! </p>
-            <div className={styles.contactOptions}>
-              <a href="tel:+447460140474" className={styles.phoneLink}>Call +44 7460140474</a>
-              <a href="mailto:info@pearlepp.co.uk" className={styles.emailLink}>Email info@pearlepp.co.uk</a>
-              <a href="https://pearlepp.co.uk/" className={styles.websiteButton}>Visit Our Website</a>
-            </div>
+            <h2>Contact Us Today!</h2>
+            <p>
+              Looking for a qualified and experienced <Link href="/structure-engineers">structural engineer in London</Link>? Contact PEPP today! Call{' '}
+              <a href="tel:+447460140474" className={styles.link}>+44 7460140474</a> or email{' '}
+              <a href="mailto:info@pearlepp.co.uk" className={styles.link}>info@pearlepp.co.uk</a>. Visit{' '}
+              <a href="https://pearlepp.co.uk/" className={styles.link}>PearlEPP.co.uk</a> for professional guidance.
+            </p>
           </section>
 
           <section className={styles.conclusion}>
-            <h2>Making the Right Choice</h2>
+            <h2>Conclusion</h2>
             <p>
-           Hiring the right <Link href="https://www.google.com/search?sca_esv=3cbb991dc4cf362e&sxsrf=AHTn8zqYVTDAvYgLHNbI45-A8estxxz9eg:1741802763717&kgmid=/g/11y4c5th_1&q=PEARL+ENGINEERS+PLANNERS+AND+PROJECT+MANAGERS&shndl=30&shem=lcuae,uaasie,xcxes&source=sh/x/loc/uni/m1/1&kgs=28c06422f341eb9e" className={styles.link1}>structural engineer in London</Link> requires careful evaluation of their qualifications, 
-              experience, regulatory knowledge, and reputation. By considering these key factors, you can 
-              ensure your project meets the highest standards of safety and compliance. PEPP combines all 
-              these qualities with transparent communication and competitive pricing, making us the ideal 
-              partner for your structural engineering needs in London.
+              Hiring the right <Link href="https://g.co/kgs/wJmR8pW">structural engineer in London</Link> requires careful consideration of qualifications, experience,
+              regulatory knowledge, and reputation. By ensuring your engineer meets industry standards and has a proven
+              track record, you can safeguard the success of your project. Trust PEPP for expert structural engineering
+              services that guarantee safety, compliance, and long-term structural integrity.
             </p>
           </section>
-        </main>
-      </div>
-    </>
+        </article>
+      </main>
+    </div>
   );
 };
 
-export default HiringGuide;
+export default KeyFactorsStructuralEngineerLondon;
+
+
+
