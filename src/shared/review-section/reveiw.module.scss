@@ -1,0 +1,104 @@
+
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.reviewRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.reviewCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.companyInfo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.companyLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.companyDetails h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.review {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.reviewer {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.timeAgo {
+  color: #888;
+  font-size: 12px;
+}
+
+.reviewButton {
+ 
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.reviewButton:hover {
+  background-color: #0f5bb6;
+}
+
+@media (max-width: 1024px) {
+  .reviewRow {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewRow {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+
+.heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 28x;
+}
+
