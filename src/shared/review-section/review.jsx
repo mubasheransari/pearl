@@ -3,10 +3,10 @@ import style from './reveiw.module.scss';
 
 const reviews = [
   {
-    name: "B D",
+    name: "Nick Goodson",
     rating: 5.0,
     reviewCount: 17,
-    reviewText: "No real queuing discipline on busy days and could do better with understanding who’s queuing for much longer .......",
+    reviewText: "Recently used Pearl for a kitchen lintel spec and found well priced and competent service. Very easy to contact and quick to assist. Will continue to use Mojo on all following projects. kitchen fitter of 20 years plus experience.",
     timeAgo: "now week ago",
     image: "review2.png"
   },
