@@ -439,9 +439,75 @@ const Navbar = () => {
     setCategoriesOpen(false);
     setBlogOpen(false);
   };
+  // const names = ['Download the PEPP Mobile App Streamline your construction projects, manage your teams, and access site updates on the go. ', 'Get 20% Off When You Book Through Our App!'];
+  // const [index, setIndex] = useState(0);
+  // const [animate, setAnimate] = useState(true);
 
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setAnimate(false);
+  //     setTimeout(() => {
+  //       setIndex((prev) => (prev + 1) % names.length);
+  //       setAnimate(true);
+  //     }, 500); // Allow exit animation before switching
+  //   }, 5000);
+
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  // const handleClick = () => {
+  //   window.location.href = '/'; // 🔁 Replace with your desired route
+  // };
+  const names = [
+    'Download the PEPP Mobile App Streamline your construction projects, manage your teams, and access site updates on the go.',
+    'Get 20% Off When You Book Through Our App!',
+  ];
+
+  const [index, setIndex] = useState(0);
+  const [animate, setAnimate] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimate(false);
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % names.length);
+        setAnimate(true);
+      }, 500);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleClick = () => {
+    window.location.href = 'https://apps.apple.com/us/app/pepp/id6503652490'; // 🔁 Replace with your desired route
+  };
   return (
     <div className={styles.maindiv}>
+      <div className={styles.topebar}>
+        <div className={styles.sliderContainer}>
+          <p
+            className={`${styles.name} ${animate ? styles.slideIn : styles.slideOut}`}
+            onClick={handleClick}
+            style={{ cursor: 'pointer' }}
+          >
+            {names[index]}
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* Navbar */}
       <nav className={styles.navbar} ref={dropdownRef}>
         <div className={styles.navbar__logo}>
           <Link href="/">
