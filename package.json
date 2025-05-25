@@ -26,8 +26,10 @@
     "react-hook-form": "^7.54.2",
     "react-medium-image-zoom": "^5.2.14",
     "react-pageflip": "^2.0.3",
+    "react-slick": "^0.30.3",
     "reactstrap": "^9.2.2",
     "sass": "^1.74.1",
+    "slick-carousel": "^1.8.1",
     "yup": "^1.4.0"
   },
   "devDependencies": {

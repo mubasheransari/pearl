@@ -5,7 +5,9 @@ import About from '@/shared/about/about';
 import ContactUs from '@/shared/contactus/contactUs';
 import NewContactUs from '@/shared/newContactUs/newContactUs';
 import Video from '@/container/home/video';
-import ReviewCard from '@/shared/review-section/review'; // ✅ Import the Reviews component
+import ReviewCard from '@/shared/review-section/review'; 
+import Barkreview from '@/shared/barkReviews/bark';
+import CheckReview from '@/shared/checkReviews/check';
 import Head from 'next/head';
 
 export const metadata = {
@@ -26,6 +28,8 @@ const Home = () => {
         <Services />
         
  <ReviewCard/>
+ <Barkreview />
+ <CheckReview/>
 
         <Expertise />
 

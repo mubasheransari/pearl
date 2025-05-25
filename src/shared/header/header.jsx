@@ -479,7 +479,7 @@ const Navbar = () => {
   }, []);
 
   const handleClick = () => {
-    window.location.href = 'https://apps.apple.com/us/app/pepp/id6503652490'; // 🔁 Replace with your desired route
+    window.location.href = 'https://apps.apple.com/us/app/pepp/id6503652490'; 
   };
   return (
     <div className={styles.maindiv}>

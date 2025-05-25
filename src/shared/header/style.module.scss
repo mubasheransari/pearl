@@ -15,7 +15,7 @@
   
 .sliderContainer {
   position: relative;
-  height: 30px;
+  height: 35px;
   overflow: hidden;
   // @media(max-width:992px){
   //   height: 20px;
@@ -27,6 +27,7 @@
 }
 
 .name {
+  margin-top: 3px;
   font-size: 16px;
   color: rgb(255, 255, 255);
   // font-weight: bold;
@@ -80,22 +81,17 @@
 
   .navbar {
     position: fixed;
-    top: 30px; // Adjust this based on the height of .topebar
+    top: 30px; 
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #f5f6f6;
     z-index: 1000;
-    // padding: 10px 20px;
-    // box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+ 
   }
 
-  // // Optional: content area to prevent it from hiding under the fixed bars
-  // .content {
-  //   padding-top: 110px; // Adjust based on .topebar + .navbar height
-  // }
-
+ 
 
   
   .navbar__logo img {
@@ -117,10 +113,10 @@
   .navbar__menu li {
     padding-top : 10px;
     margin-right: 10px;
-    // margin-top: 15px;
+
   }
   
-  /* Top-level link style */
+
   .navLink {
     color: #000000;
     text-decoration: none;
@@ -135,7 +131,6 @@
     }
   }
   
-  /* If a dropdown is open, we might add .activeLink for a white BG (optional) */
   .activeLink {
     background-color: #ffffff;
     color: black;
