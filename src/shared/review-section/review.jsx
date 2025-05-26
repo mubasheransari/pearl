@@ -166,13 +166,13 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 const reviews = [
   {
-    name: "B D",
+    name: "Gert Meneri",
     rating: 5.0,
-    reviewCount: 17,
+    reviewCount: 3,
     reviewText:
-      "I cannot rate Pearl Engineers highly enough. We engaged Mohammed during a single storey extension project where the previous builder well and truly messed up the initial construction leading to council pointing out multiple problems which required rework. As this was part of a Building Control application, the council were closely involved. He did an exceptional job of not only providing the structural engineers report to be submitted to the council but also made architectural drawings and changes to accommodate the existing works, to avoid unnecessary redoing of work. He engaged well with the building inspector, the new builder and also managed to contact the council’s structural engineer who was vague in the comments and feedback. I particularly appreciated him making physical visits to address the concerns of the building inspectors and ensuring he works with us to understand our requirements and project budget.You will not regret hiring their services",
+      "Pearl Engineers Planners and Project Managers, where the structural engineers for my loft conversion project. I dealt with Mojo and to this day, I haven't come across any company or individual who where more accommodating than him. I was impressed when he came over for a site visit, on the same day that I called and enquired about their services.He came on site two more times when there were issues when we took out the chimney breast and the drawings had to be revised. He made the necessary changes without charging extra.What also was amazing about him, is the fact that he answered most questions I made through messages, in a matter of minutes. I never had to wait next day for a response.I have already recommended him to other friends who required his kind of services and will definitely contract him again in the future.",
     timeAgo: "now week ago",
-    image: "review2.png",
+    image: "g.png",
   },
   {
     name: "Muhammad Adil Qureshi",
@@ -317,7 +317,7 @@ export default function ReviewSection() {
                           size="small"
                         />
                         <Typography variant="body2" sx={{ ml: 1 }}>
-                          ({review.reviewCount})
+                          {/* ({review.reviewCount}) */}
                         </Typography>
                       </Box>
                     }
@@ -339,7 +339,7 @@ export default function ReviewSection() {
                       color="text.secondary"
                       display="block"
                     >
-                      {review.timeAgo}
+                      {/* {review.timeAgo} */}
                     </Typography>
                   </CardContent>
                 </Card>

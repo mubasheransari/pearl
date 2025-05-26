@@ -17,7 +17,7 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 const reviews = [
   {
     name: "H. Karim",
-    date: "23 April 2025",
+    // date: "23 April 2025",
     text: `We took on the challenge of buying an auction property that was in a seriously bad state. Before going ahead, we got in touch with PEPP for a structural survey and a breakdown of what needed fixing. They came through with a super detailed report, covering literally everything, even the small stuff.
 
 From there, they helped us with lending options, building regs, and all the structural packs we needed. Honestly, they were there for us every step of the way, making what could’ve been a stressful process so much easier.
@@ -31,12 +31,12 @@ Massive shoutout to Mojo for always being on point with his responses, proper li
 //   },
   {
     name: "Adil",
-    date: "12 December 2024",
+    // date: "12 December 2024",
     text: `Mojo was absolutely brilliant! He provided structural drawings with incredible speed and went above and beyond to offer advice and support throughout the project. His expertise and professionalism were outstanding. Offering great value for the exceptional service he delivered. Highly recommend!`,
   },
   {
     name: "Kamal",
-    date: "12 December 2024",
+    // date: "12 December 2024",
     text: `I hired Pepp for a house conversion project and have been very impressed from their work. It's been absolute pleasure working with Mojo. He has deep understanding of concepts related to structural integrity, planning process, and how everything then integrate into building works. Mojo has given many valuable suggestions which make overall project cost efficient. Would highly recommend them and would look forward to working with them again in future.`,
   },
 //   {
@@ -48,7 +48,7 @@ Massive shoutout to Mojo for always being on point with his responses, proper li
 //   },
   {
     name: "Bea Buan",
-    date: "12 October 2024",
+    // date: "12 October 2024",
     text: `I’ve recently hired Pearl engineers to be the structural engineers for my extension and renovation project. Right from the start, Mojo was very prompt in his responses to arrange a visit on the site and very clear on his explanations of what needs to be done. I feel like he’s really listened to all my queries and considerations.
 
 Moreover, Mojo helped in finding the right contractors for the project. I have found that he was also always willing to help and quick with his responses for any queries that came about once the project had started.
@@ -68,17 +68,17 @@ Overall, I would recommend Pearl engineers and would use them again if the oppor
   {
     name: "Ruth",
     // verified: true,
-    date: "5 September 2024",
+    // date: "5 September 2024",
     text: `I have used this company for a kitchen wall to be removed. Mohammed came and he has done a great job providing all the details needed, drawings and instructions for the builder to understand, but most of all he had completed all the drawings within two days to accommodate the urgency of the work. Thank you Mohammed.`,
   },
   {
     name: "Chhavi",
-    date: "29 May 2024",
+    // date: "29 May 2024",
     text: `I had Muhammad visit and provide structural designs and calculations for my work. I found him very professional and helpful. He explained things that I was not sure on and has been very helpful throughout the process and this far. We are waiting on the council approvals to complete the works. Thank you!! I highly recommend!!`,
   },
   {
     name: "Marisa Erftemeijer",
-    date: "27 May 2024",
+    // date: "27 May 2024",
     text: `Found weekend before builders arrived when we realised previous calculations had mistakes in them—agreed to job on Friday night and by Saturday had visited and advised with final plans in by Monday! Really appreciated their quick and last-minute support! Good value for money and felt in safe hands—would use again and recommend.`,
   },
 ];
@@ -148,6 +148,7 @@ export default function BarkReview() {
                     }
                     title={review.name}
                     subheader={review.subtitle || review.date}
+                    // subheader={review.subtitle || review.date}
                   />
                   <CardContent>
                     <Typography variant="body2" sx={{ mb: 1, whiteSpace: "pre-line" }}>
