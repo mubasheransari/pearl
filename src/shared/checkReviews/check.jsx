@@ -56,7 +56,7 @@ export default function CheckReview() {
   return (
     <Box sx={{ maxWidth: 1400, mx: "auto", py: 4, px: 2 }}>
       <Typography variant="h4" align="center" gutterBottom>
-        Bark Reviews
+        Checkatrade Reviews
       </Typography>
       <Box sx={{ position: "relative", overflow: "hidden" }}>
         <Box
