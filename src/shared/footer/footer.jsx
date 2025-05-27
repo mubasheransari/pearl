@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
                 <div className={`${style.footer_bottom}`}>
                     <div className={`container d-flex`}>
-                        <div className={`${style.copy_right}`}>© Copyright {year.getFullYear()} PERAL.</div>
+                        <div className={`${style.copy_right}`}>© Copyright {year.getFullYear()} PEPP.</div>
                         <div className={`${style.social_terms}`}>
                             <span>
                                 <ul>

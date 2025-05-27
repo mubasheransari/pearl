@@ -166,6 +166,15 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 const reviews = [
   {
+    name: "ASDB LTD",
+    rating: 5.0,
+    reviewCount: 2,
+    reviewText:
+      "Very clear and well-detailed structural drawings for the side and rear extension. The plans were easy to follow, accurate, and aligned perfectly with building regulations. Highly recommend for anyone needing reliable structural design work.",
+    timeAgo: "4 month ago",
+    image: "asdb.png",
+  },
+  {
     name: "Gert Meneri",
     rating: 5.0,
     reviewCount: 3,
@@ -175,13 +184,13 @@ const reviews = [
     image: "g.png",
   },
   {
-    name: "Muhammad Adil Qureshi",
+    name: "EBEC Assistant",
     rating: 5.0,
-    reviewCount: 36,
+    reviewCount: 7,
     reviewText:
-      "100% recommended - service was amazing from start to finish. They went out of their way to accommodate us, answered all our questions, and worked with us to find cost-effective solutions. The aftercare was the best part—they were always just a phone call away. We had to make some changes to the design midway, and they handled it without any issues. They even helped us deal with building control questions and adjusted the design when we discovered unexpected changes after opening a wall. I really felt I had to write this review because their support was incredible. One thing I’d say is to follow their designs. Builders might have their own ideas, but even building control praised the plans, saying they were exactly how things should be done. Mojo, in particular, was super helpful. We worked with them on a structural design for removing a massive chimney breast. I am thankful to them for considering us in the centre of their design decision - For example, they suggested a splice in the beam, which saved us money with builders as we didn’t need a crane. If you want a team that knows what they’re doing and truly cares about their clients, Pearl Engineers Planners is the way to go!",
+      "Mojo was very helpful and precise in the explanations. He arrived perfectly on time and he was able to come for a site visit with a very small notice, because we were in a hurry. Thank you, we will surely call back if there will be other issues.",
     timeAgo: "4 month ago",
-    image: "review6.png",
+    image: "ebec.png",
   },
 
   {
@@ -195,23 +204,23 @@ const reviews = [
   },
   
   {
-    name: "Kamal Sahni",
+    name: "Richard Long",
     rating: 5.0,
-    reviewCount: 4,
+    reviewCount: 48,
     reviewText:
-      "Mojo and company is one of the most professional and ethical set of people we have worked with. I was very impressed with level of knowledge and understanding that Mojo showed on the job. We hired Mojo for a structural survey of a house we were looking to buy for investment purposes. On surface everything looked perfect and we didn't think house had any issue. But Mojo highlighted some really important structural details which were critical to the structural integrity of the house and were very expensive to fix. His insight and knowledge saved us a great deal of money for which we are very thankful. We plan to hire Mojo for any future project we'll do and would highly recommend anyone for the same.",
+      "We have worked with Mojo and his team on a few projects now and can honestly say their work and professionalism is unrivalled in the industry. Thank you again and we look forward to working with you on the next project",
     timeAgo: "2 months ago",
-    image: "review7.png",
+    image: "richard.png",
   },
 
   {
-    name: "Abdullah Shameer",
-    rating: 4.9,
-    reviewCount: 14,
+    name: "Nick Goodson",
+    rating: 5.0,
+    reviewCount: 2,
     reviewText:
-      "10/10 service, knowledge and engagement from Muhammad - at the time of writing, I’ve engaged his services for two different projects and he has not disappointed one bit, delivering excellence both times. All reports, drawings, explanations etc are super clear and complete to a very high standard. He is very thorough and clear in his approach and explanations, and always goes above and beyond to ensure the client gets the exactly what they’re after.  Very few businesses can give you enough confidence to re-engage their services however I can confidently say I will be returning for future projects!",
+      "Recently used Pearl for a kitchen  lintel spec and found well priced and competent service. Very easy to contact and quick to assist. Will continue to use  Mojo on all following projects.kitchen fitter of 20 years plus experience.",
     timeAgo: "2 week ago",
-    image: "review5.png",
+    image: "n.png",
   },
   {
     name: "Krupali Patel",
