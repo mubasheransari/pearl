@@ -285,9 +285,9 @@ export default function ReviewSection() {
 
   return (
     <Box sx={{ maxWidth: 1400, mx: "auto", py: 4, px: 2 }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      {/* <Typography variant="h4" align="center" gutterBottom>
          Google Reviews
-      </Typography>
+      </Typography> */}
 
       <Box sx={{ position: "relative", overflow: "hidden" }}>
         <Box

@@ -109,9 +109,9 @@ export default function BarkReview() {
 
   return (
     <Box sx={{ maxWidth: 1400, mx: "auto", py: 4, px: 2 }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      {/* <Typography variant="h4" align="center" gutterBottom>
         Bark Reviews
-      </Typography>
+      </Typography> */}
 
       <Box sx={{ position: "relative", overflow: "hidden" }}>
         <Box
