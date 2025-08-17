@@ -50,6 +50,15 @@ import ContractorManagement from './What-Is-Contractor-Management-A-Complete-Gui
 import PlanningBuilding from './What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners/page'
 import LocalEngineer from './Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters/page'
 import LondonStructuralEngineer from './Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project/page'
+import EngineeringConsultantVsFullTimeEngineer from './Engineering-Consultant-vs-Full-Time-Engineer-Which-One-Do-You-Need/page'
+import ArchitectEngineerBromley from './Finding-the-Best-Architect-Engineer-in-Bromley-A-Complete-Guide/page'
+import FutureOfArchitecturalEngineeringBromley from './The-Future-of-Architectural-Engineering-in-Bromley/page'
+import EngineeringConsultantsEfficiency from './How-Engineering-Consultants-Improve-Project-Efficiency-and-Cost-Savings/page'
+import ChooseRightEngineeringConsultant from './How-to-Choose-the-Right-Engineering-Consultant-for-Your-Business/page'
+import KeySkillsEngineeringConsultant from './Key-Skills-Every-Engineering-Consultant-Should-Have/page'
+import RoleOfEngineeringConsultant from './The-Role-of-an-Engineering-Consultant-in-Construction-and-Design/page'
+import ArchitecturalTrendsBromley from './Top-Architectural-Trends-Shaping-Bromleys-Skyline/page'
+import HireEngineeringConsultant from './Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project/page'
 
 const Blog = ({blog,title}) => {
   const router=useRouter()
@@ -64,6 +73,16 @@ const Blog = ({blog,title}) => {
   
   return (
     <div className={style.blogs_container}>
+      
+      {blog == "Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project" ? <HireEngineeringConsultant/> : ''}
+      {blog == "Top-Architectural-Trends-Shaping-Bromleys-Skyline" ? <ArchitecturalTrendsBromley/> : ''}
+      {blog == "The-Role-of-an-Engineering-Consultant-in-Construction-and-Design" ? <RoleOfEngineeringConsultant/> : ''}
+      {blog == "Key-Skills-Every-Engineering-Consultant-Should-Have" ? <KeySkillsEngineeringConsultant/> : ''}
+      {blog == "How-to-Choose-the-Right-Engineering-Consultant-for-Your-Business" ? <ChooseRightEngineeringConsultant/> : ''}
+      {blog == "How-Engineering-Consultants-Improve-Project-Efficiency-and-Cost-Savings" ? <EngineeringConsultantsEfficiency/> : ''}
+      {blog == "The-Future-of-Architectural-Engineering-in-Bromley" ? <FutureOfArchitecturalEngineeringBromley/> : ''}
+      {blog == "Finding-the-Best-Architect-Engineer-in-Bromley-A-Complete-Guide" ? <ArchitectEngineerBromley /> : ''}
+      {blog == "Engineering-Consultant-vs-Full-Time-Engineer-Which-One-Do-You-Need" ? <EngineeringConsultantVsFullTimeEngineer /> : ''}
       {blog == "Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project" ? <LondonStructuralEngineer /> : ''}
       {blog == "Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters" ? <LocalEngineer /> : ''}
       {blog == "What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners" ? <PlanningBuilding /> : ''}

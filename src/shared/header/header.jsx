@@ -111,6 +111,52 @@ const categoryLinks = [
 
 /* Blog: single column */
 const blogLinks = [
+     {
+    link: 'Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project',
+    text: 'Top Reasons to Hire an Engineering Consultant for Your Project',
+    icon: faClipboardList
+},
+      {
+    link: 'Top-Architectural-Trends-Shaping-Bromleys-Skyline',
+    text: 'Top Architectural Trends Shaping Bromley’s Skyline',
+    icon: faCity
+},
+      {
+    link: 'The-Role-of-an-Engineering-Consultant-in-Construction-and-Design',
+    text: 'The Role of an Engineering Consultant in Construction and Design',
+    icon: faProjectDiagram
+},
+     {
+    link: 'Key-Skills-Every-Engineering-Consultant-Should-Have',
+    text: 'Key Skills Every Engineering Consultant Should Have',
+    icon: faLightbulb
+},
+      {
+    link: 'How-to-Choose-the-Right-Engineering-Consultant-for-Your-Business',
+    text: 'How to Choose the Right Engineering Consultant for Your Business',
+    icon: faUserTie
+},
+
+      {
+    link: 'How-Engineering-Consultants-Improve-Project-Efficiency-and-Cost-Savings',
+    text: 'How Engineering Consultants Improve Project Efficiency and Cost Savings',
+    icon: faChartLine
+},
+        {
+    link: 'The-Future-of-Architectural-Engineering-in-Bromley',
+    text: 'The Future of Architectural Engineering in Bromley',
+    icon: faBuilding
+},
+      {
+    link: 'Finding-the-Best-Architect-Engineer-in-Bromley-A-Complete-Guide',
+    text: 'Finding the Best Architect Engineer in Bromley A Complete Guide',
+    icon: faSearchLocation
+    },
+    {
+    link: 'Engineering-Consultant-vs-Full-Time-Engineer-Which-One-Do-You-Need',
+    text: 'Engineering Consultant vs Full Time Engineer  Which One Do You Need',
+    icon: faBalanceScale
+},
   {
     link: 'Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project',
     text: 'Why You Need a Structural Engineer in London for Your Construction Project',
@@ -190,7 +236,7 @@ const blogLinks = [
 {
     link: 'How-Much-Does-an-Architect-Engineer-in-Bromley-Cost',
     text: 'How Much Does an Architect Engineer in Bromley Cost? | PEPP',
-    icon: faCalculatorAlt
+    icon: faRulerCombined 
 },
 {
     link: 'How-Much-Does-a-Structural-Engineer-in-London-Cost',
@@ -350,31 +396,17 @@ const blogLinks = [
 const leftCategoryLinks = categoryLinks.slice(0, 4);
 const rightCategoryLinks = categoryLinks.slice(4);
 
-// Helper function to return a blog icon based on text
+//new function icon 
 const getBlogIcon = (text) => {
   const lowerText = text.toLowerCase();
-  if (lowerText.includes('rear extension')) {
-    return faBuilding;
-  } else if (lowerText.includes('structural engineer') || lowerText.includes('structural')) {
-    return faBalanceScale;
-  } else if (lowerText.includes('planning')) {
-    return faFileContract;
-  } else if (lowerText.includes('project manager') || lowerText.includes('project management')) {
-    return faProjectDiagram;
-  } else if (lowerText.includes('commercial')) {
-    return faChartLine;
-  } else if (lowerText.includes('building compliance')) {
-    return faClipboardList;
-  } else if (lowerText.includes('independent building inspectors')) {
-    return faSearchLocation;
-  } else if (lowerText.includes('architectural')) {
-    return faCity;
-  } else if (lowerText.includes('residential')) {
-    return faBuilding;
-  } else {
-    return faPen;
-  }
+  const found = blogLinks.find(
+    (item) => item.text.toLowerCase() === lowerText
+  );
+  return found ? found.icon : faPen; 
 };
+
+
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -60,11 +60,29 @@ const titles= {
   'What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners':'What Is Planning and Building Control A Complete Guide for Homeowners',
   'Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters':'Why Hiring a Local Structural Engineer Near Me Matters',
   'Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project':'Why You Need a Structural Engineer in London for Your Construction Project',
+  'Engineering-Consultant-vs-Full-Time-Engineer-Which-One-Do-You-Need':'Engineering Consultant vs. Full-Time Engineer: Which One Do You Need',
+  'Finding-the-Best-Architect-Engineer-in-Bromley-A-Complete-Guide':'Finding the Best Architect Engineer in Bromley: A Complete Guide',
+  'The-Future-of-Architectural-Engineering-in-Bromley':'The Future of Architectural Engineering in Bromley',
+  'How-Engineering-Consultants-Improve-Project-Efficiency-and-Cost-Savings':'How Engineering Consultants Improve Project Efficiency and Cost Savings',
+  'How-to-Choose-the-Right-Engineering-Consultant-for-Your-Business':'How to Choose the Right Engineering Consultant for Your Business',
+  'Key-Skills-Every-Engineering-Consultant-Should-Have':'Key Skills Every Engineering Consultant Should Have',
+  'The-Role-of-an-Engineering-Consultant-in-Construction-and-Design':'The Role of an Engineering Consultant in Construction and Design',
+  'Top-Architectural-Trends-Shaping-Bromleys-Skyline':'Top Architectural Trends Shaping Bromley’s Skyline',
+  'Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project':'Top Reasons to Hire an Engineering Consultant for Your Project',
 
-
+  
 }
 
 const descriptions = {
+  'Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project':'Professional engineering consultant offering innovative solutions and expert advice for your projects. Contact us for reliable and efficient engineering services!',
+  'Top-Architectural-Trends-Shaping-Bromleys-Skyline':'Explore the latest architectural trends with innovative designs and sustainable solutions. Stay updated on modern styles and construction ideas. Learn more today!',
+  'The-Role-of-an-Engineering-Consultant-in-Construction-and-Design':'Reliable engineering consultant offering expert solutions and advice for your projects. Get professional engineering services tailored to your needs today!',
+  'Key-Skills-Every-Engineering-Consultant-Should-Have':'Experienced engineering consultant providing innovative solutions and expert advice for your projects. Contact us for professional engineering services!',
+  'How-to-Choose-the-Right-Engineering-Consultant-for-Your-Business':'Professional engineering consultant offering innovative solutions for your projects. Contact us today for expert advice and high-quality engineering services!',
+  'How-Engineering-Consultants-Improve-Project-Efficiency-and-Cost-Savings':'Discover how engineering consultants in Bromley help improve efficiency and save costs by identifying risks early, streamlining design, ensuring compliance, and optimising resources.',
+  'The-Future-of-Architectural-Engineering-in-Bromley':'Expert architectural engineering services for innovative and sustainable design solutions. Contact us today for professional architectural and engineering services!',
+  'Finding-the-Best-Architect-Engineer-in-Bromley-A-Complete-Guide':'Professional architect and engineering services in Bromley by Pearlepp. Offering innovative design and engineering solutions. Contact us today!',
+  'Engineering-Consultant-vs-Full-Time-Engineer-Which-One-Do-You-Need':'Expert engineering consultancy at Pearlepp. Providing innovative solutions and professional advice for all your engineering needs. Contact us today!',
   'Why-You-Need-a-Structural-Engineer-in-London-for-Your-Construction-Project':'Experienced structural engineer in London providing expert design, analysis, and compliance solutions for residential & commercial projects. Contact us today!',
   'Why-Hiring-a-Local-Structural-Engineer-Near-Me-Matters':'Find a trusted structural engineer near me for expert design, analysis, and compliance solutions for residential & commercial projects. Get a consultation today!',
   'What-Is-Planning-and-Building-Control-A-Complete-Guide-for-Homeowners':'Professional planning and building control services ensuring compliance, safety, and efficiency for residential & commercial projects. Get expert guidance today!',
