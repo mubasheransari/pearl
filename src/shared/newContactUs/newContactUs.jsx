@@ -227,7 +227,7 @@ const ContactForm = () => {
     className="text-dark text-decoration-none"
     style={{ textDecoration: "none", color: "black" }}
   >
-    Flat 02 Towerfieds, Westerham Road Bromley, BR2 6HF, London, United Kingdom
+    Flat 02 Towerfieds, Westerham Road Bromley, BR2 6HF, London, United Kingdom.
   </a>
 </div>
           </div>
