@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from './page.module.scss';
+import Link from 'next/link';
 
 const RoleOfEngineeringConsultant = () => {
   return (
@@ -25,7 +26,7 @@ const RoleOfEngineeringConsultant = () => {
           <section className={styles.introSection}>
             <p>
               In the world of residential construction and architectural design — especially across
-              Bromley and Greater London — the role of an engineering consultant is crucial yet
+              Bromley and Greater London — the role of an <Link href="structure-engineers">engineering consultant</Link> is crucial yet
               often misunderstood. Many homeowners and developers assume the architect alone handles
               everything. In reality, it’s the engineering consultant who ensures the design is
               buildable, compliant, and structurally sound.
@@ -69,8 +70,7 @@ const RoleOfEngineeringConsultant = () => {
           <section className={styles.section}>
             <h2>👷 PEPP’s Integrated Role in Your Project</h2>
             <p>
-              Unlike isolated services, PEPP offers in-house architectural planning and engineering
-              consultancy, working together from the concept phase. This integration reduces errors,
+              Unlike isolated services, PEPP offers in-house <Link href="planning_and_building_control_services"> planning_and_building_control_services</Link> consultancy, working together from the concept phase. This integration reduces errors,
               speeds up approvals, and gives clients a clearer roadmap to success.
             </p>
           </section>

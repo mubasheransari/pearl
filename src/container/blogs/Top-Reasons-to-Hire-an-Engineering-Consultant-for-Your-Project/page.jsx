@@ -87,7 +87,7 @@ const HireEngineeringConsultant = () => {
           <section className={styles.conclusion}>
             <h2>🔚 Conclusion</h2>
             <p>
-              An <Link href="/structural_enigneering_services">engineering consultant </Link>is more than a technical expert — they’re your strategic
+              An <Link href="/structure-engineers">engineering consultant </Link>is more than a technical expert — they’re your strategic
               partner for safe, cost-effective, and compliant construction. At PEPP, we combine
               civil and structural expertise with clear communication and reliable service.
             </p>
