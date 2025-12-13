@@ -50,7 +50,7 @@ const Footer = () => {
                                     </li>
                                     <li className={`${style.wrap}`}>
                                         <FontAwesomeIcon icon={faLocationDot} />
-                                        <label className='ms-2'>Flat 02 Towerfieds, Westerham Road Bromley, BR2 6HF, London, United Kingdom</label>
+                                        <label className='ms-2'>2 Briar Wood Close Bromley, BR2 8EJ, London, United Kingdom</label>
                                     </li>
                                     <li>
         <Link href="https://apps.apple.com/us/app/pepp/id6503652490">
