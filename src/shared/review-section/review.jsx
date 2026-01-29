@@ -1,62 +1,80 @@
 // "use client";
-// import React, { useState } from "react";
-// import style from "./reveiw.module.scss";
+// import React, { useMemo, useRef, useState } from "react";
+// import {
+//   Avatar,
+//   Box,
+//   Button,
+//   Card,
+//   CardContent,
+//   Chip,
+//   IconButton,
+//   Rating,
+//   Typography,
+//   useMediaQuery,
+// } from "@mui/material";
+// import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 // const reviews = [
 //   {
-//     name: "B D",
+//     name: "ASDB LTD",
 //     rating: 5.0,
-//     reviewCount: 17,
+//     reviewCount: 2,
 //     reviewText:
-//       "I cannot rate Pearl Engineers highly enough. We engaged Mohammed during a single storey extension project where the previous builder well and truly messed up the initial construction leading to council pointing out multiple problems which required rework. As this was part of a Building Control application, the council were closely involved. He did an exceptional job of not only providing the structural engineers report to be submitted to the council but also made architectural drawings and changes to accommodate the existing works, to avoid unnecessary redoing of work. He engaged well with the building inspector, the new builder and also managed to contact the council’s structural engineer who was vague in the comments and feedback. I particularly appreciated him making physical visits to address the concerns of the building inspectors and ensuring he works with us to understand our requirements and project budget.You will not regret hiring their services",
-//     timeAgo: "now week ago",
-//     image: "review2.png",
+//       "Very clear and well-detailed structural drawings for the side and rear extension. The plans were easy to follow, accurate, and aligned perfectly with building regulations. Highly recommend for anyone needing reliable structural design work.",
+//     timeAgo: "4 month ago",
+//     image: "asdb.png",
 //   },
 //   {
-//     name: "Muhammad Adil Qureshi",
+//     name: "Gert Meneri",
 //     rating: 5.0,
-//     reviewCount: 36,
+//     reviewCount: 3,
 //     reviewText:
-//       "100% recommended - service was amazing from start to finish. They went out of their way to accommodate us, answered all our questions, and worked with us to find cost-effective solutions. The aftercare was the best part—they were always just a phone call away. We had to make some changes to the design midway, and they handled it without any issues. They even helped us deal with building control questions and adjusted the design when we discovered unexpected changes after opening a wall. I really felt I had to write this review because their support was incredible. One thing I’d say is to follow their designs. Builders might have their own ideas, but even building control praised the plans, saying they were exactly how things should be done. Mojo, in particular, was super helpful. We worked with them on a structural design for removing a massive chimney breast. I am thankful to them for considering us in the centre of their design decision - For example, they suggested a splice in the beam, which saved us money with builders as we didn’t need a crane. If you want a team that knows what they’re doing and truly cares about their clients, Pearl Engineers Planners is the way to go!",
-//     timeAgo: "4 month ago",
-//     image: "review6.png",
+//       "Pearl Engineers Planners and Project Managers, where the structural engineers for my loft conversion project. I dealt with Mojo and to this day, I haven't come across any company or individual who where more accommodating than him. I was impressed when he came over for a site visit, on the same day that I called and enquired about their services. He came on site two more times when there were issues when we took out the chimney breast and the drawings had to be revised. He made the necessary changes without charging extra. What also was amazing about him, is the fact that he answered most questions I made through messages, in a matter of minutes. I never had to wait next day for a response. I have already recommended him to other friends who required his kind of services and will definitely contract him again in the future.",
+//     timeAgo: "now week ago",
+//     image: "g.png",
 //   },
-
+//   {
+//     name: "EBEC Assistant",
+//     rating: 5.0,
+//     reviewCount: 7,
+//     reviewText:
+//       "Mojo was very helpful and precise in the explanations. He arrived perfectly on time and he was able to come for a site visit with a very small notice, because we were in a hurry. Thank you, we will surely call back if there will be other issues.",
+//     timeAgo: "4 month ago",
+//     image: "ebec.png",
+//   },
 //   {
 //     name: "marcus “MW”",
 //     rating: 4.8,
 //     reviewCount: 4,
 //     reviewText:
-//       "Pearl Engineers and project managers: Highly recommended. Mojo was helpful, professional and informative from the first meeting.  He  provided very clear explanation of the nature of our building problems and excellent solutions. The report was extremely useful and prompt, he was very supportive, always available by e-mail or phone. Kind, friendly yet very professional, clear and forthright representing us. Our guardian angel! Very reliable and trustworthy, We would highly recommend his work and this company to anyone.",
+//       "Pearl Engineers and project managers: Highly recommended. Mojo was helpful, professional and informative from the first meeting. He provided very clear explanation of the nature of our building problems and excellent solutions. The report was extremely useful and prompt, he was very supportive, always available by e-mail or phone. Kind, friendly yet very professional, clear and forthright representing us. Our guardian angel! Very reliable and trustworthy, We would highly recommend his work and this company to anyone.",
 //     timeAgo: "a month ago",
 //     image: "review3.png",
 //   },
-  
 //   {
-//     name: "Kamal Sahni",
+//     name: "Richard Long",
 //     rating: 5.0,
-//     reviewCount: 4,
+//     reviewCount: 48,
 //     reviewText:
-//       "Mojo and company is one of the most professional and ethical set of people we have worked with. I was very impressed with level of knowledge and understanding that Mojo showed on the job. We hired Mojo for a structural survey of a house we were looking to buy for investment purposes. On surface everything looked perfect and we didn't think house had any issue. But Mojo highlighted some really important structural details which were critical to the structural integrity of the house and were very expensive to fix. His insight and knowledge saved us a great deal of money for which we are very thankful. We plan to hire Mojo for any future project we'll do and would highly recommend anyone for the same.",
+//       "We have worked with Mojo and his team on a few projects now and can honestly say their work and professionalism is unrivalled in the industry. Thank you again and we look forward to working with you on the next project",
 //     timeAgo: "2 months ago",
-//     image: "review7.png",
+//     image: "richard.png",
 //   },
-
 //   {
-//     name: "Abdullah Shameer",
-//     rating: 4.9,
-//     reviewCount: 14,
+//     name: "Nick Goodson",
+//     rating: 5.0,
+//     reviewCount: 2,
 //     reviewText:
-//       "10/10 service, knowledge and engagement from Muhammad - at the time of writing, I’ve engaged his services for two different projects and he has not disappointed one bit, delivering excellence both times. All reports, drawings, explanations etc are super clear and complete to a very high standard. He is very thorough and clear in his approach and explanations, and always goes above and beyond to ensure the client gets the exactly what they’re after.  Very few businesses can give you enough confidence to re-engage their services however I can confidently say I will be returning for future projects!",
+//       "Recently used Pearl for a kitchen lintel spec and found well priced and competent service. Very easy to contact and quick to assist. Will continue to use Mojo on all following projects. Kitchen fitter of 20 years plus experience.",
 //     timeAgo: "2 week ago",
-//     image: "review5.png",
+//     image: "n.png",
 //   },
 //   {
 //     name: "Krupali Patel",
 //     rating: 4.9,
 //     reviewCount: 24,
 //     reviewText:
-//       "Working with Mojo has been an absolute pleasure. From the start, he has shown genuine interest and a strong duty of care to ensure that our build progresses smoothly without delays or complications. His responsiveness, dedication, and continuous support have been invaluable in managing our complex project.Mojo is always willing to assist, providing practical and suitable options to tackle challenges effectively. His expertise and problem-solving skills make a real difference, and it's clear that he truly cares about the success of the project.I would highly recommend Mojo and his team to anyone looking for a knowledgeable, reliable, and proactive structural engineer. We will definitely continue working with him on future builds! Thank you, Mojo, for your unwavering support and professionalism!",
+//       "Working with Mojo has been an absolute pleasure. From the start, he has shown genuine interest and a strong duty of care to ensure that our build progresses smoothly without delays or complications. His responsiveness, dedication, and continuous support have been invaluable in managing our complex project. Mojo is always willing to assist, providing practical and suitable options to tackle challenges effectively. His expertise and problem-solving skills make a real difference, and it's clear that he truly cares about the success of the project. I would highly recommend Mojo and his team to anyone looking for a knowledgeable, reliable, and proactive structural engineer. We will definitely continue working with him on future builds! Thank you, Mojo, for your unwavering support and professionalism!",
 //     timeAgo: "2 years ago",
 //     image: "/unnamed.png",
 //   },
@@ -69,7 +87,6 @@
 //     timeAgo: "a month ago",
 //     image: "review4.png",
 //   },
-
 //   {
 //     name: "Gert Meneri",
 //     rating: 5.0,
@@ -81,86 +98,371 @@
 //   },
 // ];
 
-// const ReviewSection = () => {
+// export default function ReviewSection() {
+//   const isMd = useMediaQuery("(max-width:992px)");
+//   const isSm = useMediaQuery("(max-width:768px)");
+//   const slidesToShow = isSm ? 1 : isMd ? 2 : 3;
+
+//   const [index, setIndex] = useState(0);
 //   const [expandedIndex, setExpandedIndex] = useState(null);
 
-//   const toggleExpand = (index) => {
-//     setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+//   const maxIndex = Math.max(0, reviews.length - slidesToShow);
+//   const timer = useRef(null);
+
+//   const summary = useMemo(() => {
+//     const total = reviews.reduce((s, r) => s + (r.reviewCount || 0), 0);
+//     const avg =
+//       reviews.reduce((s, r) => s + (r.rating || 0), 0) /
+//       Math.max(1, reviews.length);
+//     return { avg: Math.round(avg * 10) / 10, total };
+//   }, []);
+
+//   const stopTimer = () => {
+//     if (timer.current) clearInterval(timer.current);
+//     timer.current = null;
 //   };
 
-//   const maxLength = 250;
+//   const prev = () => {
+//     stopTimer();
+//     setIndex((i) => (i <= 0 ? maxIndex : i - 1));
+//   };
+
+//   const next = () => {
+//     stopTimer();
+//     setIndex((i) => (i >= maxIndex ? 0 : i + 1));
+//   };
+
+//   const toggleExpand = (idx) => setExpandedIndex((p) => (p === idx ? null : idx));
+
+//   const maxLength = 220;
 
 //   return (
-//     <div className={style.reviewSection}>
-//       <h1 className={style.heading}>Reviews</h1>
-//       <div className={style.reviewRow}>
-//         {reviews.map((review, index) => {
-//           const isExpanded = expandedIndex === index;
-//           const text = review.reviewText;
+//     <Box
+//       sx={{
+//         position: "relative",
+//         py: { xs: 7, md: 9 },
+//         px: 2,
+//         overflow: "hidden",
+//       }}
+//     >
+//       <Box
+//         aria-hidden
+//         sx={{
+//           position: "absolute",
+//           inset: 0,
+//           pointerEvents: "none",
+//           background:
+//             "radial-gradient(900px 500px at 20% 10%, rgba(0,64,143,.14), transparent 60%), radial-gradient(900px 500px at 80% 40%, rgba(59,130,246,.10), transparent 60%), radial-gradient(900px 500px at 50% 90%, rgba(16,185,129,.09), transparent 60%)",
+//         }}
+//       />
 
-//           return (
-//             <div
-//               className={`${style.reviewCard} ${isExpanded ? style.expanded : ""}`}
-//               key={index}
+//       <Box sx={{ position: "relative", maxWidth: 1200, mx: "auto" }}>
+//         <Box
+//           sx={{
+//             display: "flex",
+//             alignItems: { xs: "flex-start", md: "center" },
+//             justifyContent: "space-between",
+//             gap: 2,
+//             mb: 3,
+//             flexDirection: { xs: "column", md: "row" },
+//           }}
+//         >
+//           <Box>
+//             <Chip
+//               label="Trusted by clients"
+//               size="small"
+//               sx={{
+//                 mb: 1,
+//                 borderRadius: 99,
+//                 fontWeight: 800,
+//                 bgcolor: "rgba(17,24,39,.06)",
+//               }}
+//             />
+//             <Typography
+//               variant="h4"
+//               sx={{
+//                 fontWeight: 900,
+//                 letterSpacing: "-0.02em",
+//                 lineHeight: 1.1,
+//               }}
 //             >
-//               <div className={style.companyInfo}>
-//                 <img
-//                   src={review.image}
-//                   alt={`${review.name} logo`}
-//                   className={style.companyLogo}
-//                 />
-//                 <div className={style.companyDetails}>
-//                   <h3>{review.name}</h3>
-//                   <div className={style.rating}>
-//                     <span>{review.rating} </span> ⭐⭐⭐
-//                     <span>Based on {review.reviewCount} reviews</span>
-//                   </div>
-//                 </div>
-//               </div>
-//               <div className={style.review}>
-//                 <p>
-//                   {isExpanded
-//                     ? text
-//                     : text.length > maxLength
-//                     ? text.slice(0, maxLength) + "..."
-//                     : text}
-//                 </p>
-//                 <div className={style.reviewFooter}>
-//                   {text.length > maxLength && (
-//                     <button
-//                       className={style.toggleButton}
-//                       onClick={() => toggleExpand(index)}
-//                     >
-//                       {isExpanded ? " Hide " : " See more "}
-//                     </button>
-//                   )}
-//                   <span className={style.timeAgo}>{review.timeAgo}</span>
-//                 </div>
-//               </div>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// };
+//               Google Reviews
+//             </Typography>
+//             <Typography sx={{ color: "text.secondary", mt: 1, maxWidth: 680 }}>
+//               Real feedback from homeowners, builders and businesses — quality, speed and clarity in every
+//               report and drawing.
+//             </Typography>
+//           </Box>
 
-// export default ReviewSection;
+//           <Box
+//             sx={{
+//               display: "flex",
+//               alignItems: "center",
+//               gap: 1.5,
+//               p: 1.5,
+//               borderRadius: 3,
+//               bgcolor: "rgba(255,255,255,.72)",
+//               border: "1px solid rgba(17,24,39,.08)",
+//               backdropFilter: "blur(10px)",
+//             }}
+//           >
+//             <Box>
+//               <Typography sx={{ fontWeight: 900, fontSize: 22, lineHeight: 1 }}>
+//                 {summary.avg}/5
+//               </Typography>
+//               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+//                 <Rating value={summary.avg} precision={0.1} readOnly size="small" />
+//                 <Typography variant="caption" sx={{ color: "text.secondary" }}>
+//                   ({summary.total}+)
+//                 </Typography>
+//               </Box>
+//             </Box>
+
+//             <Box
+//               sx={{
+//                 width: 1,
+//                 alignSelf: "stretch",
+//                 bgcolor: "rgba(17,24,39,.10)",
+//                 mx: 0.5,
+//               }}
+//             />
+
+//             <Button
+//               href="/contact"
+//               variant="contained"
+//               sx={{
+//                 textTransform: "none",
+//                 borderRadius: 999,
+//                 px: 2.2,
+//                 fontWeight: 900,
+//                 background: "linear-gradient(90deg, #00408f, #1b74e4)",
+//               }}
+//             >
+//               Get a quote
+//             </Button>
+//           </Box>
+//         </Box>
+
+//         <Box sx={{ position: "relative" }}>
+//           <Box sx={{ overflow: "hidden", borderRadius: 4 }}>
+//             <Box
+//               sx={{
+//                 display: "flex",
+//                 transition: "transform .55s cubic-bezier(.2,.8,.2,1)",
+//                 transform: `translateX(-${(100 / slidesToShow) * index}%)`,
+//               }}
+//             >
+//               {reviews.map((review, idx) => {
+//                 const isExpanded = expandedIndex === idx;
+//                 const text = review.reviewText || "";
+//                 const displayText =
+//                   isExpanded || text.length <= maxLength
+//                     ? text
+//                     : text.slice(0, maxLength).trim() + "…";
+
+//                 return (
+//                   <Box
+//                     key={idx}
+//                     sx={{
+//                       flex: `0 0 ${100 / slidesToShow}%`,
+//                       p: 1.25,
+//                       boxSizing: "border-box",
+//                     }}
+//                   >
+//                     <Card
+//                       elevation={0}
+//                       sx={{
+//                         height: "100%",
+//                         borderRadius: 4,
+//                         border: "1px solid rgba(17,24,39,.10)",
+//                         bgcolor: "rgba(255,255,255,.86)",
+//                         backdropFilter: "blur(10px)",
+//                         overflow: "hidden",
+//                         transition: "transform .25s ease, box-shadow .25s ease",
+//                         "&:hover": {
+//                           transform: "translateY(-4px)",
+//                           boxShadow: "0 20px 45px rgba(0,0,0,.10)",
+//                         },
+//                       }}
+//                     >
+//                       <CardContent sx={{ p: 2.25 }}>
+//                         <Box
+//                           sx={{
+//                             display: "flex",
+//                             alignItems: "center",
+//                             justifyContent: "space-between",
+//                             mb: 1.5,
+//                             gap: 1.5,
+//                           }}
+//                         >
+//                           <Box sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
+//                             <Avatar
+//                               src={review.image}
+//                               alt={review.name}
+//                               sx={{
+//                                 width: 44,
+//                                 height: 44,
+//                                 border: "2px solid rgba(0,64,143,.20)",
+//                                 boxShadow: "0 12px 25px rgba(0,64,143,.12)",
+//                               }}
+//                             />
+//                             <Box>
+//                               <Typography sx={{ fontWeight: 900, lineHeight: 1.1 }}>
+//                                 {review.name}
+//                               </Typography>
+//                               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+//                                 <Rating value={review.rating} precision={0.1} readOnly size="small" />
+//                                 <Typography variant="caption" sx={{ color: "text.secondary" }}>
+//                                   {/* ({review.reviewCount}) */}
+//                                 </Typography>
+//                               </Box>
+//                             </Box>
+//                           </Box>
+
+//                           <Box
+//                             aria-hidden
+//                             sx={{
+//                               fontSize: 36,
+//                               fontWeight: 900,
+//                               lineHeight: 1,
+//                               color: "rgba(17,24,39,.10)",
+//                               userSelect: "none",
+//                             }}
+//                           >
+//                             “
+//                           </Box>
+//                         </Box>
+
+//                         <Typography
+//                           sx={{
+//                             color: "rgba(17,24,39,.86)",
+//                             lineHeight: 1.7,
+//                             fontSize: 14.5,
+//                             display: "-webkit-box",
+//                             WebkitLineClamp: isExpanded ? "unset" : 5,
+//                             WebkitBoxOrient: "vertical",
+//                             overflow: "hidden",
+//                           }}
+//                         >
+//                           {displayText}
+//                         </Typography>
+
+//                         <Box
+//                           sx={{
+//                             display: "flex",
+//                             alignItems: "center",
+//                             justifyContent: "space-between",
+//                             mt: 1.75,
+//                           }}
+//                         >
+//                           {text.length > maxLength ? (
+//                             <Button
+//                               size="small"
+//                               onClick={() => toggleExpand(idx)}
+//                               sx={{
+//                                 textTransform: "none",
+//                                 fontWeight: 900,
+//                                 borderRadius: 999,
+//                                 px: 1.6,
+//                               }}
+//                             >
+//                               {isExpanded ? "Show less" : "Read more"}
+//                             </Button>
+//                           ) : (
+//                             <span />
+//                           )}
+
+//                           <Typography variant="caption" sx={{ color: "text.secondary" }}>
+//                             {/* {review.timeAgo} */}
+//                           </Typography>
+//                         </Box>
+//                       </CardContent>
+//                     </Card>
+//                   </Box>
+//                 );
+//               })}
+//             </Box>
+//           </Box>
+
+//           {maxIndex > 0 && (
+//             <>
+//               <IconButton
+//                 onClick={prev}
+//                 aria-label="Previous reviews"
+//                 sx={{
+//                   position: "absolute",
+//                   top: "50%",
+//                   left: { xs: 6, md: -10 },
+//                   transform: "translateY(-50%)",
+//                   bgcolor: "rgba(255,255,255,.92)",
+//                   border: "1px solid rgba(17,24,39,.10)",
+//                   boxShadow: "0 10px 25px rgba(0,0,0,.10)",
+//                   "&:hover": { bgcolor: "rgba(255,255,255,1)" },
+//                 }}
+//               >
+//                 <ChevronLeft />
+//               </IconButton>
+
+//               <IconButton
+//                 onClick={next}
+//                 aria-label="Next reviews"
+//                 sx={{
+//                   position: "absolute",
+//                   top: "50%",
+//                   right: { xs: 6, md: -10 },
+//                   transform: "translateY(-50%)",
+//                   bgcolor: "rgba(255,255,255,.92)",
+//                   border: "1px solid rgba(17,24,39,.10)",
+//                   boxShadow: "0 10px 25px rgba(0,0,0,.10)",
+//                   "&:hover": { bgcolor: "rgba(255,255,255,1)" },
+//                 }}
+//               >
+//                 <ChevronRight />
+//               </IconButton>
+//             </>
+//           )}
+//         </Box>
+
+//         {maxIndex > 0 && (
+//           <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mt: 2.5 }}>
+//             {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+//               <Box
+//                 key={i}
+//                 onClick={() => setIndex(i)}
+//                 role="button"
+//                 aria-label={`Go to reviews page ${i + 1}`}
+//                 tabIndex={0}
+//                 sx={{
+//                   width: i === index ? 22 : 8,
+//                   height: 8,
+//                   borderRadius: 999,
+//                   bgcolor: i === index ? "rgba(0,64,143,.65)" : "rgba(17,24,39,.18)",
+//                   transition: "all .2s ease",
+//                   cursor: "pointer",
+//                 }}
+//               />
+//             ))}
+//           </Box>
+//         )}
+//       </Box>
+//     </Box>
+//   );
+// }
+
 
 
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import {
+  Avatar,
   Box,
-  Typography,
-  IconButton,
-  useMediaQuery,
   Card,
   CardContent,
-  CardHeader,
-  Avatar,
+  Chip,
+  IconButton,
   Rating,
-  Button
+  Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
@@ -179,7 +481,7 @@ const reviews = [
     rating: 5.0,
     reviewCount: 3,
     reviewText:
-      "Pearl Engineers Planners and Project Managers, where the structural engineers for my loft conversion project. I dealt with Mojo and to this day, I haven't come across any company or individual who where more accommodating than him. I was impressed when he came over for a site visit, on the same day that I called and enquired about their services.He came on site two more times when there were issues when we took out the chimney breast and the drawings had to be revised. He made the necessary changes without charging extra.What also was amazing about him, is the fact that he answered most questions I made through messages, in a matter of minutes. I never had to wait next day for a response.I have already recommended him to other friends who required his kind of services and will definitely contract him again in the future.",
+      "Pearl Engineers Planners and Project Managers, where the structural engineers for my loft conversion project. I dealt with Mojo and to this day, I haven't come across any company or individual who where more accommodating than him. I was impressed when he came over for a site visit, on the same day that I called and enquired about their services. He came on site two more times when there were issues when we took out the chimney breast and the drawings had to be revised. He made the necessary changes without charging extra. What also was amazing about him, is the fact that he answered most questions I made through messages, in a matter of minutes. I never had to wait next day for a response. I have already recommended him to other friends who required his kind of services and will definitely contract him again in the future.",
     timeAgo: "now week ago",
     image: "g.png",
   },
@@ -192,17 +494,15 @@ const reviews = [
     timeAgo: "4 month ago",
     image: "ebec.png",
   },
-
   {
-    name: "marcus “MW”",
+    name: 'marcus “MW”',
     rating: 4.8,
     reviewCount: 4,
     reviewText:
-      "Pearl Engineers and project managers: Highly recommended. Mojo was helpful, professional and informative from the first meeting.  He  provided very clear explanation of the nature of our building problems and excellent solutions. The report was extremely useful and prompt, he was very supportive, always available by e-mail or phone. Kind, friendly yet very professional, clear and forthright representing us. Our guardian angel! Very reliable and trustworthy, We would highly recommend his work and this company to anyone.",
+      "Pearl Engineers and project managers: Highly recommended. Mojo was helpful, professional and informative from the first meeting. He provided very clear explanation of the nature of our building problems and excellent solutions. The report was extremely useful and prompt, he was very supportive, always available by e-mail or phone. Kind, friendly yet very professional, clear and forthright representing us. Our guardian angel! Very reliable and trustworthy, We would highly recommend his work and this company to anyone.",
     timeAgo: "a month ago",
     image: "review3.png",
   },
-  
   {
     name: "Richard Long",
     rating: 5.0,
@@ -212,13 +512,12 @@ const reviews = [
     timeAgo: "2 months ago",
     image: "richard.png",
   },
-
   {
     name: "Nick Goodson",
     rating: 5.0,
     reviewCount: 2,
     reviewText:
-      "Recently used Pearl for a kitchen  lintel spec and found well priced and competent service. Very easy to contact and quick to assist. Will continue to use  Mojo on all following projects.kitchen fitter of 20 years plus experience.",
+      "Recently used Pearl for a kitchen lintel spec and found well priced and competent service. Very easy to contact and quick to assist. Will continue to use Mojo on all following projects. Kitchen fitter of 20 years plus experience.",
     timeAgo: "2 week ago",
     image: "n.png",
   },
@@ -227,7 +526,7 @@ const reviews = [
     rating: 4.9,
     reviewCount: 24,
     reviewText:
-      "Working with Mojo has been an absolute pleasure. From the start, he has shown genuine interest and a strong duty of care to ensure that our build progresses smoothly without delays or complications. His responsiveness, dedication, and continuous support have been invaluable in managing our complex project.Mojo is always willing to assist, providing practical and suitable options to tackle challenges effectively. His expertise and problem-solving skills make a real difference, and it's clear that he truly cares about the success of the project.I would highly recommend Mojo and his team to anyone looking for a knowledgeable, reliable, and proactive structural engineer. We will definitely continue working with him on future builds! Thank you, Mojo, for your unwavering support and professionalism!",
+      "Working with Mojo has been an absolute pleasure. From the start, he has shown genuine interest and a strong duty of care to ensure that our build progresses smoothly without delays or complications. His responsiveness, dedication, and continuous support have been invaluable in managing our complex project. Mojo is always willing to assist, providing practical and suitable options to tackle challenges effectively. His expertise and problem-solving skills make a real difference, and it's clear that he truly cares about the success of the project. I would highly recommend Mojo and his team to anyone looking for a knowledgeable, reliable, and proactive structural engineer. We will definitely continue working with him on future builds! Thank you, Mojo, for your unwavering support and professionalism!",
     timeAgo: "2 years ago",
     image: "/unnamed.png",
   },
@@ -240,7 +539,6 @@ const reviews = [
     timeAgo: "a month ago",
     image: "review4.png",
   },
-
   {
     name: "Gert Meneri",
     rating: 5.0,
@@ -251,140 +549,303 @@ const reviews = [
     image: "review8.png",
   },
 ];
-export default function ReviewSection() {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-  const toggleExpand = (idx) => {
-    setExpandedIndex(prev => (prev === idx ? null : idx));
-  };
 
-  const show2 = useMediaQuery("(max-width:992px)");
-  const show1 = useMediaQuery("(max-width:768px)");
-  const slidesToShow = show1 ? 1 : show2 ? 2 : 3;
+export default function ReviewSection() {
+  const isMd = useMediaQuery("(max-width:992px)");
+  const isSm = useMediaQuery("(max-width:768px)");
+  const slidesToShow = isSm ? 1 : isMd ? 2 : 3;
 
   const [index, setIndex] = useState(0);
-  const maxIndex = reviews.length - slidesToShow;
-  const timer = useRef();
-  const maxLength = 200;
+  const [expandedIndex, setExpandedIndex] = useState(null);
 
-  // useEffect(() => {
-  //   // autoplay moving left-to-right only (i.e., track moves positive direction)
-  //   timer.current = setInterval(() => {
-  //     setIndex(i => (i === 0 ? maxIndex : i - 1));
-  //   }, 2000);
-  //   return () => clearInterval(timer.current);
-  // }, [maxIndex]);
+  const maxIndex = Math.max(0, reviews.length - slidesToShow);
+  const timer = useRef(null);
+
+  const summary = useMemo(() => {
+    const total = reviews.reduce((s, r) => s + (r.reviewCount || 0), 0);
+    const avg =
+      reviews.reduce((s, r) => s + (r.rating || 0), 0) /
+      Math.max(1, reviews.length);
+    return { avg: Math.round(avg * 10) / 10, total };
+  }, []);
+
+  const stopTimer = () => {
+    if (timer.current) clearInterval(timer.current);
+    timer.current = null;
+  };
 
   const prev = () => {
-    clearInterval(timer.current);
-    setIndex(i => (i === 0 ? maxIndex : i - 1));
+    stopTimer();
+    setIndex((i) => (i <= 0 ? maxIndex : i - 1));
   };
+
   const next = () => {
-    clearInterval(timer.current);
-    setIndex(i => (i >= maxIndex ? 0 : i + 1));
+    stopTimer();
+    setIndex((i) => (i >= maxIndex ? 0 : i + 1));
   };
+
+  const toggleExpand = (idx) => setExpandedIndex((p) => (p === idx ? null : idx));
+  const maxLength = 220;
 
   return (
-    <Box sx={{ maxWidth: 1400, mx: "auto", py: 4, px: 2 }}>
-      <Typography variant="h4" align="center" gutterBottom>
-         Google Reviews
-      </Typography>
+    <Box sx={{ position: "relative", py: { xs: 7, md: 9 }, px: 2, overflow: "hidden" }}>
+      <Box
+        aria-hidden
+        sx={{
+          position: "absolute",
+          inset: 0,
+          pointerEvents: "none",
+          background:
+            "radial-gradient(900px 500px at 20% 10%, rgba(0,64,143,.14), transparent 60%), radial-gradient(900px 500px at 80% 40%, rgba(59,130,246,.10), transparent 60%), radial-gradient(900px 500px at 50% 90%, rgba(16,185,129,.09), transparent 60%)",
+        }}
+      />
 
-      <Box sx={{ position: "relative", overflow: "hidden" }}>
+      <Box sx={{ position: "relative", maxWidth: 1200, mx: "auto" }}>
         <Box
           sx={{
             display: "flex",
-            transition: "transform 0.5s ease",
-            transform: `translateX(-${(100 / slidesToShow) * index}%)`,
+            alignItems: { xs: "flex-start", md: "center" },
+            justifyContent: "space-between",
+            gap: 2,
+            mb: 3,
+            flexDirection: { xs: "column", md: "row" },
           }}
         >
-          {reviews.map((review, idx) => {
-            const isExpanded = expandedIndex === idx;
-            const text = review.reviewText;
-            const displayText = isExpanded || text.length <= maxLength
-              ? text
-              : text.slice(0, maxLength) + "…";
+          <Box>
+            <Chip
+              label="Trusted by clients"
+              size="small"
+              sx={{ mb: 1, borderRadius: 99, fontWeight: 800, bgcolor: "rgba(17,24,39,.06)" }}
+            />
+            <Typography variant="h4" sx={{ fontWeight: 900, letterSpacing: "-0.02em", lineHeight: 1.1 }}>
+              Google Reviews
+            </Typography>
+            <Typography sx={{ color: "text.secondary", mt: 1, maxWidth: 680 }}>
+              Real feedback from homeowners, builders and businesses — quality, speed and clarity in every
+              report and drawing.
+            </Typography>
+          </Box>
 
-            return (
-              <Box
-                key={idx}
-                sx={{
-                  flex: `0 0 ${100 / slidesToShow}%`,
-                  boxSizing: "border-box",
-                  p: 1,
-                }}
-              >
-                <Card elevation={3}>
-                  <CardHeader
-                    avatar={<Avatar src={review.image} />}
-                    title={review.name}
-                    subheader={
-                      <Box sx={{ display: "flex", alignItems: "center" }}>
-                        <Rating
-                          value={review.rating}
-                          precision={0.1}
-                          readOnly
-                          size="small"
-                        />
-                        <Typography variant="body2" sx={{ ml: 1 }}>
-                          {/* ({review.reviewCount}) */}
-                        </Typography>
-                      </Box>
-                    }
-                  />
-                  <CardContent>
-                    <Typography variant="body2" sx={{ mb: 1 }}>
-                      {displayText}
-                    </Typography>
-                    {text.length > maxLength && (
-                      <Button
-                        size="small"
-                        onClick={() => toggleExpand(idx)}
-                      >
-                        {isExpanded ? "Hide" : "See more"}
-                      </Button>
-                    )}
-                    <Typography
-                      variant="caption"
-                      color="text.secondary"
-                      display="block"
-                    >
-                      {/* {review.timeAgo} */}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Box>
-            );
-          })}
+          {/* ✅ UPDATED: only rating summary (no grey divider, no button) */}
+          <Box
+            sx={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 1.5,
+              px: 2.2,
+              py: 1.4,
+              borderRadius: 999,
+              bgcolor: "rgba(255,255,255,.78)",
+              border: "1px solid rgba(17,24,39,.08)",
+              backdropFilter: "blur(10px)",
+              boxShadow: "0 14px 35px rgba(0,0,0,.08)",
+            }}
+          >
+            <Typography sx={{ fontWeight: 900, fontSize: 26, lineHeight: 1 }}>
+              {summary.avg}/5
+            </Typography>
+
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+              <Rating value={summary.avg} precision={0.1} readOnly size="small" />
+              <Typography variant="caption" sx={{ color: "text.secondary", fontWeight: 700 }}>
+                ({summary.total}+)
+              </Typography>
+            </Box>
+          </Box>
         </Box>
 
-        <IconButton
-          onClick={prev}
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: -16,
-            transform: "translateY(-50%)",
-            bgcolor: "background.paper",
-            boxShadow: 1,
-            "&:hover": { bgcolor: "background.paper" },
-          }}
-        >
-          <ChevronLeft />
-        </IconButton>
-        <IconButton
-          onClick={next}
-          sx={{
-            position: "absolute",
-            top: "50%",
-            right: -16,
-            transform: "translateY(-50%)",
-            bgcolor: "background.paper",
-            boxShadow: 1,
-            "&:hover": { bgcolor: "background.paper" },
-          }}
-        >
-          <ChevronRight />
-        </IconButton>
+        <Box sx={{ position: "relative" }}>
+          <Box sx={{ overflow: "hidden", borderRadius: 4 }}>
+            <Box
+              sx={{
+                display: "flex",
+                transition: "transform .55s cubic-bezier(.2,.8,.2,1)",
+                transform: `translateX(-${(100 / slidesToShow) * index}%)`,
+              }}
+            >
+              {reviews.map((review, idx) => {
+                const isExpanded = expandedIndex === idx;
+                const text = review.reviewText || "";
+                const displayText =
+                  isExpanded || text.length <= maxLength
+                    ? text
+                    : text.slice(0, maxLength).trim() + "…";
+
+                return (
+                  <Box
+                    key={idx}
+                    sx={{ flex: `0 0 ${100 / slidesToShow}%`, p: 1.25, boxSizing: "border-box" }}
+                  >
+                    <Card
+                      elevation={0}
+                      sx={{
+                        height: "100%",
+                        borderRadius: 4,
+                        border: "1px solid rgba(17,24,39,.10)",
+                        bgcolor: "rgba(255,255,255,.86)",
+                        backdropFilter: "blur(10px)",
+                        overflow: "hidden",
+                        transition: "transform .25s ease, box-shadow .25s ease",
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                          boxShadow: "0 20px 45px rgba(0,0,0,.10)",
+                        },
+                      }}
+                    >
+                      <CardContent sx={{ p: 2.25 }}>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            mb: 1.5,
+                            gap: 1.5,
+                          }}
+                        >
+                          <Box sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
+                            <Avatar
+                              src={review.image}
+                              alt={review.name}
+                              sx={{
+                                width: 44,
+                                height: 44,
+                                border: "2px solid rgba(0,64,143,.20)",
+                                boxShadow: "0 12px 25px rgba(0,64,143,.12)",
+                              }}
+                            />
+                            <Box>
+                              <Typography sx={{ fontWeight: 900, lineHeight: 1.1 }}>
+                                {review.name}
+                              </Typography>
+                              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                                <Rating value={review.rating} precision={0.1} readOnly size="small" />
+                              </Box>
+                            </Box>
+                          </Box>
+
+                          <Box
+                            aria-hidden
+                            sx={{
+                              fontSize: 36,
+                              fontWeight: 900,
+                              lineHeight: 1,
+                              color: "rgba(17,24,39,.10)",
+                              userSelect: "none",
+                            }}
+                          >
+                            “
+                          </Box>
+                        </Box>
+
+                        <Typography
+                          sx={{
+                            color: "rgba(17,24,39,.86)",
+                            lineHeight: 1.7,
+                            fontSize: 14.5,
+                            display: "-webkit-box",
+                            WebkitLineClamp: isExpanded ? "unset" : 5,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                          }}
+                        >
+                          {displayText}
+                        </Typography>
+
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            mt: 1.75,
+                          }}
+                        >
+                          {text.length > maxLength ? (
+                            <Box
+                              component="button"
+                              onClick={() => toggleExpand(idx)}
+                              style={{
+                                border: 0,
+                                background: "transparent",
+                                cursor: "pointer",
+                                fontWeight: 900,
+                                padding: "6px 10px",
+                                borderRadius: 999,
+                              }}
+                            >
+                              {isExpanded ? "Show less" : "Read more"}
+                            </Box>
+                          ) : (
+                            <span />
+                          )}
+                        </Box>
+                      </CardContent>
+                    </Card>
+                  </Box>
+                );
+              })}
+            </Box>
+          </Box>
+
+          {maxIndex > 0 && (
+            <>
+              <IconButton
+                onClick={prev}
+                aria-label="Previous reviews"
+                sx={{
+                  position: "absolute",
+                  top: "50%",
+                  left: { xs: 6, md: -10 },
+                  transform: "translateY(-50%)",
+                  bgcolor: "rgba(255,255,255,.92)",
+                  border: "1px solid rgba(17,24,39,.10)",
+                  boxShadow: "0 10px 25px rgba(0,0,0,.10)",
+                  "&:hover": { bgcolor: "rgba(255,255,255,1)" },
+                }}
+              >
+                <ChevronLeft />
+              </IconButton>
+
+              <IconButton
+                onClick={next}
+                aria-label="Next reviews"
+                sx={{
+                  position: "absolute",
+                  top: "50%",
+                  right: { xs: 6, md: -10 },
+                  transform: "translateY(-50%)",
+                  bgcolor: "rgba(255,255,255,.92)",
+                  border: "1px solid rgba(17,24,39,.10)",
+                  boxShadow: "0 10px 25px rgba(0,0,0,.10)",
+                  "&:hover": { bgcolor: "rgba(255,255,255,1)" },
+                }}
+              >
+                <ChevronRight />
+              </IconButton>
+            </>
+          )}
+        </Box>
+
+        {maxIndex > 0 && (
+          <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mt: 2.5 }}>
+            {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+              <Box
+                key={i}
+                onClick={() => setIndex(i)}
+                role="button"
+                aria-label={`Go to reviews page ${i + 1}`}
+                tabIndex={0}
+                sx={{
+                  width: i === index ? 22 : 8,
+                  height: 8,
+                  borderRadius: 999,
+                  bgcolor: i === index ? "rgba(0,64,143,.65)" : "rgba(17,24,39,.18)",
+                  transition: "all .2s ease",
+                  cursor: "pointer",
+                }}
+              />
+            ))}
+          </Box>
+        )}
       </Box>
     </Box>
   );

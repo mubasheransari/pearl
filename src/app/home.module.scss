@@ -1,0 +1,38 @@
+.home {
+  background:
+    radial-gradient(900px 500px at 20% 10%, rgba(0, 64, 143, .12), transparent 60%),
+    radial-gradient(900px 500px at 80% 40%, rgba(16, 185, 129, .10), transparent 60%),
+    radial-gradient(900px 500px at 50% 95%, rgba(124, 58, 237, .10), transparent 60%),
+    #f7f8fb;
+}
+
+.hero {
+  /* Hero section should feel full-bleed */
+  background: transparent;
+}
+
+.section {
+  padding: 28px 0;
+}
+
+.sectionAlt {
+  background: rgba(255, 255, 255, .55);
+  border-top: 1px solid rgba(17, 24, 39, .06);
+  border-bottom: 1px solid rgba(17, 24, 39, .06);
+}
+
+.spacer {
+  height: 18px;
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 18px 0;
+  }
+}

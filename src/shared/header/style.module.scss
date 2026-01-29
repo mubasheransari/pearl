@@ -1,317 +1,1232 @@
-.maindiv {
-  .topebar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    background: radial-gradient(circle, #7684c6, #28409d ); 
-    // background-color: #004aad;
-    // color: white;
+// .maindiv {
+//   .topebar {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     text-align: center;
+//     background: radial-gradient(circle, #7684c6, #28409d ); 
+//     // background-color: #004aad;
+//     // color: white;
     
-    z-index: 1001;
-    // padding: 5px 0;
-    // box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+//     z-index: 1001;
+//     // padding: 5px 0;
+//     // box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
    
   
-.sliderContainer {
-  position: relative;
-  height: 35px;
-  overflow: hidden;
-  // @media(max-width:992px){
-  //   height: 20px;
-  // }
-  @media(max-width:576px){
-    height: 40px;
-  }
-}
+// .sliderContainer {
+//   position: relative;
+//   height: 35px;
+//   overflow: hidden;
+//   // @media(max-width:992px){
+//   //   height: 20px;
+//   // }
+//   @media(max-width:576px){
+//     height: 40px;
+//   }
+// }
+// }
+
+// .name {
+//   margin-top: 3px;
+//   font-size: 16px;
+//   color: rgb(255, 255, 255);
+//   // font-weight: bold;
+//   position: absolute;
+//   width: 100%;
+//   text-align: center;
+//   @media(max-width:992px){
+//     font-size: 12px;
+//   }
+//   // @media(max-width:768px){
+//   //   font-size: 11px;
+//   // }
+//   // @media(max-width:576px){
+//   //   font-size: 9px;
+//   // }
+// }
+
+// .slideIn {
+//   animation: slideIn 0.5s forwards;
+// }
+
+// .slideOut {
+//   animation: slideOut 0.5s forwards;
+// }
+
+// @keyframes slideIn {
+//   from {
+//     transform: translateY(-100%);
+//     opacity: 0;
+//   }
+//   to {
+//     transform: translateY(0%);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slideOut {
+//   from {
+//     transform: translateY(0%);
+//     opacity: 1;
+//   }
+//   to {
+//     transform: translateY(100%);
+//     opacity: 0;
+//   }
+// }
+
+
+
+
+
+//   .navbar {
+//     position: fixed;
+//     top: 30px; 
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     background: #f5f6f6;
+//     z-index: 1000;
+ 
+//   }
+
+ 
+
+  
+//   .navbar__logo img {
+//     height: 70px;
+//     padding: 5px;
+//      @media(max-width:768px){
+//     height: 60px;
+//     margin-top: 6px;
+//   }
+//   }
+  
+//   .navbar__menu {
+//     list-style: none;
+//     display: flex;
+//     align-items: center;
+//     margin-right: 10px;
+//   }
+  
+//   .navbar__menu li {
+//     padding-top : 10px;
+//     margin-right: 10px;
+
+//   }
+  
+
+//   .navLink {
+//     color: #000000;
+//     text-decoration: none;
+//     font-size: 13px;
+//     font-weight: 600;
+//     padding: 29px 5px 28px 5px;
+//     transition: color 0.3s;
+  
+//     &:hover {
+//       background-color: #ffffff;
+//       color: #004aad;
+//     }
+//   }
+  
+//   .activeLink {
+//     background-color: #ffffff;
+//     color: black;
+//   }
+  
+//   /* ========== DROPDOWN (Shared) ========== */
+//   .dropdown {
+//     position: relative; 
+//   }
+  
+//   .dropdownMenu {
+//     display: none;
+//     position: absolute;
+//     left: 0;
+//     background: #ffffff;
+//     // border-radius: 5px;
+//     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+//     z-index: 9999;
+//     padding: 10px;
+   
+//   }
+  
+//   /* Show the dropdown if .open is toggled by React */
+//   .dropdownMenu.open {
+//     display: block;
+//   }
+  
+//   /* Common item styles in the dropdown */
+  
+  
+//   .dropdownLink {
+//     display: flex;
+//     align-items: center;
+//     gap: 5px;
+//     color: #333;
+//     text-decoration: none;
+//     font-weight: 500;
+//     padding: 10px;
+//     @media (max-width: 1200px) {
+//       font-size: 13px;
+//       font-weight: bold;
+//       padding: 0px;
+     
+//     }
+//     // font-size: 15px;
+  
+//     &:hover {
+//       color: #004aad;
+//       background-color: #fff;
+//     }
+//   }
+  
+//   /* ========== Icon Styles ========== */
+//   .icon {
+//     // font-size: 15px;
+//     color: #ffffff;
+//     background-color: rgb(22, 92, 177); ; /* Same as navbar background */
+//     padding: 4px; /* Add padding to center the icon */
+//     // border-radius: 50%; /* Optional: Make it circular */
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 20px; /* Fixed width for consistency */
+//     height: 20px; /* Fixed height for consistency */
+//     @media (max-width: 1200px) {
+//       font-size: 5px;
+//       padding: 4px;
+//       width: 20px;
+//       height: 20px;
+//     }
+//   }
+  
+//   /* ========== Different top offsets ========== */
+//   .aboutDropdownMenu {
+//     top: 60px; /* You can change to 150px, 190px, etc. */
+//     left: -555px;
+//     width:620px;
+    
+//   }
+//   .servicesDropdownMenu{
+//     top: 60px; /* You can change to 150px, 190px, etc. */
+//     left: -270px;
+//     width:350px;
+//   }
+  
+//   .categoriesDropdownMenu {
+//     top: 60px; /* You can change to 150px, 190px, etc. */
+//     left: -600px;
+//     width: 699px;}
+  
+//   .blogDropdownMenu {
+//     top: 60px; /* You can change to 150px, 190px, etc. */
+//     left: -340px;
+//     width: 400px;}
+  
+//   /* 2-column layout for categories on desktop if needed */
+//   .twoColumnDropdown {
+//     display: flex;
+//     gap: 20px;
+//     ul {
+//       list-style: none;
+//       padding: 0;
+//       li {
+//         margin-bottom: 10px;
+//       }
+//     }
+//   }
+  
+//   /* ========== Hamburger (Mobile) ========== */
+//   .navbar__hamburger {
+//     display: none;
+//     font-size: 30px;
+//     margin-right: 10px;
+//     color: #000;
+//     cursor: pointer;
+//   }
+  
+//   /* Hide desktop nav at smaller screens, show hamburger */
+//   @media (max-width: 1200px) {
+//     .navbar__menu {
+//       display: none;
+//     }
+//     .navbar__hamburger {
+//       display: block;
+//     }
+//   }
+  
+//   /* ========== MOBILE SIDEBAR ========== */
+//   .sidebar {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 300px;
+//     height: 100%;
+//     background: #fff;
+//     z-index: 9999;
+//     transform: translateX(-100%);
+//     transition: transform 0.3s ease-in-out;
+//     overflow-y: auto; 
+//   }
+  
+//   .sidebar.open {
+//     transform: translateX(0);
+//   }
+  
+//   .sidebar__close {
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     font-size: 20px;
+//   font-weight:  bolder;
+//     color: #000000;
+//     background-color: white;
+//     border: none;
+  
+//   }
+  
+//   .sidebar ul {
+//     list-style: none;
+//     padding: 10px;
+//   }
+  
+//   .sidebar ul li {
+//     padding: 15px 0;
+//   }
+  
+//   /* 2-column for categories on mobile if desired */
+//   .twoColumnDropdownMobile {
+//     // display: flex;
+//     flex-wrap: wrap;
+//     padding: 10px;
+  
+//     ul {
+//       flex: 1;
+//       list-style: none;
+//       padding: 0;
+  
+//       li {
+//         margin-bottom: 10px;
+//       }
+//     }
+//   }
+//   }
+
+// .headerWrap {
+//   position: sticky;
+//   top: 0;
+//   z-index: 1200;
+// }
+
+// .topbar {
+//   background:
+//     radial-gradient(700px 220px at 20% 0%, rgba(124,58,237,.18), transparent 55%),
+//     radial-gradient(700px 220px at 80% 60%, rgba(59,130,246,.14), transparent 60%),
+//     #0b1220;
+//   color: #fff;
+// }
+
+// .topbarInner {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 10px 14px;
+// }
+
+// .ticker {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   user-select: none;
+//   cursor: pointer;
+//   font-weight: 800;
+//   letter-spacing: .01em;
+//   font-size: 13px;
+//   opacity: .95;
+// }
+
+// .tickerDot {
+//   width: 8px;
+//   height: 8px;
+//   border-radius: 999px;
+//   background: rgba(255,255,255,.9);
+//   box-shadow: 0 10px 25px rgba(255,255,255,.18);
+// }
+
+// .tickerText {
+//   flex: 1;
+//   line-height: 1.35;
+// }
+
+// .tickerCta {
+//   opacity: .9;
+//   font-weight: 900;
+//   white-space: nowrap;
+// }
+
+// .slideIn { animation: slideIn .45s ease both; }
+// .slideOut { animation: slideOut .45s ease both; }
+
+// @keyframes slideIn {
+//   from { transform: translateY(8px); opacity: 0; }
+//   to { transform: translateY(0); opacity: 1; }
+// }
+// @keyframes slideOut {
+//   from { transform: translateY(0); opacity: 1; }
+//   to { transform: translateY(-8px); opacity: 0; }
+// }
+
+// .navbar {
+//   position: relative;
+//   background: rgba(255,255,255,.72);
+//   border-bottom: 1px solid rgba(17,24,39,.08);
+//   backdrop-filter: blur(12px);
+//   box-shadow: 0 18px 40px rgba(0,0,0,.06);
+
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 12px 14px;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 16px;
+// }
+
+// .navLeft {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .logo img {
+//   height: 44px;
+//   width: auto;
+//   display: block;
+// }
+
+// .menu {
+//   display: flex;
+//   align-items: center;
+//   gap: 14px;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .navLink {
+//   text-decoration: none;
+//   color: rgba(17,24,39,.86);
+//   font-weight: 800;
+//   font-size: 14px;
+//   padding: 10px 10px;
+//   border-radius: 999px;
+//   transition: background .2s ease, color .2s ease;
+// }
+
+// .navLink:hover {
+//   background: rgba(17,24,39,.06);
+// }
+
+// .navBtn {
+//   border: 0;
+//   background: transparent;
+//   color: rgba(17,24,39,.86);
+//   font-weight: 900;
+//   font-size: 14px;
+//   padding: 10px 10px;
+//   border-radius: 999px;
+//   cursor: pointer;
+//   transition: background .2s ease, color .2s ease;
+// }
+
+// .navBtn:hover {
+//   background: rgba(17,24,39,.06);
+// }
+
+// .activeLink {
+//   background: rgba(124,58,237,.10);
+//   color: rgba(17,24,39,.92);
+// }
+
+// .caret { margin-left: 6px; opacity: .75; }
+
+// .dropdown {
+//   position: relative;
+// }
+
+// .dropdownPanel {
+//   position: absolute;
+//   top: calc(100% + 10px);
+//   left: 0;
+//   width: 560px;
+//   max-width: 70vw;
+//   opacity: 0;
+//   transform: translateY(8px);
+//   pointer-events: none;
+//   transition: all .18s ease;
+
+//   background: rgba(255,255,255,.86);
+//   border: 1px solid rgba(17,24,39,.10);
+//   border-radius: 18px;
+//   box-shadow: 0 30px 90px rgba(0,0,0,.14);
+//   backdrop-filter: blur(12px);
+//   overflow: hidden;
+// }
+
+// .open {
+//   opacity: 1;
+//   transform: translateY(0);
+//   pointer-events: auto;
+// }
+
+// .panelHeader {
+//   padding: 14px 16px;
+//   border-bottom: 1px solid rgba(17,24,39,.08);
+//   background:
+//     radial-gradient(700px 220px at 20% 0%, rgba(124,58,237,.14), transparent 55%),
+//     radial-gradient(700px 220px at 80% 60%, rgba(59,130,246,.10), transparent 60%),
+//     rgba(255,255,255,.7);
+// }
+
+// .panelTitle {
+//   font-weight: 950;
+//   letter-spacing: -0.01em;
+//   font-size: 14px;
+//   color: rgba(17,24,39,.95);
+// }
+
+// .panelSub {
+//   font-weight: 700;
+//   font-size: 12px;
+//   color: rgba(17,24,39,.62);
+//   margin-top: 2px;
+// }
+
+// .twoCol {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 6px;
+//   padding: 10px;
+// }
+
+// .oneCol {
+//   list-style: none;
+//   margin: 0;
+//   padding: 10px;
+//   display: grid;
+//   gap: 6px;
+// }
+
+// .blogList {
+//   list-style: none;
+//   margin: 0;
+//   padding: 10px;
+//   display: grid;
+//   gap: 6px;
+//   max-height: 360px;
+//   overflow: auto;
+// }
+
+// .ddLink {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   padding: 10px 10px;
+//   border-radius: 14px;
+//   text-decoration: none;
+//   color: rgba(17,24,39,.86);
+//   font-weight: 800;
+//   font-size: 13px;
+//   transition: background .15s ease, transform .15s ease;
+// }
+
+// .ddLink:hover {
+//   background: rgba(17,24,39,.06);
+//   transform: translateY(-1px);
+// }
+
+// .ddIcon {
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 999px;
+//   display: grid;
+//   place-items: center;
+//   background: rgba(17,24,39,.06);
+//   border: 1px solid rgba(17,24,39,.08);
+// }
+
+// .ddText { line-height: 1.25; }
+
+// .ctaWrap { margin-left: 6px; }
+// .ctaBtn {
+//   text-decoration: none;
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 10px 14px;
+//   border-radius: 999px;
+//   font-weight: 950;
+//   font-size: 13.5px;
+//   color: #fff;
+//   background:
+//     linear-gradient(90deg, rgba(124,58,237,1), rgba(59,130,246,1));
+//   box-shadow: 0 16px 40px rgba(0,0,0,.12);
+// }
+
+// .ctaBtn:hover { filter: brightness(1.03); }
+
+// .hamburger {
+//   display: none;
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 12px;
+//   background: rgba(17,24,39,.04);
+//   border: 1px solid rgba(17,24,39,.08);
+//   cursor: pointer;
+//   padding: 10px;
+// }
+// .hamburger span {
+//   display: block;
+//   height: 2px;
+//   background: rgba(17,24,39,.75);
+//   border-radius: 99px;
+//   margin: 5px 0;
+// }
+
+// .backdrop {
+//   position: fixed;
+//   inset: 0;
+//   background: rgba(17,24,39,.35);
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: opacity .2s ease;
+//   z-index: 1100;
+// }
+// .show {
+//   opacity: 1;
+//   pointer-events: auto;
+// }
+
+// .sidebar {
+//   position: fixed;
+//   top: 0;
+//   right: -380px;
+//   width: 360px;
+//   max-width: 92vw;
+//   height: 100vh;
+//   z-index: 1150;
+
+//   background: rgba(255,255,255,.92);
+//   border-left: 1px solid rgba(17,24,39,.10);
+//   box-shadow: -25px 0 90px rgba(0,0,0,.18);
+//   backdrop-filter: blur(14px);
+
+//   transition: right .22s ease;
+//   display: flex;
+//   flex-direction: column;
+// }
+// .sidebar.open { right: 0; }
+
+// .sidebarTop {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 14px;
+//   border-bottom: 1px solid rgba(17,24,39,.08);
+// }
+
+// .sidebarLogo img { height: 42px; }
+
+// .closeBtn {
+//   width: 42px;
+//   height: 42px;
+//   border-radius: 12px;
+//   border: 1px solid rgba(17,24,39,.10);
+//   background: rgba(255,255,255,.9);
+//   cursor: pointer;
+//   font-weight: 900;
+// }
+
+// .sidebarContent {
+//   padding: 12px 14px 18px 14px;
+//   overflow: auto;
+//   display: grid;
+//   gap: 10px;
+// }
+
+// .sideLink {
+//   text-decoration: none;
+//   color: rgba(17,24,39,.86);
+//   font-weight: 900;
+//   padding: 12px 12px;
+//   border-radius: 14px;
+//   background: rgba(17,24,39,.03);
+//   border: 1px solid rgba(17,24,39,.06);
+// }
+
+// .sideGroup { border: 1px solid rgba(17,24,39,.08); border-radius: 16px; overflow: hidden; }
+// .sideGroupBtn {
+//   width: 100%;
+//   text-align: left;
+//   padding: 12px 12px;
+//   border: 0;
+//   background: rgba(17,24,39,.03);
+//   font-weight: 950;
+//   cursor: pointer;
+// }
+// .sideGroupPanel { padding: 10px; display: grid; gap: 6px; background: rgba(255,255,255,.85); }
+// .sideGroupPanelTwoCol { padding: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; background: rgba(255,255,255,.85); }
+
+// .sideDD {
+//   text-decoration: none;
+//   color: rgba(17,24,39,.86);
+//   font-weight: 850;
+//   font-size: 13px;
+//   padding: 10px 10px;
+//   border-radius: 14px;
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   background: rgba(17,24,39,.03);
+//   border: 1px solid rgba(17,24,39,.06);
+// }
+
+// .sideCta {
+//   text-decoration: none;
+//   padding: 12px 14px;
+//   border-radius: 14px;
+//   font-weight: 950;
+//   color: #fff;
+//   background: linear-gradient(90deg, rgba(124,58,237,1), rgba(59,130,246,1));
+//   text-align: center;
+//   box-shadow: 0 16px 40px rgba(0,0,0,.12);
+// }
+
+// @media (max-width: 1100px) {
+//   .menu { display: none; }
+//   .hamburger { display: inline-block; }
+//   .navbar { padding: 12px 14px; }
+// }
+
+
+
+/* style.module.scss (FULL UPDATED) */
+/* style.module.scss  ✅ FULL FIX (drop-in replacement)
+   - Keeps ALL top menu text in a single line
+   - Fixes wrapping like "Our Expertise" / "Instant Quote"
+   - Prevents dropdown hover gap issues
+   - Keeps z-index layering correct
+*/
+
+.headerWrap {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
-.name {
-  margin-top: 3px;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  // font-weight: bold;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  @media(max-width:992px){
-    font-size: 12px;
-  }
-  // @media(max-width:768px){
-  //   font-size: 11px;
-  // }
-  // @media(max-width:576px){
-  //   font-size: 9px;
-  // }
+/* ===================== TOP BAR ===================== */
+
+.topbar {
+  background:
+    radial-gradient(700px 220px at 20% 0%, rgba(124,58,237,.18), transparent 55%),
+    radial-gradient(700px 220px at 80% 60%, rgba(59,130,246,.14), transparent 60%),
+    #0b1220;
+  color: #fff;
 }
 
-.slideIn {
-  animation: slideIn 0.5s forwards;
+.topbarInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 14px;
 }
 
-.slideOut {
-  animation: slideOut 0.5s forwards;
+.ticker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: .01em;
+  font-size: 13px;
+  opacity: .95;
 }
+
+.tickerDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 10px 25px rgba(255,255,255,.18);
+}
+
+.tickerText {
+  flex: 1;
+  line-height: 1.35;
+}
+
+.tickerCta {
+  opacity: .9;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.slideIn { animation: slideIn .45s ease both; }
+.slideOut { animation: slideOut .45s ease both; }
 
 @keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
-
 @keyframes slideOut {
-  from {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(100%);
-    opacity: 0;
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-8px); opacity: 0; }
+}
+
+/* ===================== NAVBAR ===================== */
+
+.navbar {
+  position: relative;
+  z-index: 9999;
+
+  background: rgba(255,255,255,.72);
+  border-bottom: 1px solid rgba(17,24,39,.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.06);
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  /* ✅ IMPORTANT: stop children causing wrap by shrinking nicely */
+  min-width: 0;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+/* ✅ MENU: MUST STAY SINGLE LINE */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* ✅ FIX: never wrap to 2 lines */
+  flex-wrap: nowrap;
+  white-space: nowrap;
+
+  /* allow it to shrink without forcing wrap */
+  min-width: 0;
+}
+
+/* ✅ Each menu item should not shrink weirdly */
+.menu > li {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+/* ✅ Links and buttons: keep text in one line */
+.navLink,
+.navBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  line-height: 1;
+
+  text-decoration: none;
+  color: rgba(17,24,39,.86);
+  font-weight: 800;
+  font-size: 14px;
+
+  padding: 0 10px;
+  border-radius: 999px;
+
+  /* ✅ FIX: never break into 2 lines */
+  white-space: nowrap;
+  word-break: keep-all;
+
+  transition: background .2s ease, color .2s ease;
+}
+
+.navLink:hover,
+.navBtn:hover {
+  background: rgba(17,24,39,.06);
+}
+
+.navBtn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.activeLink {
+  background: rgba(124,58,237,.10);
+  color: rgba(17,24,39,.92);
+}
+
+.caret {
+  margin-left: 6px;
+  opacity: .75;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ===================== DROPDOWNS ===================== */
+
+.dropdown {
+  position: relative;
+
+  /* ✅ FIX: "hover bridge" so it doesn't close while moving mouse to panel */
+  padding-bottom: 10px;
+}
+
+.dropdownPanel {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 560px;
+  max-width: 70vw;
+
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: all .18s ease;
+
+  background: rgba(255,255,255,.96);
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  box-shadow: 0 30px 90px rgba(0,0,0,.14);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+
+  z-index: 10000;
+}
+
+.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.panelHeader {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(17,24,39,.08);
+  background:
+    radial-gradient(700px 220px at 20% 0%, rgba(124,58,237,.14), transparent 55%),
+    radial-gradient(700px 220px at 80% 60%, rgba(59,130,246,.10), transparent 60%),
+    rgba(255,255,255,.7);
+}
+
+.panelTitle {
+  font-weight: 950;
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  color: rgba(17,24,39,.95);
+}
+
+.panelSub {
+  font-weight: 700;
+  font-size: 12px;
+  color: rgba(17,24,39,.62);
+  margin-top: 2px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 10px;
+}
+
+.twoCol ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.oneCol {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.blogList {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+  max-height: 360px;
+  overflow: auto;
+}
+
+.ddLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: rgba(17,24,39,.86);
+  font-weight: 800;
+  font-size: 13px;
+  transition: background .15s ease, transform .15s ease;
+}
+
+.ddLink:hover {
+  background: rgba(17,24,39,.06);
+  transform: translateY(-1px);
+}
+
+.ddIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(17,24,39,.06);
+  border: 1px solid rgba(17,24,39,.08);
+}
+
+.ddText {
+  line-height: 1.25;
+}
+
+/* ===================== CTA ===================== */
+
+.ctaWrap {
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+
+  /* ✅ FIX: never wrap CTA */
+  white-space: nowrap;
+}
+
+.ctaBtn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  padding: 0 16px;
+
+  border-radius: 999px;
+  font-weight: 950;
+  font-size: 13.5px;
+  color: #fff;
+
+  background: linear-gradient(90deg, rgba(124,58,237,1), rgba(59,130,246,1));
+  box-shadow: 0 16px 40px rgba(0,0,0,.12);
+
+  /* ✅ FIX: "Instant Quote" on one line */
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.ctaBtn:hover {
+  filter: brightness(1.03);
+}
+
+/* ===================== HAMBURGER ===================== */
+
+.hamburger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(17,24,39,.04);
+  border: 1px solid rgba(17,24,39,.08);
+  cursor: pointer;
+  padding: 10px;
+  flex: 0 0 auto;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: rgba(17,24,39,.75);
+  border-radius: 99px;
+  margin: 5px 0;
+}
+
+/* ===================== MOBILE SIDEBAR ===================== */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(17,24,39,.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+  z-index: 1100;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -380px;
+  width: 360px;
+  max-width: 92vw;
+  height: 100vh;
+  z-index: 1150;
+
+  background: rgba(255,255,255,.92);
+  border-left: 1px solid rgba(17,24,39,.10);
+  box-shadow: -25px 0 90px rgba(0,0,0,.18);
+  backdrop-filter: blur(14px);
+
+  transition: right .22s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open { right: 0; }
+
+.sidebarTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  border-bottom: 1px solid rgba(17,24,39,.08);
+}
+
+.sidebarLogo img { height: 42px; }
+
+.closeBtn {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(17,24,39,.10);
+  background: rgba(255,255,255,.9);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.sidebarContent {
+  padding: 12px 14px 18px 14px;
+  overflow: auto;
+  display: grid;
+  gap: 10px;
+}
+
+.sideLink {
+  text-decoration: none;
+  color: rgba(17,24,39,.86);
+  font-weight: 900;
+  padding: 12px 12px;
+  border-radius: 14px;
+  background: rgba(17,24,39,.03);
+  border: 1px solid rgba(17,24,39,.06);
+}
+
+.sideGroup {
+  border: 1px solid rgba(17,24,39,.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.sideGroupBtn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 12px;
+  border: 0;
+  background: rgba(17,24,39,.03);
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.sideGroupPanel {
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+  background: rgba(255,255,255,.85);
+}
+
+.sideGroupPanelTwoCol {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: rgba(255,255,255,.85);
+}
+
+.sideDD {
+  text-decoration: none;
+  color: rgba(17,24,39,.86);
+  font-weight: 850;
+  font-size: 13px;
+  padding: 10px 10px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(17,24,39,.03);
+  border: 1px solid rgba(17,24,39,.06);
+}
+
+.sideCta {
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-weight: 950;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(124,58,237,1), rgba(59,130,246,1));
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(0,0,0,.12);
+}
+
+/* ✅ Desktop: keep sidebar/backdrop off so they can't block hover */
+@media (min-width: 1101px) {
+  .sidebar,
+  .backdrop {
+    display: none !important;
   }
 }
 
-
-
-
-
-  .navbar {
-    position: fixed;
-    top: 30px; 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f5f6f6;
-    z-index: 1000;
- 
-  }
-
- 
-
-  
-  .navbar__logo img {
-    height: 70px;
-    padding: 5px;
-     @media(max-width:768px){
-    height: 60px;
-    margin-top: 6px;
-  }
-  }
-  
-  .navbar__menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-  }
-  
-  .navbar__menu li {
-    padding-top : 10px;
-    margin-right: 10px;
-
-  }
-  
-
-  .navLink {
-    color: #000000;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 29px 5px 28px 5px;
-    transition: color 0.3s;
-  
-    &:hover {
-      background-color: #ffffff;
-      color: #004aad;
-    }
-  }
-  
-  .activeLink {
-    background-color: #ffffff;
-    color: black;
-  }
-  
-  /* ========== DROPDOWN (Shared) ========== */
-  .dropdown {
-    position: relative; 
-  }
-  
-  .dropdownMenu {
-    display: none;
-    position: absolute;
-    left: 0;
-    background: #ffffff;
-    // border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 9999;
-    padding: 10px;
-   
-  }
-  
-  /* Show the dropdown if .open is toggled by React */
-  .dropdownMenu.open {
-    display: block;
-  }
-  
-  /* Common item styles in the dropdown */
-  
-  
-  .dropdownLink {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 10px;
-    @media (max-width: 1200px) {
-      font-size: 13px;
-      font-weight: bold;
-      padding: 0px;
-     
-    }
-    // font-size: 15px;
-  
-    &:hover {
-      color: #004aad;
-      background-color: #fff;
-    }
-  }
-  
-  /* ========== Icon Styles ========== */
-  .icon {
-    // font-size: 15px;
-    color: #ffffff;
-    background-color: rgb(22, 92, 177); ; /* Same as navbar background */
-    padding: 4px; /* Add padding to center the icon */
-    // border-radius: 50%; /* Optional: Make it circular */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px; /* Fixed width for consistency */
-    height: 20px; /* Fixed height for consistency */
-    @media (max-width: 1200px) {
-      font-size: 5px;
-      padding: 4px;
-      width: 20px;
-      height: 20px;
-    }
-  }
-  
-  /* ========== Different top offsets ========== */
-  .aboutDropdownMenu {
-    top: 60px; /* You can change to 150px, 190px, etc. */
-    left: -555px;
-    width:620px;
-    
-  }
-  .servicesDropdownMenu{
-    top: 60px; /* You can change to 150px, 190px, etc. */
-    left: -270px;
-    width:350px;
-  }
-  
-  .categoriesDropdownMenu {
-    top: 60px; /* You can change to 150px, 190px, etc. */
-    left: -600px;
-    width: 699px;}
-  
-  .blogDropdownMenu {
-    top: 60px; /* You can change to 150px, 190px, etc. */
-    left: -340px;
-    width: 400px;}
-  
-  /* 2-column layout for categories on desktop if needed */
-  .twoColumnDropdown {
-    display: flex;
-    gap: 20px;
-    ul {
-      list-style: none;
-      padding: 0;
-      li {
-        margin-bottom: 10px;
-      }
-    }
-  }
-  
-  /* ========== Hamburger (Mobile) ========== */
-  .navbar__hamburger {
-    display: none;
-    font-size: 30px;
-    margin-right: 10px;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  /* Hide desktop nav at smaller screens, show hamburger */
-  @media (max-width: 1200px) {
-    .navbar__menu {
-      display: none;
-    }
-    .navbar__hamburger {
-      display: block;
-    }
-  }
-  
-  /* ========== MOBILE SIDEBAR ========== */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    background: #fff;
-    z-index: 9999;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    overflow-y: auto; 
-  }
-  
-  .sidebar.open {
-    transform: translateX(0);
-  }
-  
-  .sidebar__close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-  font-weight:  bolder;
-    color: #000000;
-    background-color: white;
-    border: none;
-  
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 10px;
-  }
-  
-  .sidebar ul li {
-    padding: 15px 0;
-  }
-  
-  /* 2-column for categories on mobile if desired */
-  .twoColumnDropdownMobile {
-    // display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-  
-    ul {
-      flex: 1;
-      list-style: none;
-      padding: 0;
-  
-      li {
-        margin-bottom: 10px;
-      }
-    }
-  }
-  }
-
+@media (max-width: 1100px) {
+  .menu { display: none; }
+  .hamburger { display: inline-block; }
+  .navbar { padding: 12px 14px; }
+}

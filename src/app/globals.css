@@ -88,6 +88,9 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  background: #f7f8fb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {

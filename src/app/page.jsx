@@ -8,7 +8,7 @@ import Video from '@/container/home/video';
 import ReviewCard from '@/shared/review-section/review'; 
 import Barkreview from '@/shared/barkReviews/bark';
 import CheckReview from '@/shared/checkReviews/check';
-import Head from 'next/head';
+import styles from './home.module.scss';
 
 export const metadata = {
   title: 'Pearl Engineers, Planners & Project Managers | Pearlepp',
@@ -23,18 +23,46 @@ const Home = () => {
   return (
     <>
       <BaseLayout>
-        <Video />
-        <About isMain={true} />
-        <Services />
-        
- <ReviewCard/>
- <Barkreview />
- <CheckReview/>
+        <main className={styles.home}>
+          {/* Hero */}
+          <section className={styles.hero}>
+            <Video />
+          </section>
 
-        <Expertise />
+          {/* About + Values */}
+          <section className={styles.section} id="about">
+            <About isMain={true} />
+          </section>
 
-        <ContactUs />
-        <NewContactUs />
+          {/* Services */}
+          <section className={`${styles.section} ${styles.sectionAlt}`} id="services">
+            <Services />
+          </section>
+
+          {/* Reviews */}
+          <section className={styles.section} id="reviews">
+            <ReviewCard />
+          </section>
+          <section className={`${styles.section} ${styles.sectionAlt}`}>
+            <Barkreview />
+          </section>
+          <section className={styles.section}>
+            <CheckReview />
+          </section>
+
+          {/* Expertise */}
+          <section className={`${styles.section} ${styles.sectionAlt}`} id="expertise">
+            <Expertise />
+          </section>
+
+          {/* Contact */}
+          <section className={styles.section} id="contact">
+            {/* Keep both components as-is; only layout/spacing is unified by wrappers */}
+            <ContactUs />
+            <div className={styles.spacer} />
+            <NewContactUs />
+          </section>
+        </main>
       </BaseLayout>
     </>
   );

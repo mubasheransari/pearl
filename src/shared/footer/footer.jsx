@@ -1,114 +1,222 @@
+// 'use client'
+// import React, { useState } from 'react'
+// import style from './style.module.scss'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope, faLocation, faLocationDot, faMapLocationDot, faMapMarked, faPhone, faX } from '@fortawesome/free-solid-svg-icons'
+// import { } from '@fortawesome/fontawesome-svg-core'
+// import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+// import { Lora } from "next/font/google";
+// import Privacy from '@/shared/popups/privacy'
+// import Link from 'next/link'
+
+// const lora = Lora({ subsets: ["latin"] });
+
+// const Footer = () => {
+
+//     const [year, setYear] = useState(new Date())
+//     const [privacyModal, setPrivacyModal] = useState(false)
+
+//     return (
+//         <footer className={`${style.footer}`}>
+//             <div className={`${style.container}`}>
+//                 <div className={`${style.footer_top} container`}>
+//                     <div className={`${style.left}`}>
+//                         <div className={``}>
+//                             <span ><img src="/pearl.png" /></span>
+//                         </div>
+//                     </div>
+//                     <div className={`${style.right}`}>
+//                         <div className={`d-flex justify-content-between`}>
+//                             <span>
+//                                 <label className={lora.className}>Company</label>
+//                                 <ul>
+//                                     <li><Link href={'/#home'}>Home</Link></li>
+//                                     <li><Link href={'/#about-us'}>About Us</Link></li>
+//                                     <li><Link href={'/#services'}>Our Vision</Link></li>
+//                                     <li><Link href={'/#expertise'}>Our Expertise</Link></li>
+//                                     <li><Link href={'/#contact-us'}>Contact Us</Link></li>
+//                                 </ul>
+//                             </span>
+//                             <span>
+//                                 <label className={lora.className}>Contact Us</label>
+//                                 <ul>
+//                                     <li>
+//                                         <FontAwesomeIcon icon={faEnvelope} />
+//                                         <Link href="mailto:Info@pearlepp.co.uk" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>Info@pearlepp.co.uk</label></Link>
+//                                     </li>
+//                                     <li>
+//                                         <FontAwesomeIcon icon={faPhone} />
+//                                         <Link href="https://wa.me/+447460140474" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>+44 7460 140474</label></Link>
+//                                     </li>
+//                                     <li className={`${style.wrap}`}>
+//                                         <FontAwesomeIcon icon={faLocationDot} />
+//                                         <label className='ms-2'>2 Briar Wood Close Bromley, BR2 8EJ, London, United Kingdom</label>
+//                                     </li>
+//                                     <li>
+//         <Link href="https://apps.apple.com/us/app/pepp/id6503652490">
+//             <img 
+//                 src="/apple2.png" 
+//                 alt="About Me" 
+//                 style={{cursor: 'pointer', width: '180px', height: '60px'}} 
+//             />
+//         </Link>
+//     </li>
+//                                 </ul>
+//                             </span>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div className={`${style.footer_bottom}`}>
+//                     <div className={`container d-flex`}>
+//                         <div className={`${style.copy_right}`}>© Copyright {year.getFullYear()} PEPP.</div>
+//                         <div className={`${style.social_terms}`}>
+//                             <span>
+//                                 <ul>
+//                                     <li>
+//                                     <Link href='#'>
+//                                     <FontAwesomeIcon icon={faFacebookF} />
+//                                     </Link>
+//                                     </li>
+//                                     <li>
+//                                     <Link href={'https://www.linkedin.com/company/pearl-engineers-planners-project-managers/'} target='_blank'><FontAwesomeIcon icon={faLinkedin} />
+//                                     </Link>
+//                                     </li>
+//                                     <li>
+//                                     <Link href='#'>
+//                                     <FontAwesomeIcon icon={faX} />
+//                                     </Link>
+//                                     </li>
+//                                     <li>
+//                                     <Link href='#'>
+//                                     <FontAwesomeIcon icon={faInstagram} />
+//                                     </Link>
+//                                     </li>
+//                                     <li>
+//                                     <Link href='#'>
+//                                     <FontAwesomeIcon icon={faYoutube} />
+//                                     </Link>
+//                                     </li>
+                                    
+//                                 </ul>
+//                             </span>
+//                             <span>
+//                                 <label style={{cursor:'pointer'}} onClick={() => {setPrivacyModal(!privacyModal)}}>Privacy Policy</label>
+//                             </span>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//             <Privacy isOpen={privacyModal} toggle={() => {setPrivacyModal(!privacyModal)}} />
+//         </footer>
+//     )
+// }
+
+// export default Footer
 'use client'
 import React, { useState } from 'react'
-import style from './style.module.scss'
+import styles from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLocation, faLocationDot, faMapLocationDot, faMapMarked, faPhone, faX } from '@fortawesome/free-solid-svg-icons'
-import { } from '@fortawesome/fontawesome-svg-core'
-import { faFacebookF, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { Lora } from "next/font/google";
-import Privacy from '@/shared/popups/privacy'
+import {
+  faEnvelope,
+  faPhone,
+  faLocationDot
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedin,
+  faXTwitter,
+  faYoutube
+} from '@fortawesome/free-brands-svg-icons'
+import { Lora } from 'next/font/google'
 import Link from 'next/link'
+import Privacy from '@/shared/popups/privacy'
 
-const lora = Lora({ subsets: ["latin"] });
+const lora = Lora({ subsets: ['latin'] })
 
 const Footer = () => {
+  const [privacyModal, setPrivacyModal] = useState(false)
 
-    const [year, setYear] = useState(new Date())
-    const [privacyModal, setPrivacyModal] = useState(false)
+  return (
+    <footer className={styles.footer}>
+      {/* TOP */}
+      <div className={styles.footerTop}>
+        <div className={styles.brand}>
+          <img src="/pearl.png" alt="PEPP" />
+          <p>
+            Pearl Engineers, Planners & Project Managers delivering
+            trusted structural, planning and architectural solutions
+            across the UK.
+          </p>
+        </div>
 
-    return (
-        <footer className={`${style.footer}`}>
-            <div className={`${style.container}`}>
-                <div className={`${style.footer_top} container`}>
-                    <div className={`${style.left}`}>
-                        <div className={``}>
-                            <span ><img src="/pearl.png" /></span>
-                        </div>
-                    </div>
-                    <div className={`${style.right}`}>
-                        <div className={`d-flex justify-content-between`}>
-                            <span>
-                                <label className={lora.className}>Company</label>
-                                <ul>
-                                    <li><Link href={'/#home'}>Home</Link></li>
-                                    <li><Link href={'/#about-us'}>About Us</Link></li>
-                                    <li><Link href={'/#services'}>Our Vision</Link></li>
-                                    <li><Link href={'/#expertise'}>Our Expertise</Link></li>
-                                    <li><Link href={'/#contact-us'}>Contact Us</Link></li>
-                                </ul>
-                            </span>
-                            <span>
-                                <label className={lora.className}>Contact Us</label>
-                                <ul>
-                                    <li>
-                                        <FontAwesomeIcon icon={faEnvelope} />
-                                        <Link href="mailto:Info@pearlepp.co.uk" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>Info@pearlepp.co.uk</label></Link>
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faPhone} />
-                                        <Link href="https://wa.me/+447460140474" target='_blank'><label className='ms-2' style={{cursor:'pointer'}}>+44 7460 140474</label></Link>
-                                    </li>
-                                    <li className={`${style.wrap}`}>
-                                        <FontAwesomeIcon icon={faLocationDot} />
-                                        <label className='ms-2'>2 Briar Wood Close Bromley, BR2 8EJ, London, United Kingdom</label>
-                                    </li>
-                                    <li>
-        <Link href="https://apps.apple.com/us/app/pepp/id6503652490">
-            <img 
-                src="/apple2.png" 
-                alt="About Me" 
-                style={{cursor: 'pointer', width: '180px', height: '60px'}} 
+        <div className={styles.links}>
+          <h4 className={lora.className}>Company</h4>
+          <ul>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/#about-us">About Us</Link></li>
+            <li><Link href="/#services">Services</Link></li>
+            <li><Link href="/#expertise">Expertise</Link></li>
+            <li><Link href="/#contact-us">Contact</Link></li>
+          </ul>
+        </div>
+
+        <div className={styles.contact}>
+          <h4 className={lora.className}>Contact</h4>
+          <ul>
+            <li>
+              <FontAwesomeIcon icon={faEnvelope} />
+              <a href="mailto:Info@pearlepp.co.uk">Info@pearlepp.co.uk</a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faPhone} />
+              <a href="https://wa.me/+447460140474" target="_blank">
+                +44 7460 140474
+              </a>
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faLocationDot} />
+              <span>
+                2 Briar Wood Close, Bromley, BR2 8EJ, London
+              </span>
+            </li>
+          </ul>
+
+          <Link href="https://apps.apple.com/us/app/pepp/id6503652490">
+            <img
+              src="/apple2.png"
+              alt="App Store"
+              className={styles.appBadge}
             />
-        </Link>
-    </li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className={`${style.footer_bottom}`}>
-                    <div className={`container d-flex`}>
-                        <div className={`${style.copy_right}`}>© Copyright {year.getFullYear()} PEPP.</div>
-                        <div className={`${style.social_terms}`}>
-                            <span>
-                                <ul>
-                                    <li>
-                                    <Link href='#'>
-                                    <FontAwesomeIcon icon={faFacebookF} />
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href={'https://www.linkedin.com/company/pearl-engineers-planners-project-managers/'} target='_blank'><FontAwesomeIcon icon={faLinkedin} />
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href='#'>
-                                    <FontAwesomeIcon icon={faX} />
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href='#'>
-                                    <FontAwesomeIcon icon={faInstagram} />
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href='#'>
-                                    <FontAwesomeIcon icon={faYoutube} />
-                                    </Link>
-                                    </li>
-                                    
-                                </ul>
-                            </span>
-                            <span>
-                                <label style={{cursor:'pointer'}} onClick={() => {setPrivacyModal(!privacyModal)}}>Privacy Policy</label>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Privacy isOpen={privacyModal} toggle={() => {setPrivacyModal(!privacyModal)}} />
-        </footer>
-    )
+          </Link>
+        </div>
+      </div>
+
+      {/* BOTTOM */}
+      <div className={styles.footerBottom}>
+        <span>© {new Date().getFullYear()} PEPP. All rights reserved.</span>
+
+        <div className={styles.socials}>
+          <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
+          <a href="https://www.linkedin.com/company/pearl-engineers-planners-project-managers/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
+          <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
+        </div>
+
+        <button
+          className={styles.privacy}
+          onClick={() => setPrivacyModal(true)}
+        >
+          Privacy Policy
+        </button>
+      </div>
+
+      <Privacy isOpen={privacyModal} toggle={() => setPrivacyModal(false)} />
+    </footer>
+  )
 }
 
 export default Footer
