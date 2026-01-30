@@ -139,6 +139,7 @@ const servicesLinks = [
     { value: 'architectural_services', label: 'Architectural Services' },
     { value: 'structural_engineering_services', label: 'Structural Engineering Services' },
     { value: 'planning_and_building_control_services', label: 'Planning and Building Control Services' },
+    { value: 'bim_coordination_and_asset_ready_as_built_models', label: 'BIM Coordination and Asset-Ready As-Built Models' },
     { value: 'quantity_surveying', label: 'Quantity Surveying' },
     { value: 'contracts_management', label: 'Contracts Management' },
     { value: 'snagging_services', label: 'Snagging Works' },

@@ -633,6 +633,11 @@ const servicesLinks = [
   { link: '/architectural_services', text: 'Architectural', icon: faCity },
   { link: '/structural_enigneering_services', text: 'Structural Engineering', icon: faBalanceScale },
   { link: '/planning_and_building_control_services', text: 'Planning & Building Control', icon: faFileContract },
+  {
+    link: '/bim_coordination_and_asset_ready_as_built_models',
+    text: 'BIM Coordination & Asset-Ready As-Built Models',
+    icon: faProjectDiagram,
+  },
 ];
 
 const categoryLinks = [
@@ -726,6 +731,19 @@ const Navbar = () => {
   const sidebarRef = useRef(null);
   const dropdownRef = useRef(null);
   const pathname = usePathname();
+
+  // ✅ Chrome scroll fix (safety net):
+  // If any overlay/modal leaves the body locked (overflow hidden),
+  // restore scrolling when route changes.
+  useEffect(() => {
+    try {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+      document.body.classList.remove('MuiModal-open');
+    } catch (_) {
+      // no-op
+    }
+  }, [pathname]);
 
   // Open modal when the route is /contact
   useEffect(() => {
