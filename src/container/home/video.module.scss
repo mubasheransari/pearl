@@ -57,6 +57,14 @@
         }
       }
 
+      /* When the mobile nav drawer is open, hide the mute button so it
+         doesn't float on top of the sidebar/backdrop. */
+      :global(body.navDrawerOpen) & {
+        .mute_button {
+          display: none !important;
+        }
+      }
+
       
 
     //   @media only screen and (max-width: 768px) {
@@ -106,5 +114,3 @@
     }
   }
   
-
-:global(body.nav-open) .mute_button { display: none !important; }

@@ -8,6 +8,18 @@ const lora = Lora({ subsets: ["latin"] });
 const Video = () => {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  // Hide mute button when nav drawer is open
+  useEffect(() => {
+    const handler = (e) => {
+      const open = !!(e?.detail && e.detail.open);
+      setDrawerOpen(open);
+    };
+    window.addEventListener('navdrawer', handler);
+    return () => window.removeEventListener('navdrawer', handler);
+  }, []);
+
 
   useEffect(() => {
     if (videoRef.current) {
@@ -42,6 +54,7 @@ const Video = () => {
           <source src='/pepp-video.mp4' type="video/mp4" />
         </video>
 
+        {!drawerOpen && (
         <button
           className={style.mute_button}
           onClick={toggleMute}
@@ -49,6 +62,7 @@ const Video = () => {
         >
           {muted ? '🔇 Muted' : '🔊 Unmuted'}
         </button>
+        )}
 
         <div className={`${style.video_label} ${lora.className}`}>
           PEARL ENGINEERS, PLANNERS & PROJECT MANAGERS

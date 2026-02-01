@@ -83,14 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  /* ✅ Chrome scroll fix: keep vertical scrolling enabled */
-  overscroll-behavior-y: auto;
-  overflow-y: auto;
-}
-
-/* Allow MUI to intentionally lock scrolling when a dialog is open */
-body.MuiModal-open {
-  overflow: hidden;
+  overscroll-behavior-y: none;
 }
 
 body {

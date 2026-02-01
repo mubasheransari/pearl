@@ -4,12 +4,13 @@
   z-index: 9999;
 }
 
+/* Drawer scroll locking is handled in header.jsx (body overflow) */
 /* ===================== TOP BAR ===================== */
 
 .topbar {
   background:
-    radial-gradient(700px 220px at 20% 0%, rgba(124,58,237,.18), transparent 55%),
-    radial-gradient(700px 220px at 80% 60%, rgba(59,130,246,.14), transparent 60%),
+    radial-gradient(700px 220px at 20% 0%, rgba(124, 58, 237, 0.18), transparent 55%),
+    radial-gradient(700px 220px at 80% 60%, rgba(59, 130, 246, 0.14), transparent 60%),
     #0b1220;
   color: #fff;
 }
@@ -27,17 +28,17 @@
   user-select: none;
   cursor: pointer;
   font-weight: 800;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   font-size: 13px;
-  opacity: .95;
+  opacity: 0.95;
 }
 
 .tickerDot {
   width: 8px;
   height: 8px;
   border-radius: 999px;
-  background: rgba(255,255,255,.9);
-  box-shadow: 0 10px 25px rgba(255,255,255,.18);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.18);
 }
 
 .tickerText {
@@ -46,21 +47,39 @@
 }
 
 .tickerCta {
-  opacity: .9;
+  opacity: 0.9;
   font-weight: 900;
   white-space: nowrap;
 }
 
-.slideIn { animation: slideIn .45s ease both; }
-.slideOut { animation: slideOut .45s ease both; }
+.slideIn {
+  animation: slideIn 0.45s ease both;
+}
+
+.slideOut {
+  animation: slideOut 0.45s ease both;
+}
 
 @keyframes slideIn {
-  from { transform: translateY(8px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
+
 @keyframes slideOut {
-  from { transform: translateY(0); opacity: 1; }
-  to { transform: translateY(-8px); opacity: 0; }
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
 }
 
 /* ===================== NAVBAR ===================== */
@@ -69,10 +88,10 @@
   position: relative;
   z-index: 1200;
 
-  background: rgba(255,255,255,.72);
-  border-bottom: 1px solid rgba(17,24,39,.08);
+  background: rgba(255, 255, 255, 0.78);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
   backdrop-filter: blur(12px);
-  box-shadow: 0 18px 40px rgba(0,0,0,.06);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
 
   max-width: 1200px;
   margin: 0 auto;
@@ -104,7 +123,7 @@
   display: block;
 }
 
-/* MENU */
+/* Desktop menu */
 .menu {
   display: flex;
   align-items: center;
@@ -133,41 +152,36 @@
 
   height: 40px;
   line-height: 1;
-
   text-decoration: none;
-  color: rgba(17,24,39,.86);
-  font-weight: 800;
+  color: rgba(17, 24, 39, 0.86);
+  font-weight: 900;
   font-size: 14px;
-
   padding: 0 10px;
   border-radius: 999px;
-
   white-space: nowrap;
   word-break: keep-all;
-
-  transition: background .2s ease, color .2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .navLink:hover,
 .navBtn:hover {
-  background: rgba(17,24,39,.06);
+  background: rgba(17, 24, 39, 0.06);
 }
 
 .navBtn {
   border: 0;
   background: transparent;
   cursor: pointer;
-  font-weight: 900;
 }
 
 .activeLink {
-  background: rgba(124,58,237,.10);
-  color: rgba(17,24,39,.92);
+  background: rgba(124, 58, 237, 0.1);
+  color: rgba(17, 24, 39, 0.95);
 }
 
 .caret {
   margin-left: 6px;
-  opacity: .75;
+  opacity: 0.75;
   display: inline-flex;
   align-items: center;
 }
@@ -189,15 +203,14 @@
   opacity: 0;
   transform: translateY(8px);
   pointer-events: none;
-  transition: all .18s ease;
+  transition: all 0.18s ease;
 
-  background: rgba(255,255,255,.96);
-  border: 1px solid rgba(17,24,39,.10);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(17, 24, 39, 0.1);
   border-radius: 18px;
-  box-shadow: 0 30px 90px rgba(0,0,0,.14);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.14);
   backdrop-filter: blur(12px);
   overflow: hidden;
-
   z-index: 10000;
 }
 
@@ -209,24 +222,24 @@
 
 .panelHeader {
   padding: 14px 16px;
-  border-bottom: 1px solid rgba(17,24,39,.08);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
   background:
-    radial-gradient(700px 220px at 20% 0%, rgba(124,58,237,.14), transparent 55%),
-    radial-gradient(700px 220px at 80% 60%, rgba(59,130,246,.10), transparent 60%),
-    rgba(255,255,255,.7);
+    radial-gradient(700px 220px at 20% 0%, rgba(124, 58, 237, 0.14), transparent 55%),
+    radial-gradient(700px 220px at 80% 60%, rgba(59, 130, 246, 0.1), transparent 60%),
+    rgba(255, 255, 255, 0.7);
 }
 
 .panelTitle {
   font-weight: 950;
   letter-spacing: -0.01em;
   font-size: 14px;
-  color: rgba(17,24,39,.95);
+  color: rgba(17, 24, 39, 0.95);
 }
 
 .panelSub {
   font-weight: 700;
   font-size: 12px;
-  color: rgba(17,24,39,.62);
+  color: rgba(17, 24, 39, 0.62);
   margin-top: 2px;
 }
 
@@ -237,30 +250,33 @@
   padding: 10px;
 }
 
-.twoCol ul {
+.twoCol ul,
+.oneCol,
+.blogList {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.twoCol ul {
   display: grid;
   gap: 6px;
 }
 
 .oneCol {
-  list-style: none;
-  margin: 0;
   padding: 10px;
   display: grid;
   gap: 6px;
 }
 
 .blogList {
-  list-style: none;
-  margin: 0;
   padding: 10px;
   display: grid;
   gap: 6px;
   max-height: 360px;
-  }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
 .ddLink {
   display: flex;
@@ -269,14 +285,14 @@
   padding: 10px 10px;
   border-radius: 14px;
   text-decoration: none;
-  color: rgba(17,24,39,.86);
+  color: rgba(17, 24, 39, 0.86);
   font-weight: 800;
   font-size: 13px;
-  transition: background .15s ease, transform .15s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .ddLink:hover {
-  background: rgba(17,24,39,.06);
+  background: rgba(17, 24, 39, 0.06);
   transform: translateY(-1px);
 }
 
@@ -286,8 +302,8 @@
   border-radius: 999px;
   display: grid;
   place-items: center;
-  background: rgba(17,24,39,.06);
-  border: 1px solid rgba(17,24,39,.08);
+  background: rgba(17, 24, 39, 0.06);
+  border: 1px solid rgba(17, 24, 39, 0.08);
 }
 
 .ddText {
@@ -309,20 +325,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   height: 40px;
   padding: 0 16px;
-
   border-radius: 999px;
   font-weight: 950;
   font-size: 13.5px;
   color: #fff;
-
-  background: linear-gradient(90deg, rgba(124,58,237,1), rgba(59,130,246,1));
-  box-shadow: 0 16px 40px rgba(0,0,0,.12);
-
-  white-space: nowrap;
-  flex: 0 0 auto;
+  background: linear-gradient(90deg, rgba(124, 58, 237, 1), rgba(59, 130, 246, 1));
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
 }
 
 .ctaBtn:hover {
@@ -336,8 +346,8 @@
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: rgba(17,24,39,.04);
-  border: 1px solid rgba(17,24,39,.08);
+  background: rgba(17, 24, 39, 0.04);
+  border: 1px solid rgba(17, 24, 39, 0.08);
   cursor: pointer;
   padding: 10px;
   flex: 0 0 auto;
@@ -346,21 +356,21 @@
 .hamburger span {
   display: block;
   height: 2px;
-  background: rgba(17,24,39,.75);
+  background: rgba(17, 24, 39, 0.75);
   border-radius: 99px;
   margin: 5px 0;
 }
 
-/* ===================== MOBILE SIDEBAR ===================== */
+/* ===================== MOBILE DRAWER ===================== */
 
 .backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(17,24,39,.35);
+  background: rgba(17, 24, 39, 0.35);
   opacity: 0;
   pointer-events: none;
-  transition: opacity .2s ease;
-  z-index: 1100;
+  transition: opacity 0.2s ease;
+  z-index: 1300;
 }
 
 .show {
@@ -371,132 +381,102 @@
 .sidebar {
   position: fixed;
   top: 0;
+  bottom: 0;
   right: -380px;
   width: 360px;
   max-width: 92vw;
-  height: 100vh;
-  z-index: 1150;
+  height: 100dvh;
+  z-index: 1400;
 
-  background: rgba(255,255,255,.96);
-  border-left: 1px solid rgba(17,24,39,.10);
-  box-shadow: -25px 0 90px rgba(0,0,0,.18);
+  background: rgba(255, 255, 255, 0.96);
+  border-left: 1px solid rgba(17, 24, 39, 0.1);
+  box-shadow: -25px 0 90px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(14px);
 
-  transition: right .22s ease;
+  transition: right 0.22s ease;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
+
+  touch-action: pan-y;
 }
 
-.sidebar.open { right: 0; }
+.sidebar.open {
+  right: 0;
+}
 
 .sidebarTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 14px;
-  border-bottom: 1px solid rgba(17,24,39,.08);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
 }
 
-.sidebarTitle {
-  font-weight: 950;
-  font-size: 16px;
-  color: rgba(17,24,39,.92);
+.sidebarLogo img {
+  height: 42px;
 }
-
-.sidebarLogo img { height: 42px; }
 
 .closeBtn {
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  border: 1px solid rgba(17,24,39,.10);
-  background: rgba(255,255,255,.9);
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  background: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   font-weight: 900;
-  color: rgba(17,24,39,.92);
-  font-size: 18px;
-  display: grid;
-  place-items: center;
+  color: rgba(17, 24, 39, 0.9);
 }
-
 
 .sidebarContent {
   padding: 14px;
-    display: flex;
+  display: flex;
   flex-direction: column;
   gap: 12px;
   flex: 1 1 auto;
-  min-height: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
+
+  min-height: 0; /* allow flex child to scroll in iOS */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 
-
-/* ✅ readable main links */
 .sideLink {
   text-decoration: none;
-  color: rgba(17,24,39,.92);
+  color: rgba(17, 24, 39, 0.9);
   font-weight: 900;
   padding: 14px;
   border-radius: 16px;
-  background: #F3F4F6;
-  border: 1px solid rgba(17,24,39,.08);
+  background: rgba(17, 24, 39, 0.03);
+  border: 1px solid rgba(17, 24, 39, 0.06);
 }
 
-.sideLink:hover {
-  background: #EEF2FF;
-}
-
-/* ✅ groups */
 .sideGroup {
-  border: 1px solid rgba(17,24,39,.10);
+  border: 1px solid rgba(17, 24, 39, 0.08);
   border-radius: 16px;
   overflow: hidden;
-  background: rgba(255,255,255,.92);
 }
 
-/* ✅ FIX: About/Services/Categories/Blog visible */
 .sideGroupBtn {
   width: 100%;
-  padding: 14px 14px;
-  border: 1px solid rgba(17,24,39,.08);
-  background: #F3F4F6;
-
-  font-weight: 900;
-  cursor: pointer;
-
-  color: rgba(17,24,39,.92);
-  font-size: 15px;
-  letter-spacing: .01em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: rgba(17,24,39,.92);
-}
-
-
-.sideGroupBtn:hover {
-  background: #EEF2FF;
-}
-
-.sideCaret {
-  font-weight: 900;
-  color: rgba(17,24,39,.70);
-  margin-left: 10px;
+  padding: 14px;
+  border: 0;
+  background: rgba(17, 24, 39, 0.03);
+  font-weight: 950;
+  cursor: pointer;
+  color: rgba(17, 24, 39, 0.92);
 }
 
 .sideGroupPanel {
   padding: 10px;
   display: grid;
   gap: 8px;
-  background: rgba(255,255,255,.85);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .sideGroupPanelTwoCol {
@@ -504,12 +484,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  background: rgba(255,255,255,.85);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .sideDD {
   text-decoration: none;
-  color: rgba(17,24,39,.90);
+  color: rgba(17, 24, 39, 0.9);
   font-weight: 850;
   font-size: 13px;
   padding: 10px 10px;
@@ -517,30 +497,23 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(17,24,39,.03);
-  border: 1px solid rgba(17,24,39,.06);
-}
-
-.sideDD:hover {
-  background: rgba(17,24,39,.06);
+  background: rgba(17, 24, 39, 0.03);
+  border: 1px solid rgba(17, 24, 39, 0.06);
 }
 
 .sideCta {
-  margin-top: auto;
-  position: sticky;
-  bottom: 12px;
-
   text-decoration: none;
   padding: 14px;
   border-radius: 16px;
   font-weight: 950;
   color: #fff;
-  background: linear-gradient(90deg, rgba(124,58,237,1), rgba(59,130,246,1));
+  background: linear-gradient(90deg, rgba(124, 58, 237, 1), rgba(59, 130, 246, 1));
   text-align: center;
-  box-shadow: 0 16px 40px rgba(0,0,0,.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  margin-top: 8px;
 }
 
-/* ===================== RESPONSIVE RULES ===================== */
+/* ===================== RESPONSIVE ===================== */
 
 @media (min-width: 1101px) {
   .sidebar,
@@ -550,19 +523,21 @@
 }
 
 @media (max-width: 1100px) {
-  .menu { display: none; }
-  .hamburger { display: inline-block; }
-  .navbar { padding: 12px 14px; }
-}
-
-@media (max-width: 768px) {
-  .topbar { display: none; }
-
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
   .navbar {
-    position: sticky;
-    top: 0;
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
   }
 }

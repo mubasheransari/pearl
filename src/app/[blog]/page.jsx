@@ -1,14 +1,6 @@
 import React from 'react'
 import Blog from '@/container/blogs'
 
-export const metadata = {
-  title: '',
-  description: '',
-  alternates:{
-    canonical: ""
-  }
-}
-
 const titles= {
   
   'rear-extension-ideas-from-simplicity-to-architectural-ingenuity':'Rear Extension Ideas from Simplicity to Architectural Ingenuity',
@@ -140,16 +132,26 @@ const descriptions = {
 
 }
 
-const Page = ({params}) => {
-    metadata.title = titles[params.blog]
-    metadata.description  = descriptions[params.blog]
-    metadata.alternates.canonical  = `https://pearlepp.co.uk/${params.blog}`
+// ✅ Correct way to set SEO metadata for dynamic routes in the App Router
+export async function generateMetadata({ params }) {
+  const slug = params?.blog;
+  const title = titles[slug] ?? 'Blog | PEPP';
+  const description = descriptions[slug] ?? 'PEPP blog articles and guides.';
 
-  return (
-    <div>
-      <Blog blog={params.blog} title={metadata.title} />
-    </div>
-  )
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: slug ? `https://pearlepp.co.uk/${slug}` : 'https://pearlepp.co.uk/',
+    },
+  };
 }
 
-export default Page
+const Page = ({ params }) => {
+  const slug = params?.blog;
+  const title = titles[slug] ?? 'Blog | PEPP';
+
+  return <Blog blog={slug} title={title} />;
+};
+
+export default Page;

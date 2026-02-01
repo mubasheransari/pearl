@@ -81,7 +81,11 @@ const servicesLinks = [
   { link: '/architectural_services', text: 'Architectural', icon: faCity },
   { link: '/structural_enigneering_services', text: 'Structural Engineering', icon: faBalanceScale },
   { link: '/planning_and_building_control_services', text: 'Planning & Building Control', icon: faFileContract },
-  { link: '/bim_coordination_and_asset_ready_as_built_models', text: 'BIM Coordination & Asset-Ready As-Built Models', icon: faProjectDiagram },
+  {
+    link: '/bim_coordination_and_asset_ready_as_built_models',
+    text: 'BIM Coordination & Asset-Ready As-Built Models',
+    icon: faProjectDiagram,
+  },
 ];
 
 const categoryLinks = [
@@ -96,7 +100,11 @@ const categoryLinks = [
 ];
 
 const blogLinks = [
-  { link: 'Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project', text: 'Top Reasons to Hire an Engineering Consultant for Your Project', icon: faClipboardList },
+  {
+    link: 'Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project',
+    text: 'Top Reasons to Hire an Engineering Consultant for Your Project',
+    icon: faClipboardList,
+  },
   { link: 'Top-Architectural-Trends-Shaping-Bromleys-Skyline', text: 'Top Architectural Trends Shaping Bromley’s Skyline', icon: faCity },
   { link: 'The-Role-of-an-Engineering-Consultant-in-Construction-and-Design', text: 'The Role of an Engineering Consultant in Construction and Design', icon: faProjectDiagram },
   { link: 'Key-Skills-Every-Engineering-Consultant-Should-Have', text: 'Key Skills Every Engineering Consultant Should Have', icon: faLightbulb },
@@ -154,12 +162,12 @@ const blogLinks = [
 ];
 
 const getBlogIcon = (text) => {
-  const lowerText = text.toLowerCase();
-  const found = blogLinks.find((item) => item.text.toLowerCase() === lowerText);
+  const lowerText = (text || '').toLowerCase();
+  const found = blogLinks.find((item) => (item.text || '').toLowerCase() === lowerText);
   return found ? found.icon : faPen;
 };
 
-const Navbar = () => {
+export default function Navbar() {
   const pathname = usePathname();
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -171,9 +179,8 @@ const Navbar = () => {
 
   const sidebarRef = useRef(null);
   const dropdownRef = useRef(null);
-
-  // ✅ store videos to resume (fixes iOS "Muted" overlay by pausing video when menu opens)
-  const videosToResumeRef = useRef([]);
+  const pausedVideosRef = useRef([]);
+  const scrollYRef = useRef(0);
 
   // ticker
   const names = [
@@ -190,9 +197,9 @@ const Navbar = () => {
         setAnimate(true);
       }, 200);
     }, 5000);
-
     return () => clearInterval(interval);
-  }, [names.length]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const closeAllDropdowns = () => {
     setServicesOpen(false);
@@ -212,103 +219,94 @@ const Navbar = () => {
     setOpenModal(pathname === '/contact');
   }, [pathname]);
 
-  // Lock body scroll when sidebar is open
+  // Drawer open/close effects (scroll lock + hide overlays)
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : '';
-    document.body.classList.toggle('nav-open', menuOpen);
+    if (typeof document === 'undefined') return;
+
+    const b = document.body;
+    b.classList.toggle('navDrawerOpen', menuOpen);
+
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('navdrawer', { detail: { open: menuOpen } }));
+    }
+
+    if (menuOpen) {
+      // ✅ background scroll lock (works on iOS + keeps drawer scroll)
+      scrollYRef.current = window.scrollY || 0;
+      b.style.position = 'fixed';
+      b.style.top = `-${scrollYRef.current}px`;
+      b.style.left = '0';
+      b.style.right = '0';
+      b.style.width = '100%';
+
+      // Best effort: pause all videos so iOS mute overlay doesn't sit above menu
+      const vids = Array.from(document.querySelectorAll('video'));
+      const paused = [];
+      vids.forEach((v) => {
+        try {
+          if (!v.paused && !v.ended) {
+            v.pause();
+            paused.push(v);
+          }
+        } catch (_) {
+          // ignore
+        }
+      });
+      pausedVideosRef.current = paused;
+    } else {
+      // restore scroll
+      const y = scrollYRef.current || 0;
+      b.style.position = '';
+      b.style.top = '';
+      b.style.left = '';
+      b.style.right = '';
+      b.style.width = '';
+      window.scrollTo(0, y);
+
+      // resume paused videos
+      (pausedVideosRef.current || []).forEach((v) => {
+        try {
+          v.play?.();
+        } catch (_) {
+          // ignore
+        }
+      });
+      pausedVideosRef.current = [];
+    }
 
     return () => {
-      document.body.style.overflow = '';
-      document.body.classList.remove('nav-open');
+      // ensure body isn't left locked if component unmounts
+      b.classList.remove('navDrawerOpen');
+      b.style.position = '';
+      b.style.top = '';
+      b.style.left = '';
+      b.style.right = '';
+      b.style.width = '';
     };
-  }, [menuOpen]);
-
-// ✅ iOS/Safari: pause videos when menu opens so the "Muted" overlay disappears
-  useEffect(() => {
-    if (!menuOpen) {
-      // resume only those that were playing (optional)
-      try {
-        videosToResumeRef.current.forEach((v) => {
-          if (v && typeof v.play === 'function') v.play().catch(() => {});
-        });
-      } catch (_) {}
-      videosToResumeRef.current = [];
-      return;
-    }
-
-    // menuOpen === true
-    try {
-      const vids = Array.from(document.querySelectorAll('video'));
-      const resumeList = [];
-
-      vids.forEach((v) => {
-        const wasPlaying = v && !v.paused && !v.ended && v.readyState > 2;
-        if (wasPlaying) resumeList.push(v);
-        try {
-          v.pause();
-        } catch (_) {}
-      });
-
-      videosToResumeRef.current = resumeList;
-    } catch (_) {
-      videosToResumeRef.current = [];
-    }
   }, [menuOpen]);
 
   // Close on outside click (desktop + mobile)
   useEffect(() => {
-    const handleClickOutside = (e) => {
+    const handlePointerDown = (e) => {
       const sidebar = sidebarRef.current;
       const nav = dropdownRef.current;
-
       if ((sidebar && sidebar.contains(e.target)) || (nav && nav.contains(e.target))) return;
-
       setMenuOpen(false);
       closeAllDropdowns();
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('pointerdown', handlePointerDown);
+    return () => document.removeEventListener('pointerdown', handlePointerDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleTickerClick = () => {
     window.location.href = 'https://apps.apple.com/us/app/pepp/id6503652490';
   };
 
-  // ✅ Mobile: open one accordion at a time (clean UX)
-  const toggleMobileGroup = (key) => {
-    if (key === 'about') {
-      setAboutOpen((v) => !v);
-      setServicesOpen(false);
-      setCategoriesOpen(false);
-      setBlogOpen(false);
-      return;
-    }
-    if (key === 'services') {
-      setServicesOpen((v) => !v);
-      setAboutOpen(false);
-      setCategoriesOpen(false);
-      setBlogOpen(false);
-      return;
-    }
-    if (key === 'categories') {
-      setCategoriesOpen((v) => !v);
-      setAboutOpen(false);
-      setServicesOpen(false);
-      setBlogOpen(false);
-      return;
-    }
-    if (key === 'blog') {
-      setBlogOpen((v) => !v);
-      setAboutOpen(false);
-      setServicesOpen(false);
-      setCategoriesOpen(false);
-    }
-  };
-
   return (
     <header className={styles.headerWrap}>
-      {/* Top announcement bar */}
+      {/* Top announcement bar (hidden on mobile in SCSS) */}
       <div className={styles.topbar} role="banner">
         <div className={styles.topbarInner}>
           <div
@@ -515,8 +513,9 @@ const Navbar = () => {
         <button
           type="button"
           className={styles.hamburger}
-          aria-label="Open menu"
-          onClick={() => { closeAllDropdowns(); setMenuOpen((v) => !v); }}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((v) => !v)}
         >
           <span />
           <span />
@@ -525,12 +524,22 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Backdrop */}
-      <div className={`${styles.backdrop} ${menuOpen ? styles.show : ''}`} onClick={() => setMenuOpen(false)} />
+      <div
+        className={`${styles.backdrop} ${menuOpen ? styles.show : ''}`}
+        onClick={() => setMenuOpen(false)}
+        aria-hidden
+      />
 
       {/* Mobile Sidebar */}
-      <aside className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`} ref={sidebarRef}>
+      <aside
+        className={`${styles.sidebar} ${menuOpen ? styles.open : ''}`}
+        ref={sidebarRef}
+        aria-hidden={!menuOpen}
+      >
         <div className={styles.sidebarTop}>
-          <div className={styles.sidebarTitle}>Menu</div>
+          <Link href="/" className={styles.sidebarLogo} onClick={() => setMenuOpen(false)}>
+            <img src="/pearl.png" alt="Logo" />
+          </Link>
           <button className={styles.closeBtn} onClick={() => setMenuOpen(false)} aria-label="Close menu">✕</button>
         </div>
 
@@ -542,9 +551,9 @@ const Navbar = () => {
           <Link href="/potfolio" className={styles.sideLink} onClick={() => setMenuOpen(false)}>Portfolio</Link>
 
           <div className={styles.sideGroup}>
-            <button className={styles.sideGroupBtn} onClick={() => toggleMobileGroup('about')}>
+            <button className={styles.sideGroupBtn} onClick={() => setAboutOpen((v) => !v)}>
               <span>About</span>
-              <span className={styles.sideCaret}>{aboutOpen ? '▴' : '▾'}</span>
+              <span className={styles.sideCaret}>▾</span>
             </button>
             {aboutOpen && (
               <div className={styles.sideGroupPanel}>
@@ -559,9 +568,9 @@ const Navbar = () => {
           </div>
 
           <div className={styles.sideGroup}>
-            <button className={styles.sideGroupBtn} onClick={() => toggleMobileGroup('services')}>
+            <button className={styles.sideGroupBtn} onClick={() => setServicesOpen((v) => !v)}>
               <span>Services</span>
-              <span className={styles.sideCaret}>{servicesOpen ? '▴' : '▾'}</span>
+              <span className={styles.sideCaret}>▾</span>
             </button>
             {servicesOpen && (
               <div className={styles.sideGroupPanel}>
@@ -576,9 +585,9 @@ const Navbar = () => {
           </div>
 
           <div className={styles.sideGroup}>
-            <button className={styles.sideGroupBtn} onClick={() => toggleMobileGroup('categories')}>
+            <button className={styles.sideGroupBtn} onClick={() => setCategoriesOpen((v) => !v)}>
               <span>Categories</span>
-              <span className={styles.sideCaret}>{categoriesOpen ? '▴' : '▾'}</span>
+              <span className={styles.sideCaret}>▾</span>
             </button>
             {categoriesOpen && (
               <div className={styles.sideGroupPanelTwoCol}>
@@ -603,9 +612,9 @@ const Navbar = () => {
           </div>
 
           <div className={styles.sideGroup}>
-            <button className={styles.sideGroupBtn} onClick={() => toggleMobileGroup('blog')}>
+            <button className={styles.sideGroupBtn} onClick={() => setBlogOpen((v) => !v)}>
               <span>Blog</span>
-              <span className={styles.sideCaret}>{blogOpen ? '▴' : '▾'}</span>
+              <span className={styles.sideCaret}>▾</span>
             </button>
             {blogOpen && (
               <div className={styles.sideGroupPanel}>
@@ -628,6 +637,4 @@ const Navbar = () => {
       {openModal && <ServiceQueryPopup open={openModal} setOpen={setOpenModal} />}
     </header>
   );
-};
-
-export default Navbar;
+}
