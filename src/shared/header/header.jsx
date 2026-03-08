@@ -220,70 +220,96 @@ export default function Navbar() {
   }, [pathname]);
 
   // Drawer open/close effects (scroll lock + hide overlays)
-  useEffect(() => {
-    if (typeof document === 'undefined') return;
+// NOTE: If the drawer ever gets stuck (e.g. hot-reload / crash), we aggressively
+// restore scrolling on mount and on unmount.
+useEffect(() => {
+  if (typeof document === 'undefined') return;
 
-    const b = document.body;
-    b.classList.toggle('navDrawerOpen', menuOpen);
+  const b = document.body;
+  // Safety: ensure we never start with a locked body
+  b.classList.remove('navDrawerOpen');
+  b.style.position = '';
+  b.style.top = '';
+  b.style.left = '';
+  b.style.right = '';
+  b.style.width = '';
+  b.style.overflow = '';
+}, []);
+
+useEffect(() => {
+  if (typeof document === 'undefined') return;
+
+  const b = document.body;
+
+  const lock = () => {
+    b.classList.add('navDrawerOpen');
+
+    // ✅ background scroll lock (works on iOS + keeps drawer scroll)
+    if (typeof window !== 'undefined') {
+      scrollYRef.current = window.scrollY || 0;
+    }
+    b.style.position = 'fixed';
+    b.style.top = `-${scrollYRef.current}px`;
+    b.style.left = '0';
+    b.style.right = '0';
+    b.style.width = '100%';
+    b.style.overflow = 'hidden';
+
+    // Best effort: pause all videos so iOS mute overlay doesn't sit above menu
+    const vids = Array.from(document.querySelectorAll('video'));
+    const paused = [];
+    vids.forEach((v) => {
+      try {
+        if (!v.paused && !v.ended) {
+          v.pause();
+          paused.push(v);
+        }
+      } catch (_) {
+        // ignore
+      }
+    });
+    pausedVideosRef.current = paused;
+  };
+
+  const unlock = () => {
+    b.classList.remove('navDrawerOpen');
+
+    const y = scrollYRef.current || 0;
+    b.style.position = '';
+    b.style.top = '';
+    b.style.left = '';
+    b.style.right = '';
+    b.style.width = '';
+    b.style.overflow = '';
 
     if (typeof window !== 'undefined') {
-      window.dispatchEvent(new CustomEvent('navdrawer', { detail: { open: menuOpen } }));
-    }
-
-    if (menuOpen) {
-      // ✅ background scroll lock (works on iOS + keeps drawer scroll)
-      scrollYRef.current = window.scrollY || 0;
-      b.style.position = 'fixed';
-      b.style.top = `-${scrollYRef.current}px`;
-      b.style.left = '0';
-      b.style.right = '0';
-      b.style.width = '100%';
-
-      // Best effort: pause all videos so iOS mute overlay doesn't sit above menu
-      const vids = Array.from(document.querySelectorAll('video'));
-      const paused = [];
-      vids.forEach((v) => {
-        try {
-          if (!v.paused && !v.ended) {
-            v.pause();
-            paused.push(v);
-          }
-        } catch (_) {
-          // ignore
-        }
-      });
-      pausedVideosRef.current = paused;
-    } else {
-      // restore scroll
-      const y = scrollYRef.current || 0;
-      b.style.position = '';
-      b.style.top = '';
-      b.style.left = '';
-      b.style.right = '';
-      b.style.width = '';
       window.scrollTo(0, y);
-
-      // resume paused videos
-      (pausedVideosRef.current || []).forEach((v) => {
-        try {
-          v.play?.();
-        } catch (_) {
-          // ignore
-        }
-      });
-      pausedVideosRef.current = [];
     }
 
-    return () => {
-      // ensure body isn't left locked if component unmounts
-      b.classList.remove('navDrawerOpen');
-      b.style.position = '';
-      b.style.top = '';
-      b.style.left = '';
-      b.style.right = '';
-      b.style.width = '';
-    };
-  }, [menuOpen]);
+    // resume paused videos
+    (pausedVideosRef.current || []).forEach((v) => {
+      try {
+        v.play?.();
+      } catch (_) {
+        // ignore
+      }
+    });
+    pausedVideosRef.current = [];
+  };
+
+  if (menuOpen) lock();
+  else unlock();
+
+  // broadcast drawer state (optional)
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('navdrawer', { detail: { open: menuOpen } }));
+  }
+
+  return () => {
+    // ensure body isn't left locked if component unmounts
+    unlock();
+  };
+}, [menuOpen]);
 
   // Close on outside click (desktop + mobile)
   useEffect(() => {

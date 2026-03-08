@@ -101,6 +101,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  flex-wrap: nowrap;
 
   min-width: 0;
 }
@@ -126,16 +127,20 @@
 /* Desktop menu */
 .menu {
   display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
   align-items: center;
   justify-content: flex-end;
-  gap: 14px;
+  gap: 12px;
   list-style: none;
   margin: 0;
   padding: 0;
 
   flex-wrap: nowrap;
   white-space: nowrap;
-  min-width: 0;
+
+  /* Keep everything on ONE line (no wrap, no horizontal scrollbars). */
+  overflow: visible;
 }
 
 .menu > li {
@@ -190,7 +195,7 @@
 
 .dropdown {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .dropdownPanel {
@@ -210,7 +215,10 @@
   border-radius: 18px;
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.14);
   backdrop-filter: blur(12px);
-  overflow: hidden;
+  overflow: auto;
+  max-height: calc(100vh - 90px);
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   z-index: 10000;
 }
 
@@ -333,6 +341,7 @@
   color: #fff;
   background: linear-gradient(90deg, rgba(124, 58, 237, 1), rgba(59, 130, 246, 1));
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  white-space: nowrap;
 }
 
 .ctaBtn:hover {
@@ -511,6 +520,26 @@
   text-align: center;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
   margin-top: 8px;
+}
+
+
+@media (max-width: 1280px) {
+  .menu {
+    gap: 10px;
+  }
+  .navLink,
+  .navBtn {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+  .logo img {
+    height: 40px;
+  }
+  .ctaBtn {
+    height: 38px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
 }
 
 /* ===================== RESPONSIVE ===================== */
