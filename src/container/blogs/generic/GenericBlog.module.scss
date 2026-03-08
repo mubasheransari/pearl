@@ -1,0 +1,144 @@
+
+.articleWrap {
+  background:
+    radial-gradient(900px 320px at 15% 0%, rgba(124, 58, 237, 0.08), transparent 60%),
+    radial-gradient(900px 320px at 85% 10%, rgba(59, 130, 246, 0.08), transparent 58%),
+    #f8fafc;
+  color: #111827;
+}
+
+.inner {
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  padding: 72px 0 28px;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+.lead {
+  max-width: 860px;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(15, 23, 42, 0.78);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.primaryBtn {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(124, 58, 237, 1), rgba(59, 130, 246, 1));
+  box-shadow: 0 16px 38px rgba(59, 130, 246, 0.18);
+}
+
+.secondaryBtn {
+  color: #111827;
+  background: #fff;
+  border: 1px solid rgba(17, 24, 39, 0.1);
+}
+
+.primaryBtn:hover,
+.secondaryBtn:hover {
+  transform: translateY(-1px);
+}
+
+.contentSection {
+  padding: 16px 0 72px;
+}
+
+.contentCard {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.07);
+  padding: clamp(22px, 3vw, 40px);
+}
+
+.heading {
+  margin: 30px 0 12px;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.25;
+  color: #0f172a;
+}
+
+.paragraph {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(15, 23, 42, 0.84);
+}
+
+.list {
+  margin: 0 0 20px 0;
+  padding-left: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.list li {
+  line-height: 1.75;
+  color: rgba(15, 23, 42, 0.84);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 0 18px;
+  }
+
+  .contentSection {
+    padding-bottom: 48px;
+  }
+
+  .contentCard {
+    border-radius: 22px;
+    padding: 20px 16px;
+  }
+
+  .lead,
+  .paragraph,
+  .list li {
+    line-height: 1.75;
+  }
+}

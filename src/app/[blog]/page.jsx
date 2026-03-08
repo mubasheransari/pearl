@@ -1,5 +1,6 @@
 import React from 'react'
 import Blog from '@/container/blogs'
+import { genericBlogsMeta } from '@/container/blogs/blogData'
 
 const titles= {
   
@@ -135,21 +136,22 @@ const descriptions = {
 // ✅ Correct way to set SEO metadata for dynamic routes in the App Router
 export async function generateMetadata({ params }) {
   const slug = params?.blog;
-  const title = titles[slug] ?? 'Blog | PEPP';
-  const description = descriptions[slug] ?? 'PEPP blog articles and guides.';
+  const genericMeta = genericBlogsMeta[slug];
+  const title = genericMeta?.title ?? titles[slug] ?? 'Blog | PEPP';
+  const description = genericMeta?.description ?? descriptions[slug] ?? 'PEPP blog articles and guides.';
 
   return {
     title,
     description,
     alternates: {
-      canonical: slug ? `https://pearlepp.co.uk/${slug}` : 'https://pearlepp.co.uk/',
+      canonical: genericMeta?.canonical ?? (slug ? `https://pearlepp.co.uk/${slug}` : 'https://pearlepp.co.uk/'),
     },
   };
 }
 
 const Page = ({ params }) => {
   const slug = params?.blog;
-  const title = titles[slug] ?? 'Blog | PEPP';
+  const title = genericBlogsMeta[slug]?.title ?? titles[slug] ?? 'Blog | PEPP';
 
   return <Blog blog={slug} title={title} />;
 };

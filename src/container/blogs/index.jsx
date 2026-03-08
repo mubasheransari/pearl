@@ -3,6 +3,8 @@ import React, { useLayoutEffect } from 'react'
 import { useRouter } from 'next/navigation'
 
 import style from './blogs.module.scss'
+import GenericBlog from './generic/GenericBlog'
+import { genericBlogs } from './blogData'
 import RearExtensions from './rearextensions/RearExtensions'
 import StructuralCalculations from './structuralcalculations/StructuralCalculations'
 import StructuralEngineerCalculations from './structuralengineeringcalculations/StuctualEngineeringCalculations'
@@ -62,6 +64,7 @@ import HireEngineeringConsultant from './Top-Reasons-to-Hire-an-Engineering-Cons
 
 const Blog = ({blog,title}) => {
   const router=useRouter()
+  const genericBlog = genericBlogs[blog]
 
   console.log('tilte',title)
   
@@ -73,6 +76,7 @@ const Blog = ({blog,title}) => {
   
   return (
     <div className={style.blogs_container}>
+      {genericBlog ? <GenericBlog article={genericBlog} /> : null}
       
       {blog == "Top-Reasons-to-Hire-an-Engineering-Consultant-for-Your-Project" ? <HireEngineeringConsultant/> : ''}
       {blog == "Top-Architectural-Trends-Shaping-Bromleys-Skyline" ? <ArchitecturalTrendsBromley/> : ''}
