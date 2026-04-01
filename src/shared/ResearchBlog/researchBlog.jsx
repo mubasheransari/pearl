@@ -1,6 +1,9 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./reseachBlog.module.scss";
-// import { FaPhone } from "react-icons/fa";
+import { genericBlogsMeta } from "@/container/blogs/blogData";
+
+const newBlogEntries = Object.entries(genericBlogsMeta);
 
 const Resherch = () => {
   return (
@@ -19,8 +22,14 @@ const Resherch = () => {
       </p>
 
       <h2 className={styles.subheading}>Why You Need a Structural Engineer in Bromley or London</h2>
-      <p className={styles.paragraph}>A structural engineer near you ensures that buildings are safe, durable, and compliant with local regulations.  They assess the strength of materials, design load-bearing structures, and work closely with architects  and contractors to prevent costly structural failures.</p>
-      <p className={styles.paragraph}>If you're in Bromley, London, or surrounding areas, you may need a structural engineer for:</p>
+      <p className={styles.paragraph}>
+        A structural engineer near you ensures that buildings are safe, durable, and compliant with local regulations.
+        They assess the strength of materials, design load-bearing structures, and work closely with architects and
+        contractors to prevent costly structural failures.
+      </p>
+      <p className={styles.paragraph}>
+        If you're in Bromley, London, or surrounding areas, you may need a structural engineer for:
+      </p>
 
       <ul className={styles.list}>
         <li className={styles.listItem}>✅ Loft conversions – Maximize your space with a structurally sound attic transformation.</li>
@@ -31,9 +40,14 @@ const Resherch = () => {
 
       <h2 className={styles.subheading}>Planning and Building Control – Ensuring Compliance</h2>
       <p className={styles.paragraph}>
-      Navigating Planning and Building Control in Bromley can be complex. Without expert guidance, your project  could face delays, fines, or even rejection.
+        Navigating Planning and Building Control in Bromley can be complex. Without expert guidance, your project
+        could face delays, fines, or even rejection.
       </p>
-      <p className={styles.paragraph}>Hiring consultant engineers or project engineering consultants ensures that your project meets legal standards  while staying within budget. A skilled engineering consultant streamlines the approval process and provides  innovative solutions to contractor management challenges.</p>
+      <p className={styles.paragraph}>
+        Hiring consultant engineers or project engineering consultants ensures that your project meets legal standards
+        while staying within budget. A skilled engineering consultant streamlines the approval process and provides
+        innovative solutions to contractor management challenges.
+      </p>
 
       <h2 className={styles.subheading}>The Role of Architectural Engineers in Construction</h2>
       <p className={styles.paragraph}>
@@ -51,16 +65,37 @@ const Resherch = () => {
 
       <h2 className={styles.subheading}>Get Expert Structural & Engineering Consultation Today</h2>
       <p className={styles.paragraph}>
-      Finding reliable structural engineers in London or Bromley consultant engineers doesn’t have to be overwhelming.  By partnering with experienced professionals, you can ensure a smooth, stress-free construction process.
+        Finding reliable structural engineers in London or Bromley consultant engineers doesn’t have to be overwhelming.
+        By partnering with experienced professionals, you can ensure a smooth, stress-free construction process.
       </p>
       <h2 className={styles.subheading}>Need Expert Guidance?</h2>
-      <p className={styles.paragraph}>If you're planning a construction or renovation project, consult with top structural engineers, project consultants,  and architectural experts today!</p>
-
+      <p className={styles.paragraph}>
+        If you're planning a construction or renovation project, consult with top structural engineers, project consultants,
+        and architectural experts today!
+      </p>
 
       <p className={styles.contact}>📞 Contact us now for a FREE consultation!</p>
+
+      <section className={styles.blogSection}>
+        <h2 className={styles.subheading}>Newly Added Blogs</h2>
+        <p className={styles.paragraph}>
+          Your old blogs remain unchanged. The following new blogs have been added using the same dynamic pattern.
+        </p>
+
+        <div className={styles.blogGrid}>
+          {newBlogEntries.map(([slug, meta]) => (
+            <article key={slug} className={styles.blogCard}>
+              <h3 className={styles.blogTitle}>{meta.title}</h3>
+              <p className={styles.blogDescription}>{meta.description}</p>
+              <Link href={`/${slug}`} className={styles.blogLink}>
+                Read blog
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
 
 export default Resherch;
-

@@ -43,3 +43,44 @@
     margin-top: 20px;
   }
   
+
+
+.blogSection {
+  margin-top: 40px;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.blogCard {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.blogTitle {
+  font-size: 1.05rem;
+  color: #222;
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.blogDescription {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.blogLink {
+  display: inline-block;
+  text-decoration: none;
+  color: #0b63ce;
+  font-weight: 600;
+}

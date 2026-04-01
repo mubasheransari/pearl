@@ -631,6 +631,447 @@
 //     </Box>
 //   );
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// "use client";
+// import React, { useState, useRef, useMemo } from "react";
+// import {
+//   Box,
+//   Typography,
+//   IconButton,
+//   useMediaQuery,
+//   Card,
+//   CardContent,
+//   Avatar,
+//   Button,
+//   Chip,
+//   Rating,
+// } from "@mui/material";
+// import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+
+// // Reviews data
+// const reviews = [
+//   {
+//     name: "H. Karim",
+//     text: `We took on the challenge of buying an auction property that was in a seriously bad state. Before going ahead, we got in touch with PEPP for a structural survey and a breakdown of what needed fixing. They came through with a super detailed report, covering literally everything, even the small stuff.
+
+// From there, they helped us with lending options, building regs, and all the structural packs we needed. Honestly, they were there for us every step of the way, making what could’ve been a stressful process so much easier.
+
+// Massive shoutout to Mojo for always being on point with his responses, proper lifesaver! Couldn’t have done it without you lot. Top-tier services soon we will be cracking on more projects.`,
+//   },
+//   {
+//     name: "Adil",
+//     text: `Mojo was absolutely brilliant! He provided structural drawings with incredible speed and went above and beyond to offer advice and support throughout the project. His expertise and professionalism were outstanding. Offering great value for the exceptional service he delivered. Highly recommend!`,
+//   },
+//   {
+//     name: "Kamal",
+//     text: `I hired Pepp for a house conversion project and have been very impressed from their work. It's been absolute pleasure working with Mojo. He has deep understanding of concepts related to structural integrity, planning process, and how everything then integrate into building works. Mojo has given many valuable suggestions which make overall project cost efficient. Would highly recommend them and would look forward to working with them again in future.`,
+//   },
+//   {
+//     name: "Bea Buan",
+//     text: `I’ve recently hired Pearl engineers to be the structural engineers for my extension and renovation project. Right from the start, Mojo was very prompt in his responses to arrange a visit on the site and very clear on his explanations of what needs to be done. I feel like he’s really listened to all my queries and considerations.
+
+// Moreover, Mojo helped in finding the right contractors for the project. I have found that he was also always willing to help and quick with his responses for any queries that came about once the project had started.
+
+// Overall, I would recommend Pearl engineers and would use them again if the opportunity arises.`,
+//   },
+//   {
+//     name: "Ruth",
+//     text: `I have used this company for a kitchen wall to be removed. Mohammed came and he has done a great job providing all the details needed, drawings and instructions for the builder to understand, but most of all he had completed all the drawings within two days to accommodate the urgency of the work. Thank you Mohammed.`,
+//   },
+//   {
+//     name: "Chhavi",
+//     text: `I had Muhammad visit and provide structural designs and calculations for my work. I found him very professional and helpful. He explained things that I was not sure on and has been very helpful throughout the process and this far. We are waiting on the council approvals to complete the works. Thank you!! I highly recommend!!`,
+//   },
+//   {
+//     name: "Marisa Erftemeijer",
+//     text: `Found weekend before builders arrived when we realised previous calculations had mistakes in them—agreed to job on Friday night and by Saturday had visited and advised with final plans in by Monday! Really appreciated their quick and last-minute support! Good value for money and felt in safe hands—would use again and recommend.`,
+//   },
+// ];
+
+// // small helper: initials
+// const initials = (name = "") =>
+//   name
+//     .split(" ")
+//     .filter(Boolean)
+//     .slice(0, 2)
+//     .map((w) => w[0]?.toUpperCase())
+//     .join("");
+
+// export default function BarkReview() {
+//   const [expandedIndex, setExpandedIndex] = useState(null);
+//   const toggleExpand = (idx) => setExpandedIndex((prev) => (prev === idx ? null : idx));
+
+//   const show2 = useMediaQuery("(max-width:992px)");
+//   const show1 = useMediaQuery("(max-width:768px)");
+//   const slidesToShow = show1 ? 1 : show2 ? 2 : 3;
+
+//   const [index, setIndex] = useState(0);
+//   const maxIndex = Math.max(0, reviews.length - slidesToShow);
+
+//   const timer = useRef();
+//   const maxLength = 220;
+
+//   const prev = () => {
+//     clearInterval(timer.current);
+//     setIndex((i) => (i <= 0 ? maxIndex : i - 1));
+//   };
+//   const next = () => {
+//     clearInterval(timer.current);
+//     setIndex((i) => (i >= maxIndex ? 0 : i + 1));
+//   };
+
+//   // summary header (static for now)
+//   const summary = useMemo(() => {
+//     return { avg: 4.9, total: reviews.length };
+//   }, []);
+
+//   return (
+//     <Box
+//       sx={{
+//         position: "relative",
+//         py: { xs: 7, md: 9 },
+//         px: 2,
+//         overflow: "hidden",
+//       }}
+//     >
+//       {/* soft theme background */}
+//       <Box
+//         aria-hidden
+//         sx={{
+//           position: "absolute",
+//           inset: 0,
+//           pointerEvents: "none",
+//           background:
+//             "radial-gradient(900px 520px at 15% 5%, rgba(124,58,237,.14), transparent 60%), radial-gradient(900px 520px at 85% 45%, rgba(59,130,246,.10), transparent 62%), radial-gradient(900px 520px at 50% 95%, rgba(16,185,129,.08), transparent 60%)",
+//         }}
+//       />
+
+//       <Box sx={{ position: "relative", maxWidth: 1200, mx: "auto" }}>
+//         {/* Header */}
+//         <Box
+//           sx={{
+//             display: "flex",
+//             alignItems: { xs: "flex-start", md: "center" },
+//             justifyContent: "space-between",
+//             gap: 2,
+//             mb: 3,
+//             flexDirection: { xs: "column", md: "row" },
+//           }}
+//         >
+//           <Box>
+//             <Chip
+//               label="Verified client feedback"
+//               size="small"
+//               sx={{
+//                 mb: 1,
+//                 borderRadius: 99,
+//                 fontWeight: 800,
+//                 bgcolor: "rgba(17,24,39,.06)",
+//               }}
+//             />
+//             <Typography
+//               variant="h4"
+//               sx={{ fontWeight: 950, letterSpacing: "-0.02em", lineHeight: 1.1 }}
+//             >
+//               Bark Reviews
+//             </Typography>
+//             <Typography sx={{ color: "text.secondary", mt: 1, maxWidth: 720 }}>
+//               Real experiences from customers — clarity, speed and professional guidance throughout
+//               the build journey.
+//             </Typography>
+//           </Box>
+
+//           {/* ✅ UPDATED: only rating summary (no grey divider, no button) */}
+//           <Box
+//             sx={{
+//               display: "inline-flex",
+//               alignItems: "center",
+//               gap: 1.5,
+//               px: 2.2,
+//               py: 1.4,
+//               borderRadius: 999,
+//               bgcolor: "rgba(255,255,255,.78)",
+//               border: "1px solid rgba(17,24,39,.08)",
+//               backdropFilter: "blur(10px)",
+//               boxShadow: "0 14px 35px rgba(0,0,0,.08)",
+//             }}
+//           >
+//             <Typography sx={{ fontWeight: 950, fontSize: 26, lineHeight: 1 }}>
+//               {summary.avg}/5
+//             </Typography>
+
+//             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+//               <Rating value={summary.avg} precision={0.1} readOnly size="small" />
+//               <Typography variant="caption" sx={{ color: "text.secondary", fontWeight: 700 }}>
+//                 ({summary.total} reviews)
+//               </Typography>
+//             </Box>
+//           </Box>
+//         </Box>
+
+//         {/* Slider */}
+//         <Box sx={{ position: "relative" }}>
+//           <Box sx={{ overflow: "hidden", borderRadius: 4 }}>
+//             <Box
+//               sx={{
+//                 display: "flex",
+//                 transition: "transform .55s cubic-bezier(.2,.8,.2,1)",
+//                 transform: `translateX(-${(100 / slidesToShow) * index}%)`,
+//               }}
+//             >
+//               {reviews.map((review, idx) => {
+//                 const isExpanded = expandedIndex === idx;
+//                 const text = review.text || "";
+//                 const displayText =
+//                   isExpanded || text.length <= maxLength
+//                     ? text
+//                     : text.slice(0, maxLength).trim() + "…";
+
+//                 return (
+//                   <Box
+//                     key={idx}
+//                     sx={{
+//                       flex: `0 0 ${100 / slidesToShow}%`,
+//                       boxSizing: "border-box",
+//                       p: 1.25,
+//                     }}
+//                   >
+//                     <Card
+//                       elevation={0}
+//                       sx={{
+//                         height: "100%",
+//                         borderRadius: 4,
+//                         border: "1px solid rgba(17,24,39,.10)",
+//                         bgcolor: "rgba(255,255,255,.86)",
+//                         backdropFilter: "blur(10px)",
+//                         overflow: "hidden",
+//                         transition: "transform .25s ease, box-shadow .25s ease",
+//                         "&:hover": {
+//                           transform: "translateY(-4px)",
+//                           boxShadow: "0 20px 45px rgba(0,0,0,.10)",
+//                         },
+//                       }}
+//                     >
+//                       <CardContent sx={{ p: 2.25 }}>
+//                         {/* Top row */}
+//                         <Box
+//                           sx={{
+//                             display: "flex",
+//                             alignItems: "center",
+//                             justifyContent: "space-between",
+//                             mb: 1.4,
+//                             gap: 1.5,
+//                           }}
+//                         >
+//                           <Box sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
+//                             <Avatar
+//                               sx={{
+//                                 width: 44,
+//                                 height: 44,
+//                                 fontWeight: 950,
+//                                 bgcolor: "rgba(124,58,237,.10)",
+//                                 color: "rgba(17,24,39,.85)",
+//                                 border: "2px solid rgba(124,58,237,.22)",
+//                                 boxShadow: "0 12px 25px rgba(124,58,237,.12)",
+//                               }}
+//                             >
+//                               {initials(review.name)}
+//                             </Avatar>
+
+//                             <Box>
+//                               <Typography sx={{ fontWeight: 950, lineHeight: 1.1 }}>
+//                                 {review.name}
+//                               </Typography>
+
+//                               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+//                                 <Rating value={5} readOnly size="small" />
+//                               </Box>
+//                             </Box>
+//                           </Box>
+
+//                           <Box
+//                             aria-hidden
+//                             sx={{
+//                               fontSize: 36,
+//                               fontWeight: 950,
+//                               lineHeight: 1,
+//                               color: "rgba(17,24,39,.10)",
+//                               userSelect: "none",
+//                             }}
+//                           >
+//                             “
+//                           </Box>
+//                         </Box>
+
+//                         {/* Review text */}
+//                         <Typography
+//                           sx={{
+//                             color: "rgba(17,24,39,.85)",
+//                             lineHeight: 1.7,
+//                             fontSize: 14.5,
+//                             whiteSpace: "pre-line",
+//                             display: "-webkit-box",
+//                             WebkitLineClamp: isExpanded ? "unset" : 6,
+//                             WebkitBoxOrient: "vertical",
+//                             overflow: "hidden",
+//                           }}
+//                         >
+//                           {displayText}
+//                         </Typography>
+
+//                         {/* Bottom row */}
+//                         <Box
+//                           sx={{
+//                             display: "flex",
+//                             alignItems: "center",
+//                             justifyContent: "space-between",
+//                             mt: 1.75,
+//                           }}
+//                         >
+//                           {text.length > maxLength ? (
+//                             <Button
+//                               size="small"
+//                               onClick={() => toggleExpand(idx)}
+//                               sx={{
+//                                 textTransform: "none",
+//                                 fontWeight: 900,
+//                                 borderRadius: 999,
+//                                 px: 1.6,
+//                               }}
+//                             >
+//                               {isExpanded ? "Show less" : "Read more"}
+//                             </Button>
+//                           ) : (
+//                             <span />
+//                           )}
+
+//                           <Typography variant="caption" sx={{ color: "text.secondary" }}>
+//                             {/* Date placeholder */}
+//                           </Typography>
+//                         </Box>
+//                       </CardContent>
+//                     </Card>
+//                   </Box>
+//                 );
+//               })}
+//             </Box>
+//           </Box>
+
+//           {/* Arrows */}
+//           {maxIndex > 0 && (
+//             <>
+//               <IconButton
+//                 onClick={prev}
+//                 aria-label="Previous reviews"
+//                 sx={{
+//                   position: "absolute",
+//                   top: "50%",
+//                   left: { xs: 6, md: -10 },
+//                   transform: "translateY(-50%)",
+//                   bgcolor: "rgba(255,255,255,.92)",
+//                   border: "1px solid rgba(17,24,39,.10)",
+//                   boxShadow: "0 10px 25px rgba(0,0,0,.10)",
+//                   backdropFilter: "blur(10px)",
+//                   "&:hover": { bgcolor: "rgba(255,255,255,1)" },
+//                 }}
+//               >
+//                 <ChevronLeft />
+//               </IconButton>
+
+//               <IconButton
+//                 onClick={next}
+//                 aria-label="Next reviews"
+//                 sx={{
+//                   position: "absolute",
+//                   top: "50%",
+//                   right: { xs: 6, md: -10 },
+//                   transform: "translateY(-50%)",
+//                   bgcolor: "rgba(255,255,255,.92)",
+//                   border: "1px solid rgba(17,24,39,.10)",
+//                   boxShadow: "0 10px 25px rgba(0,0,0,.10)",
+//                   backdropFilter: "blur(10px)",
+//                   "&:hover": { bgcolor: "rgba(255,255,255,1)" },
+//                 }}
+//               >
+//                 <ChevronRight />
+//               </IconButton>
+//             </>
+//           )}
+//         </Box>
+
+//         {/* Dots */}
+//         {maxIndex > 0 && (
+//           <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mt: 2.5 }}>
+//             {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+//               <Box
+//                 key={i}
+//                 onClick={() => setIndex(i)}
+//                 role="button"
+//                 aria-label={`Go to reviews page ${i + 1}`}
+//                 tabIndex={0}
+//                 sx={{
+//                   width: i === index ? 22 : 8,
+//                   height: 8,
+//                   borderRadius: 999,
+//                   bgcolor: i === index ? "rgba(124,58,237,.65)" : "rgba(17,24,39,.18)",
+//                   transition: "all .2s ease",
+//                   cursor: "pointer",
+//                 }}
+//               />
+//             ))}
+//           </Box>
+//         )}
+//       </Box>
+//     </Box>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use client";
 import React, { useState, useRef, useMemo } from "react";
 import {
@@ -647,47 +1088,470 @@ import {
 } from "@mui/material";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
-// Reviews data
+
 const reviews = [
   {
+    name: "Mel O",
+    date: "11 September 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Winston Alphonse",
+    date: "28 August 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Steve Firebase",
+    date: "18 July 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Milan Kanabar",
+    date: "11 July 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "marco mesaroli",
+    date: "3 June 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Mark Smith",
+    date: "2 June 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Tabish Nadeem",
+    date: "16 May 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Richard Long",
+    date: "13 May 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
     name: "H. Karim",
-    text: `We took on the challenge of buying an auction property that was in a seriously bad state. Before going ahead, we got in touch with PEPP for a structural survey and a breakdown of what needed fixing. They came through with a super detailed report, covering literally everything, even the small stuff.
-
-From there, they helped us with lending options, building regs, and all the structural packs we needed. Honestly, they were there for us every step of the way, making what could’ve been a stressful process so much easier.
-
-Massive shoutout to Mojo for always being on point with his responses, proper lifesaver! Couldn’t have done it without you lot. Top-tier services soon we will be cracking on more projects.`,
+    date: "23 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Igor",
+    date: "23 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Igor Iashchenko",
+    date: "23 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Abdullah Shameer",
+    date: "23 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "ASDB LTD",
+    date: "15 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "N",
+    date: "4 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Neeta J",
+    date: "4 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "EBEC Assistant",
+    date: "1 April 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Nelson",
+    date: "30 March 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Kathirkamathamby Suthagar",
+    date: "20 March 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "marcus “MW”",
+    date: "17 March 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Babur Moghul",
+    date: "15 March 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Krupali Patel",
+    date: "15 February 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Gert Meneri",
+    date: "27 January 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Nick Goodson",
+    date: "26 January 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Muhammad Arsalan Karim",
+    date: "21 January 2025",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Muhammad Adil Qureshi",
+    date: "23 December 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "B D",
+    date: "21 December 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
   },
   {
     name: "Adil",
-    text: `Mojo was absolutely brilliant! He provided structural drawings with incredible speed and went above and beyond to offer advice and support throughout the project. His expertise and professionalism were outstanding. Offering great value for the exceptional service he delivered. Highly recommend!`,
+    date: "12 December 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
   },
   {
     name: "Kamal",
-    text: `I hired Pepp for a house conversion project and have been very impressed from their work. It's been absolute pleasure working with Mojo. He has deep understanding of concepts related to structural integrity, planning process, and how everything then integrate into building works. Mojo has given many valuable suggestions which make overall project cost efficient. Would highly recommend them and would look forward to working with them again in future.`,
+    date: "12 December 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Tom Gallagher",
+    date: "11 November 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: true,
+    role: "Residential Building & Structural Surveyor",
+    photo: null,
   },
   {
     name: "Bea Buan",
-    text: `I’ve recently hired Pearl engineers to be the structural engineers for my extension and renovation project. Right from the start, Mojo was very prompt in his responses to arrange a visit on the site and very clear on his explanations of what needs to be done. I feel like he’s really listened to all my queries and considerations.
-
-Moreover, Mojo helped in finding the right contractors for the project. I have found that he was also always willing to help and quick with his responses for any queries that came about once the project had started.
-
-Overall, I would recommend Pearl engineers and would use them again if the opportunity arises.`,
+    date: "12 October 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark / Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Thilan Madawalage",
+    date: "10 October 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark / Google Maps",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Aleksandra",
+    date: "25 September 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
   },
   {
     name: "Ruth",
-    text: `I have used this company for a kitchen wall to be removed. Mohammed came and he has done a great job providing all the details needed, drawings and instructions for the builder to understand, but most of all he had completed all the drawings within two days to accommodate the urgency of the work. Thank you Mohammed.`,
+    date: "5 September 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: true,
+    role: "Structural Engineer",
+    photo: null,
+  },
+  {
+    name: "Haris",
+    date: "2 July 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
   },
   {
     name: "Chhavi",
-    text: `I had Muhammad visit and provide structural designs and calculations for my work. I found him very professional and helpful. He explained things that I was not sure on and has been very helpful throughout the process and this far. We are waiting on the council approvals to complete the works. Thank you!! I highly recommend!!`,
+    date: "29 May 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
   },
   {
     name: "Marisa Erftemeijer",
-    text: `Found weekend before builders arrived when we realised previous calculations had mistakes in them—agreed to job on Friday night and by Saturday had visited and advised with final plans in by Monday! Really appreciated their quick and last-minute support! Good value for money and felt in safe hands—would use again and recommend.`,
+    date: "27 May 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Louise & Adam",
+    date: "26 February 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Ashwin",
+    date: "12 February 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: true,
+    role: "Structural Engineer",
+    photo: null,
+  },
+  {
+    name: "Amanda Adams",
+    date: "17 January 2024",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Alaa cherid",
+    date: "13 December 2023",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Pheobe Suzz",
+    date: "9 December 2023",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Alexander Kayes",
+    date: "5 December 2023",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "Alex",
+    date: "2 December 2023",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
+  },
+  {
+    name: "A K Dow",
+    date: "14 July 2023",
+    text: "Add full review text here from your Bark source/export.",
+    source: "Bark",
+    verified: false,
+    role: "",
+    photo: null,
   },
 ];
 
-// small helper: initials
+// const reviews = [
+//   {
+//     name: "H. Karim",
+//     date: "23 April 2025",
+//     text: `We took on the challenge of buying an auction property that was in a seriously bad state. Before going ahead, we got in touch with PEPP for a structural survey and a breakdown of what needed fixing. They came through with a super detailed report, covering literally everything, even the small stuff.
+
+// From there, they helped us with lending options, building regs, and all the structural packs we needed. Honestly, they were there for us every step of the way, making what could’ve been a stressful process so much easier.
+
+// Massive shoutout to Mojo for always being on point with his responses, proper lifesaver! Couldn’t have done it without you lot. Top-tier services soon we will be cracking on more projects.`,
+//     source: "Bark / Google Maps",
+//     photo: null,
+//   },
+//   {
+//     name: "Adil",
+//     date: "12 December 2024",
+//     text: `Mojo was absolutely brilliant! He provided structural drawings with incredible speed and went above and beyond to offer advice and support throughout the project. His expertise and professionalism were outstanding. Offering great value for the exceptional service he delivered. Highly recommend!`,
+//     source: "Bark / Google Maps",
+//     photo: null,
+//   },
+//   {
+//     name: "Kamal",
+//     date: "12 December 2024",
+//     text: `I hired Pepp for a house conversion project and have been very impressed from their work. It's been absolute pleasure working with Mojo. He has deep understanding of concepts related to structural integrity, planning process, and how everything then integrate into building works. Mojo has given many valuable suggestions which make overall project cost efficient.
+
+// Would highly recommend them and would look forward to working with them again in future.`,
+//     source: "Bark / Google Maps",
+//     photo: null,
+//   },
+//   {
+//     name: "Bea Buan",
+//     date: "12 October 2024",
+//     text: `I’ve recently hired Pearl engineers to be the structural engineers for my extension and renovation project. Right from the start, Mojo was very prompt in his responses to arrange a visit on the site and very clear on his explanations of what needs to be done. I feel like he’s really listened to all my queries and considerations.
+
+// Moreover, Mojo helped in finding the right contractors for the project. I have found that he was also always willing to help and quick with his responses for any queries that came about once the project had started.
+
+// Overall, I would recommend Pearl engineers and would use them again if the opportunity arises.`,
+//     source: "Bark / Google Maps",
+//     photo: null,
+//   },
+//   {
+//     name: "Ruth",
+//     date: "5 September 2024",
+//     text: `I have used this company for a kitchen wall to be removed. Mohammed came and he has done a great job providing all the details needed, drawings and instructions for the builder to understand, but most of all he had completed all the drawings within two days to accommodate the urgency of the work. Thank you Mohammed.`,
+//     source: "Bark",
+//     verified: true,
+//     role: "Structural Engineer",
+//     photo: null,
+//   },
+//   {
+//     name: "Chhavi",
+//     date: "29 May 2024",
+//     text: `I had Muhammad visit and provide structural designs and calculations for my work. I found him very professional and helpful. He explained things that I was not sure on and has been very helpful throughout the process and this far. We are waiting on the council approvals to complete the works. Thank you!! I highly recommend!!`,
+//     source: "Bark / Google Maps",
+//     photo: null,
+//   },
+//   {
+//     name: "Marisa Erftemeijer",
+//     date: "27 May 2024",
+//     text: `Found weekend before builders arrived when we realised previous calculations had mistakes in them—agreed to job on Friday night and by Saturday had visited and advised with final plans in by Monday! Really appreciated their quick and last-minute support! Good value for money and felt in safe hands—would use again and recommend.`,
+//     source: "Bark / Google Maps",
+//     photo: null,
+//   },
+// ];
+
 const initials = (name = "") =>
   name
     .split(" ")
@@ -696,9 +1560,43 @@ const initials = (name = "") =>
     .map((w) => w[0]?.toUpperCase())
     .join("");
 
+function ReviewerAvatar({ name, photo }) {
+  if (photo) {
+    return (
+      <Avatar
+        src={photo}
+        alt={name}
+        sx={{
+          width: 52,
+          height: 52,
+          border: "2px solid rgba(124,58,237,.18)",
+          boxShadow: "0 12px 24px rgba(124,58,237,.14)",
+        }}
+      />
+    );
+  }
+
+  return (
+    <Avatar
+      sx={{
+        width: 52,
+        height: 52,
+        fontWeight: 950,
+        bgcolor: "rgba(124,58,237,.10)",
+        color: "rgba(17,24,39,.85)",
+        border: "2px solid rgba(124,58,237,.22)",
+        boxShadow: "0 12px 25px rgba(124,58,237,.12)",
+      }}
+    >
+      {initials(name)}
+    </Avatar>
+  );
+}
+
 export default function BarkReview() {
   const [expandedIndex, setExpandedIndex] = useState(null);
-  const toggleExpand = (idx) => setExpandedIndex((prev) => (prev === idx ? null : idx));
+  const toggleExpand = (idx) =>
+    setExpandedIndex((prev) => (prev === idx ? null : idx));
 
   const show2 = useMediaQuery("(max-width:992px)");
   const show1 = useMediaQuery("(max-width:768px)");
@@ -707,19 +1605,19 @@ export default function BarkReview() {
   const [index, setIndex] = useState(0);
   const maxIndex = Math.max(0, reviews.length - slidesToShow);
 
-  const timer = useRef();
-  const maxLength = 220;
+  const timer = useRef(null);
+  const maxLength = 230;
 
   const prev = () => {
-    clearInterval(timer.current);
+    if (timer.current) clearInterval(timer.current);
     setIndex((i) => (i <= 0 ? maxIndex : i - 1));
   };
+
   const next = () => {
-    clearInterval(timer.current);
+    if (timer.current) clearInterval(timer.current);
     setIndex((i) => (i >= maxIndex ? 0 : i + 1));
   };
 
-  // summary header (static for now)
   const summary = useMemo(() => {
     return { avg: 4.9, total: reviews.length };
   }, []);
@@ -733,7 +1631,6 @@ export default function BarkReview() {
         overflow: "hidden",
       }}
     >
-      {/* soft theme background */}
       <Box
         aria-hidden
         sx={{
@@ -746,7 +1643,6 @@ export default function BarkReview() {
       />
 
       <Box sx={{ position: "relative", maxWidth: 1200, mx: "auto" }}>
-        {/* Header */}
         <Box
           sx={{
             display: "flex",
@@ -780,7 +1676,6 @@ export default function BarkReview() {
             </Typography>
           </Box>
 
-          {/* ✅ UPDATED: only rating summary (no grey divider, no button) */}
           <Box
             sx={{
               display: "inline-flex",
@@ -808,7 +1703,6 @@ export default function BarkReview() {
           </Box>
         </Box>
 
-        {/* Slider */}
         <Box sx={{ position: "relative" }}>
           <Box sx={{ overflow: "hidden", borderRadius: 4 }}>
             <Box
@@ -828,7 +1722,7 @@ export default function BarkReview() {
 
                 return (
                   <Box
-                    key={idx}
+                    key={`${review.name}-${idx}`}
                     sx={{
                       flex: `0 0 ${100 / slidesToShow}%`,
                       boxSizing: "border-box",
@@ -852,39 +1746,61 @@ export default function BarkReview() {
                       }}
                     >
                       <CardContent sx={{ p: 2.25 }}>
-                        {/* Top row */}
                         <Box
                           sx={{
                             display: "flex",
-                            alignItems: "center",
+                            alignItems: "flex-start",
                             justifyContent: "space-between",
-                            mb: 1.4,
+                            mb: 1.5,
                             gap: 1.5,
                           }}
                         >
                           <Box sx={{ display: "flex", alignItems: "center", gap: 1.2 }}>
-                            <Avatar
-                              sx={{
-                                width: 44,
-                                height: 44,
-                                fontWeight: 950,
-                                bgcolor: "rgba(124,58,237,.10)",
-                                color: "rgba(17,24,39,.85)",
-                                border: "2px solid rgba(124,58,237,.22)",
-                                boxShadow: "0 12px 25px rgba(124,58,237,.12)",
-                              }}
-                            >
-                              {initials(review.name)}
-                            </Avatar>
+                            <ReviewerAvatar name={review.name} photo={review.photo} />
 
                             <Box>
                               <Typography sx={{ fontWeight: 950, lineHeight: 1.1 }}>
                                 {review.name}
                               </Typography>
 
-                              <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                              <Box
+                                sx={{
+                                  display: "flex",
+                                  flexWrap: "wrap",
+                                  alignItems: "center",
+                                  gap: 0.8,
+                                  mt: 0.35,
+                                }}
+                              >
                                 <Rating value={5} readOnly size="small" />
+                                {review.verified && (
+                                  <Chip
+                                    label="Verified"
+                                    size="small"
+                                    sx={{
+                                      height: 22,
+                                      borderRadius: 999,
+                                      fontWeight: 800,
+                                      bgcolor: "rgba(16,185,129,.10)",
+                                      color: "rgb(5,150,105)",
+                                    }}
+                                  />
+                                )}
                               </Box>
+
+                              {(review.date || review.role) && (
+                                <Typography
+                                  variant="caption"
+                                  sx={{
+                                    display: "block",
+                                    color: "text.secondary",
+                                    mt: 0.4,
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  {[review.role, review.date].filter(Boolean).join(" • ")}
+                                </Typography>
+                              )}
                             </Box>
                           </Box>
 
@@ -902,7 +1818,32 @@ export default function BarkReview() {
                           </Box>
                         </Box>
 
-                        {/* Review text */}
+                        {review.photo && (
+                          <Box
+                            sx={{
+                              mb: 1.5,
+                              height: 190,
+                              borderRadius: 3,
+                              overflow: "hidden",
+                              border: "1px solid rgba(17,24,39,.08)",
+                              background:
+                                "linear-gradient(135deg, rgba(124,58,237,.06), rgba(59,130,246,.05))",
+                            }}
+                          >
+                            <Box
+                              component="img"
+                              src={review.photo}
+                              alt={review.name}
+                              sx={{
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                display: "block",
+                              }}
+                            />
+                          </Box>
+                        )}
+
                         <Typography
                           sx={{
                             color: "rgba(17,24,39,.85)",
@@ -918,13 +1859,13 @@ export default function BarkReview() {
                           {displayText}
                         </Typography>
 
-                        {/* Bottom row */}
                         <Box
                           sx={{
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "space-between",
                             mt: 1.75,
+                            gap: 1,
                           }}
                         >
                           {text.length > maxLength ? (
@@ -944,8 +1885,11 @@ export default function BarkReview() {
                             <span />
                           )}
 
-                          <Typography variant="caption" sx={{ color: "text.secondary" }}>
-                            {/* Date placeholder */}
+                          <Typography
+                            variant="caption"
+                            sx={{ color: "text.secondary", fontWeight: 700 }}
+                          >
+                            {review.source || ""}
                           </Typography>
                         </Box>
                       </CardContent>
@@ -956,7 +1900,6 @@ export default function BarkReview() {
             </Box>
           </Box>
 
-          {/* Arrows */}
           {maxIndex > 0 && (
             <>
               <IconButton
@@ -998,9 +1941,8 @@ export default function BarkReview() {
           )}
         </Box>
 
-        {/* Dots */}
         {maxIndex > 0 && (
-          <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mt: 2.5 }}>
+          <Box sx={{ display: "flex", justifyContent: "center", gap: 1, mt: 2.5, flexWrap: "wrap" }}>
             {Array.from({ length: maxIndex + 1 }).map((_, i) => (
               <Box
                 key={i}
