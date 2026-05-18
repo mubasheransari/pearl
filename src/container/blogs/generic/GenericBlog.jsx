@@ -4,6 +4,25 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './GenericBlog.module.scss';
 
+const renderTextWithLinks = (text) => {
+  if (!text) return null;
+
+  const parts = String(text).split(/(https?:\/\/[^\s)]+|www\.[^\s)]+|pearlepp\.co\.uk)/gi);
+
+  return parts.map((part, index) => {
+    if (/^(https?:\/\/|www\.|pearlepp\.co\.uk)/i.test(part)) {
+      const href = part.startsWith('http') ? part : `https://${part}`;
+      return (
+        <Link key={`${part}-${index}`} href={href} target="_blank" rel="noopener noreferrer">
+          {part}
+        </Link>
+      );
+    }
+
+    return part;
+  });
+};
+
 const GenericBlog = ({ article }) => {
   if (!article) return null;
 
@@ -36,13 +55,13 @@ const GenericBlog = ({ article }) => {
                 return (
                   <ul key={index} className={styles.list}>
                     {block.items.map((item, itemIndex) => (
-                      <li key={itemIndex}>{item}</li>
+                      <li key={itemIndex}>{renderTextWithLinks(item)}</li>
                     ))}
                   </ul>
                 );
               }
 
-              return <p key={index} className={styles.paragraph}>{block.text}</p>;
+              return <p key={index} className={styles.paragraph}>{renderTextWithLinks(block.text)}</p>;
             })}
           </div>
         </div>

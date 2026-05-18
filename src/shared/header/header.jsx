@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import styles from './style.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ServiceQueryPopup from './servicequerypopup/ServiceQueryPopup';
+import { genericBlogsMeta } from '@/container/blogs/blogData';
 
 import {
   faBalanceScale,
@@ -186,6 +187,22 @@ const getBlogIcon = (text) => {
   const found = blogLinks.find((item) => (item.text || '').toLowerCase() === lowerText);
   return found ? found.icon : faPen;
 };
+
+const staticBlogLinks = blogLinks.map((blog) => ({
+  ...blog,
+  href: `/${blog.link}`,
+}));
+
+const dynamicBlogLinks = Object.entries(genericBlogsMeta)
+  .filter(([slug]) => !blogLinks.some((blog) => blog.link === slug))
+  .map(([slug, meta]) => ({
+    link: slug,
+    href: `/blogs/${slug}`,
+    text: meta.title,
+    icon: faPen,
+  }));
+
+const allBlogLinks = [...staticBlogLinks, ...dynamicBlogLinks];
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -534,9 +551,9 @@ useEffect(() => {
               </div>
 
               <ul className={styles.blogList}>
-                {blogLinks.map((b) => (
+                {allBlogLinks.map((b) => (
                   <li key={b.link}>
-                    <Link href={`/${b.link}`} className={styles.ddLink} onClick={() => setBlogOpen(false)}>
+                    <Link href={b.href} className={styles.ddLink} onClick={() => setBlogOpen(false)}>
                       <span className={styles.ddIcon}><FontAwesomeIcon icon={getBlogIcon(b.text)} /></span>
                       <span className={styles.ddText}>{b.text}</span>
                     </Link>
@@ -664,8 +681,8 @@ useEffect(() => {
             </button>
             {blogOpen && (
               <div className={styles.sideGroupPanel}>
-                {blogLinks.map((b) => (
-                  <Link key={b.link} href={`/${b.link}`} className={styles.sideDD} onClick={() => setMenuOpen(false)}>
+                {allBlogLinks.map((b) => (
+                  <Link key={b.link} href={b.href} className={styles.sideDD} onClick={() => setMenuOpen(false)}>
                     <span className={styles.ddIcon}><FontAwesomeIcon icon={getBlogIcon(b.text)} /></span>
                     {b.text}
                   </Link>

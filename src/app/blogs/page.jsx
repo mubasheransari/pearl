@@ -16,7 +16,7 @@ export default function BlogsPage() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', marginTop: '28px' }}>
         {blogs.map(([slug, meta]) => (
           <article key={slug} style={{ border: '1px solid #e7e7e7', borderRadius: '16px', padding: '20px', background: '#fff' }}>
-            <h2 style={{ fontSize: '20px', marginBottom: '12px' }}>{meta.title}</h2>
+            <h2 style={{ fontSize: '20px', marginBottom: '12px' }}><Link href={`/blogs/${slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>{meta.title}</Link></h2>
             <p style={{ color: '#555', lineHeight: 1.6 }}>{meta.description}</p>
             <Link href={`/blogs/${slug}`} style={{ display: 'inline-block', marginTop: '14px', fontWeight: 600 }}>Read blog</Link>
           </article>
