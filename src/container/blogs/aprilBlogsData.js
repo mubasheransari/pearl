@@ -324,6 +324,24 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "These technologies ensure precise and reliable inspection results."
       }
+    ],
+    "links": [
+      {
+        "text": "building inspectors near me",
+        "href": "https://pearlepp.co.uk/structure-engineers"
+      },
+      {
+        "text": "building inspectors near me",
+        "href": "https://share.google/OTQmRc20mYnLfEEAA"
+      },
+      {
+        "text": "pearlepp.co.uk",
+        "href": "https://pearlepp.co.uk/structure-engineers?utm_source=chatgpt.com"
+      },
+      {
+        "text": "building inspectors near me",
+        "href": "https://pearlepp.co.uk/How-Much-Does-a-Structural-Engineer-in-London-Cost"
+      }
     ]
   },
   "commercial-structural-engineering-company-in-london": {
@@ -509,6 +527,20 @@ export const aprilBlogs = {
           "Transparent pricing and timelines",
           "Positive client reviews"
         ]
+      }
+    ],
+    "links": [
+      {
+        "text": "commercial structural engineering company in London",
+        "href": "https://pearlepp.co.uk/structural_enigneering_services"
+      },
+      {
+        "text": "structural engineer in London",
+        "href": "https://pearlepp.co.uk/How-Structural-Engineers-in-London-Ensure-Safe-and-Sustainable-Buildings"
+      },
+      {
+        "text": "structural engineering services in London",
+        "href": "https://share.google/OTQmRc20mYnLfEEAA"
       }
     ]
   },
@@ -777,6 +809,20 @@ export const aprilBlogs = {
       {
         "type": "paragraph",
         "text": "Our goal is to deliver engineering excellence that supports long-term structural performance."
+      }
+    ],
+    "links": [
+      {
+        "text": "engineering services near me",
+        "href": "https://pearlepp.co.uk/structure-engineers"
+      },
+      {
+        "text": "engineering services near me",
+        "href": "https://share.google/OTQmRc20mYnLfEEAA"
+      },
+      {
+        "text": "engineering services near me",
+        "href": "https://pearlepp.co.uk/How-Much-Does-a-Structural-Engineer-in-London-Cost"
       }
     ]
   },
@@ -1050,6 +1096,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "The company is committed to delivering reliable and forward-thinking engineering solutions across the UK."
       }
+    ],
+    "links": [
+      {
+        "text": "structural designer near me",
+        "href": "https://pearlepp.co.uk/Structural-Design"
+      },
+      {
+        "text": "structural designer near me",
+        "href": "https://pearlepp.co.uk/How-to-Find-the-Best-Structural-Engineer-Near-Me-A-Complete-Guide"
+      },
+      {
+        "text": "structural designer near me",
+        "href": "https://share.google/OTQmRc20mYnLfEEAA"
+      }
     ]
   },
   "commercial-building-structural-design": {
@@ -1169,6 +1229,20 @@ export const aprilBlogs = {
           "Faster approvals",
           "Long-lasting structural performance"
         ]
+      }
+    ],
+    "links": [
+      {
+        "text": "commercial building structural design",
+        "href": "https://pearlepp.co.uk/commercial_management"
+      },
+      {
+        "text": "commercial building structural design",
+        "href": "https://share.google/OTQmRc20mYnLfEEAA"
+      },
+      {
+        "text": "commercial building structural design",
+        "href": "https://pearlepp.co.uk/Structural-Engineer-London-Services-Ensuring-Safety-and-Innovation-in-Your-Builds"
       }
     ]
   },
@@ -1464,6 +1538,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "While pricing varies, professional engineering helps avoid expensive construction errors later."
       }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Cambridge UK",
+        "href": "https://pearlepp.co.uk/structure-engineers"
+      },
+      {
+        "text": "structural engineer Cambridge UK",
+        "href": "https://pearlepp.co.uk/Structural-Engineer-London-Services-Ensuring-Safety-and-Innovation-in-Your-Builds"
+      },
+      {
+        "text": "structural engineer Cambridge UK",
+        "href": "https://share.google/8zakkR8YrXiogEXvD"
+      }
     ]
   },
   "structural-engineer-kensington-expert-solutions-for-safe-and-modern-construction": {
@@ -1715,6 +1803,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "This local expertise makes a significant difference in project success."
       }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Kensington",
+        "href": "https://pearlepp.co.uk/structural_enigneering_services"
+      },
+      {
+        "text": "structural engineer Kensington",
+        "href": "https://pearlepp.co.uk/How-a-Structural-Engineer-in-Lambeth-London-Ensures-Your-Building-Meets-the-Highest-Safety-Standards"
+      },
+      {
+        "text": "structural engineer Kensington",
+        "href": "https://share.google/8zakkR8YrXiogEXvD"
+      }
     ]
   },
   "structural-engineer-oxford-smart-structural-solutions-for-safe-property-development": {
@@ -1904,6 +2006,20 @@ export const aprilBlogs = {
       {
         "type": "paragraph",
         "text": "However, investing in proper engineering prevents costly construction mistakes later."
+      }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Oxford",
+        "href": "https://pearlepp.co.uk/structural_enigneering_services"
+      },
+      {
+        "text": "structural engineer Oxford",
+        "href": "https://pearlepp.co.uk/structural-integrity-through-meticulous-structural-engineer-calculations-the-pepp-approach"
+      },
+      {
+        "text": "structural engineer Oxford",
+        "href": "https://share.google/8zakkR8YrXiogEXvD"
       }
     ]
   },
@@ -2169,6 +2285,20 @@ export const aprilBlogs = {
       {
         "type": "paragraph",
         "text": "Professional guidance ensures a smoother process and reduces long-term risks."
+      }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Westminster",
+        "href": "https://pearlepp.co.uk/How-a-Structural-Engineer-in-Lambeth-London-Ensures-Your-Building-Meets-the-Highest-Safety-Standards"
+      },
+      {
+        "text": "structural engineer Westminster",
+        "href": "https://pearlepp.co.uk/How-a-Structural-Engineer-in-Cambridge-Ensures-Your-Renovation-Stands-the-Test-of-Time"
+      },
+      {
+        "text": "structural engineer Westminster",
+        "href": "https://share.google/8zakkR8YrXiogEXvD"
       }
     ]
   },
@@ -2466,6 +2596,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "Professional engineers ensure everything is done correctly from the beginning."
       }
+    ],
+    "links": [
+      {
+        "text": "structural engineering services in Westminster",
+        "href": "https://pearlepp.co.uk/structural_enigneering_services"
+      },
+      {
+        "text": "structural engineering services in Westminster",
+        "href": "https://pearlepp.co.uk/Structural-Engineer-Kensington-UK-Expert-Solutions-by-PEPP"
+      },
+      {
+        "text": "structural engineering services in Westminster",
+        "href": "https://share.google/8zakkR8YrXiogEXvD"
+      }
     ]
   },
   "architect-engineer-kensington": {
@@ -2684,6 +2828,20 @@ export const aprilBlogs = {
       {
         "type": "paragraph",
         "text": "We don’t just design buildings—we engineer long-lasting solutions."
+      }
+    ],
+    "links": [
+      {
+        "text": "architect engineer Kensington",
+        "href": "https://pearlepp.co.uk/architectural_services"
+      },
+      {
+        "text": "architect engineer Kensington",
+        "href": "https://pearlepp.co.uk/How-an-Architect-Engineer-in-Oxford-Blends-Innovation-with-Traditional-British-Architecture"
+      },
+      {
+        "text": "architect engineer Kensington",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
       }
     ]
   },
@@ -2911,6 +3069,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "A reliable architect engineer Oxford transforms ideas into structurally sound realities."
       }
+    ],
+    "links": [
+      {
+        "text": "architect engineer Oxford",
+        "href": "https://pearlepp.co.uk/architectural_services"
+      },
+      {
+        "text": "architect engineer Oxford",
+        "href": "https://pearlepp.co.uk/Structural-Engineer-Oxford-Trusted-Experts-for-Safe-and-Sustainable-Structures"
+      },
+      {
+        "text": "architect engineer Oxford",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
+      }
     ]
   },
   "engineer-and-planners-oxford-london": {
@@ -3058,6 +3230,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "An experienced engineer and planners Oxford London ensures buildings are future-ready and environmentally responsible."
       }
+    ],
+    "links": [
+      {
+        "text": "engineer and planners Oxford London",
+        "href": "https://pearlepp.co.uk/planning_and_building_control_services"
+      },
+      {
+        "text": "engineer and planners Oxford London",
+        "href": "https://pearlepp.co.uk/The-Growing-Importance-of-Integrated-Planners-and-Engineers-in-Oxford-and-London-for-Future-Ready-Infrastructure"
+      },
+      {
+        "text": "engineer and planners Oxford London",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
+      }
     ]
   },
   "planners-and-engineers-in-cambridge": {
@@ -3199,6 +3385,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "A professional planners and engineers in cambridge ensures environmentally responsible development."
       }
+    ],
+    "links": [
+      {
+        "text": "planners and engineers in cambridge",
+        "href": "https://pearlepp.co.uk/planning_and_building_control_services"
+      },
+      {
+        "text": "planners and engineers in cambridge",
+        "href": "https://pearlepp.co.uk/How-Collaboration-Between-Planners-and-Engineers-in-Cambridge-Reduces-Costs-and-Enhances-Quality"
+      },
+      {
+        "text": "planners and engineers in cambridge",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
+      }
     ]
   },
   "planners-and-engineers-kensington": {
@@ -3339,6 +3539,20 @@ export const aprilBlogs = {
       {
         "type": "paragraph",
         "text": "A professional planners and engineers kensington ensures sustainability without compromising luxury or design quality."
+      }
+    ],
+    "links": [
+      {
+        "text": "planners and engineers kensington",
+        "href": "https://pearlepp.co.uk/planning_and_building_control_services"
+      },
+      {
+        "text": "planners and engineers kensington",
+        "href": "https://pearlepp.co.uk/Why-Collaboration-Between-Planners-and-Engineers-in-Oxford-Is-Key-to-Successful-Developments"
+      },
+      {
+        "text": "planners and engineers kensington",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
       }
     ]
   },
@@ -3541,6 +3755,12 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "Strong focus on safety and sustainability"
       }
+    ],
+    "links": [
+      {
+        "text": "engineering services in Kensington, London.",
+        "href": "https://pearlepp.co.uk/structural_enigneering_services"
+      }
     ]
   },
   "structural-engineer-lambeth-london": {
@@ -3681,6 +3901,20 @@ export const aprilBlogs = {
       {
         "type": "paragraph",
         "text": "Fast turnaround and clear reporting"
+      }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Lambeth London",
+        "href": "https://pearlepp.co.uk/structural_enigneering_services"
+      },
+      {
+        "text": "structural engineer Lambeth London",
+        "href": "https://pearlepp.co.uk/How-a-Structural-Engineer-in-Cambridge-Ensures-Your-Renovation-Stands-the-Test-of-Time"
+      },
+      {
+        "text": "structural engineer Lambeth London",
+        "href": "https://share.google/nuMDfU87YHdRPWRYs"
       }
     ]
   },
@@ -3941,6 +4175,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "The company prioritizes safety, functionality, and long-term performance in every project."
       }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Newham",
+        "href": "https://pearlepp.co.uk/structure-engineers"
+      },
+      {
+        "text": "structural engineer Newham",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
+      },
+      {
+        "text": "structural engineer Newham",
+        "href": "https://pearlepp.co.uk/Choosing-the-Right-Structural-Design-Engineer-in-Bromley-London-A-Guide"
+      }
     ]
   },
   "structural-engineer-southwark": {
@@ -4160,6 +4408,20 @@ export const aprilBlogs = {
         "type": "paragraph",
         "text": "These tools help us deliver efficient, cost-effective, and durable solutions."
       }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Southwark",
+        "href": "https://pearlepp.co.uk/structure-engineers"
+      },
+      {
+        "text": "structural engineer Southwark",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
+      },
+      {
+        "text": "structural engineer Southwark",
+        "href": "https://pearlepp.co.uk/Structural-Engineering-Challenges-and-Solutions-in-London"
+      }
     ]
   },
   "structural-engineer-westminster": {
@@ -4302,6 +4564,20 @@ export const aprilBlogs = {
           "Fast reporting and approvals",
           "Full compliance with UK building standards"
         ]
+      }
+    ],
+    "links": [
+      {
+        "text": "structural engineer Westminster",
+        "href": "https://pearlepp.co.uk/structural_enigneering_services"
+      },
+      {
+        "text": "structural engineer Westminster",
+        "href": "https://pearlepp.co.uk/Structural-Engineer-Westminster-Precision-Engineering-by-PEPP"
+      },
+      {
+        "text": "structural engineer Westminster",
+        "href": "https://share.google/q2uWNa6ThRIZN1V6F"
       }
     ]
   }

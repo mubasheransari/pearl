@@ -142,3 +142,13 @@
     line-height: 1.75;
   }
 }
+
+.inlineLink {
+  color: #0b65c2;
+  text-decoration: underline;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
