@@ -71,10 +71,10 @@ const Home = () => {
                 {homepageBlogs.map(([slug, meta]) => (
                   <article key={slug} style={{ border: '1px solid #e7e7e7', borderRadius: '16px', padding: '20px', background: '#fff' }}>
                     <h3 style={{ fontSize: '20px', marginBottom: '12px' }}>
-                      <Link href={`/blogs/${slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>{meta.title}</Link>
+                      <Link href={`/${slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>{meta.title}</Link>
                     </h3>
                     <p style={{ color: '#555', lineHeight: 1.6 }}>{meta.description}</p>
-                    <Link href={`/blogs/${slug}`} style={{ display: 'inline-block', marginTop: '14px', fontWeight: 600 }}>Read blog</Link>
+                    <Link href={`/${slug}`} style={{ display: 'inline-block', marginTop: '14px', fontWeight: 600 }}>Read blog</Link>
                   </article>
                 ))}
               </div>

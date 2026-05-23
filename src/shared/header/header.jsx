@@ -197,7 +197,7 @@ const dynamicBlogLinks = Object.entries(genericBlogsMeta)
   .filter(([slug]) => !blogLinks.some((blog) => blog.link === slug))
   .map(([slug, meta]) => ({
     link: slug,
-    href: `/blogs/${slug}`,
+    href: `/${slug}`,
     text: meta.title,
     icon: faPen,
   }));

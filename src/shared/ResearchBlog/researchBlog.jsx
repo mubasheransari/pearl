@@ -87,7 +87,7 @@ const Resherch = () => {
             <article key={slug} className={styles.blogCard}>
               <h3 className={styles.blogTitle}>{meta.title}</h3>
               <p className={styles.blogDescription}>{meta.description}</p>
-              <Link href={`/blogs/${slug}`} className={styles.blogLink}>
+              <Link href={`/${slug}`} className={styles.blogLink}>
                 Read blog
               </Link>
             </article>
