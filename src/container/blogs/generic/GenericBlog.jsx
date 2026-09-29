@@ -122,21 +122,25 @@ const GenericBlog = ({ article }) => {
         <div className={styles.inner}>
           <div className={styles.contentCard}>
             {blocks.map((block, index) => {
+              // Blocks with their own `links` use only those links (so a link lands in the paragraph it belongs to);
+              // all other blocks keep using the article-level `links` queue as before.
+              const queues = block.links?.length ? createLinkQueues(block.links) : linkQueues;
+
               if (block.type === 'heading') {
-                return <h2 key={index} className={styles.heading}>{renderTextWithLinks(block.text, linkQueues)}</h2>;
+                return <h2 key={index} className={styles.heading}>{renderTextWithLinks(block.text, queues)}</h2>;
               }
 
               if (block.type === 'list') {
                 return (
                   <ul key={index} className={styles.list}>
                     {block.items.map((item, itemIndex) => (
-                      <li key={itemIndex}>{renderTextWithLinks(item, linkQueues)}</li>
+                      <li key={itemIndex}>{renderTextWithLinks(item, queues)}</li>
                     ))}
                   </ul>
                 );
               }
 
-              return <p key={index} className={styles.paragraph}>{renderTextWithLinks(block.text, linkQueues)}</p>;
+              return <p key={index} className={styles.paragraph}>{renderTextWithLinks(block.text, queues)}</p>;
             })}
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { aprilBlogs } from './aprilBlogsData';
+import { aeoBlogs } from './aeoBlogsData';
 export const genericBlogs = {
   "Structural-Engineer-Kensington-Building-Strong-Foundations-with-PEPP": {
     title: "Structural Engineer Kensington: Building Strong Foundations with PEPP",
@@ -1373,5 +1374,6 @@ export const genericBlogs = {
 };
 
 Object.assign(genericBlogs, aprilBlogs);
+Object.assign(genericBlogs, aeoBlogs);
 
 export const genericBlogsMeta = Object.fromEntries(Object.entries(genericBlogs).map(([slug, article]) => [slug, { title: article.metaTitle || article.title, description: article.description, canonical: article.canonical }]));
